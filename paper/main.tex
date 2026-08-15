@@ -303,8 +303,10 @@ The PD ``electrons'' sentence is Paramananda's 1919 commentary \emph{rejecting} 
 \label{fig:capra}
 \end{figure}
 This is a Tier~2--3 quantitative finding about how quantum--Sanskrit rhetoric works---not a Tier~5 claim that ancient authors discovered QM.
-Open-model annotation on Kaggle was subsequently authenticated under account \texttt{aks1321}; early GPU batch workers did not attach accelerators, and a CPU oneshot pilot returned uniformly \texttt{NA} labels (model too weak for 36-feature oneshot JSON).
-A batched CPU follow-up and GPU unlock (phone verification / UI accelerator) remain part of the exploratory annotation path.
+Open-model annotation on Kaggle was subsequently authenticated under account \texttt{aks1321}; early GPU batch workers did not attach accelerators.
+A CPU oneshot pilot (Qwen2.5-0.5B) returned uniformly \texttt{NA} labels (model too weak for 36-feature oneshot JSON).
+A batched follow-up ($6$ features/call; $80$ passages; prompt \texttt{ann-v0.3-batched6}) completed with $2875$ \texttt{NA}, $5$ explicit \texttt{0}, and $0$ positive labels---still insufficient for Level~III inference, and treated as an annotator-capacity limit rather than a Sanskrit null.
+GPU unlock (phone verification / UI accelerator) and larger instruct models remain on the exploratory path.
 The confirmatory firewall is unchanged.
 
 \section{Flagship exploratory finding}
