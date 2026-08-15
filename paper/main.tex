@@ -10,7 +10,7 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{float}
-\usepackage{caption}
+\usepackage{natbib}
 
 \hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
 
@@ -25,15 +25,19 @@ Success is \emph{not} defined as a positive quantum result.}}
 
 \title{Beyond Metaphor:\\
 \large A Blinded Confirmatory Design and Computational Discovery Engine\\
-for Quantum-Structural Analogues in Classical Sanskrit Thought}
-\author{RISHI-Q Project\\[0.35em]
-\small Working manuscript --- methodology, instrument validation, and exploratory discovery\\
-\small Local repository build}
+for Quantum-Structural Analogues in Classical Sanskrit Thought\\[0.35em]
+\normalsize (RISHI-Q)}
+\author{
+Arjun Shah\\
+\small RISHI-Q Project\\
+\small\texttt{https://github.com/arjunkshah/rishi-q}\\[0.5em]
+\small Sister experimental project: RISHI-FIELDS (\texttt{https://github.com/arjunkshah/rishi-fields})
+}
 \date{\today}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small RISHI-Q working draft}
+\fancyhead[L]{\small RISHI-Q preprint}
 \fancyhead[R]{\small Systems A+B; confirmatory locked}
 \fancyfoot[C]{\thepage}
 
@@ -47,10 +51,13 @@ RISHI-Q (Research Instrument for Structural Historical Inference of Quantum-anal
 \textbf{System~A} is a preregisterable confirmatory experiment asking whether selected Sanskrit corpora exhibit \emph{quantum-specific} structural correspondence with QM/QFT beyond matched historical controls, after blinding, translation controls, vocabulary masking, evidence-constrained annotation, and cluster-aware inference.
 \textbf{System~B} is a computational discovery engine that extracts evidence-bound concept graphs, mines unsupervised \emph{Rishi Motifs} \emph{without} physics labels, then maps motifs to physical theories only post hoc---searching for previously unquantified structural patterns, translation effects, anomalies, and claim--data divergences.
 The framework separates Level~I (generic metaphysical), Level~II (classical/field-like), and Level~III (quantum-specific) similarity and forbids upgrading metaphors such as unity into entanglement.
-This manuscript documents the scientific design, ontology, pipelines, reproducibility machinery, instrument validation on synthetic and modern-physics controls, an exploratory public-domain pilot, and System~B discovery outputs.
-It does \textbf{not} claim confirmatory Sanskrit results or Tier-5 transformative discoveries.
+This manuscript documents the scientific design, ontology, pipelines, reproducibility machinery, instrument validation on synthetic and modern-physics controls, an exploratory public-domain pilot ($n=276$), a Capra-style claim autopsy (5/5 claims \texttt{CONTRADICTED\_AS\_QUANTUM} on the Ved\={a}nta PD slice), and System~B discovery outputs under a heuristic annotator.
+It does \textbf{not} claim confirmatory Sanskrit results, historical discovery of quantum mechanics, or Tier-5 transformative discoveries.
 A negative confirmatory result remains a successful scientific outcome.
+Physical detection of pr\={a}\d{n}a or related concepts is out of scope and is pursued separately in RISHI-FIELDS.
 \end{abstract}
+
+\noindent\textbf{Keywords:} computational humanities; history of physics; Sanskrit philosophy; quantum foundations; blinded annotation; motif discovery; falsifiability
 
 \tableofcontents
 \newpage
@@ -296,7 +303,9 @@ The PD ``electrons'' sentence is Paramananda's 1919 commentary \emph{rejecting} 
 \label{fig:capra}
 \end{figure}
 This is a Tier~2--3 quantitative finding about how quantum--Sanskrit rhetoric works---not a Tier~5 claim that ancient authors discovered QM.
-GPU open-model annotation on Kaggle remains blocked by API authorization at writing time; the confirmatory firewall is unchanged.
+Open-model annotation on Kaggle was subsequently authenticated under account \texttt{aks1321}; early GPU batch workers did not attach accelerators, and a CPU oneshot pilot returned uniformly \texttt{NA} labels (model too weak for 36-feature oneshot JSON).
+A batched CPU follow-up and GPU unlock (phone verification / UI accelerator) remain part of the exploratory annotation path.
+The confirmatory firewall is unchanged.
 
 \section{Flagship exploratory finding}
 \label{sec:headline}
@@ -429,23 +438,27 @@ See \texttt{docs/LIMITATIONS.md}.
 
 \section{Conclusion}
 RISHI-Q is both a confirmatory instrument and a discovery engine.
-The present manuscript freezes the methodological story, demonstrates instrument behavior on controls, and reports exploratory System~B outputs without manufacturing significance.
-Confirmatory evaluation remains locked until preregistration and human validation are complete.
+The present manuscript freezes the methodological story, demonstrates instrument behavior on controls, and reports exploratory System~B outputs and Capra-style claim autopsies without manufacturing significance or inventing ancient quantum discovery.
+Under heuristic public-domain annotation, Level~I metaphysical structure appears without Level~III quantum enrichment for the Ved\={a}nta slice examined here---a result that constrains popular rhetoric even while confirmatory H1 remains locked.
+Confirmatory evaluation awaits preregistration, human validation, and stronger annotation backends.
 \textbf{Rigor first; discovery second; extraordinary claims only with extraordinary evidence.}
 
 \section*{Data and code availability}
-Software: MIT-licensed repository.
+Software: MIT-licensed repository (\texttt{https://github.com/arjunkshah/rishi-q}).
+Private blinding maps are not published.
 Regenerate exhibits:
 \begin{verbatim}
 uv run python scripts/run_discovery_engine.py
+uv run python scripts/run_capra_autopsy.py
 uv run python scripts/build_all_visualizations.py
 uv run python scripts/build_paper_assets.py
 \end{verbatim}
 
 \section*{Acknowledgments}
 External Sanskrit, physics, and statistics reviewers are invited; none are invented here.
+No human subjects were enrolled for this textual study.
 
-\bibliographystyle{plain}
+\bibliographystyle{plainnat}
 \bibliography{references}
 
 \appendix
