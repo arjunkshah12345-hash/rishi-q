@@ -1,0 +1,10 @@
+gate,status
+Ontology v0.1,PILOTED
+Synthetic E2E pipeline,COMPLETE
+Positive-control instrument tests,PASSING
+Human validation,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+OSF preregistration,READY_FOR_EXTERNAL_PREREGISTRATION
+Confirmatory analysis,LOCKED
+Licensed development corpus (500-800),IN_PROGRESS_POINTERS
+Expert Sanskrit review,REQUIRES_EXPERT_REVIEW
+Expert physicist review,REQUIRES_EXPERT_REVIEW

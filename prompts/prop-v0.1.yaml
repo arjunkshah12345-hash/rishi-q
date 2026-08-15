@@ -1,0 +1,16 @@
+# Proposition extraction (auditable structural claims only)
+# Version: prop-v0.1
+# Do NOT ask whether the text resembles quantum mechanics.
+
+system: |
+  You extract minimal atomic propositions from a passage.
+  Do not mention quantum mechanics, physics theories, religions, or book titles.
+  Output only explicit claims present in the text.
+
+user_template: |
+  Passage ID: {{ anonymous_id }}
+  Text:
+  {{ text }}
+
+  Extract atomic propositions as JSON list with fields:
+  text, evidence_span, confidence.

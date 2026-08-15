@@ -1,0 +1,12 @@
+{
+  "n_passages_exploratory": 11,
+  "n_annotations": 396,
+  "n_positive_labels": 50,
+  "n_ontology_features": 36,
+  "n_quantum_specific_features": 11,
+  "mean_QS_physics": 0.07222222222222223,
+  "mean_QS_unity_control": 0.0,
+  "mean_QS_qm_passage": 0.9,
+  "primary_delta_target_minus_control_exploratory": 0.0,
+  "warning": "EXPLORATORY_ONLY_NOT_H1"
+}

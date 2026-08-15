@@ -1,0 +1,97 @@
+{
+  "generated_utc": "2026-08-15T18:05:51.966305+00:00",
+  "n_assets": 15,
+  "assets": [
+    {
+      "path": "paper/figures/fig01_pipeline.png",
+      "kind": "figure",
+      "description": "Analysis pipeline schematic",
+      "generated_utc": "2026-08-15T18:05:49.590793+00:00"
+    },
+    {
+      "path": "paper/figures/fig02_three_levels.png",
+      "kind": "figure",
+      "description": "Level I/II/III scientific distinction",
+      "generated_utc": "2026-08-15T18:05:49.723729+00:00"
+    },
+    {
+      "path": "paper/figures/fig03_ontology_overview.png",
+      "kind": "figure",
+      "description": "Ontology feature counts by family and level",
+      "generated_utc": "2026-08-15T18:05:49.904007+00:00"
+    },
+    {
+      "path": "paper/figures/fig04_firewall.png",
+      "kind": "figure",
+      "description": "Development vs confirmatory firewall",
+      "generated_utc": "2026-08-15T18:05:49.992433+00:00"
+    },
+    {
+      "path": "paper/figures/fig05_positive_controls.png",
+      "kind": "figure",
+      "description": "Modern physics positive-control theory scores",
+      "generated_utc": "2026-08-15T18:05:50.151620+00:00"
+    },
+    {
+      "path": "paper/figures/fig06_qs_by_tradition.png",
+      "kind": "figure",
+      "description": "QS by tradition (exploratory)",
+      "generated_utc": "2026-08-15T18:05:50.279555+00:00"
+    },
+    {
+      "path": "paper/figures/fig07_theory_heatmap.png",
+      "kind": "figure",
+      "description": "Theory similarity heatmap",
+      "generated_utc": "2026-08-15T18:05:50.462290+00:00"
+    },
+    {
+      "path": "paper/figures/fig08_qs_qef_scatter.png",
+      "kind": "figure",
+      "description": "QS vs QEF scatter with passage labels",
+      "generated_utc": "2026-08-15T18:05:50.648920+00:00"
+    },
+    {
+      "path": "paper/figures/fig09_feature_heatmap.png",
+      "kind": "figure",
+      "description": "Feature positivity heatmap",
+      "generated_utc": "2026-08-15T18:05:50.951745+00:00"
+    },
+    {
+      "path": "paper/figures/fig10_robustness_forest.png",
+      "kind": "figure",
+      "description": "Robustness forest scaffold",
+      "generated_utc": "2026-08-15T18:05:51.236000+00:00"
+    },
+    {
+      "path": "paper/figures/fig11_power_curves.png",
+      "kind": "figure",
+      "description": "Exploratory power curves",
+      "generated_utc": "2026-08-15T18:05:51.365626+00:00"
+    },
+    {
+      "path": "paper/figures/fig12_translation_tci_demo.png",
+      "kind": "figure",
+      "description": "Synthetic translation contamination demo",
+      "generated_utc": "2026-08-15T18:05:51.365799+00:00"
+    },
+    {
+      "path": "paper/tables/tab_passage_scores.tex",
+      "kind": "table",
+      "description": "Passage-level QS/QEF/theory scores",
+      "generated_utc": "2026-08-15T18:05:51.919083+00:00"
+    },
+    {
+      "path": "paper/tables/tab_positive_controls.tex",
+      "kind": "table",
+      "description": "Positive control summary",
+      "generated_utc": "2026-08-15T18:05:51.922044+00:00"
+    },
+    {
+      "path": "paper/tables/tab_ontology_features.tex",
+      "kind": "table",
+      "description": "Full ontology feature list",
+      "generated_utc": "2026-08-15T18:05:51.960450+00:00"
+    }
+  ],
+  "notes": "All numeric figures/tables derive from exploratory synthetic pipeline unless marked schematic."
+}

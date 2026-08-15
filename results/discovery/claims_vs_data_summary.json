@@ -1,0 +1,16 @@
+{
+  "supported": [
+    "\u0101k\u0101\u015ba = quantum field",
+    "Brahman = unified field",
+    "oneness = entanglement"
+  ],
+  "unsupported": [
+    "pr\u0101\u1e47a = energy",
+    "spanda = quantum vibration",
+    "observer consciousness = measurement effect",
+    "a\u1e47u = quantum particle"
+  ],
+  "popular_quantum_divergences": [
+    "**\u0101k\u0101\u015ba = quantum field**: popular quantum reading unsupported; best_match=classical_field_like_ontology; structural=['F01', 'O04']; quantum_missing=['Q08', 'Q01', 'Q03', 'Q06']"
+  ]
+}

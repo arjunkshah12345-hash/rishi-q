@@ -1,0 +1,48 @@
+{
+  "candidate_id": "DC-M012",
+  "title": "Structural motif M012: E:manifests_as + N:substrate",
+  "discovery_type": "rishi_motif",
+  "motif_id": "M012",
+  "supporting_sources": [
+    "Upanishads (Paramananda tr.)",
+    "De Rerum Natura",
+    "Tao Te Ching",
+    "Synthetic classical EM description",
+    "Synthetic QFT description"
+  ],
+  "n_independent_works": 5,
+  "estimated_historical_period": "unknown",
+  "effect_size": 2.0,
+  "confidence_interval": [
+    1.7243801714668323,
+    23.261176261955548
+  ],
+  "control_comparison": "{\"passage_enrichment\": {\"motif_id\": \"M012\", \"n_target\": 8, \"n_control\": 3, \"p_target\": 0.1, \"p_control\": 0.015789473684210527, \"enrichment\": 6.333333333333333, \"enrichment_infinite\": false, \"ci95\": [1.7243801714668323, 23.261176261955548], \"n_works\": 5}, \"cluster_bootstrap\": {\"motif_id\": \"M012\", \"status\": \"ok\", \"n_target_works\": 1, \"n_control_works\": 4, \"n_present_works\": 5, \"enrichment_work_level\": 2.0, \"enrichment_infinite\": false, \"ci95\": [1.0, 50.0], \"p_boot_two_sided\": 1.0, \"note\": \"Work-cluster bootstrap; p is secondary to effect size / replication.\"}}",
+  "translation_robustness": "untested",
+  "model_robustness": "untested",
+  "human_validation_status": "REQUIRES_EXTERNAL_HUMAN_VALIDATION",
+  "nearest_physics_analogue": "classical_field_like",
+  "classical_vs_quantum_specificity": "field_like",
+  "prior_literature_status": "NOVELTY_REVIEW_REQUIRED",
+  "alternative_explanations": [
+    "generic metaphysics",
+    "translation modernization",
+    "annotator lexical bias",
+    "shared mystical tropes across civilizations"
+  ],
+  "novelty_confidence": 0.0,
+  "scientific_importance": 0.6708333333333334,
+  "status": "NOVELTY_REVIEW_REQUIRED",
+  "so_what": {
+    "novelty": 0.0,
+    "robustness": 0.8666666666666667,
+    "specificity": 1.0,
+    "historical_importance": 0.4,
+    "physics_relevance": 0.6,
+    "interpretability": 0.7,
+    "reproducibility": 0.8,
+    "surprise": 1.0,
+    "composite_optional": 0.6708333333333334
+  },
+  "notes": "gate:{'not_trivial_ontology': True, 'not_single_passage': True, 'multi_work': True, 'translation_ok': True, 'model_ok': True, 'has_effect': True, 'precise': True, 'literature_reviewed': False, 'not_rejected': True, 'not_artifact': True}"
+}

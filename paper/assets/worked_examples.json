@@ -1,0 +1,89 @@
+{
+  "warning": "EXPLORATORY_INSTRUMENT_EXAMPLES_ONLY",
+  "strongest_qs_physics": [
+    {
+      "passage_id": "PHYS_QM_001",
+      "work": "Synthetic QM description",
+      "QS": 0.9,
+      "QEF": 1.0,
+      "quantum_mechanics": 1.0,
+      "classical_em": 0.0
+    },
+    {
+      "passage_id": "PHYS_ENTANGLE_001",
+      "work": "Synthetic entanglement description",
+      "QS": 0.8,
+      "QEF": 1.0,
+      "quantum_mechanics": 0.8,
+      "classical_em": 0.0
+    },
+    {
+      "passage_id": "PHYS_QFT_001",
+      "work": "Synthetic QFT description",
+      "QS": 0.33333333333333337,
+      "QEF": 1.0,
+      "quantum_mechanics": 0.2,
+      "classical_em": 0.6666666666666666
+    }
+  ],
+  "lowest_qs_overall": [
+    {
+      "passage_id": "PHYS_THERMO_001",
+      "tradition": "modern_physics",
+      "role": "physics_reference",
+      "QS": -1.0,
+      "QEF": 0.0
+    },
+    {
+      "passage_id": "PHYS_NEWTON_001",
+      "tradition": "modern_physics",
+      "role": "physics_reference",
+      "QS": -0.5,
+      "QEF": 0.0
+    },
+    {
+      "passage_id": "SYN_ATOM_001",
+      "tradition": "synthetic_vaisheshika_like",
+      "role": "target",
+      "QS": -0.3333333333333333,
+      "QEF": 0.0
+    }
+  ],
+  "unity_metaphor_control": {
+    "passage_scores": [
+      {
+        "passage_id": "SYN_UNITY_001",
+        "QS": 0.0,
+        "QEF": 0.0
+      }
+    ],
+    "Q06_annotation": [
+      {
+        "passage_id": "SYN_UNITY_001",
+        "label": "0",
+        "evidence": "Everything is one",
+        "reason": "generic unity/interconnection does not support nonseparability"
+      }
+    ],
+    "lesson": "Generic unity must not count as nonseparability."
+  },
+  "entanglement_control": {
+    "passage_scores": [
+      {
+        "passage_id": "PHYS_ENTANGLE_001",
+        "QS": 0.8,
+        "QEF": 1.0,
+        "quantum_mechanics": 0.8
+      }
+    ],
+    "Q06_annotation": [
+      {
+        "passage_id": "PHYS_ENTANGLE_001",
+        "label": "1",
+        "evidence": "For two systems prepared jointly, the joint state cannot be represented as independent component states.",
+        "reason": "matched structural cue for Q06"
+      }
+    ],
+    "lesson": "Explicit non-factorizable joint state supports Q06."
+  }
+}

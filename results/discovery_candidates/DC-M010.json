@@ -1,0 +1,41 @@
+{
+  "candidate_id": "DC-M010",
+  "title": "Structural motif M010: E:composed_of + E:pervades + N:constituent + N:space",
+  "discovery_type": "rishi_motif",
+  "motif_id": "M010",
+  "supporting_sources": [
+    "De Rerum Natura"
+  ],
+  "n_independent_works": 1,
+  "estimated_historical_period": "unknown",
+  "effect_size": 0.0,
+  "confidence_interval": null,
+  "control_comparison": "{'motif_id': 'M010', 'n_target': 0, 'n_control': 2, 'p_target': 0.0, 'p_control': 0.010526315789473684, 'enrichment': 0.0, 'enrichment_infinite': False, 'ci95': None, 'n_works': 1}",
+  "translation_robustness": "untested",
+  "model_robustness": "untested",
+  "human_validation_status": "REQUIRES_EXTERNAL_HUMAN_VALIDATION",
+  "nearest_physics_analogue": "classical_field_like",
+  "classical_vs_quantum_specificity": "field_like",
+  "prior_literature_status": "NOVELTY_REVIEW_REQUIRED",
+  "alternative_explanations": [
+    "generic metaphysics",
+    "translation modernization",
+    "annotator lexical bias",
+    "shared mystical tropes across civilizations"
+  ],
+  "novelty_confidence": 0.0,
+  "scientific_importance": 0.4708333333333333,
+  "status": "NOVELTY_REVIEW_REQUIRED",
+  "so_what": {
+    "novelty": 0.0,
+    "robustness": 0.26666666666666666,
+    "specificity": 1.0,
+    "historical_importance": 0.4,
+    "physics_relevance": 0.6,
+    "interpretability": 0.7,
+    "reproducibility": 0.8,
+    "surprise": 0.0,
+    "composite_optional": 0.4708333333333333
+  },
+  "notes": "gate:{'not_trivial_ontology': True, 'not_single_passage': False, 'multi_work': False, 'translation_ok': True, 'model_ok': True, 'has_effect': False, 'precise': True, 'literature_reviewed': False, 'not_rejected': True, 'not_artifact': True}"
+}

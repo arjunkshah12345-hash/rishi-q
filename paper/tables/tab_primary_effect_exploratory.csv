@@ -1,0 +1,2 @@
+warning,n_target,n_control,delta_Q,mean_QS_target,mean_QS_control,permutation,note
+EXPLORATORY_ONLY_NOT_CONFIRMATORY_H1,50,117,-0.01527065527065527,-0.026666666666666665,-0.011396011396011395,"{'observed_delta': -0.01527065527065527, 'p_value': 0.582, 'n_perm': 499, 'null_mean': -0.0032494618867364385}",Synthetic prototype100; do not interpret as Sanskrit result.

@@ -1,0 +1,29 @@
+{
+  "warning": "EXPLORATORY_PD_PILOT_NOT_CONFIRMATORY_H1",
+  "n_target": 80,
+  "n_control": 190,
+  "delta_Q": -0.0006578947368421073,
+  "mean_QS_target": -0.0375,
+  "mean_QS_control": -0.03684210526315789,
+  "mean_QEF_target": 0.0,
+  "mean_QEF_control": 0.0,
+  "permutation": {
+    "observed_delta": -0.0006578947368421073,
+    "p_value": 0.409,
+    "n_perm": 999,
+    "null_mean": -0.00012387387387387483
+  },
+  "mean_QS_by_tradition": {
+    "buddhist_dhammapada_pd": -0.05,
+    "chinese_ddj_pd": 0.0,
+    "greek_lucretius_pd": -0.0667,
+    "greek_timaeus_pd": -0.02,
+    "vedanta_pd": -0.0375
+  },
+  "interpretation_rules": [
+    "Do not claim ancient discovery of QM.",
+    "Older translations may modernize language \u2014 treat as exploratory.",
+    "Heuristic annotator is not human validation.",
+    "Confirmatory remains locked until preregistration."
+  ]
+}

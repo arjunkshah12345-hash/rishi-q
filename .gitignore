@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Data products (regenerable; keep fixtures)
+results/exploratory/**
+!results/exploratory/README.md
+!results/exploratory/.gitkeep
+results/confirmatory/**
+!results/confirmatory/README.md
+!results/confirmatory/.gitkeep
+*.parquet
+!tests/fixtures/**/*.parquet
+!corpus/development/synthetic_passages.parquet
+!corpus/validation/**/*.parquet
+
+# Private blinding maps (never publish)
+corpus/**/blinding_map.json
+corpus/**/*.private.json
+*.private.*
+
+# Local notebooks checkpoints
+.ipynb_checkpoints/
+
+# Large ML caches
+.cache/
+models/
+*.pt
+*.bin
+*.safetensors
+
+# uv
+uv.lock.bak
+
+# Kaggle upload artifacts
+kaggle/**/*.zip
+kaggle/rishiq_kaggle_bundle_public/
+!kaggle/rishiq_kaggle_bundle_public/README.md
+
+# Explicit private maps
+**/blinding_map.PRIVATE.json
+**/blinding_map.PRIVATE.*

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use RISHI-Q, please cite this work."
+title: "RISHI-Q: Beyond Metaphor — A Blinded Computational Test of Quantum-Structural Analogues in Classical Sanskrit Thought"
+version: 0.1.0
+date-released: "2026-08-15"
+license: MIT
+type: software
+authors:
+  - family-names: Shah
+    given-names: Arjun
+    email: arjunkshah21@gmail.com
+repository-code: "https://github.com/arjunkshah/rishi-q"
+abstract: >
+  RISHI-Q is a preregisterable computational framework for testing whether
+  selected classical Sanskrit philosophical texts exhibit quantum-specific
+  structural correspondences relative to matched historical controls, after
+  source blinding, translation controls, vocabulary masking, and statistical
+  safeguards. A negative result is a successful scientific result.
+keywords:
+  - computational humanities
+  - philosophy of physics
+  - Sanskrit philosophy
+  - quantum foundations
+  - reproducibility

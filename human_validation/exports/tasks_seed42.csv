@@ -1,0 +1,397 @@
+passage_id,feature_id,label,evidence,reason,confidence,annotator,model_version,prompt_version,verified,verification_flags,human_label,human_evidence,reviewer_id,status
+PHYS_NEWTON_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,O04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,D01,1,Its state is a configuration of position and velocity that evolves according to deterministic equations.,matched structural cue for D01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,D02,1,Its state is a configuration of position and velocity that evolves according to deterministic equations.,matched structural cue for D02,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,D04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,D05,1,A specified mechanical quantity remains unchanged through the process.,matched structural cue for D05,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,D07,1,The transformation can be undone by the inverse process.,matched structural cue for D07,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,Q03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,Q06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,R01,1,Influences are transmitted through neighboring interactions.,matched structural cue for R01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,M03,1,"We cannot know the exact microstate of every grain of sand, but each has definite values.",matched structural cue for M03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_NEWTON_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,O04,1,A continuous medium fills space: the electromagnetic field is present throughout a spatial region.,matched structural cue for O04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,O05,1,Local forms appear within an all-pervading substrate.,matched structural cue for O05,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,D03,1,The quantity oscillates periodically.,matched structural cue for D03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,D04,1,A change in the field travels through space over time.,matched structural cue for D04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,Q03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,Q06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,R01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,F01,1,A continuous medium fills space: the electromagnetic field is present throughout a spatial region.,matched structural cue for F01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,F02,1,The field takes different values at different locations.,matched structural cue for F02,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,F03,1,A change in the field travels through space over time.,matched structural cue for F03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,F04,1,Local observables are manifestations of the extended field.,matched structural cue for F04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,F05,1,Forces between charges are mediated by the electromagnetic field.,matched structural cue for F05,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,F06,1,A localized pulse is a dynamical disturbance of the medium.,matched structural cue for F06,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_EM_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,O04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,D04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,D05,1,A specified quantity remains unchanged through the process in an isolated idealization.,matched structural cue for D05,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,Q03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,Q06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,R01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,M03,1,Probability only reflects our ignorance of hidden definite values.,matched structural cue for M03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_THERMO_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,O04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,D04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,Q01,1,Only discrete energy levels are allowed.,matched structural cue for Q01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,Q02,1,The state jointly represents mutually exclusive outcomes prior to selection.,matched structural cue for Q02,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,Q03,1,"Outcome probabilities are basic features of the theory, not just missing information.",matched structural cue for Q03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,Q04,1,The recorded outcome is produced in association with a measurement interaction.,matched structural cue for Q04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,Q05,1,Position and momentum cannot both have definite values in the same state.,matched structural cue for Q05,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,Q06,1,The joint state cannot be written as independent component states.,matched structural cue for Q06,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,Q07,1,Assigned values depend on which compatible measurement context is chosen.,matched structural cue for Q07,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,R01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,M01,1,We distinguish the measuring apparatus from the measured system.,matched structural cue for M01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,M02,1,Measurement interaction alters the system's subsequent state.,matched structural cue for M02,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,M04,1,No definite value is predetermined prior to the interaction.,matched structural cue for M04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QM_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,O04,1,A continuous medium fills space as a quantum field present throughout a spatial region.,matched structural cue for O04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,D04,1,A change in the field travels through space over time.,matched structural cue for D04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,Q03,1,"Outcome probabilities are basic features of the theory, not just missing information.",matched structural cue for Q03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,Q06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,Q08,1,Particles are discrete excitations of the underlying field.,matched structural cue for Q08,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,R01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,F01,1,A continuous medium fills space as a quantum field present throughout a spatial region.,matched structural cue for F01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,F03,1,A change in the field travels through space over time.,matched structural cue for F03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,F04,1,Local observables are manifestations of the extended field.,matched structural cue for F04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,F05,1,Forces between charges are mediated by the electromagnetic field.,matched structural cue for F05,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_QFT_001,F07,1,The field admits only discrete excitation quanta.,matched structural cue for F07,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,O04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,D04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,Q03,1,"Outcome probabilities are basic features of the theory, not just missing information.",matched structural cue for Q03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,Q06,1,"For two systems prepared jointly, the joint state cannot be represented as independent component states.",matched structural cue for Q06,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,R01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,R02,1,"Distant entities maintain specified correlations. Outcome probabilities are basic features of the theory, not just missing information. For two systems prepared jointly, the joint state cannot be represented as independent component states. Distant entities maintain specified correlation",matched structural cue for R02,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+PHYS_ENTANGLE_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,O04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,D04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,Q03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,Q06,0,Everything is one,generic unity/interconnection does not support nonseparability,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,R01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_UNITY_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,O01,1,An underlying reality persists while forms change.,matched structural cue for O01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,O04,1,A continuous medium fills space.,matched structural cue for O04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,O05,1,Local forms appear within an all-pervading substrate.,matched structural cue for O05,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,D04,1,A disturbance travels through the medium.,matched structural cue for D04,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,Q03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,Q06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,R01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_FIELD_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,O02,1,Bodies are aggregates of indivisible particles.,matched structural cue for O02,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,O03,1,Bodies are aggregates of indivisible particles.,matched structural cue for O03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,O04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,D04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,Q03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,Q06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,R01,1,Influences are transmitted through neighboring interactions.,matched structural cue for R01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_ATOM_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,O02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,O03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,O04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,D04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,Q03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,Q06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,R01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_MYSTICAL_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,O01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,O02,1,Bodies are aggregates of indivisible particles moving in the void.,matched structural cue for O02,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,O03,1,Bodies are aggregates of indivisible particles moving in the void.,matched structural cue for O03,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,O04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,O05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,O06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,D01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,D02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,D03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,D04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,D05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,D06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,D07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,Q01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,Q02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,Q03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,Q04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,Q05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,Q06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,Q07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,Q08,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,R01,1,Influences are transmitted through neighboring interactions.,matched structural cue for R01,0.7,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,R02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,R03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,R04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,M01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,M02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,M03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,M04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,F01,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,F02,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,F03,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,F04,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,F05,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,F06,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION
+SYN_GREEK_001,F07,NA,,insufficient explicit evidence,0.55,heuristic-annotator,0.1.0,ann-v0.1,True,[],,,,REQUIRES_EXTERNAL_HUMAN_VALIDATION

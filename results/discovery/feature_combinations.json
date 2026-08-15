@@ -1,0 +1,133 @@
+[
+  {
+    "combo_id": "C001",
+    "features": [
+      "O01",
+      "O05"
+    ],
+    "support": 6,
+    "traditions": {
+      "vedanta_pd": 6
+    },
+    "n_traditions": 1,
+    "passages": [
+      "PD_VEDANTA__003_a5db141c",
+      "PD_VEDANTA__043_3d8ba7ba",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__070_01dbf506",
+      "PD_VEDANTA__072_a697263a"
+    ]
+  },
+  {
+    "combo_id": "C002",
+    "features": [
+      "F01",
+      "O04"
+    ],
+    "support": 6,
+    "traditions": {
+      "vedanta_pd": 4,
+      "modern_physics": 2
+    },
+    "n_traditions": 2,
+    "passages": [
+      "PD_VEDANTA__008_3d98546c",
+      "PD_VEDANTA__012_1ade2cee",
+      "PD_VEDANTA__034_9c5182c4",
+      "PD_VEDANTA__050_e6624a54",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ]
+  },
+  {
+    "combo_id": "C003",
+    "features": [
+      "D02",
+      "O01"
+    ],
+    "support": 3,
+    "traditions": {
+      "vedanta_pd": 2,
+      "buddhist_dhammapada_pd": 1
+    },
+    "n_traditions": 2,
+    "passages": [
+      "PD_VEDANTA__021_9a1c705f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_BUDDHIST_012_ce26392d"
+    ]
+  },
+  {
+    "combo_id": "C004",
+    "features": [
+      "O01",
+      "O02"
+    ],
+    "support": 3,
+    "traditions": {
+      "vedanta_pd": 3
+    },
+    "n_traditions": 1,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83"
+    ]
+  },
+  {
+    "combo_id": "C005",
+    "features": [
+      "O04",
+      "O05"
+    ],
+    "support": 3,
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 1
+    },
+    "n_traditions": 3,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001"
+    ]
+  },
+  {
+    "combo_id": "C006",
+    "features": [
+      "O02",
+      "O05"
+    ],
+    "support": 3,
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "n_traditions": 2,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ]
+  },
+  {
+    "combo_id": "C007",
+    "features": [
+      "D02",
+      "O04"
+    ],
+    "support": 3,
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "n_traditions": 2,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ]
+  }
+]

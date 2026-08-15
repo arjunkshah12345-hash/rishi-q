@@ -1,0 +1,11 @@
+experiment_id: development-synthetic-v0.1
+seed: 42
+repo_root: .
+corpus_path: corpus/development/synthetic_passages.parquet
+ontology_path: ontology/ontology_v0.1.yaml
+fingerprint_dir: ontology/physics_fingerprints
+out_dir: results/exploratory/synthetic_e2e
+metric: weighted_jaccard
+backend: heuristic
+prompt_version: ann-v0.1
+notes: Exploratory synthetic end-to-end run. Not confirmatory.

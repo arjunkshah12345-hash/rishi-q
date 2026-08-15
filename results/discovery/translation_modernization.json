@@ -1,0 +1,132 @@
+{
+  "decade_modernization": [
+    {
+      "decade": 1870,
+      "n_translations": 50,
+      "lexicon_totals": {
+        "particle": 4,
+        "matter": 3,
+        "atom": 4,
+        "energy": 1,
+        "force": 2,
+        "vibration": 1
+      },
+      "mean_modern_term_mentions": 0.3,
+      "mean_qs": -0.02
+    },
+    {
+      "decade": 1880,
+      "n_translations": 40,
+      "lexicon_totals": {
+        "energy": 1,
+        "matter": 1
+      },
+      "mean_modern_term_mentions": 0.05,
+      "mean_qs": -0.05
+    },
+    {
+      "decade": 1890,
+      "n_translations": 40,
+      "lexicon_totals": {
+        "force": 1
+      },
+      "mean_modern_term_mentions": 0.025,
+      "mean_qs": 0.0
+    },
+    {
+      "decade": 1910,
+      "n_translations": 140,
+      "lexicon_totals": {
+        "energy": 6,
+        "matter": 8,
+        "force": 9,
+        "field": 3,
+        "atom": 7,
+        "wave": 7,
+        "particle": 3
+      },
+      "mean_modern_term_mentions": 0.30714285714285716,
+      "mean_qs": -0.051190476190476196
+    }
+  ],
+  "aligned_shift_graphs": [
+    {
+      "nodes": [
+        {
+          "id": "DEMO_SUBSTRATE_001-literal",
+          "year": 1880,
+          "lexicon_hits": {},
+          "n_modern_terms": 0,
+          "qs": 0.0,
+          "features": [
+            "O01",
+            "O04",
+            "O05"
+          ]
+        },
+        {
+          "id": "DEMO_SUBSTRATE_001-older_scholarly",
+          "year": 1920,
+          "lexicon_hits": {},
+          "n_modern_terms": 0,
+          "qs": 0.0,
+          "features": [
+            "O01",
+            "O04",
+            "O05"
+          ]
+        },
+        {
+          "id": "DEMO_SUBSTRATE_001-recent_scholarly",
+          "year": 2018,
+          "lexicon_hits": {
+            "energy": 1,
+            "field": 2,
+            "vibration": 1,
+            "particle": 1,
+            "quantum": 1
+          },
+          "n_modern_terms": 6,
+          "qs": 0.0,
+          "features": []
+        }
+      ],
+      "edges": [
+        {
+          "from": "DEMO_SUBSTRATE_001-literal",
+          "to": "DEMO_SUBSTRATE_001-older_scholarly",
+          "year_from": 1880,
+          "year_to": 1920,
+          "lexicon_gained": {},
+          "features_gained": [],
+          "features_lost": [],
+          "delta_qs": 0
+        },
+        {
+          "from": "DEMO_SUBSTRATE_001-older_scholarly",
+          "to": "DEMO_SUBSTRATE_001-recent_scholarly",
+          "year_from": 1920,
+          "year_to": 2018,
+          "lexicon_gained": {
+            "energy": 1,
+            "field": 2,
+            "vibration": 1,
+            "particle": 1,
+            "quantum": 1
+          },
+          "features_gained": [],
+          "features_lost": [
+            "O01",
+            "O04",
+            "O05"
+          ],
+          "delta_qs": 0
+        }
+      ],
+      "status": "exploratory",
+      "passage_family": "DEMO_SUBSTRATE_001"
+    }
+  ],
+  "status": "exploratory",
+  "note": "Decade lexicon vs QS is exploratory. Aligned shift graphs use synthetic multi-translation demo until licensed Sanskrit pairs exist."
+}

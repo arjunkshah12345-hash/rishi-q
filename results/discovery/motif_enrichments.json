@@ -1,0 +1,1786 @@
+{
+  "M001": {
+    "motif_id": "M001",
+    "n_target": 8,
+    "n_control": 11,
+    "p_target": 0.1,
+    "p_control": 0.05789473684210526,
+    "enrichment": 1.7272727272727273,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.7218610736476732,
+      4.133026676870433
+    ],
+    "n_works": 6
+  },
+  "M002": {
+    "motif_id": "M002",
+    "n_target": 6,
+    "n_control": 9,
+    "p_target": 0.075,
+    "p_control": 0.04736842105263158,
+    "enrichment": 1.5833333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.5828044358590564,
+      4.301519154961813
+    ],
+    "n_works": 4
+  },
+  "M003": {
+    "motif_id": "M003",
+    "n_target": 8,
+    "n_control": 11,
+    "p_target": 0.1,
+    "p_control": 0.05789473684210526,
+    "enrichment": 1.7272727272727273,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.7218610736476732,
+      4.133026676870433
+    ],
+    "n_works": 6
+  },
+  "M004": {
+    "motif_id": "M004",
+    "n_target": 8,
+    "n_control": 11,
+    "p_target": 0.1,
+    "p_control": 0.05789473684210526,
+    "enrichment": 1.7272727272727273,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.7218610736476732,
+      4.133026676870433
+    ],
+    "n_works": 6
+  },
+  "M005": {
+    "motif_id": "M005",
+    "n_target": 8,
+    "n_control": 11,
+    "p_target": 0.1,
+    "p_control": 0.05789473684210526,
+    "enrichment": 1.7272727272727273,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.7218610736476732,
+      4.133026676870433
+    ],
+    "n_works": 6
+  },
+  "M006": {
+    "motif_id": "M006",
+    "n_target": 8,
+    "n_control": 3,
+    "p_target": 0.1,
+    "p_control": 0.015789473684210527,
+    "enrichment": 6.333333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.7243801714668323,
+      23.261176261955548
+    ],
+    "n_works": 5
+  },
+  "M007": {
+    "motif_id": "M007",
+    "n_target": 6,
+    "n_control": 9,
+    "p_target": 0.075,
+    "p_control": 0.04736842105263158,
+    "enrichment": 1.5833333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.5828044358590564,
+      4.301519154961813
+    ],
+    "n_works": 6
+  },
+  "M008": {
+    "motif_id": "M008",
+    "n_target": 6,
+    "n_control": 9,
+    "p_target": 0.075,
+    "p_control": 0.04736842105263158,
+    "enrichment": 1.5833333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.5828044358590564,
+      4.301519154961813
+    ],
+    "n_works": 4
+  },
+  "M009": {
+    "motif_id": "M009",
+    "n_target": 6,
+    "n_control": 9,
+    "p_target": 0.075,
+    "p_control": 0.04736842105263158,
+    "enrichment": 1.5833333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.5828044358590564,
+      4.301519154961813
+    ],
+    "n_works": 4
+  },
+  "M010": {
+    "motif_id": "M010",
+    "n_target": 4,
+    "n_control": 4,
+    "p_target": 0.05,
+    "p_control": 0.021052631578947368,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.6089063806434091,
+      9.263534065844011
+    ],
+    "n_works": 7
+  },
+  "M011": {
+    "motif_id": "M011",
+    "n_target": 8,
+    "n_control": 3,
+    "p_target": 0.1,
+    "p_control": 0.015789473684210527,
+    "enrichment": 6.333333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.7243801714668323,
+      23.261176261955548
+    ],
+    "n_works": 5
+  },
+  "M012": {
+    "motif_id": "M012",
+    "n_target": 8,
+    "n_control": 3,
+    "p_target": 0.1,
+    "p_control": 0.015789473684210527,
+    "enrichment": 6.333333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.7243801714668323,
+      23.261176261955548
+    ],
+    "n_works": 5
+  },
+  "M013": {
+    "motif_id": "M013",
+    "n_target": 8,
+    "n_control": 3,
+    "p_target": 0.1,
+    "p_control": 0.015789473684210527,
+    "enrichment": 6.333333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.7243801714668323,
+      23.261176261955548
+    ],
+    "n_works": 5
+  },
+  "M014": {
+    "motif_id": "M014",
+    "n_target": 2,
+    "n_control": 2,
+    "p_target": 0.025,
+    "p_control": 0.010526315789473684,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.34043990185106854,
+      16.56863654739153
+    ],
+    "n_works": 5
+  },
+  "M015": {
+    "motif_id": "M015",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 5
+  },
+  "M016": {
+    "motif_id": "M016",
+    "n_target": 2,
+    "n_control": 2,
+    "p_target": 0.025,
+    "p_control": 0.010526315789473684,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.34043990185106854,
+      16.56863654739153
+    ],
+    "n_works": 5
+  },
+  "M017": {
+    "motif_id": "M017",
+    "n_target": 2,
+    "n_control": 2,
+    "p_target": 0.025,
+    "p_control": 0.010526315789473684,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.34043990185106854,
+      16.56863654739153
+    ],
+    "n_works": 5
+  },
+  "M018": {
+    "motif_id": "M018",
+    "n_target": 3,
+    "n_control": 2,
+    "p_target": 0.0375,
+    "p_control": 0.010526315789473684,
+    "enrichment": 3.5625,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.606777953332684,
+      20.916063578601314
+    ],
+    "n_works": 2
+  },
+  "M019": {
+    "motif_id": "M019",
+    "n_target": 3,
+    "n_control": 2,
+    "p_target": 0.0375,
+    "p_control": 0.010526315789473684,
+    "enrichment": 3.5625,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.606777953332684,
+      20.916063578601314
+    ],
+    "n_works": 2
+  },
+  "M020": {
+    "motif_id": "M020",
+    "n_target": 3,
+    "n_control": 2,
+    "p_target": 0.0375,
+    "p_control": 0.010526315789473684,
+    "enrichment": 3.5625,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.606777953332684,
+      20.916063578601314
+    ],
+    "n_works": 2
+  },
+  "M021": {
+    "motif_id": "M021",
+    "n_target": 3,
+    "n_control": 2,
+    "p_target": 0.0375,
+    "p_control": 0.010526315789473684,
+    "enrichment": 3.5625,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.606777953332684,
+      20.916063578601314
+    ],
+    "n_works": 2
+  },
+  "M022": {
+    "motif_id": "M022",
+    "n_target": 3,
+    "n_control": 2,
+    "p_target": 0.0375,
+    "p_control": 0.010526315789473684,
+    "enrichment": 3.5625,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.606777953332684,
+      20.916063578601314
+    ],
+    "n_works": 2
+  },
+  "M023": {
+    "motif_id": "M023",
+    "n_target": 3,
+    "n_control": 2,
+    "p_target": 0.0375,
+    "p_control": 0.010526315789473684,
+    "enrichment": 3.5625,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.606777953332684,
+      20.916063578601314
+    ],
+    "n_works": 2
+  },
+  "M024": {
+    "motif_id": "M024",
+    "n_target": 3,
+    "n_control": 2,
+    "p_target": 0.0375,
+    "p_control": 0.010526315789473684,
+    "enrichment": 3.5625,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.606777953332684,
+      20.916063578601314
+    ],
+    "n_works": 2
+  },
+  "M025": {
+    "motif_id": "M025",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M026": {
+    "motif_id": "M026",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M027": {
+    "motif_id": "M027",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M028": {
+    "motif_id": "M028",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M029": {
+    "motif_id": "M029",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M030": {
+    "motif_id": "M030",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M031": {
+    "motif_id": "M031",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M032": {
+    "motif_id": "M032",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M033": {
+    "motif_id": "M033",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M034": {
+    "motif_id": "M034",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M035": {
+    "motif_id": "M035",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M036": {
+    "motif_id": "M036",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M037": {
+    "motif_id": "M037",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M038": {
+    "motif_id": "M038",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M039": {
+    "motif_id": "M039",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M040": {
+    "motif_id": "M040",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M041": {
+    "motif_id": "M041",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M042": {
+    "motif_id": "M042",
+    "n_target": 1,
+    "n_control": 1,
+    "p_target": 0.0125,
+    "p_control": 0.005263157894736842,
+    "enrichment": 2.375,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.1503898357910556,
+      37.50669033136529
+    ],
+    "n_works": 4
+  },
+  "M043": {
+    "motif_id": "M043",
+    "n_target": 2,
+    "n_control": 0,
+    "p_target": 0.025,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M044": {
+    "motif_id": "M044",
+    "n_target": 2,
+    "n_control": 0,
+    "p_target": 0.025,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M045": {
+    "motif_id": "M045",
+    "n_target": 2,
+    "n_control": 0,
+    "p_target": 0.025,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M046": {
+    "motif_id": "M046",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M047": {
+    "motif_id": "M047",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M048": {
+    "motif_id": "M048",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M049": {
+    "motif_id": "M049",
+    "n_target": 0,
+    "n_control": 0,
+    "p_target": 0.0,
+    "p_control": 0.0,
+    "enrichment": 1.0,
+    "enrichment_infinite": false,
+    "ci95": null,
+    "n_works": 4
+  },
+  "M050": {
+    "motif_id": "M050",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M051": {
+    "motif_id": "M051",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M052": {
+    "motif_id": "M052",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M053": {
+    "motif_id": "M053",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M054": {
+    "motif_id": "M054",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M055": {
+    "motif_id": "M055",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M056": {
+    "motif_id": "M056",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M057": {
+    "motif_id": "M057",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M058": {
+    "motif_id": "M058",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M059": {
+    "motif_id": "M059",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M060": {
+    "motif_id": "M060",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M061": {
+    "motif_id": "M061",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M062": {
+    "motif_id": "M062",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M063": {
+    "motif_id": "M063",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M064": {
+    "motif_id": "M064",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M065": {
+    "motif_id": "M065",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M066": {
+    "motif_id": "M066",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M067": {
+    "motif_id": "M067",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M068": {
+    "motif_id": "M068",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M069": {
+    "motif_id": "M069",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M070": {
+    "motif_id": "M070",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M071": {
+    "motif_id": "M071",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M072": {
+    "motif_id": "M072",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M073": {
+    "motif_id": "M073",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M074": {
+    "motif_id": "M074",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M075": {
+    "motif_id": "M075",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M076": {
+    "motif_id": "M076",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M077": {
+    "motif_id": "M077",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M078": {
+    "motif_id": "M078",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M079": {
+    "motif_id": "M079",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M080": {
+    "motif_id": "M080",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M081": {
+    "motif_id": "M081",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M082": {
+    "motif_id": "M082",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M083": {
+    "motif_id": "M083",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M084": {
+    "motif_id": "M084",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M085": {
+    "motif_id": "M085",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M086": {
+    "motif_id": "M086",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M087": {
+    "motif_id": "M087",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M088": {
+    "motif_id": "M088",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M089": {
+    "motif_id": "M089",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M090": {
+    "motif_id": "M090",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M091": {
+    "motif_id": "M091",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M092": {
+    "motif_id": "M092",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M093": {
+    "motif_id": "M093",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M094": {
+    "motif_id": "M094",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M095": {
+    "motif_id": "M095",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M096": {
+    "motif_id": "M096",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M097": {
+    "motif_id": "M097",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M098": {
+    "motif_id": "M098",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M099": {
+    "motif_id": "M099",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M100": {
+    "motif_id": "M100",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M101": {
+    "motif_id": "M101",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M102": {
+    "motif_id": "M102",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M103": {
+    "motif_id": "M103",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M104": {
+    "motif_id": "M104",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M105": {
+    "motif_id": "M105",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M106": {
+    "motif_id": "M106",
+    "n_target": 2,
+    "n_control": 0,
+    "p_target": 0.025,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 1
+  },
+  "M107": {
+    "motif_id": "M107",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M108": {
+    "motif_id": "M108",
+    "n_target": 1,
+    "n_control": 0,
+    "p_target": 0.0125,
+    "p_control": 0.0,
+    "enrichment": null,
+    "enrichment_infinite": true,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M109": {
+    "motif_id": "M109",
+    "n_target": 2,
+    "n_control": 1,
+    "p_target": 0.025,
+    "p_control": 0.005263157894736842,
+    "enrichment": 4.75,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.43687878032266064,
+      51.64476055196884
+    ],
+    "n_works": 2
+  },
+  "M110": {
+    "motif_id": "M110",
+    "n_target": 0,
+    "n_control": 2,
+    "p_target": 0.0,
+    "p_control": 0.010526315789473684,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.09197448006792855,
+      10.872581168835543
+    ],
+    "n_works": 1
+  },
+  "M111": {
+    "motif_id": "M111",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M112": {
+    "motif_id": "M112",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M113": {
+    "motif_id": "M113",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M114": {
+    "motif_id": "M114",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M115": {
+    "motif_id": "M115",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M116": {
+    "motif_id": "M116",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M117": {
+    "motif_id": "M117",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M118": {
+    "motif_id": "M118",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M119": {
+    "motif_id": "M119",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M120": {
+    "motif_id": "M120",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M121": {
+    "motif_id": "M121",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M122": {
+    "motif_id": "M122",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M123": {
+    "motif_id": "M123",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M124": {
+    "motif_id": "M124",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M125": {
+    "motif_id": "M125",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M126": {
+    "motif_id": "M126",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M127": {
+    "motif_id": "M127",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M128": {
+    "motif_id": "M128",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M129": {
+    "motif_id": "M129",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M130": {
+    "motif_id": "M130",
+    "n_target": 0,
+    "n_control": 1,
+    "p_target": 0.0,
+    "p_control": 0.005263157894736842,
+    "enrichment": 0.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      0.06332203612254973,
+      15.792290665838019
+    ],
+    "n_works": 3
+  },
+  "M131": {
+    "motif_id": "M131",
+    "n_target": 0,
+    "n_control": 0,
+    "p_target": 0.0,
+    "p_control": 0.0,
+    "enrichment": 1.0,
+    "enrichment_infinite": false,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M132": {
+    "motif_id": "M132",
+    "n_target": 0,
+    "n_control": 0,
+    "p_target": 0.0,
+    "p_control": 0.0,
+    "enrichment": 1.0,
+    "enrichment_infinite": false,
+    "ci95": null,
+    "n_works": 3
+  },
+  "M133": {
+    "motif_id": "M133",
+    "n_target": 0,
+    "n_control": 0,
+    "p_target": 0.0,
+    "p_control": 0.0,
+    "enrichment": 1.0,
+    "enrichment_infinite": false,
+    "ci95": null,
+    "n_works": 3
+  }
+}

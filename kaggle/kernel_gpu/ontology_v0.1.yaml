@@ -1,0 +1,757 @@
+ontology_id: rishiq-ontology
+version: 0.1.0
+status: PILOTED
+description: 'Physics-derived structural ontology for RISHI-Q. Levels: I generic metaphysical, II classical/field-like,
+  III quantum-specific.'
+annotation_values:
+  '1': explicitly supported
+  '0': explicitly contradicted
+  NA: not specified / insufficient evidence
+  U: ambiguous (development only; non-positive for scoring)
+hard_rules:
+- Everything is one does NOT imply entanglement (Q06).
+- Interconnected does NOT imply nonlocality.
+- Vibration does NOT imply QFT.
+- Prana does NOT automatically mean physical energy.
+- Akasa does NOT automatically mean a physical/quantum field.
+- Sakti does NOT automatically mean physics energy.
+- Anu does NOT automatically mean elementary particle.
+- Observer importance does NOT imply quantum measurement.
+- Epistemic uncertainty does NOT imply quantum indeterminacy.
+- Invisible does NOT imply quantum.
+- When ambiguous, prefer NA/U over 1.
+- Positive labels require exact evidence spans.
+families:
+- fundamental_ontology
+- dynamics
+- quantum_specific
+- relational
+- observer_epistemic
+- field_like
+features:
+- id: O01
+  name: Fundamental substrate
+  family: fundamental_ontology
+  level: I
+  definition: An underlying entity or level is presented as ontologically more fundamental than observable
+    objects.
+  positive_requirements:
+  - Explicit claim that some substrate/level is more basic than observed objects
+  negative_conditions:
+  - Mere hierarchy of social status or ritual purity without ontology of matter/reality
+  exclusions:
+  - Generic 'deeper meaning' of a story without ontological substrate
+  ambiguity_rules: If only poetic depth is claimed without an underlying entity, label NA.
+  positive_examples:
+  - Observable forms arise from an underlying reality that persists while forms change.
+  negative_examples:
+  - The king is more important than the subjects.
+  physics_relevance: classical_and_quantum_ontology
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: O02
+  name: Constituents
+  family: fundamental_ontology
+  level: II
+  definition: Macroscopic objects are composed from more elementary entities.
+  positive_requirements:
+  - Explicit composition from parts/atoms/elements
+  negative_conditions:
+  - Mere plurality of objects without composition claim
+  exclusions:
+  - Metaphorical 'made of love/virtue'
+  ambiguity_rules: If parts are moral/allegorical only, NA.
+  positive_examples:
+  - Bodies are aggregates of indivisible particles.
+  negative_examples:
+  - There are many trees in the forest.
+  physics_relevance: atomism_classical
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: O03
+  name: Fundamental discreteness
+  family: fundamental_ontology
+  level: II
+  definition: Fundamental constituents or states are discrete (countable/indivisible units).
+  positive_requirements:
+  - Explicit discreteness of ultimate constituents or allowed units
+  negative_conditions:
+  - Continuous fluid metaphors without discrete units
+  exclusions:
+  - Moral 'discrete acts'
+  ambiguity_rules: Discrete social categories ≠ physical discreteness → NA.
+  positive_examples:
+  - Ultimate atoms cannot be further divided.
+  negative_examples:
+  - Water flows continuously without smallest parts.
+  physics_relevance: classical_atomism
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: O04
+  name: Continuous substrate
+  family: fundamental_ontology
+  level: II
+  definition: A distributed continuous entity/substrate is described.
+  positive_requirements:
+  - Explicit continuous/extended medium or continuum
+  negative_conditions:
+  - Only discrete atoms with void, no continuum
+  exclusions:
+  - Vague 'everywhere' without continuous entity
+  ambiguity_rules: If continuity is only temporal, not ontological substrate → NA.
+  positive_examples:
+  - A continuous medium fills space.
+  negative_examples:
+  - Only separate atoms exist with empty gaps and no medium.
+  physics_relevance: continuum_classical_field
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: O05
+  name: Local manifestation
+  family: fundamental_ontology
+  level: II
+  definition: A broader substrate has localized manifestations.
+  positive_requirements:
+  - Local appearances arise from a broader underlying entity
+  negative_conditions:
+  - Local objects exist independently with no substrate
+  exclusions:
+  - Avatar metaphors without physical/ontological substrate
+  ambiguity_rules: Religious incarnation without ontology of substrate → NA unless structural claim is
+    explicit.
+  positive_examples:
+  - Local forms appear within an all-pervading substrate.
+  negative_examples:
+  - Each object exists independently with no shared substrate.
+  physics_relevance: field_like_classical
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: O06
+  name: Emergence
+  family: fundamental_ontology
+  level: II
+  definition: Higher-level properties arise from lower-level organization.
+  positive_requirements:
+  - Explicit emergence/organization dependence
+  negative_conditions:
+  - Properties merely listed without level relation
+  exclusions:
+  - Miraculous creation without organizational claim
+  ambiguity_rules: If emergence is purely moral/psychological, NA for physics ontology.
+  positive_examples:
+  - Complex properties arise when elementary parts are organized.
+  negative_examples:
+  - The property simply exists without relating to parts.
+  physics_relevance: statistical_mechanics_thermo
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: D01
+  name: State
+  family: dynamics
+  level: II
+  definition: An entity can occupy distinguishable configurations/states.
+  positive_requirements:
+  - Explicit multiple possible configurations
+  negative_conditions:
+  - Static naming without configuration language
+  exclusions:
+  - Emotional 'states' only
+  ambiguity_rules: Psychological mood alone → NA.
+  positive_examples:
+  - The system may be in configuration A or B.
+  negative_examples:
+  - The object is simply named without alternative configurations.
+  physics_relevance: all_physics
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: D02
+  name: Transformation
+  family: dynamics
+  level: II
+  definition: States change according to identifiable relationships/laws.
+  positive_requirements:
+  - Change linked to rule/relation/cause
+  negative_conditions:
+  - Mere change with no structure
+  exclusions:
+  - Moral transformation only
+  ambiguity_rules: If only 'things change' with no relation → Level I, label carefully; prefer NA for
+    D02.
+  positive_examples:
+  - State evolves according to a specified relation.
+  negative_examples:
+  - Things sometimes change for unknown reasons.
+  physics_relevance: classical_dynamics
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: D03
+  name: Periodicity
+  family: dynamics
+  level: II
+  definition: Dynamics are explicitly cyclic or oscillatory.
+  positive_requirements:
+  - Cycle, oscillation, periodic return
+  negative_conditions:
+  - One-way change only
+  exclusions:
+  - Vague 'vibration' as spiritual metaphor without dynamics
+  ambiguity_rules: 'Hard rule: vibration metaphor ≠ QFT; without cyclic dynamics → NA.'
+  positive_examples:
+  - The quantity oscillates periodically.
+  negative_examples:
+  - The process proceeds once and ends.
+  physics_relevance: waves_classical
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: D04
+  name: Propagation
+  family: dynamics
+  level: II
+  definition: A disturbance or influence propagates through space/medium.
+  positive_requirements:
+  - Traveling influence/disturbance
+  negative_conditions:
+  - Instantaneous global identity without propagation
+  exclusions:
+  - Mere 'influence' as social persuasion
+  ambiguity_rules: Action-at-a-distance claims without propagation path → R02 maybe, not D04.
+  positive_examples:
+  - A disturbance travels through the medium.
+  negative_examples:
+  - Everything is instantly the same everywhere.
+  physics_relevance: classical_field_waves
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: D05
+  name: Conservation
+  family: dynamics
+  level: II
+  definition: Some quantity/property remains invariant through change.
+  positive_requirements:
+  - Explicit invariance of a quantity
+  negative_conditions:
+  - Mere persistence of identity
+  exclusions:
+  - Conservation of moral virtue
+  ambiguity_rules: Identity persistence ≠ conservation law → NA.
+  positive_examples:
+  - A specified quantity remains unchanged through the process.
+  negative_examples:
+  - The thing continues to exist but no quantity is conserved.
+  physics_relevance: classical_conservation
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: D06
+  name: Symmetry
+  family: dynamics
+  level: II
+  definition: Structure is invariant under specified transformations.
+  positive_requirements:
+  - Explicit invariance under transformation
+  negative_conditions:
+  - Vague 'balance'
+  exclusions:
+  - Aesthetic symmetry only
+  ambiguity_rules: Balance metaphors without transform invariance → NA.
+  positive_examples:
+  - The laws are unchanged under spatial translation.
+  negative_examples:
+  - The design looks balanced.
+  physics_relevance: modern_physics
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: D07
+  name: Reversibility
+  family: dynamics
+  level: II
+  definition: A transformation can formally reverse.
+  positive_requirements:
+  - Explicit reverse process possible
+  negative_conditions:
+  - Irreversible-only processes
+  exclusions:
+  - Moral 'return to virtue'
+  ambiguity_rules: If only cyclical myth without formal reverse of same process → U/NA.
+  positive_examples:
+  - The transformation can be undone by the inverse process.
+  negative_examples:
+  - The process cannot be reversed.
+  physics_relevance: classical_mechanics
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: Q01
+  name: Discrete allowed states
+  family: quantum_specific
+  level: III
+  definition: Only certain physical states/values are permitted (selection rule / spectrum).
+  positive_requirements:
+  - Explicit restriction to allowed discrete values/states beyond mere atomism of stuff
+  negative_conditions:
+  - Continuous spectra only; or mere atomic constituents without state restriction
+  exclusions:
+  - O03 atomism alone does not imply Q01
+  ambiguity_rules: Atomism of matter (O03) ≠ discrete energy/state levels. Require state/value restriction.
+  positive_examples:
+  - Only discrete energy levels are allowed.
+  negative_examples:
+  - Any continuous value of the quantity is allowed.
+  physics_relevance: quantum_mechanics
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: Q02
+  name: Superposed possibilities
+  family: quantum_specific
+  level: III
+  definition: Multiple alternative states are simultaneously represented prior to outcome selection.
+  positive_requirements:
+  - Simultaneous representation of alternatives in the state, not mere ignorance list
+  negative_conditions:
+  - Epistemic list of possibilities due to ignorance (→ M03)
+  exclusions:
+  - Mythic multi-aspect deities without state structure
+  ambiguity_rules: 'Hard: epistemic uncertainty ≠ superposition. Prefer NA unless ontic simultaneous representation.'
+  positive_examples:
+  - The state jointly represents mutually exclusive outcomes prior to selection.
+  negative_examples:
+  - We do not know which outcome will occur, but one is already determined.
+  physics_relevance: quantum_mechanics
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: Q03
+  name: Fundamental probability
+  family: quantum_specific
+  level: III
+  definition: Probability is inherent in physical prediction rather than mere ignorance.
+  positive_requirements:
+  - Explicit ontic/irreducible probability in outcomes
+  negative_conditions:
+  - Ignorance probability only (M03)
+  exclusions:
+  - Fate/chance metaphors
+  ambiguity_rules: 'Hard rule: uncertain ≠ quantum uncertainty. Require fundamental predictive probability.'
+  positive_examples:
+  - Outcome probabilities are basic features of the theory, not just missing information.
+  negative_examples:
+  - Probability only reflects our ignorance of hidden definite values.
+  physics_relevance: quantum_mechanics
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: Q04
+  name: Measurement-conditioned outcome
+  family: quantum_specific
+  level: III
+  definition: The outcome is associated with a measurement/observation interaction that conditions the
+    result.
+  positive_requirements:
+  - Measurement interaction linked to outcome realization
+  negative_conditions:
+  - Mere observer noticing a pre-existing fact
+  exclusions:
+  - Philosophical importance of consciousness alone
+  ambiguity_rules: 'Hard: observer importance ≠ quantum measurement. Need interaction-conditioned outcome.'
+  positive_examples:
+  - The recorded outcome is produced in association with a measurement interaction.
+  negative_examples:
+  - An observer becomes aware of a value that already existed.
+  physics_relevance: quantum_measurement
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: Q05
+  name: Incompatible observables
+  family: quantum_specific
+  level: III
+  definition: Two properties cannot simultaneously possess arbitrary definite values.
+  positive_requirements:
+  - Explicit incompatibility / non-joint definiteness
+  negative_conditions:
+  - Practical inability to measure two things at once due to tools
+  exclusions:
+  - Moral conflicting duties
+  ambiguity_rules: Instrument limits ≠ incompatibility of observables → NA.
+  positive_examples:
+  - Position and momentum cannot both have definite values in the same state.
+  negative_examples:
+  - We lack instruments to measure both at once, but both are definite.
+  physics_relevance: quantum_mechanics
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: Q06
+  name: Nonseparability
+  family: quantum_specific
+  level: III
+  definition: A composite state cannot be represented as a product of independent component states.
+  positive_requirements:
+  - Explicit non-factorizability / holistic joint state
+  negative_conditions:
+  - Mere interconnection, sympathy, or unity
+  exclusions:
+  - Everything is one / interconnected
+  ambiguity_rules: 'HARD RULE: unity/interconnectedness ≠ entanglement. Require non-factorizable joint
+    state.'
+  positive_examples:
+  - The joint state cannot be written as independent component states.
+  negative_examples:
+  - Everything is interconnected as one.
+  physics_relevance: quantum_entanglement
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: Q07
+  name: Context dependence
+  family: quantum_specific
+  level: III
+  definition: Possible outcomes depend structurally upon measurement context (contextuality).
+  positive_requirements:
+  - Outcome set/value assignment depends on measurement context
+  negative_conditions:
+  - Mere situational ethics or pragmatic dependence
+  exclusions:
+  - Reference-frame dependence alone (relativity) without quantum contextuality
+  ambiguity_rules: Relativity of frames (M01/relativity) ≠ Kochen-Specker-style contextuality.
+  positive_examples:
+  - Assigned values depend on which compatible measurement context is chosen.
+  negative_examples:
+  - Values are absolute but our descriptions use different coordinates.
+  physics_relevance: quantum_contextuality
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: Q08
+  name: Quantized excitation
+  family: quantum_specific
+  level: III
+  definition: Localized entities correspond to discrete excitations of an underlying distributed system.
+  positive_requirements:
+  - Discrete excitation of a field/distributed substrate
+  negative_conditions:
+  - Local lumps in a continuous medium without discreteness of excitation
+  exclusions:
+  - F06 without discreteness
+  ambiguity_rules: Field-like localization (F04/F06) without discrete excitation → not Q08.
+  positive_examples:
+  - Particles are discrete excitations of the underlying field.
+  negative_examples:
+  - A continuous wave crest travels without discrete excitation quanta.
+  physics_relevance: quantum_field_theory
+  quantum_specific: true
+  field_like: true
+  version: 0.1.0
+- id: R01
+  name: Local causation
+  family: relational
+  level: II
+  definition: Effects proceed through local interactions.
+  positive_requirements:
+  - Local interaction pathway
+  negative_conditions:
+  - Explicit nonlocal influence as primary
+  exclusions:
+  - Moral local community influence
+  ambiguity_rules: If text asserts nonlocal correlation without local mediation, do not force R01=1.
+  positive_examples:
+  - Influences are transmitted through neighboring interactions.
+  negative_examples:
+  - Separated things affect each other with no mediating process.
+  physics_relevance: classical_locality
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: R02
+  name: Long-range relation
+  family: relational
+  level: II
+  definition: Separated entities remain explicitly correlated/related at a distance.
+  positive_requirements:
+  - Explicit distant correlation/relation
+  negative_conditions:
+  - Only local contact
+  exclusions:
+  - Social long-distance friendship
+  ambiguity_rules: Long-range relation ≠ nonlocality of entanglement (needs Q06).
+  positive_examples:
+  - Distant entities maintain specified correlations.
+  negative_examples:
+  - Only contiguous entities interact.
+  physics_relevance: could_be_classical_or_quantum
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: R03
+  name: Holistic state
+  family: relational
+  level: II
+  definition: The state of a whole contains information not reducible to independent component descriptions.
+  positive_requirements:
+  - Irreducible whole-state information
+  negative_conditions:
+  - Whole is mere sum of parts
+  exclusions:
+  - Vague holism / 'everything is one' without state irreducibility
+  ambiguity_rules: Generic holism → Level I; require state-level irreducibility; else NA. Q06 is stricter.
+  positive_examples:
+  - The whole-state description is not recoverable from independent part-states.
+  negative_examples:
+  - Describe each part and you have described the whole.
+  physics_relevance: borderline_quantum
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: R04
+  name: Relational properties
+  family: relational
+  level: II
+  definition: Properties are defined relative to other entities rather than absolutely.
+  positive_requirements:
+  - Explicit relativity of properties to relations
+  negative_conditions:
+  - Intrinsic absolute properties only
+  exclusions:
+  - Relative moral status
+  ambiguity_rules: Frame-relative quantities can be relativity without quantum.
+  positive_examples:
+  - Velocity is defined relative to a reference body.
+  negative_examples:
+  - Mass is an absolute intrinsic number independent of relations.
+  physics_relevance: relativity_classical
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: M01
+  name: Observer/system distinction
+  family: observer_epistemic
+  level: II
+  definition: An observer and observed system are explicitly distinguished.
+  positive_requirements:
+  - Explicit observer vs system split
+  negative_conditions:
+  - No cognitive/observational split
+  exclusions:
+  - God as witness without system distinction for measurement
+  ambiguity_rules: Distinction alone ≠ quantum measurement.
+  positive_examples:
+  - We distinguish the measuring apparatus from the measured system.
+  negative_examples:
+  - There is no separation between knower and known asserted as absolute unity only.
+  physics_relevance: measurement_theory_and_relativity
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: M02
+  name: Observation modifies system
+  family: observer_epistemic
+  level: III
+  definition: The act of measurement/observation physically changes the system.
+  positive_requirements:
+  - Physical change caused by observation/measurement
+  negative_conditions:
+  - Mere discovery of a pre-existing value
+  exclusions:
+  - Psychological 'observation changes the person' soft claims
+  ambiguity_rules: 'HARD: consciousness matters ≠ measurement disturbance. Require physical modification
+    claim.'
+  positive_examples:
+  - Measurement interaction alters the system's subsequent state.
+  negative_examples:
+  - Looking reveals what was already there unchanged.
+  physics_relevance: quantum_measurement
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: M03
+  name: Epistemic limitation
+  family: observer_epistemic
+  level: I
+  definition: The observer cannot know some property (ignorance), without claiming ontic indefiniteness.
+  positive_requirements:
+  - Explicit limits of knowledge
+  negative_conditions:
+  - Claim that reality itself lacks the value (→ M04/Q03)
+  exclusions:
+  - Mystical ineffability without epistemic structure
+  ambiguity_rules: Keep M03 distinct from Q03/M04. Ignorance ≠ quantum indeterminacy.
+  positive_examples:
+  - We cannot know the exact microstate.
+  negative_examples:
+  - The value is not determined in nature prior to interaction.
+  physics_relevance: statistical_physics
+  quantum_specific: false
+  field_like: false
+  version: 0.1.0
+- id: M04
+  name: Ontic indeterminacy
+  family: observer_epistemic
+  level: III
+  definition: The property is not specified as having one predetermined value prior to the relevant interaction.
+  positive_requirements:
+  - Explicit lack of predetermined value
+  negative_conditions:
+  - Hidden definite value unknown to us (M03)
+  exclusions:
+  - Vague mystery
+  ambiguity_rules: Prefer NA unless ontic reading is explicit. Do not upgrade M03→M04.
+  positive_examples:
+  - No definite value is predetermined prior to the interaction.
+  negative_examples:
+  - A definite value exists but is unknown.
+  physics_relevance: quantum_indeterminacy
+  quantum_specific: true
+  field_like: false
+  version: 0.1.0
+- id: F01
+  name: Spatial distribution
+  family: field_like
+  level: II
+  definition: An entity exists across an extended spatial region.
+  positive_requirements:
+  - Extended spatial presence of an entity
+  negative_conditions:
+  - Pointlike only
+  exclusions:
+  - Everywhere as poetic omnipresence without spatial entity
+  ambiguity_rules: Omnipresence theology without spatial distribution structure → NA.
+  positive_examples:
+  - The entity is present throughout a spatial region.
+  negative_examples:
+  - The entity exists only at a single point.
+  physics_relevance: classical_field
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: F02
+  name: Local state of distributed entity
+  family: field_like
+  level: II
+  definition: Different locations may possess different states/values of the distributed entity.
+  positive_requirements:
+  - Spatially varying local values
+  negative_conditions:
+  - Uniform everywhere with no local state language
+  exclusions:
+  - Different places have different moods
+  ambiguity_rules: Requires F01-like distributed entity; else NA.
+  positive_examples:
+  - The field takes different values at different locations.
+  negative_examples:
+  - The substance is the same with no local variation described.
+  physics_relevance: classical_field
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: F03
+  name: Disturbance propagation
+  family: field_like
+  level: II
+  definition: Changes propagate through the distributed entity.
+  positive_requirements:
+  - Propagation through distributed entity
+  negative_conditions:
+  - Global instantaneous update only
+  exclusions:
+  - Same as D04 but tied to distributed entity
+  ambiguity_rules: Align with D04; if no distributed entity, prefer D04 alone / NA for F03.
+  positive_examples:
+  - A change in the field travels through space over time.
+  negative_examples:
+  - The whole updates instantly with no travel.
+  physics_relevance: classical_field_waves
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: F04
+  name: Localized manifestation
+  family: field_like
+  level: II
+  definition: Localized observable phenomena arise from that distributed entity.
+  positive_requirements:
+  - Local observables from distributed entity
+  negative_conditions:
+  - Local objects unrelated to substrate
+  exclusions:
+  - O05 without distributed/field framing
+  ambiguity_rules: Overlaps O05; use when distributed/field framing is explicit.
+  positive_examples:
+  - Local observables are manifestations of the extended field.
+  negative_examples:
+  - Local objects are independent substances.
+  physics_relevance: classical_field
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: F05
+  name: Interaction mediation
+  family: field_like
+  level: II
+  definition: The distributed entity mediates interactions between systems.
+  positive_requirements:
+  - Mediating role of distributed entity
+  negative_conditions:
+  - Direct particle contact only; or no mediation
+  exclusions:
+  - Social mediator metaphors
+  ambiguity_rules: Medium of interaction without distribution → weaker; need distributed mediator.
+  positive_examples:
+  - Forces between charges are mediated by the electromagnetic field.
+  negative_examples:
+  - Particles influence each other only by direct contact.
+  physics_relevance: classical_field
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: F06
+  name: Excitation-like structure
+  family: field_like
+  level: II
+  definition: Localized entities correspond to dynamically changed states of the underlying structure.
+  positive_requirements:
+  - Local entity as dynamical change of substrate
+  negative_conditions:
+  - Permanent independent substance
+  exclusions:
+  - Q08 without claiming discreteness
+  ambiguity_rules: Without discreteness this is classical-field-like, not QFT.
+  positive_examples:
+  - A localized pulse is a dynamical disturbance of the medium.
+  negative_examples:
+  - The local object is an independent enduring substance.
+  physics_relevance: classical_or_quantum_field
+  quantum_specific: false
+  field_like: true
+  version: 0.1.0
+- id: F07
+  name: Quantization of distributed structure
+  family: field_like
+  level: III
+  definition: The distributed entity permits explicitly discrete excitations/states.
+  positive_requirements:
+  - Discrete excitations of distributed entity
+  negative_conditions:
+  - Continuous field only
+  exclusions:
+  - F01–F06 without discreteness
+  ambiguity_rules: F01–F05 field-like ≠ quantum. F07 required for QFT-like analogy.
+  positive_examples:
+  - The field admits only discrete excitation quanta.
+  negative_examples:
+  - The field varies continuously without discrete quanta.
+  physics_relevance: quantum_field_theory
+  quantum_specific: true
+  field_like: true
+  version: 0.1.0

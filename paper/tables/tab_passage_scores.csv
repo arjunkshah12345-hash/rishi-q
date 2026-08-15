@@ -1,0 +1,12 @@
+passage_id,tradition,role,QS,QEF,field_class,newtonian,classical_em,thermodynamics,relativity,quantum_mechanics,quantum_field_theory
+PHYS_NEWTON_001,modern_physics,physics_reference,-0.5,0.0,insufficient,1.0,0.667,0.667,0.5,0.333,0.5
+PHYS_EM_001,modern_physics,physics_reference,-0.1,0.0,classical_field_like,0.0,1.0,0.0,0.0,0.0,0.9
+PHYS_THERMO_001,modern_physics,physics_reference,-1.0,0.0,insufficient,1.0,0.5,1.0,0.0,0.0,0.0
+PHYS_QM_001,modern_physics,physics_reference,0.9,1.0,insufficient,0.0,0.0,0.0,0.1,1.0,0.333
+PHYS_QFT_001,modern_physics,physics_reference,0.333,1.0,potentially_qft_like,0.0,0.667,0.0,0.0,0.2,1.0
+PHYS_ENTANGLE_001,modern_physics,physics_reference,0.8,1.0,insufficient,0.0,0.0,0.0,0.0,0.8,0.5
+SYN_UNITY_001,synthetic_metaphysical,negative_control,0.0,0.0,insufficient,0.0,0.0,0.0,0.0,0.0,0.0
+SYN_FIELD_001,synthetic_target_like,target,0.0,0.0,metaphor_substrate_only,0.0,0.75,0.0,0.0,0.0,0.75
+SYN_ATOM_001,synthetic_vaisheshika_like,target,-0.333,0.0,insufficient,0.667,0.333,0.0,0.333,0.333,0.333
+SYN_MYSTICAL_001,synthetic_mystical,control,0.0,0.0,insufficient,0.0,0.0,0.0,0.0,0.0,0.0
+SYN_GREEK_001,greek,control,-0.333,0.0,insufficient,0.667,0.333,0.0,0.333,0.333,0.333

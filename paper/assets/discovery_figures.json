@@ -1,0 +1,10 @@
+{
+  "figures": [
+    "fig20_discovery_motif_enrichment.png",
+    "fig21_discovery_motif_atlas.png",
+    "fig22_discovery_surprisal.png"
+  ],
+  "warning": "EXPLORATORY_SYSTEM_B",
+  "n_motifs_ranked": 23,
+  "n_quantum_specific": 0
+}

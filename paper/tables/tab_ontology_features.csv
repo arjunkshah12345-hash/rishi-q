@@ -1,0 +1,37 @@
+id,name,family,level,quantum_specific,field_like
+O01,Fundamental substrate,fundamental_ontology,I,False,False
+O02,Constituents,fundamental_ontology,II,False,False
+O03,Fundamental discreteness,fundamental_ontology,II,False,False
+O04,Continuous substrate,fundamental_ontology,II,False,True
+O05,Local manifestation,fundamental_ontology,II,False,True
+O06,Emergence,fundamental_ontology,II,False,False
+D01,State,dynamics,II,False,False
+D02,Transformation,dynamics,II,False,False
+D03,Periodicity,dynamics,II,False,True
+D04,Propagation,dynamics,II,False,True
+D05,Conservation,dynamics,II,False,False
+D06,Symmetry,dynamics,II,False,False
+D07,Reversibility,dynamics,II,False,False
+Q01,Discrete allowed states,quantum_specific,III,True,False
+Q02,Superposed possibilities,quantum_specific,III,True,False
+Q03,Fundamental probability,quantum_specific,III,True,False
+Q04,Measurement-conditioned outcome,quantum_specific,III,True,False
+Q05,Incompatible observables,quantum_specific,III,True,False
+Q06,Nonseparability,quantum_specific,III,True,False
+Q07,Context dependence,quantum_specific,III,True,False
+Q08,Quantized excitation,quantum_specific,III,True,True
+R01,Local causation,relational,II,False,True
+R02,Long-range relation,relational,II,False,False
+R03,Holistic state,relational,II,False,False
+R04,Relational properties,relational,II,False,False
+M01,Observer/system distinction,observer_epistemic,II,False,False
+M02,Observation modifies system,observer_epistemic,III,True,False
+M03,Epistemic limitation,observer_epistemic,I,False,False
+M04,Ontic indeterminacy,observer_epistemic,III,True,False
+F01,Spatial distribution,field_like,II,False,True
+F02,Local state of distributed entity,field_like,II,False,True
+F03,Disturbance propagation,field_like,II,False,True
+F04,Localized manifestation,field_like,II,False,True
+F05,Interaction mediation,field_like,II,False,True
+F06,Excitation-like structure,field_like,II,False,True
+F07,Quantization of distributed structure,field_like,III,True,True

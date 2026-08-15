@@ -1,0 +1,1220 @@
+[
+  {
+    "passage_id": "PHYS_EM_001",
+    "surprisal": 27.631021115928547,
+    "n_nodes": 7,
+    "n_edges": 10,
+    "signature": [
+      "E:interacts_with",
+      "E:is_state_of",
+      "E:manifests_as",
+      "E:pervades",
+      "E:propagates_through",
+      "E:transforms_into",
+      "N:disturbance",
+      "N:manifestation",
+      "N:matter",
+      "N:motion",
+      "N:space",
+      "N:state",
+      "N:substrate"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": true,
+    "status": "ANOMALY_CANDIDATE"
+  },
+  {
+    "passage_id": "PHYS_QM_001",
+    "surprisal": 27.631021115928547,
+    "n_nodes": 8,
+    "n_edges": 5,
+    "signature": [
+      "E:cannot_be_reduced_to",
+      "E:changes",
+      "E:depends_on",
+      "E:observes",
+      "N:constituent",
+      "N:matter",
+      "N:measurement",
+      "N:observer",
+      "N:potential_state",
+      "N:property",
+      "N:state",
+      "N:whole"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": true,
+    "status": "ANOMALY_CANDIDATE"
+  },
+  {
+    "passage_id": "PHYS_QFT_001",
+    "surprisal": 27.631021115928547,
+    "n_nodes": 6,
+    "n_edges": 9,
+    "signature": [
+      "E:emerges_from",
+      "E:interacts_with",
+      "E:manifests_as",
+      "E:pervades",
+      "E:propagates_through",
+      "E:transforms_into",
+      "N:disturbance",
+      "N:manifestation",
+      "N:matter",
+      "N:space",
+      "N:state",
+      "N:substrate"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": true,
+    "status": "ANOMALY_CANDIDATE"
+  },
+  {
+    "passage_id": "PHYS_NEWTON_001",
+    "surprisal": 27.51835187510677,
+    "n_nodes": 5,
+    "n_edges": 2,
+    "signature": [
+      "E:interacts_with",
+      "E:transforms_into",
+      "N:cause",
+      "N:effect",
+      "N:observer",
+      "N:property",
+      "N:state"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": true,
+    "status": "ANOMALY_CANDIDATE"
+  },
+  {
+    "passage_id": "PHYS_ENTANGLE_001",
+    "surprisal": 21.198483266027086,
+    "n_nodes": 4,
+    "n_edges": 2,
+    "signature": [
+      "E:cannot_be_reduced_to",
+      "E:correlates_with",
+      "N:constituent",
+      "N:matter",
+      "N:state",
+      "N:whole"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_VEDANTA__053_c2059922",
+    "surprisal": 20.853740814145514,
+    "n_nodes": 5,
+    "n_edges": 3,
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "E:transforms_into",
+      "N:constituent",
+      "N:manifestation",
+      "N:state",
+      "N:substrate",
+      "N:whole"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_010_2fa7cb8b",
+    "surprisal": 19.20508218855813,
+    "n_nodes": 5,
+    "n_edges": 3,
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "E:pervades",
+      "N:constituent",
+      "N:manifestation",
+      "N:space",
+      "N:substrate",
+      "N:whole"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_VEDANTA__038_ae712a5f",
+    "surprisal": 16.41099152324504,
+    "n_nodes": 5,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:observer",
+      "N:property",
+      "N:substrate",
+      "N:whole"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_VEDANTA__063_57c07e83",
+    "surprisal": 15.024697162125149,
+    "n_nodes": 4,
+    "n_edges": 2,
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_023_ae912e85",
+    "surprisal": 12.747429877115392,
+    "n_nodes": 4,
+    "n_edges": 2,
+    "signature": [
+      "E:composed_of",
+      "E:pervades",
+      "N:constituent",
+      "N:space",
+      "N:substrate",
+      "N:whole"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_VEDANTA__069_f01ebfe5",
+    "surprisal": 12.67133974375768,
+    "n_nodes": 3,
+    "n_edges": 2,
+    "signature": [
+      "E:composed_of",
+      "E:transforms_into",
+      "N:constituent",
+      "N:state",
+      "N:whole"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_VEDANTA__046_e60fd06f",
+    "surprisal": 12.362786096820814,
+    "n_nodes": 3,
+    "n_edges": 2,
+    "signature": [
+      "E:manifests_as",
+      "E:pervades",
+      "N:manifestation",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_GREEK_TI_020_ccab6d71",
+    "surprisal": 11.73417743739844,
+    "n_nodes": 3,
+    "n_edges": 2,
+    "signature": [
+      "E:pervades",
+      "E:transforms_into",
+      "N:space",
+      "N:state",
+      "N:substrate"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_GREEK_TI_007_670254a7",
+    "surprisal": 9.894117831942351,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:propagates_through",
+      "N:disturbance",
+      "N:space"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_VEDANTA__003_a5db141c",
+    "surprisal": 8.182401070387833,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__043_3d8ba7ba",
+    "surprisal": 8.182401070387833,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__048_b3dec2b1",
+    "surprisal": 8.182401070387833,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__070_01dbf506",
+    "surprisal": 8.182401070387833,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__072_a697263a",
+    "surprisal": 8.182401070387833,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_CHINESE__013_416e3b02",
+    "surprisal": 8.182401070387833,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_CHINESE__028_e8a5cef0",
+    "surprisal": 8.182401070387833,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_004_0849fcd5",
+    "surprisal": 7.843946672562629,
+    "n_nodes": 2,
+    "n_edges": 0,
+    "signature": [
+      "N:observer",
+      "N:property"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PHYS_THERMO_001",
+    "surprisal": 7.843946672562629,
+    "n_nodes": 2,
+    "n_edges": 0,
+    "signature": [
+      "N:observer",
+      "N:property"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_VEDANTA__021_9a1c705f",
+    "surprisal": 7.553792410965459,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:transforms_into",
+      "N:state",
+      "N:substrate"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_BUDDHIST_012_ce26392d",
+    "surprisal": 7.553792410965459,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:transforms_into",
+      "N:state",
+      "N:substrate"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_VEDANTA__036_a68368b6",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__045_76a9460d",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_009_4f1e039f",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_014_b44a8723",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_020_b997fae5",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_TI_027_1fd4d2df",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_TI_039_479090fd",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_BUDDHIST_001_2d3cd320",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_BUDDHIST_002_70ed2dc9",
+    "surprisal": 6.842296091737317,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__008_3d98546c",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 2,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__012_1ade2cee",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 2,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__013_3c25c9d5",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__034_9c5182c4",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 2,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__035_10f04977",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__049_01b25962",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__050_e6624a54",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 2,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_001_d27cbe72",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_019_7ac38ad0",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_040_8b6b8696",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_042_9d4ec66e",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_056_2a359a6d",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_TI_019_5b1dc9d4",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_TI_043_925f7095",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_CHINESE__006_7fb47a77",
+    "surprisal": 5.9051337853780765,
+    "n_nodes": 2,
+    "n_edges": 1,
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__006_0f29d985",
+    "surprisal": 5.8290436520203635,
+    "n_nodes": 1,
+    "n_edges": 1,
+    "signature": [
+      "E:transforms_into",
+      "N:state"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_005_518c0032",
+    "surprisal": 5.8290436520203635,
+    "n_nodes": 1,
+    "n_edges": 1,
+    "signature": [
+      "E:transforms_into",
+      "N:state"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_GREEK_TI_049_4d9542c0",
+    "surprisal": 5.8290436520203635,
+    "n_nodes": 1,
+    "n_edges": 1,
+    "signature": [
+      "E:transforms_into",
+      "N:state"
+    ],
+    "artifact_flags": [],
+    "anomaly_candidate": false,
+    "status": "TYPICAL"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_032_8764b42a",
+    "surprisal": 2.8233610476132043,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:state"
+    ],
+    "artifact_flags": [
+      "sparse_graph"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_TI_021_a15f426d",
+    "surprisal": 2.217225244042889,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:constituent"
+    ],
+    "artifact_flags": [
+      "sparse_graph"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__000_ed104077",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__002_f1f9f2b9",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__007_6d220fdc",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__028_4a299f5a",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__032_d013b252",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__033_b56e5d85",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__037_456ed19a",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__039_05795deb",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__040_ae244e31",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__054_b19d4df0",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__057_238fb055",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__066_51764084",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__068_efc22c3f",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__071_f78bc007",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__073_7f8e0933",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__074_aeab7d38",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__075_438779fc",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__076_bab60c87",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__077_51dddbc2",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_VEDANTA__078_bd252075",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_011_72425654",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_GREEK_LU_025_4f2ada5c",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  },
+  {
+    "passage_id": "PD_BUDDHIST_021_c9a61dc7",
+    "surprisal": 1.7247487589450947,
+    "n_nodes": 1,
+    "n_edges": 0,
+    "signature": [
+      "N:substrate"
+    ],
+    "artifact_flags": [
+      "sparse_graph",
+      "duplicate_signature_cluster"
+    ],
+    "anomaly_candidate": false,
+    "status": "ARTIFACT_SUSPECTED"
+  }
+]

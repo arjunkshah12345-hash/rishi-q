@@ -1,0 +1,160 @@
+{
+  "n": 31,
+  "figures": [
+    {
+      "path": "paper/figures/fig01_pipeline.png",
+      "description": "Pipeline",
+      "generated_utc": "2026-08-15T18:12:43.091434+00:00"
+    },
+    {
+      "path": "paper/figures/fig02_three_levels.png",
+      "description": "Three levels",
+      "generated_utc": "2026-08-15T18:12:43.216576+00:00"
+    },
+    {
+      "path": "paper/figures/fig03_ontology_overview.png",
+      "description": "Ontology",
+      "generated_utc": "2026-08-15T18:12:43.403183+00:00"
+    },
+    {
+      "path": "paper/figures/fig04_firewall.png",
+      "description": "Firewall",
+      "generated_utc": "2026-08-15T18:12:43.496018+00:00"
+    },
+    {
+      "path": "paper/figures/fig23_dual_system.png",
+      "description": "Dual system A/B",
+      "generated_utc": "2026-08-15T18:12:43.629816+00:00"
+    },
+    {
+      "path": "paper/figures/fig24_discovery_flow.png",
+      "description": "Discovery flow",
+      "generated_utc": "2026-08-15T18:12:43.722600+00:00"
+    },
+    {
+      "path": "paper/figures/fig25_concept_graph.png",
+      "description": "Concept graph",
+      "generated_utc": "2026-08-15T18:12:43.835128+00:00"
+    },
+    {
+      "path": "paper/figures/fig26_success_tiers.png",
+      "description": "Success tiers",
+      "generated_utc": "2026-08-15T18:12:43.943708+00:00"
+    },
+    {
+      "path": "paper/figures/fig05_positive_controls.png",
+      "description": "Positive controls",
+      "generated_utc": "2026-08-15T18:12:44.171520+00:00"
+    },
+    {
+      "path": "paper/figures/fig06_qs_by_tradition.png",
+      "description": "QS by tradition",
+      "generated_utc": "2026-08-15T18:12:44.302004+00:00"
+    },
+    {
+      "path": "paper/figures/fig07_theory_heatmap.png",
+      "description": "Theory heatmap",
+      "generated_utc": "2026-08-15T18:12:44.489781+00:00"
+    },
+    {
+      "path": "paper/figures/fig08_qs_qef_scatter.png",
+      "description": "QS/QEF scatter",
+      "generated_utc": "2026-08-15T18:12:44.670684+00:00"
+    },
+    {
+      "path": "paper/figures/fig09_feature_heatmap.png",
+      "description": "Feature heatmap",
+      "generated_utc": "2026-08-15T18:12:44.961126+00:00"
+    },
+    {
+      "path": "paper/figures/fig10_robustness_forest.png",
+      "description": "Robustness",
+      "generated_utc": "2026-08-15T18:12:45.260954+00:00"
+    },
+    {
+      "path": "paper/figures/fig11_power_curves.png",
+      "description": "Power",
+      "generated_utc": "2026-08-15T18:12:45.435601+00:00"
+    },
+    {
+      "path": "paper/figures/fig14_prototype100_qs_by_role.png",
+      "description": "Prototype QS by role",
+      "generated_utc": "2026-08-15T18:12:45.534859+00:00"
+    },
+    {
+      "path": "paper/figures/fig13_cross_civilization.png",
+      "description": "Cross-civ tournament",
+      "generated_utc": "2026-08-15T18:12:45.757747+00:00"
+    },
+    {
+      "path": "paper/figures/fig17_prototype_balance.png",
+      "description": "Prototype balance",
+      "generated_utc": "2026-08-15T18:12:45.967518+00:00"
+    },
+    {
+      "path": "paper/figures/fig16_primary_effect_exploratory.png",
+      "description": "Primary effect exploratory",
+      "generated_utc": "2026-08-15T18:12:46.034307+00:00"
+    },
+    {
+      "path": "paper/figures/fig15_field_ontology.png",
+      "description": "Field ontology",
+      "generated_utc": "2026-08-15T18:12:46.172241+00:00"
+    },
+    {
+      "path": "paper/figures/fig18_pd_pilot_qs.png",
+      "description": "PD pilot panel",
+      "generated_utc": "2026-08-15T18:12:46.469256+00:00"
+    },
+    {
+      "path": "paper/figures/fig19_pd_pilot_tournament.png",
+      "description": "PD pilot panel",
+      "generated_utc": "2026-08-15T18:12:46.469320+00:00"
+    },
+    {
+      "path": "paper/figures/fig12_translation_tci_demo.png",
+      "description": "TCI demo",
+      "generated_utc": "2026-08-15T18:12:46.560462+00:00"
+    },
+    {
+      "path": "paper/figures/fig20_discovery_motif_enrichment.png",
+      "description": "Motif enrichment",
+      "generated_utc": "2026-08-15T18:12:46.713919+00:00"
+    },
+    {
+      "path": "paper/figures/fig21_discovery_motif_atlas.png",
+      "description": "Motif atlas",
+      "generated_utc": "2026-08-15T18:12:46.822534+00:00"
+    },
+    {
+      "path": "paper/figures/fig22_discovery_surprisal.png",
+      "description": "Surprisal",
+      "generated_utc": "2026-08-15T18:12:46.956215+00:00"
+    },
+    {
+      "path": "paper/figures/fig27_claims_vs_data.png",
+      "description": "Claims vs data",
+      "generated_utc": "2026-08-15T18:12:47.109164+00:00"
+    },
+    {
+      "path": "paper/figures/fig28_temporal_combinations.png",
+      "description": "Temporal",
+      "generated_utc": "2026-08-15T18:12:47.276093+00:00"
+    },
+    {
+      "path": "paper/figures/fig29_translation_modernization.png",
+      "description": "Translation modernization",
+      "generated_utc": "2026-08-15T18:12:47.470768+00:00"
+    },
+    {
+      "path": "paper/figures/fig30_cluster_bootstrap.png",
+      "description": "Cluster bootstrap",
+      "generated_utc": "2026-08-15T18:12:47.600333+00:00"
+    },
+    {
+      "path": "paper/figures/fig31_translation_shift_graph.png",
+      "description": "Shift graph",
+      "generated_utc": "2026-08-15T18:12:47.719225+00:00"
+    }
+  ]
+}

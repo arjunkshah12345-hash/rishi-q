@@ -1,0 +1,28 @@
+version: 0.1.0
+theories:
+- newtonian
+- classical_em
+- thermodynamics
+- relativity
+- quantum_mechanics
+- quantum_field_theory
+classical_theories:
+- newtonian
+- classical_em
+- thermodynamics
+- relativity
+quantum_theories:
+- quantum_mechanics
+- quantum_field_theory
+qef_features:
+- Q01
+- Q02
+- Q03
+- Q04
+- Q05
+- Q06
+- Q07
+- Q08
+- M02
+- M04
+- F07

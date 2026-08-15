@@ -1,0 +1,227 @@
+{
+  "M006": {
+    "motif_id": "M006",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 5,
+    "enrichment_work_level": 2.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.0,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M012": {
+    "motif_id": "M012",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 5,
+    "enrichment_work_level": 2.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.0,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M001": {
+    "motif_id": "M001",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 6,
+    "enrichment_work_level": 1.3333333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.0,
+      4.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M003": {
+    "motif_id": "M003",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 6,
+    "enrichment_work_level": 1.3333333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.0,
+      4.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M004": {
+    "motif_id": "M004",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 6,
+    "enrichment_work_level": 1.3333333333333333,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.0,
+      4.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M011": {
+    "motif_id": "M011",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 5,
+    "enrichment_work_level": 2.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.0,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M013": {
+    "motif_id": "M013",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 5,
+    "enrichment_work_level": 2.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.0,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M046": {
+    "motif_id": "M046",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 2,
+    "enrichment_work_level": 4.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.3333333333333333,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M062": {
+    "motif_id": "M062",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 2,
+    "enrichment_work_level": 4.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.3333333333333333,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M071": {
+    "motif_id": "M071",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 2,
+    "enrichment_work_level": 4.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.3333333333333333,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M076": {
+    "motif_id": "M076",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 2,
+    "enrichment_work_level": 4.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.3333333333333333,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M084": {
+    "motif_id": "M084",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 2,
+    "enrichment_work_level": 4.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.3333333333333333,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M086": {
+    "motif_id": "M086",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 2,
+    "enrichment_work_level": 4.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.3333333333333333,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M088": {
+    "motif_id": "M088",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 2,
+    "enrichment_work_level": 4.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.3333333333333333,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  },
+  "M095": {
+    "motif_id": "M095",
+    "status": "ok",
+    "n_target_works": 1,
+    "n_control_works": 4,
+    "n_present_works": 2,
+    "enrichment_work_level": 4.0,
+    "enrichment_infinite": false,
+    "ci95": [
+      1.3333333333333333,
+      50.0
+    ],
+    "p_boot_two_sided": 1.0,
+    "note": "Work-cluster bootstrap; p is secondary to effect size / replication."
+  }
+}

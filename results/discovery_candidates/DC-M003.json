@@ -1,0 +1,49 @@
+{
+  "candidate_id": "DC-M003",
+  "title": "Structural motif M003: E:pervades + N:space",
+  "discovery_type": "rishi_motif",
+  "motif_id": "M003",
+  "supporting_sources": [
+    "Upanishads (Paramananda tr.)",
+    "De Rerum Natura",
+    "Timaeus",
+    "Tao Te Ching",
+    "Synthetic classical EM description",
+    "Synthetic QFT description"
+  ],
+  "n_independent_works": 6,
+  "estimated_historical_period": "unknown",
+  "effect_size": 1.3333333333333333,
+  "confidence_interval": [
+    0.7218610736476732,
+    4.133026676870433
+  ],
+  "control_comparison": "{\"passage_enrichment\": {\"motif_id\": \"M003\", \"n_target\": 8, \"n_control\": 11, \"p_target\": 0.1, \"p_control\": 0.05789473684210526, \"enrichment\": 1.7272727272727273, \"enrichment_infinite\": false, \"ci95\": [0.7218610736476732, 4.133026676870433], \"n_works\": 6}, \"cluster_bootstrap\": {\"motif_id\": \"M003\", \"status\": \"ok\", \"n_target_works\": 1, \"n_control_works\": 4, \"n_present_works\": 6, \"enrichment_work_level\": 1.3333333333333333, \"enrichment_infinite\": false, \"ci95\": [1.0, 4.0], \"p_boot_two_sided\": 1.0, \"note\": \"Work-cluster bootstrap; p is secondary to effect size / replication.\"}}",
+  "translation_robustness": "untested",
+  "model_robustness": "untested",
+  "human_validation_status": "REQUIRES_EXTERNAL_HUMAN_VALIDATION",
+  "nearest_physics_analogue": "classical_field_like",
+  "classical_vs_quantum_specificity": "field_like",
+  "prior_literature_status": "NOVELTY_REVIEW_REQUIRED",
+  "alternative_explanations": [
+    "generic metaphysics",
+    "translation modernization",
+    "annotator lexical bias",
+    "shared mystical tropes across civilizations"
+  ],
+  "novelty_confidence": 0.0,
+  "scientific_importance": 0.6164772727272727,
+  "status": "NOVELTY_REVIEW_REQUIRED",
+  "so_what": {
+    "novelty": 0.0,
+    "robustness": 1.0,
+    "specificity": 1.0,
+    "historical_importance": 0.4,
+    "physics_relevance": 0.6,
+    "interpretability": 0.7,
+    "reproducibility": 0.8,
+    "surprise": 0.4318181818181818,
+    "composite_optional": 0.6164772727272727
+  },
+  "notes": "gate:{'not_trivial_ontology': True, 'not_single_passage': True, 'multi_work': True, 'translation_ok': True, 'model_ok': True, 'has_effect': True, 'precise': True, 'literature_reviewed': False, 'not_rejected': True, 'not_artifact': True}"
+}

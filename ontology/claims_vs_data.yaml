@@ -1,0 +1,41 @@
+# Curated claims for claims-vs-data analysis (System B)
+# Separate popular vs scholarly; test against ontology features.
+claims:
+  - claim_id: C01
+    claim: "prāṇa = energy"
+    kind: popular
+    required_features: [D03, F03]
+    quantum_features: []
+    notes: "Energy as dynamical activity, not necessarily quantum."
+  - claim_id: C02
+    claim: "ākāśa = quantum field"
+    kind: popular
+    required_features: [F01, F02, O04]
+    quantum_features: [Q01, Q03, Q06, Q08]
+    notes: "Field-like support ≠ quantum-specific support."
+  - claim_id: C03
+    claim: "spanda = quantum vibration"
+    kind: popular
+    required_features: [D03, F06]
+    quantum_features: [Q01, Q02]
+  - claim_id: C04
+    claim: "Brahman = unified field"
+    kind: popular
+    required_features: [O01, F01, O05]
+    quantum_features: [Q08]
+  - claim_id: C05
+    claim: "observer consciousness = measurement effect"
+    kind: popular
+    required_features: [M01, M02]
+    quantum_features: [Q04, Q07]
+  - claim_id: C06
+    claim: "oneness = entanglement"
+    kind: popular
+    required_features: [O01, O02]
+    quantum_features: [Q06]
+    notes: "Unity ≠ entanglement; Q06 required for quantum reading."
+  - claim_id: C07
+    claim: "aṇu = quantum particle"
+    kind: popular
+    required_features: [O03]
+    quantum_features: [Q01, Q05]

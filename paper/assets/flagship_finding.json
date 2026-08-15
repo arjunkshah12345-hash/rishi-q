@@ -1,0 +1,143 @@
+{
+  "title": "Capra-claim autopsy: Level-I metaphysics without Level-III quantum \u2014 plus modern-lexicon irony",
+  "status": "EXPLORATORY_FLAGSHIP",
+  "tier": "Tier 2\u20133 candidate (quantitative claim divergence + translation/modernization irony)",
+  "amazing_because": "We did not discover ancient quantum mechanics. We discovered a precise, quantified reverse of the popular story: the PD Ved\u0101nta sample carries Level-I Brahman/\u0100tman structure with zero Q-family hits, Capra-style claims are systematically contradicted as quantum readings, and the famous 'electrons' sentence is commentary arguing AGAINST material science as a path to Brahman (Paramananda 1919) \u2014 while Capra-style rhetoric co-opts similar scientific language to claim identity. Masking modern physics lexicon does not create quantum signal (\u0394QS\u22480).",
+  "literature_anchors": [
+    {
+      "work": "Paramananda, The Upanishads (1919), Kena commentary",
+      "point": "atoms\u2192electrons example used to limit material science vs spiritual knowledge",
+      "url": "https://www.hinduwebsite.com/sacredscripts/hinduism/parama/kena.asp"
+    },
+    {
+      "work": "Restivo / Zygon critiques of Capra methodology",
+      "point": "linguistic parallels \u2260 structural/physics identity; Capra selectivity criticized",
+      "url": "https://doi.org/10.1111/j.1467-9744.1990.tb00871.x"
+    },
+    {
+      "work": "RISHI-Q contribution",
+      "point": "First (to our automated search) ontology+graph+claims autopsy that separates Level I/II/III with evidence spans and contamination detection on a public PD panel \u2014 still exploratory, not 'first ever' without human lit review."
+    }
+  ],
+  "capra_autopsy": [
+    {
+      "id": "CAPRA01",
+      "claim": "Eastern mysticism and modern physics share a unified interconnected whole \u2248 entanglement",
+      "source": "Capra-style popularization (Tao of Physics reception)",
+      "required_level_i": [
+        "O01",
+        "O02"
+      ],
+      "required_quantum": [
+        "Q06"
+      ],
+      "expected_best_match_if_honest": "Level I unity / interconnectedness \u2014 NOT Q06",
+      "n_passages": 80,
+      "rate_any_level_i": 0.3875,
+      "rate_all_level_i": 0.0375,
+      "rate_any_quantum": 0.0,
+      "rate_all_quantum": 0.0,
+      "verdict": "CONTRADICTED_AS_QUANTUM"
+    },
+    {
+      "id": "CAPRA02",
+      "claim": "Dynamic dance of creation \u2248 QFT field excitations",
+      "source": "Capra-style / New Age physics\u2013mysticism",
+      "required_level_i": [
+        "O05",
+        "D02",
+        "D03"
+      ],
+      "required_quantum": [
+        "Q08",
+        "F07"
+      ],
+      "expected_best_match_if_honest": "dynamical/metaphysical change \u2014 NOT quantized excitations",
+      "n_passages": 80,
+      "rate_any_level_i": 0.1375,
+      "rate_all_level_i": 0.0,
+      "rate_any_quantum": 0.0,
+      "rate_all_quantum": 0.0,
+      "verdict": "CONTRADICTED_AS_QUANTUM"
+    },
+    {
+      "id": "CAPRA03",
+      "claim": "\u0101k\u0101\u015ba / continuous medium \u2248 quantum field",
+      "source": "Popular Ved\u0101nta\u2013physics analogies",
+      "required_level_i": [
+        "O04",
+        "F01"
+      ],
+      "required_quantum": [
+        "Q01",
+        "Q03",
+        "Q08"
+      ],
+      "expected_best_match_if_honest": "field-like / continuum ontology (Level II) without Level III",
+      "n_passages": 80,
+      "rate_any_level_i": 0.1,
+      "rate_all_level_i": 0.05,
+      "rate_any_quantum": 0.0,
+      "rate_all_quantum": 0.0,
+      "verdict": "CONTRADICTED_AS_QUANTUM"
+    },
+    {
+      "id": "CAPRA04",
+      "claim": "Observer/consciousness central \u2248 quantum measurement problem",
+      "source": "Popular consciousness\u2013QM literature",
+      "required_level_i": [
+        "M01",
+        "M03"
+      ],
+      "required_quantum": [
+        "Q04",
+        "Q07"
+      ],
+      "expected_best_match_if_honest": "epistemic/spiritual unknowability \u2014 NOT measurement contextuality",
+      "n_passages": 80,
+      "rate_any_level_i": 0.0125,
+      "rate_all_level_i": 0.0,
+      "rate_any_quantum": 0.0,
+      "rate_all_quantum": 0.0,
+      "verdict": "CONTRADICTED_AS_QUANTUM"
+    },
+    {
+      "id": "CAPRA05",
+      "claim": "a\u1e47u / primordial seeds \u2248 quantum particles",
+      "source": "Popular atomism analogies",
+      "required_level_i": [
+        "O02",
+        "O03"
+      ],
+      "required_quantum": [
+        "Q01",
+        "Q05"
+      ],
+      "expected_best_match_if_honest": "classical atomism / composition (Lucretius-like) if present",
+      "n_passages": 80,
+      "rate_any_level_i": 0.075,
+      "rate_all_level_i": 0.0,
+      "rate_any_quantum": 0.0,
+      "rate_all_quantum": 0.0,
+      "verdict": "CONTRADICTED_AS_QUANTUM"
+    }
+  ],
+  "ablation_summary": {
+    "vedanta_mean_delta_QS_mask": 0.00625,
+    "lucretius_mean_delta_QS_mask": 0.03333333333333333,
+    "vedanta_mean_QS": -0.03958333333333333,
+    "n_claims_contradicted_as_quantum": 5,
+    "n_claims_total": 5
+  },
+  "irony_passages": [
+    {
+      "passage_id": "PD_VEDANTA__069_f01ebfe5",
+      "has_electron": true,
+      "excerpt": "The observation of material science being confined to the sense plane, it ignores what is beyond. Therefore it must always be limited and subject to change. It discovered atoms, then it went further and discovered electrons, and when it had found the one, it had to drop the other; so this kind of knowledge can never lead to the ultimate knowledge of the Infinite, because it is exclusive and not inclusive. Spiritual science is not merely a question of mind and brain, it depends on the awakening o",
+      "interpretation": "Paramananda uses modern scientific vocabulary while arguing that material science is exclusive/limited and cannot yield knowledge of the Infinite (Brahman). Capra-style readings often reverse this: they treat science vocabulary as evidence of Sanskrit\u2194QM identity.",
+      "verse_like_chars": 184,
+      "commentary_like_chars": 349
+    }
+  ],
+  "kaggle_status": "API 401 Unauthorized at attempt time \u2014 GPU LLM annotation pending re-auth"
+}

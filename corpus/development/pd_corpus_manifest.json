@@ -1,0 +1,55 @@
+{
+  "seed": 42,
+  "sources": [
+    {
+      "file": "upanishads_paramananda_3283.txt",
+      "tradition": "vedanta_pd",
+      "role": "target",
+      "available_paragraphs": 135,
+      "sampled": 80
+    },
+    {
+      "file": "lucretius_785.txt",
+      "tradition": "greek_lucretius_pd",
+      "role": "control",
+      "available_paragraphs": 761,
+      "sampled": 60
+    },
+    {
+      "file": "plato_timaeus_1572.txt",
+      "tradition": "greek_timaeus_pd",
+      "role": "control",
+      "available_paragraphs": 795,
+      "sampled": 50
+    },
+    {
+      "file": "dhammapada_2017.txt",
+      "tradition": "buddhist_dhammapada_pd",
+      "role": "control",
+      "available_paragraphs": 45,
+      "sampled": 40
+    },
+    {
+      "file": "taoteching_216.txt",
+      "tradition": "chinese_ddj_pd",
+      "role": "control",
+      "available_paragraphs": 123,
+      "sampled": 40
+    }
+  ],
+  "warning": "DEVELOPMENT_EXPLORATORY_NOT_CONFIRMATORY",
+  "n_total": 276,
+  "n_by_role": {
+    "control": 190,
+    "physics_reference": 6,
+    "target": 80
+  },
+  "n_by_tradition": {
+    "buddhist_dhammapada_pd": 40,
+    "chinese_ddj_pd": 40,
+    "greek_lucretius_pd": 60,
+    "greek_timaeus_pd": 50,
+    "modern_physics": 6,
+    "vedanta_pd": 80
+  }
+}

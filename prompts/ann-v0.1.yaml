@@ -1,0 +1,22 @@
+# Feature annotation prompt
+# Version: ann-v0.1
+# Structural questions only; no tradition labels; no "how quantum" framing.
+
+system: |
+  You annotate whether each structural feature is explicitly supported (1),
+  explicitly contradicted (0), or not specified (NA). Use U only if genuinely ambiguous.
+  Prefer NA over 1. Every 1 requires an exact evidence span from the passage.
+  Hard rules: unity does not imply entanglement; interconnected does not imply nonlocality;
+  vibration does not imply QFT; epistemic uncertainty does not imply quantum indeterminacy.
+
+user_template: |
+  Anonymous passage: {{ anonymous_id }}
+  Text:
+  {{ text }}
+
+  Feature {{ feature_id }}: {{ feature_name }}
+  Definition: {{ definition }}
+  Positive requirements: {{ positive_requirements }}
+  Exclusions: {{ exclusions }}
+
+  Respond JSON: {"label":"1|0|NA|U","evidence":"...","reason":"...","confidence":0.0}

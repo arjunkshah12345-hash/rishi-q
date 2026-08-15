@@ -1,0 +1,190 @@
+[
+  {
+    "claim_id": "C01",
+    "claim": "pr\u0101\u1e47a = energy",
+    "kind": "popular",
+    "n_passages_examined": 80,
+    "SUPPORTED_STRUCTURAL_COMPONENTS": [],
+    "UNSUPPORTED_COMPONENTS": [
+      "D03",
+      "F03"
+    ],
+    "CONTRADICTED_COMPONENTS": [],
+    "QUANTUM_SUPPORTED": [],
+    "QUANTUM_UNSUPPORTED": [],
+    "rates": {
+      "any_required": 0.0,
+      "all_required": 0.0,
+      "any_quantum": 0.0,
+      "all_quantum": 0.0
+    },
+    "BEST_PHYSICS_MATCH": "unsupported_in_sample",
+    "TRANSLATION_DEPENDENCE": "untested",
+    "EVIDENCE_QUALITY": "exploratory_heuristic",
+    "notes": "Energy as dynamical activity, not necessarily quantum."
+  },
+  {
+    "claim_id": "C02",
+    "claim": "\u0101k\u0101\u015ba = quantum field",
+    "kind": "popular",
+    "n_passages_examined": 80,
+    "SUPPORTED_STRUCTURAL_COMPONENTS": [
+      "F01",
+      "O04"
+    ],
+    "UNSUPPORTED_COMPONENTS": [
+      "F02"
+    ],
+    "CONTRADICTED_COMPONENTS": [],
+    "QUANTUM_SUPPORTED": [],
+    "QUANTUM_UNSUPPORTED": [
+      "Q08",
+      "Q01",
+      "Q03",
+      "Q06"
+    ],
+    "rates": {
+      "any_required": 0.1,
+      "all_required": 0.0,
+      "any_quantum": 0.0,
+      "all_quantum": 0.0
+    },
+    "BEST_PHYSICS_MATCH": "classical_field_like_ontology",
+    "TRANSLATION_DEPENDENCE": "untested",
+    "EVIDENCE_QUALITY": "exploratory_heuristic",
+    "notes": "Field-like support \u2260 quantum-specific support."
+  },
+  {
+    "claim_id": "C03",
+    "claim": "spanda = quantum vibration",
+    "kind": "popular",
+    "n_passages_examined": 80,
+    "SUPPORTED_STRUCTURAL_COMPONENTS": [],
+    "UNSUPPORTED_COMPONENTS": [
+      "F06",
+      "D03"
+    ],
+    "CONTRADICTED_COMPONENTS": [],
+    "QUANTUM_SUPPORTED": [],
+    "QUANTUM_UNSUPPORTED": [
+      "Q01",
+      "Q02"
+    ],
+    "rates": {
+      "any_required": 0.0,
+      "all_required": 0.0,
+      "any_quantum": 0.0,
+      "all_quantum": 0.0
+    },
+    "BEST_PHYSICS_MATCH": "unsupported_in_sample",
+    "TRANSLATION_DEPENDENCE": "untested",
+    "EVIDENCE_QUALITY": "exploratory_heuristic",
+    "notes": ""
+  },
+  {
+    "claim_id": "C04",
+    "claim": "Brahman = unified field",
+    "kind": "popular",
+    "n_passages_examined": 80,
+    "SUPPORTED_STRUCTURAL_COMPONENTS": [
+      "O01",
+      "F01",
+      "O05"
+    ],
+    "UNSUPPORTED_COMPONENTS": [],
+    "CONTRADICTED_COMPONENTS": [],
+    "QUANTUM_SUPPORTED": [],
+    "QUANTUM_UNSUPPORTED": [
+      "Q08"
+    ],
+    "rates": {
+      "any_required": 0.4375,
+      "all_required": 0.0,
+      "any_quantum": 0.0,
+      "all_quantum": 0.0
+    },
+    "BEST_PHYSICS_MATCH": "classical_or_field_like_ontology",
+    "TRANSLATION_DEPENDENCE": "untested",
+    "EVIDENCE_QUALITY": "exploratory_heuristic",
+    "notes": ""
+  },
+  {
+    "claim_id": "C05",
+    "claim": "observer consciousness = measurement effect",
+    "kind": "popular",
+    "n_passages_examined": 80,
+    "SUPPORTED_STRUCTURAL_COMPONENTS": [],
+    "UNSUPPORTED_COMPONENTS": [
+      "M01",
+      "M02"
+    ],
+    "CONTRADICTED_COMPONENTS": [],
+    "QUANTUM_SUPPORTED": [],
+    "QUANTUM_UNSUPPORTED": [
+      "Q04",
+      "Q07"
+    ],
+    "rates": {
+      "any_required": 0.0,
+      "all_required": 0.0,
+      "any_quantum": 0.0,
+      "all_quantum": 0.0
+    },
+    "BEST_PHYSICS_MATCH": "unsupported_in_sample",
+    "TRANSLATION_DEPENDENCE": "untested",
+    "EVIDENCE_QUALITY": "exploratory_heuristic",
+    "notes": ""
+  },
+  {
+    "claim_id": "C06",
+    "claim": "oneness = entanglement",
+    "kind": "popular",
+    "n_passages_examined": 80,
+    "SUPPORTED_STRUCTURAL_COMPONENTS": [
+      "O01",
+      "O02"
+    ],
+    "UNSUPPORTED_COMPONENTS": [],
+    "CONTRADICTED_COMPONENTS": [],
+    "QUANTUM_SUPPORTED": [],
+    "QUANTUM_UNSUPPORTED": [
+      "Q06"
+    ],
+    "rates": {
+      "any_required": 0.3875,
+      "all_required": 0.0375,
+      "any_quantum": 0.0,
+      "all_quantum": 0.0
+    },
+    "BEST_PHYSICS_MATCH": "classical_or_field_like_ontology",
+    "TRANSLATION_DEPENDENCE": "untested",
+    "EVIDENCE_QUALITY": "exploratory_heuristic",
+    "notes": "Unity \u2260 entanglement; Q06 required for quantum reading."
+  },
+  {
+    "claim_id": "C07",
+    "claim": "a\u1e47u = quantum particle",
+    "kind": "popular",
+    "n_passages_examined": 80,
+    "SUPPORTED_STRUCTURAL_COMPONENTS": [],
+    "UNSUPPORTED_COMPONENTS": [
+      "O03"
+    ],
+    "CONTRADICTED_COMPONENTS": [],
+    "QUANTUM_SUPPORTED": [],
+    "QUANTUM_UNSUPPORTED": [
+      "Q05",
+      "Q01"
+    ],
+    "rates": {
+      "any_required": 0.0,
+      "all_required": 0.0,
+      "any_quantum": 0.0,
+      "all_quantum": 0.0
+    },
+    "BEST_PHYSICS_MATCH": "unsupported_in_sample",
+    "TRANSLATION_DEPENDENCE": "untested",
+    "EVIDENCE_QUALITY": "exploratory_heuristic",
+    "notes": ""
+  }
+]

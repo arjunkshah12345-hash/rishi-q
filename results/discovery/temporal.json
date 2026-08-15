@@ -1,0 +1,5033 @@
+{
+  "features": {
+    "O01": {
+      "feature": "O01",
+      "passage_id": "PD_GREEK_LU_011_72425654",
+      "year_start": -99,
+      "year_end": -55,
+      "midpoint": -77.0,
+      "range_width": 44,
+      "tradition": "greek_lucretius_pd",
+      "work_id": "De Rerum Natura"
+    },
+    "O05": {
+      "feature": "O05",
+      "passage_id": "PD_CHINESE__013_416e3b02",
+      "year_start": -400,
+      "year_end": 200,
+      "midpoint": -100.0,
+      "range_width": 600,
+      "tradition": "chinese_ddj_pd",
+      "work_id": "Tao Te Ching"
+    },
+    "D02": {
+      "feature": "D02",
+      "passage_id": "PD_GREEK_TI_020_ccab6d71",
+      "year_start": -400,
+      "year_end": -350,
+      "midpoint": -375.0,
+      "range_width": 50,
+      "tradition": "greek_timaeus_pd",
+      "work_id": "Timaeus"
+    },
+    "O04": {
+      "feature": "O04",
+      "passage_id": "PD_GREEK_TI_019_5b1dc9d4",
+      "year_start": -400,
+      "year_end": -350,
+      "midpoint": -375.0,
+      "range_width": 50,
+      "tradition": "greek_timaeus_pd",
+      "work_id": "Timaeus"
+    },
+    "F01": {
+      "feature": "F01",
+      "passage_id": "PD_VEDANTA__008_3d98546c",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "O02": {
+      "feature": "O02",
+      "passage_id": "PD_GREEK_TI_027_1fd4d2df",
+      "year_start": -400,
+      "year_end": -350,
+      "midpoint": -375.0,
+      "range_width": 50,
+      "tradition": "greek_timaeus_pd",
+      "work_id": "Timaeus"
+    },
+    "M03": {
+      "feature": "M03",
+      "passage_id": "PD_GREEK_LU_004_0849fcd5",
+      "year_start": -99,
+      "year_end": -55,
+      "midpoint": -77.0,
+      "range_width": 44,
+      "tradition": "greek_lucretius_pd",
+      "work_id": "De Rerum Natura"
+    },
+    "D01": {
+      "feature": "D01",
+      "passage_id": "PD_GREEK_LU_032_8764b42a",
+      "year_start": -99,
+      "year_end": -55,
+      "midpoint": -77.0,
+      "range_width": 44,
+      "tradition": "greek_lucretius_pd",
+      "work_id": "De Rerum Natura"
+    },
+    "D04": {
+      "feature": "D04",
+      "passage_id": "PD_GREEK_TI_007_670254a7",
+      "year_start": -400,
+      "year_end": -350,
+      "midpoint": -375.0,
+      "range_width": 50,
+      "tradition": "greek_timaeus_pd",
+      "work_id": "Timaeus"
+    },
+    "O03": {
+      "feature": "O03",
+      "passage_id": "PD_GREEK_TI_021_a15f426d",
+      "year_start": -400,
+      "year_end": -350,
+      "midpoint": -375.0,
+      "range_width": 50,
+      "tradition": "greek_timaeus_pd",
+      "work_id": "Timaeus"
+    },
+    "R01": {
+      "feature": "R01",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D07": {
+      "feature": "D07",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D05": {
+      "feature": "D05",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "F02": {
+      "feature": "F02",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F04": {
+      "feature": "F04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F06": {
+      "feature": "F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03": {
+      "feature": "D03",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F03": {
+      "feature": "F03",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F05": {
+      "feature": "F05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "Q04": {
+      "feature": "Q04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q07": {
+      "feature": "Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q05": {
+      "feature": "Q05",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q01": {
+      "feature": "Q01",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q03": {
+      "feature": "Q03",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q06": {
+      "feature": "Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01": {
+      "feature": "M01",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M04": {
+      "feature": "M04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02": {
+      "feature": "M02",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q02": {
+      "feature": "Q02",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "F07": {
+      "feature": "F07",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "Q08": {
+      "feature": "Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "R02": {
+      "feature": "R02",
+      "passage_id": "PHYS_ENTANGLE_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic entanglement description"
+    }
+  },
+  "combinations": {
+    "O01+O05": {
+      "combination": "O01+O05",
+      "passage_id": "PD_VEDANTA__003_a5db141c",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "F01+O04": {
+      "combination": "F01+O04",
+      "passage_id": "PD_VEDANTA__008_3d98546c",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "D02+O01": {
+      "combination": "D02+O01",
+      "passage_id": "PD_VEDANTA__021_9a1c705f",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "M03+O01": {
+      "combination": "M03+O01",
+      "passage_id": "PD_VEDANTA__038_ae712a5f",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "M03+O02": {
+      "combination": "M03+O02",
+      "passage_id": "PD_VEDANTA__038_ae712a5f",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "O01+O02": {
+      "combination": "O01+O02",
+      "passage_id": "PD_VEDANTA__038_ae712a5f",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "O04+O05": {
+      "combination": "O04+O05",
+      "passage_id": "PD_GREEK_LU_010_2fa7cb8b",
+      "year_start": -99,
+      "year_end": -55,
+      "midpoint": -77.0,
+      "range_width": 44,
+      "tradition": "greek_lucretius_pd",
+      "work_id": "De Rerum Natura"
+    },
+    "D02+O02": {
+      "combination": "D02+O02",
+      "passage_id": "PD_VEDANTA__053_c2059922",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "D02+O05": {
+      "combination": "D02+O05",
+      "passage_id": "PD_VEDANTA__053_c2059922",
+      "year_start": -800,
+      "year_end": 800,
+      "midpoint": 0.0,
+      "range_width": 1600,
+      "tradition": "vedanta_pd",
+      "work_id": "Upanishads (Paramananda tr.)"
+    },
+    "O02+O05": {
+      "combination": "O02+O05",
+      "passage_id": "PD_GREEK_LU_010_2fa7cb8b",
+      "year_start": -99,
+      "year_end": -55,
+      "midpoint": -77.0,
+      "range_width": 44,
+      "tradition": "greek_lucretius_pd",
+      "work_id": "De Rerum Natura"
+    },
+    "O02+O04": {
+      "combination": "O02+O04",
+      "passage_id": "PD_GREEK_LU_010_2fa7cb8b",
+      "year_start": -99,
+      "year_end": -55,
+      "midpoint": -77.0,
+      "range_width": 44,
+      "tradition": "greek_lucretius_pd",
+      "work_id": "De Rerum Natura"
+    },
+    "O01+O04": {
+      "combination": "O01+O04",
+      "passage_id": "PD_GREEK_LU_056_2a359a6d",
+      "year_start": -99,
+      "year_end": -55,
+      "midpoint": -77.0,
+      "range_width": 44,
+      "tradition": "greek_lucretius_pd",
+      "work_id": "De Rerum Natura"
+    },
+    "D02+O04": {
+      "combination": "D02+O04",
+      "passage_id": "PD_GREEK_TI_020_ccab6d71",
+      "year_start": -400,
+      "year_end": -350,
+      "midpoint": -375.0,
+      "range_width": 50,
+      "tradition": "greek_timaeus_pd",
+      "work_id": "Timaeus"
+    },
+    "D01+D02": {
+      "combination": "D01+D02",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D01+D05": {
+      "combination": "D01+D05",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D01+D07": {
+      "combination": "D01+D07",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D01+M03": {
+      "combination": "D01+M03",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D01+R01": {
+      "combination": "D01+R01",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D02+D05": {
+      "combination": "D02+D05",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D02+D07": {
+      "combination": "D02+D07",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D02+M03": {
+      "combination": "D02+M03",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D02+R01": {
+      "combination": "D02+R01",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D05+D07": {
+      "combination": "D05+D07",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D05+M03": {
+      "combination": "D05+M03",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D05+R01": {
+      "combination": "D05+R01",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D07+M03": {
+      "combination": "D07+M03",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D07+R01": {
+      "combination": "D07+R01",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "M03+R01": {
+      "combination": "M03+R01",
+      "passage_id": "PHYS_NEWTON_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic Newtonian description"
+    },
+    "D02+D03": {
+      "combination": "D02+D03",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D02+D04": {
+      "combination": "D02+D04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D02+F01": {
+      "combination": "D02+F01",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D02+F02": {
+      "combination": "D02+F02",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D02+F03": {
+      "combination": "D02+F03",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D02+F04": {
+      "combination": "D02+F04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D02+F05": {
+      "combination": "D02+F05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D02+F06": {
+      "combination": "D02+F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+D04": {
+      "combination": "D03+D04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+F01": {
+      "combination": "D03+F01",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+F02": {
+      "combination": "D03+F02",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+F03": {
+      "combination": "D03+F03",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+F04": {
+      "combination": "D03+F04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+F05": {
+      "combination": "D03+F05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+F06": {
+      "combination": "D03+F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+O04": {
+      "combination": "D03+O04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D03+O05": {
+      "combination": "D03+O05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D04+F01": {
+      "combination": "D04+F01",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D04+F02": {
+      "combination": "D04+F02",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D04+F03": {
+      "combination": "D04+F03",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D04+F04": {
+      "combination": "D04+F04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D04+F05": {
+      "combination": "D04+F05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D04+F06": {
+      "combination": "D04+F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D04+O04": {
+      "combination": "D04+O04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "D04+O05": {
+      "combination": "D04+O05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F01+F02": {
+      "combination": "F01+F02",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F01+F03": {
+      "combination": "F01+F03",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F01+F04": {
+      "combination": "F01+F04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F01+F05": {
+      "combination": "F01+F05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F01+F06": {
+      "combination": "F01+F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F01+O05": {
+      "combination": "F01+O05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F02+F03": {
+      "combination": "F02+F03",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F02+F04": {
+      "combination": "F02+F04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F02+F05": {
+      "combination": "F02+F05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F02+F06": {
+      "combination": "F02+F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F02+O04": {
+      "combination": "F02+O04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F02+O05": {
+      "combination": "F02+O05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F03+F04": {
+      "combination": "F03+F04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F03+F05": {
+      "combination": "F03+F05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F03+F06": {
+      "combination": "F03+F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F03+O04": {
+      "combination": "F03+O04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F03+O05": {
+      "combination": "F03+O05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F04+F05": {
+      "combination": "F04+F05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F04+F06": {
+      "combination": "F04+F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F04+O04": {
+      "combination": "F04+O04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F04+O05": {
+      "combination": "F04+O05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F05+F06": {
+      "combination": "F05+F06",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F05+O04": {
+      "combination": "F05+O04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F05+O05": {
+      "combination": "F05+O05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F06+O04": {
+      "combination": "F06+O04",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "F06+O05": {
+      "combination": "F06+O05",
+      "passage_id": "PHYS_EM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic classical EM description"
+    },
+    "M01+M02": {
+      "combination": "M01+M02",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01+M04": {
+      "combination": "M01+M04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01+Q01": {
+      "combination": "M01+Q01",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01+Q02": {
+      "combination": "M01+Q02",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01+Q03": {
+      "combination": "M01+Q03",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01+Q04": {
+      "combination": "M01+Q04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01+Q05": {
+      "combination": "M01+Q05",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01+Q06": {
+      "combination": "M01+Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M01+Q07": {
+      "combination": "M01+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02+M04": {
+      "combination": "M02+M04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02+Q01": {
+      "combination": "M02+Q01",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02+Q02": {
+      "combination": "M02+Q02",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02+Q03": {
+      "combination": "M02+Q03",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02+Q04": {
+      "combination": "M02+Q04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02+Q05": {
+      "combination": "M02+Q05",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02+Q06": {
+      "combination": "M02+Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M02+Q07": {
+      "combination": "M02+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M04+Q01": {
+      "combination": "M04+Q01",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M04+Q02": {
+      "combination": "M04+Q02",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M04+Q03": {
+      "combination": "M04+Q03",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M04+Q04": {
+      "combination": "M04+Q04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M04+Q05": {
+      "combination": "M04+Q05",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M04+Q06": {
+      "combination": "M04+Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "M04+Q07": {
+      "combination": "M04+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q01+Q02": {
+      "combination": "Q01+Q02",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q01+Q03": {
+      "combination": "Q01+Q03",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q01+Q04": {
+      "combination": "Q01+Q04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q01+Q05": {
+      "combination": "Q01+Q05",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q01+Q06": {
+      "combination": "Q01+Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q01+Q07": {
+      "combination": "Q01+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q02+Q03": {
+      "combination": "Q02+Q03",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q02+Q04": {
+      "combination": "Q02+Q04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q02+Q05": {
+      "combination": "Q02+Q05",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q02+Q06": {
+      "combination": "Q02+Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q02+Q07": {
+      "combination": "Q02+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q03+Q04": {
+      "combination": "Q03+Q04",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q03+Q05": {
+      "combination": "Q03+Q05",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q03+Q06": {
+      "combination": "Q03+Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q03+Q07": {
+      "combination": "Q03+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q04+Q05": {
+      "combination": "Q04+Q05",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q04+Q06": {
+      "combination": "Q04+Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q04+Q07": {
+      "combination": "Q04+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q05+Q06": {
+      "combination": "Q05+Q06",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q05+Q07": {
+      "combination": "Q05+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "Q06+Q07": {
+      "combination": "Q06+Q07",
+      "passage_id": "PHYS_QM_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QM description"
+    },
+    "D02+F07": {
+      "combination": "D02+F07",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "D02+Q03": {
+      "combination": "D02+Q03",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "D02+Q08": {
+      "combination": "D02+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "D04+F07": {
+      "combination": "D04+F07",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "D04+Q03": {
+      "combination": "D04+Q03",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "D04+Q08": {
+      "combination": "D04+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F01+F07": {
+      "combination": "F01+F07",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F01+Q03": {
+      "combination": "F01+Q03",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F01+Q08": {
+      "combination": "F01+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F03+F07": {
+      "combination": "F03+F07",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F03+Q03": {
+      "combination": "F03+Q03",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F03+Q08": {
+      "combination": "F03+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F04+F07": {
+      "combination": "F04+F07",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F04+Q03": {
+      "combination": "F04+Q03",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F04+Q08": {
+      "combination": "F04+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F05+F07": {
+      "combination": "F05+F07",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F05+Q03": {
+      "combination": "F05+Q03",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F05+Q08": {
+      "combination": "F05+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F07+O04": {
+      "combination": "F07+O04",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F07+Q03": {
+      "combination": "F07+Q03",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "F07+Q08": {
+      "combination": "F07+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "O04+Q03": {
+      "combination": "O04+Q03",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "O04+Q08": {
+      "combination": "O04+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "Q03+Q08": {
+      "combination": "Q03+Q08",
+      "passage_id": "PHYS_QFT_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic QFT description"
+    },
+    "Q03+R02": {
+      "combination": "Q03+R02",
+      "passage_id": "PHYS_ENTANGLE_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic entanglement description"
+    },
+    "Q06+R02": {
+      "combination": "Q06+R02",
+      "passage_id": "PHYS_ENTANGLE_001",
+      "year_start": 1900,
+      "year_end": 2020,
+      "midpoint": 1960.0,
+      "range_width": 120,
+      "tradition": "modern_physics",
+      "work_id": "Synthetic entanglement description"
+    }
+  },
+  "note": "Date ranges only; wide ranges indicate low chronological precision.",
+  "motifs": {
+    "M001": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": -77.0,
+      "n_dated": 21,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M002": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 50.0,
+      "median_midpoint": 0.0,
+      "n_dated": 15,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M003": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": -77.0,
+      "n_dated": 21,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M004": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": -77.0,
+      "n_dated": 21,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M005": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": -77.0,
+      "n_dated": 21,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M006": {
+      "earliest_midpoint": -100.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 0.0,
+      "n_dated": 13,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -400,
+          200
+        ]
+      ]
+    },
+    "M007": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 0.0,
+      "n_dated": 17,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M008": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 50.0,
+      "median_midpoint": 0.0,
+      "n_dated": 15,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M009": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 50.0,
+      "median_midpoint": 0.0,
+      "n_dated": 15,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M010": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 0.0,
+      "n_dated": 11,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -400,
+          -350
+        ],
+        [
+          -400,
+          -350
+        ],
+        [
+          -300,
+          400
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M011": {
+      "earliest_midpoint": -100.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 0.0,
+      "n_dated": 13,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -400,
+          200
+        ]
+      ]
+    },
+    "M012": {
+      "earliest_midpoint": -100.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 0.0,
+      "n_dated": 13,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -400,
+          200
+        ]
+      ]
+    },
+    "M013": {
+      "earliest_midpoint": -100.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 0.0,
+      "n_dated": 13,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -400,
+          200
+        ]
+      ]
+    },
+    "M014": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 50.0,
+      "n_dated": 6,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -400,
+          -350
+        ],
+        [
+          -300,
+          400
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M015": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 5,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M016": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 50.0,
+      "n_dated": 6,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -400,
+          -350
+        ],
+        [
+          -300,
+          400
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M017": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 50.0,
+      "n_dated": 6,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -400,
+          -350
+        ],
+        [
+          -300,
+          400
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M018": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 5,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M019": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 5,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M020": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 5,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M021": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 5,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M022": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 5,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M023": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 5,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M024": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 5,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M025": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M026": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M027": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M028": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M029": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M030": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M031": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M032": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M033": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M034": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M035": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M036": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M037": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M038": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M039": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M040": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M041": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M042": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M043": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M044": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M045": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M046": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M047": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M048": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M049": {
+      "earliest_midpoint": 1960.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 4,
+      "sample_ranges": [
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M050": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M051": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M052": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M053": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M054": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M055": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M056": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M057": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M058": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M059": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M060": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M061": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M062": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M063": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M064": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M065": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M066": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M067": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M068": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M069": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M070": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M071": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M072": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M073": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M074": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M075": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M076": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M077": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M078": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M079": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M080": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M081": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M082": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M083": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M084": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M085": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M086": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M087": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M088": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M089": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M090": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M091": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M092": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M093": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M094": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M095": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M096": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M097": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M098": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M099": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M100": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M101": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M102": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M103": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M104": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M105": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M106": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 2,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ]
+      ]
+    },
+    "M107": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M108": {
+      "earliest_midpoint": 0.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M109": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": 0.0,
+      "median_midpoint": 0.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -800,
+          800
+        ],
+        [
+          -800,
+          800
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M110": {
+      "earliest_midpoint": -77.0,
+      "latest_midpoint": -77.0,
+      "median_midpoint": -77.0,
+      "n_dated": 2,
+      "sample_ranges": [
+        [
+          -99,
+          -55
+        ],
+        [
+          -99,
+          -55
+        ]
+      ]
+    },
+    "M111": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M112": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M113": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M114": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M115": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M116": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M117": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M118": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M119": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M120": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M121": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M122": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M123": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M124": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M125": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M126": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M127": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M128": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M129": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M130": {
+      "earliest_midpoint": -375.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          -400,
+          -350
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M131": {
+      "earliest_midpoint": 1960.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M132": {
+      "earliest_midpoint": 1960.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    },
+    "M133": {
+      "earliest_midpoint": 1960.0,
+      "latest_midpoint": 1960.0,
+      "median_midpoint": 1960.0,
+      "n_dated": 3,
+      "sample_ranges": [
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ],
+        [
+          1900,
+          2020
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+role,tradition,n
+control,buddhist_synthetic,20
+control,chinese_synthetic,20
+control,greek,1
+control,greek_synthetic,20
+control,jain_synthetic,16
+control,synthetic_mystical,1
+negative_control,mystical_synthetic,18
+negative_control,sanskrit_literary_synthetic,20
+negative_control,synthetic_metaphysical,1
+physics_reference,modern_physics,7
+target,samkhya_synthetic,12
+target,synthetic_target_like,1
+target,synthetic_vaisheshika_like,1
+target,vaisheshika_synthetic,20
+target,vedanta_synthetic,16

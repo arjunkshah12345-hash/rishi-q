@@ -1,0 +1,10 @@
+{
+  "n_passages": 276,
+  "n_blinded": 276,
+  "corpus_hash": "bc8ebd9e6cefb5c5e039a6c0fa36114bd8ed25c6aa27abf3ee3ebd02a458aadb",
+  "ontology_hash": "d6f9c29adcca89499c3d4cbbec41ff76d7ad683a5f6a7b8bd8eeef09cae8f9d7",
+  "note": "Do NOT upload blinding_map.PRIVATE.json to a public dataset.",
+  "exclude_from_public_upload": [
+    "blinding_map.PRIVATE.json"
+  ]
+}

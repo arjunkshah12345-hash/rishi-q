@@ -1,0 +1,80 @@
+theory_id: thermodynamics
+name: Thermodynamics / statistical description
+version: 0.1.0
+classical: true
+quantum: false
+notes: Statistical ignorance (M03), not fundamental quantum probability (Q03).
+features:
+  O01: 0
+  O02: 0
+  O03: 0
+  O04: 0
+  O05: 0
+  O06: 1
+  D01: 1
+  D02: 1
+  D03: 0
+  D04: 0
+  D05: 1
+  D06: 0
+  D07: 0
+  Q01: 0
+  Q02: 0
+  Q03: 0
+  Q04: 0
+  Q05: 0
+  Q06: 0
+  Q07: 0
+  Q08: 0
+  R01: 0
+  R02: 0
+  R03: 0
+  R04: 0
+  M01: 0
+  M02: 0
+  M03: 1
+  M04: 0
+  F01: 0
+  F02: 0
+  F03: 0
+  F04: 0
+  F05: 0
+  F06: 0
+  F07: 0
+weights:
+  O01: 1.0
+  O02: 1.0
+  O03: 1.0
+  O04: 1.0
+  O05: 1.0
+  O06: 1.0
+  D01: 1.0
+  D02: 1.0
+  D03: 1.0
+  D04: 1.0
+  D05: 1.0
+  D06: 1.0
+  D07: 1.0
+  Q01: 1.0
+  Q02: 1.0
+  Q03: 1.0
+  Q04: 1.0
+  Q05: 1.0
+  Q06: 1.0
+  Q07: 1.0
+  Q08: 1.0
+  R01: 1.0
+  R02: 1.0
+  R03: 1.0
+  R04: 1.0
+  M01: 1.0
+  M02: 1.0
+  M03: 1.0
+  M04: 1.0
+  F01: 1.0
+  F02: 1.0
+  F03: 1.0
+  F04: 1.0
+  F05: 1.0
+  F06: 1.0
+  F07: 1.0

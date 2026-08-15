@@ -1,0 +1,24 @@
+field,value
+experiment_id,development-synthetic-v0.1
+git_commit,unknown
+dataset_hash,4c7e00347db13504df2986cee6b329b698431c37155b1d8ba6d5fa624a6ef67f
+ontology_version,0.1.0
+prompt_version,ann-v0.1
+model_name,heuristic-annotator
+model_revision,0.1.0
+random_seed,42
+timestamp,2026-08-15T17:03:35.953642+00:00
+config_hash,
+fingerprint_hash,cab2a6c689c6da8bbb2ec43c922986d6570ef197cdda00c271cd16f69c733e83
+notes,Exploratory/development run — not confirmatory
+extra,"{""metric"": ""weighted_jaccard"", ""n_passages"": 11, ""outputs"": {""annotations"": ""res"
+pkg:numpy,2.5.2
+pkg:scipy,1.18.0
+pkg:pandas,3.0.5
+pkg:polars,1.43.2
+pkg:pydantic,2.13.4
+pkg:pyyaml,6.0.3
+pkg:scikit-learn,1.9.0
+pkg:statsmodels,0.14.6
+pkg:duckdb,1.5.5
+pkg:rishiq,0.1.0

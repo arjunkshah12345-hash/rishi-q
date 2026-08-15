@@ -1,0 +1,7 @@
+passage_id,work,QS,QEF,quantum_mechanics,classical_em,expected_emphasis
+PHYS_NEWTON_001,Synthetic Newtonian description,-0.5,0.0,0.333,0.667,classical mechanics
+PHYS_EM_001,Synthetic classical EM description,-0.1,0.0,0.0,1.0,classical EM / field
+PHYS_THERMO_001,Synthetic thermodynamics description,-1.0,0.0,0.0,0.5,thermo / epistemic
+PHYS_QM_001,Synthetic QM description,0.9,1.0,1.0,0.0,quantum mechanics
+PHYS_QFT_001,Synthetic QFT description,0.333,1.0,0.2,0.667,QFT
+PHYS_ENTANGLE_001,Synthetic entanglement description,0.8,1.0,0.8,0.0,nonseparability

@@ -1,0 +1,15 @@
+test_id,delta_Q,status,note
+A_remove_unity_concepts,-0.01527065527065527,not_run,
+B_remove_vibration_concepts,-0.01527065527065527,not_run,
+C_remove_atomism,-0.01527065527065527,not_run,
+D_remove_prana,-0.01527065527065527,not_run,
+E_remove_akasa,-0.01527065527065527,not_run,
+F_remove_brahman,-0.01527065527065527,not_run,
+G_remove_sakti_spanda,-0.01527065527065527,not_run,
+H_older_translations_only,-0.01527065527065527,not_run,
+I_literal_translations_only,-0.01527065527065527,not_run,
+J_mask_physics_vocab,-0.25,computed,
+K_human_annotations_only,-0.01527065527065527,not_run,Human-only (K) requires external annotations
+L_high_confidence_only,-0.01527065527065527,not_run,
+N_no_embeddings,-0.01527065527065527,computed,
+S_alternative_metrics,-0.01527065527065527,not_run,

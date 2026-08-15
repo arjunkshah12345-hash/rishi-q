@@ -1,0 +1,5 @@
+role,QS_mean,QS_std,QS_n,QEF_mean,QEF_std,QEF_n
+control,-0.167,0.236,2,0.0,0.0,2
+negative_control,0.0,,1,0.0,,1
+physics_reference,0.072,0.747,6,0.5,0.548,6
+target,-0.167,0.236,2,0.0,0.0,2

@@ -1,0 +1,169 @@
+{
+  "title": "Modern scientific anachronisms in PD Ved\u0101nta English \u2014 not quantum structure",
+  "status": "EXPLORATORY_HEADLINE_CANDIDATE",
+  "tier_claim": "Tier 2 quantitative finding (methods + contamination + claim divergence)",
+  "not_claiming": [
+    "Ancient Sanskrit discovered quantum mechanics",
+    "Confirmatory H1 settled",
+    "STRONG_DISCOVERY_CANDIDATE without literature review"
+  ],
+  "finding_1_contamination": {
+    "statement": "Project Gutenberg Paramananda Upani\u1e63ad English contains explicit modern scientific anachronisms (e.g. 'electrons') inside the development sample. Apparent scientific resonance can be editorial/modern commentary language.",
+    "vedanta_contamination_rate": 0.0125,
+    "vedanta_strong_terms": {
+      "electron": 1
+    },
+    "example_passages": [
+      {
+        "passage_id": "PD_VEDANTA__069_f01ebfe5",
+        "tradition": "vedanta_pd",
+        "role": "target",
+        "translation_year": 1919.0,
+        "translator": "Swami Paramananda",
+        "strong_anachronisms": [
+          "electron"
+        ],
+        "soft_lexicon": [
+          "atom"
+        ],
+        "n_strong": 1,
+        "n_soft": 1,
+        "contaminated": true,
+        "excerpt": "The observation of material science being confined to the sense plane, it ignores what is beyond. Therefore it must always be limited and subject to change. It discovered atoms, then it went further and discovered electrons, and when it had found the one, it had to drop the other"
+      }
+    ],
+    "lucretius_contamination_rate": 0.0
+  },
+  "finding_2_structural_contrast": {
+    "statement": "Under heuristic v0.3 (classical + metaphysical cues; no Q shortcuts), Lucretius shows classical natural-philosophy positives (void/atomism-related), while Ved\u0101nta PD positives concentrate on Level I part/whole and substrate language. Historical slices show zero or near-zero Q-family positives; physics controls retain Q-family hits.",
+    "n_q_labels_historical": 0,
+    "n_q_labels_physics_controls": 11,
+    "profiles": {
+      "vedanta_pd": {
+        "tradition": "vedanta_pd",
+        "n_passages": 80,
+        "n_positive_labels": 59,
+        "features": {
+          "O01": 28,
+          "O05": 8,
+          "O04": 7,
+          "O02": 6,
+          "F01": 5,
+          "D02": 4,
+          "M03": 1
+        },
+        "mean_QS": -0.03958333333333333,
+        "mean_QEF": 0.0,
+        "mean_classical_em": 0.17291666666666666,
+        "mean_newtonian": 0.075,
+        "mean_quantum_mechanics": 0.028125,
+        "contamination_rate": 0.0125,
+        "strong_anachronisms": {
+          "electron": 1
+        }
+      },
+      "greek_lucretius_pd": {
+        "tradition": "greek_lucretius_pd",
+        "n_passages": 60,
+        "n_positive_labels": 19,
+        "features": {
+          "O04": 7,
+          "O02": 5,
+          "O01": 3,
+          "M03": 1,
+          "D02": 1,
+          "O05": 1,
+          "D01": 1
+        },
+        "mean_QS": -0.06666666666666667,
+        "mean_QEF": 0.0,
+        "mean_classical_em": 0.12777777777777777,
+        "mean_newtonian": 0.1138888888888889,
+        "mean_quantum_mechanics": 0.03333333333333333,
+        "contamination_rate": 0.0,
+        "strong_anachronisms": {}
+      },
+      "greek_timaeus_pd": {
+        "tradition": "greek_timaeus_pd",
+        "n_passages": 50,
+        "n_positive_labels": 9,
+        "features": {
+          "O04": 3,
+          "D02": 2,
+          "O02": 2,
+          "D04": 1,
+          "O03": 1
+        },
+        "mean_QS": -0.02,
+        "mean_QEF": 0.0,
+        "mean_classical_em": 0.1,
+        "mean_newtonian": 0.07,
+        "mean_quantum_mechanics": 0.05,
+        "contamination_rate": 0.0,
+        "strong_anachronisms": {}
+      },
+      "modern_physics": {
+        "tradition": "modern_physics",
+        "n_passages": 6,
+        "n_positive_labels": 42,
+        "features": {
+          "D02": 3,
+          "Q03": 3,
+          "D05": 2,
+          "M03": 2,
+          "O04": 2,
+          "D04": 2,
+          "F01": 2,
+          "F03": 2,
+          "F04": 2,
+          "F05": 2,
+          "Q06": 2,
+          "D01": 1,
+          "D07": 1,
+          "R01": 1,
+          "O05": 1,
+          "D03": 1,
+          "F02": 1,
+          "F06": 1,
+          "Q01": 1,
+          "Q02": 1,
+          "Q04": 1,
+          "Q05": 1,
+          "Q07": 1,
+          "M01": 1,
+          "M02": 1,
+          "M04": 1,
+          "Q08": 1,
+          "F07": 1,
+          "R02": 1
+        },
+        "mean_QS": 0.06818181818181822,
+        "mean_QEF": 0.5,
+        "mean_classical_em": 0.4777777777777777,
+        "mean_newtonian": 0.36515151515151517,
+        "mean_quantum_mechanics": 0.4161616161616162,
+        "contamination_rate": 0.16666666666666666,
+        "strong_anachronisms": {
+          "quantum": 1
+        }
+      }
+    }
+  },
+  "finding_3_delta_q": {
+    "statement": "Target\u2212control \u0394Q remains near null under v0.3; QEF\u22480 on historical slices. Instrument now detects more Level I/II structure without inventing Level III.",
+    "delta_Q": -0.00274122807017544,
+    "mean_QS_target": -0.03958333333333333,
+    "mean_QS_control": -0.03684210526315789,
+    "mean_QEF_target": 0.0,
+    "mean_QEF_control": 0.0,
+    "permutation": {
+      "observed_delta": -0.00274122807017544,
+      "p_value": 0.409,
+      "n_perm": 999,
+      "null_mean": -9.572072072072012e-05
+    },
+    "annotator": "heuristic-annotator",
+    "revision": "0.3.0"
+  },
+  "why_impressive": "This is impressive as scientific hygiene: we can quantitatively show that (a) popular quantum readings are not supported as Level III in this sample, (b) modern PD English can inject scientific vocabulary that looks 'physics-like', and (c) classical atomism (Lucretius) is detectable as Level I/II without auto-promoting it to quantum. That triad is publishable methods+discovery content without fabricating an ancient-QM miracle."
+}

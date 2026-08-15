@@ -1,0 +1,3611 @@
+[
+  {
+    "motif_id": "M001",
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 36,
+    "passages": [
+      "PD_VEDANTA__008_3d98546c",
+      "PD_VEDANTA__012_1ade2cee",
+      "PD_VEDANTA__013_3c25c9d5",
+      "PD_VEDANTA__034_9c5182c4",
+      "PD_VEDANTA__035_10f04977",
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_VEDANTA__049_01b25962",
+      "PD_VEDANTA__050_e6624a54",
+      "PD_GREEK_LU_001_d27cbe72",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_019_7ac38ad0",
+      "PD_GREEK_LU_023_ae912e85",
+      "PD_GREEK_LU_040_8b6b8696",
+      "PD_GREEK_LU_042_9d4ec66e",
+      "PD_GREEK_LU_056_2a359a6d",
+      "PD_GREEK_TI_019_5b1dc9d4",
+      "PD_GREEK_TI_020_ccab6d71",
+      "PD_GREEK_TI_043_925f7095",
+      "PD_CHINESE__006_7fb47a77",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 8,
+      "greek_lucretius_pd": 7,
+      "greek_timaeus_pd": 3,
+      "chinese_ddj_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 8,
+      "De Rerum Natura": 7,
+      "Timaeus": 3,
+      "Tao Te Ching": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M002",
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:whole"
+    ],
+    "support": 24,
+    "passages": [
+      "PD_VEDANTA__036_a68368b6",
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__045_76a9460d",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__069_f01ebfe5",
+      "PD_GREEK_LU_009_4f1e039f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_014_b44a8723",
+      "PD_GREEK_LU_020_b997fae5",
+      "PD_GREEK_LU_023_ae912e85",
+      "PD_GREEK_TI_027_1fd4d2df",
+      "PD_GREEK_TI_039_479090fd",
+      "PD_BUDDHIST_001_2d3cd320",
+      "PD_BUDDHIST_002_70ed2dc9"
+    ],
+    "traditions": {
+      "vedanta_pd": 6,
+      "greek_lucretius_pd": 5,
+      "greek_timaeus_pd": 2,
+      "buddhist_dhammapada_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 6,
+      "De Rerum Natura": 5,
+      "Timaeus": 2,
+      "Dhammapada": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M003",
+    "signature": [
+      "E:pervades",
+      "N:space"
+    ],
+    "support": 21,
+    "passages": [
+      "PD_VEDANTA__008_3d98546c",
+      "PD_VEDANTA__012_1ade2cee",
+      "PD_VEDANTA__013_3c25c9d5",
+      "PD_VEDANTA__034_9c5182c4",
+      "PD_VEDANTA__035_10f04977",
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_VEDANTA__049_01b25962",
+      "PD_VEDANTA__050_e6624a54",
+      "PD_GREEK_LU_001_d27cbe72",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_019_7ac38ad0",
+      "PD_GREEK_LU_023_ae912e85",
+      "PD_GREEK_LU_040_8b6b8696",
+      "PD_GREEK_LU_042_9d4ec66e",
+      "PD_GREEK_LU_056_2a359a6d",
+      "PD_GREEK_TI_019_5b1dc9d4",
+      "PD_GREEK_TI_020_ccab6d71",
+      "PD_GREEK_TI_043_925f7095",
+      "PD_CHINESE__006_7fb47a77",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 8,
+      "greek_lucretius_pd": 7,
+      "greek_timaeus_pd": 3,
+      "chinese_ddj_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 8,
+      "De Rerum Natura": 7,
+      "Timaeus": 3,
+      "Tao Te Ching": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M004",
+    "signature": [
+      "E:pervades",
+      "N:substrate"
+    ],
+    "support": 21,
+    "passages": [
+      "PD_VEDANTA__008_3d98546c",
+      "PD_VEDANTA__012_1ade2cee",
+      "PD_VEDANTA__013_3c25c9d5",
+      "PD_VEDANTA__034_9c5182c4",
+      "PD_VEDANTA__035_10f04977",
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_VEDANTA__049_01b25962",
+      "PD_VEDANTA__050_e6624a54",
+      "PD_GREEK_LU_001_d27cbe72",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_019_7ac38ad0",
+      "PD_GREEK_LU_023_ae912e85",
+      "PD_GREEK_LU_040_8b6b8696",
+      "PD_GREEK_LU_042_9d4ec66e",
+      "PD_GREEK_LU_056_2a359a6d",
+      "PD_GREEK_TI_019_5b1dc9d4",
+      "PD_GREEK_TI_020_ccab6d71",
+      "PD_GREEK_TI_043_925f7095",
+      "PD_CHINESE__006_7fb47a77",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 8,
+      "greek_lucretius_pd": 7,
+      "greek_timaeus_pd": 3,
+      "chinese_ddj_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 8,
+      "De Rerum Natura": 7,
+      "Timaeus": 3,
+      "Tao Te Ching": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M005",
+    "signature": [
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 21,
+    "passages": [
+      "PD_VEDANTA__008_3d98546c",
+      "PD_VEDANTA__012_1ade2cee",
+      "PD_VEDANTA__013_3c25c9d5",
+      "PD_VEDANTA__034_9c5182c4",
+      "PD_VEDANTA__035_10f04977",
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_VEDANTA__049_01b25962",
+      "PD_VEDANTA__050_e6624a54",
+      "PD_GREEK_LU_001_d27cbe72",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_019_7ac38ad0",
+      "PD_GREEK_LU_023_ae912e85",
+      "PD_GREEK_LU_040_8b6b8696",
+      "PD_GREEK_LU_042_9d4ec66e",
+      "PD_GREEK_LU_056_2a359a6d",
+      "PD_GREEK_TI_019_5b1dc9d4",
+      "PD_GREEK_TI_020_ccab6d71",
+      "PD_GREEK_TI_043_925f7095",
+      "PD_CHINESE__006_7fb47a77",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 8,
+      "greek_lucretius_pd": 7,
+      "greek_timaeus_pd": 3,
+      "chinese_ddj_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 8,
+      "De Rerum Natura": 7,
+      "Timaeus": 3,
+      "Tao Te Ching": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M006",
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 20,
+    "passages": [
+      "PD_VEDANTA__003_a5db141c",
+      "PD_VEDANTA__043_3d8ba7ba",
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_VEDANTA__048_b3dec2b1",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__070_01dbf506",
+      "PD_VEDANTA__072_a697263a",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_CHINESE__013_416e3b02",
+      "PD_CHINESE__028_e8a5cef0",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 8,
+      "greek_lucretius_pd": 1,
+      "chinese_ddj_pd": 2,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 8,
+      "De Rerum Natura": 1,
+      "Tao Te Ching": 2,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M007",
+    "signature": [
+      "N:constituent",
+      "N:whole"
+    ],
+    "support": 17,
+    "passages": [
+      "PD_VEDANTA__036_a68368b6",
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__045_76a9460d",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__069_f01ebfe5",
+      "PD_GREEK_LU_009_4f1e039f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_014_b44a8723",
+      "PD_GREEK_LU_020_b997fae5",
+      "PD_GREEK_LU_023_ae912e85",
+      "PD_GREEK_TI_027_1fd4d2df",
+      "PD_GREEK_TI_039_479090fd",
+      "PD_BUDDHIST_001_2d3cd320",
+      "PD_BUDDHIST_002_70ed2dc9",
+      "PHYS_QM_001",
+      "PHYS_ENTANGLE_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 6,
+      "greek_lucretius_pd": 5,
+      "greek_timaeus_pd": 2,
+      "buddhist_dhammapada_pd": 2,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 6,
+      "De Rerum Natura": 5,
+      "Timaeus": 2,
+      "Dhammapada": 2,
+      "Synthetic QM description": 1,
+      "Synthetic entanglement description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M008",
+    "signature": [
+      "E:composed_of",
+      "N:constituent"
+    ],
+    "support": 15,
+    "passages": [
+      "PD_VEDANTA__036_a68368b6",
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__045_76a9460d",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__069_f01ebfe5",
+      "PD_GREEK_LU_009_4f1e039f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_014_b44a8723",
+      "PD_GREEK_LU_020_b997fae5",
+      "PD_GREEK_LU_023_ae912e85",
+      "PD_GREEK_TI_027_1fd4d2df",
+      "PD_GREEK_TI_039_479090fd",
+      "PD_BUDDHIST_001_2d3cd320",
+      "PD_BUDDHIST_002_70ed2dc9"
+    ],
+    "traditions": {
+      "vedanta_pd": 6,
+      "greek_lucretius_pd": 5,
+      "greek_timaeus_pd": 2,
+      "buddhist_dhammapada_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 6,
+      "De Rerum Natura": 5,
+      "Timaeus": 2,
+      "Dhammapada": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M009",
+    "signature": [
+      "E:composed_of",
+      "N:whole"
+    ],
+    "support": 15,
+    "passages": [
+      "PD_VEDANTA__036_a68368b6",
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__045_76a9460d",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__069_f01ebfe5",
+      "PD_GREEK_LU_009_4f1e039f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_014_b44a8723",
+      "PD_GREEK_LU_020_b997fae5",
+      "PD_GREEK_LU_023_ae912e85",
+      "PD_GREEK_TI_027_1fd4d2df",
+      "PD_GREEK_TI_039_479090fd",
+      "PD_BUDDHIST_001_2d3cd320",
+      "PD_BUDDHIST_002_70ed2dc9"
+    ],
+    "traditions": {
+      "vedanta_pd": 6,
+      "greek_lucretius_pd": 5,
+      "greek_timaeus_pd": 2,
+      "buddhist_dhammapada_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 6,
+      "De Rerum Natura": 5,
+      "Timaeus": 2,
+      "Dhammapada": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M010",
+    "signature": [
+      "E:transforms_into",
+      "N:state"
+    ],
+    "support": 14,
+    "passages": [
+      "PD_VEDANTA__006_0f29d985",
+      "PD_VEDANTA__021_9a1c705f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__069_f01ebfe5",
+      "PD_GREEK_LU_005_518c0032",
+      "PD_GREEK_TI_020_ccab6d71",
+      "PD_GREEK_TI_049_4d9542c0",
+      "PD_BUDDHIST_012_ce26392d",
+      "PHYS_NEWTON_001",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 4,
+      "greek_lucretius_pd": 1,
+      "greek_timaeus_pd": 2,
+      "buddhist_dhammapada_pd": 1,
+      "modern_physics": 3
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 4,
+      "De Rerum Natura": 1,
+      "Timaeus": 2,
+      "Dhammapada": 1,
+      "Synthetic Newtonian description": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M011",
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation"
+    ],
+    "support": 13,
+    "passages": [
+      "PD_VEDANTA__003_a5db141c",
+      "PD_VEDANTA__043_3d8ba7ba",
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_VEDANTA__048_b3dec2b1",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__070_01dbf506",
+      "PD_VEDANTA__072_a697263a",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_CHINESE__013_416e3b02",
+      "PD_CHINESE__028_e8a5cef0",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 8,
+      "greek_lucretius_pd": 1,
+      "chinese_ddj_pd": 2,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 8,
+      "De Rerum Natura": 1,
+      "Tao Te Ching": 2,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M012",
+    "signature": [
+      "E:manifests_as",
+      "N:substrate"
+    ],
+    "support": 13,
+    "passages": [
+      "PD_VEDANTA__003_a5db141c",
+      "PD_VEDANTA__043_3d8ba7ba",
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_VEDANTA__048_b3dec2b1",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__070_01dbf506",
+      "PD_VEDANTA__072_a697263a",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_CHINESE__013_416e3b02",
+      "PD_CHINESE__028_e8a5cef0",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 8,
+      "greek_lucretius_pd": 1,
+      "chinese_ddj_pd": 2,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 8,
+      "De Rerum Natura": 1,
+      "Tao Te Ching": 2,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M013",
+    "signature": [
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 13,
+    "passages": [
+      "PD_VEDANTA__003_a5db141c",
+      "PD_VEDANTA__043_3d8ba7ba",
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_VEDANTA__048_b3dec2b1",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_VEDANTA__070_01dbf506",
+      "PD_VEDANTA__072_a697263a",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_CHINESE__013_416e3b02",
+      "PD_CHINESE__028_e8a5cef0",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 8,
+      "greek_lucretius_pd": 1,
+      "chinese_ddj_pd": 2,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 8,
+      "De Rerum Natura": 1,
+      "Tao Te Ching": 2,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M014",
+    "signature": [
+      "E:transforms_into",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 8,
+    "passages": [
+      "PD_VEDANTA__021_9a1c705f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_GREEK_TI_020_ccab6d71",
+      "PD_BUDDHIST_012_ce26392d",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_timaeus_pd": 1,
+      "buddhist_dhammapada_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "Timaeus": 1,
+      "Dhammapada": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M015",
+    "signature": [
+      "N:observer",
+      "N:property"
+    ],
+    "support": 7,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_GREEK_LU_004_0849fcd5",
+      "PHYS_NEWTON_001",
+      "PHYS_THERMO_001",
+      "PHYS_QM_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 3
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic Newtonian description": 1,
+      "Synthetic thermodynamics description": 1,
+      "Synthetic QM description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M016",
+    "signature": [
+      "E:transforms_into",
+      "N:substrate"
+    ],
+    "support": 6,
+    "passages": [
+      "PD_VEDANTA__021_9a1c705f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_GREEK_TI_020_ccab6d71",
+      "PD_BUDDHIST_012_ce26392d",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_timaeus_pd": 1,
+      "buddhist_dhammapada_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "Timaeus": 1,
+      "Dhammapada": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M017",
+    "signature": [
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 6,
+    "passages": [
+      "PD_VEDANTA__021_9a1c705f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_GREEK_TI_020_ccab6d71",
+      "PD_BUDDHIST_012_ce26392d",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_timaeus_pd": 1,
+      "buddhist_dhammapada_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "Timaeus": 1,
+      "Dhammapada": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M018",
+    "signature": [
+      "E:composed_of",
+      "N:substrate"
+    ],
+    "support": 5,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_023_ae912e85"
+    ],
+    "traditions": {
+      "vedanta_pd": 3,
+      "greek_lucretius_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 3,
+      "De Rerum Natura": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M019",
+    "signature": [
+      "N:constituent",
+      "N:substrate"
+    ],
+    "support": 5,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_023_ae912e85"
+    ],
+    "traditions": {
+      "vedanta_pd": 3,
+      "greek_lucretius_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 3,
+      "De Rerum Natura": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M020",
+    "signature": [
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 5,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_023_ae912e85"
+    ],
+    "traditions": {
+      "vedanta_pd": 3,
+      "greek_lucretius_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 3,
+      "De Rerum Natura": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M021",
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:substrate"
+    ],
+    "support": 5,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_023_ae912e85"
+    ],
+    "traditions": {
+      "vedanta_pd": 3,
+      "greek_lucretius_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 3,
+      "De Rerum Natura": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M022",
+    "signature": [
+      "E:composed_of",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 5,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_023_ae912e85"
+    ],
+    "traditions": {
+      "vedanta_pd": 3,
+      "greek_lucretius_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 3,
+      "De Rerum Natura": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M023",
+    "signature": [
+      "N:constituent",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 5,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_023_ae912e85"
+    ],
+    "traditions": {
+      "vedanta_pd": 3,
+      "greek_lucretius_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 3,
+      "De Rerum Natura": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M024",
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 5,
+    "passages": [
+      "PD_VEDANTA__038_ae712a5f",
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_023_ae912e85"
+    ],
+    "traditions": {
+      "vedanta_pd": 3,
+      "greek_lucretius_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 3,
+      "De Rerum Natura": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M025",
+    "signature": [
+      "E:manifests_as",
+      "E:pervades",
+      "N:manifestation",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 5,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M026",
+    "signature": [
+      "E:manifests_as",
+      "E:pervades"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M027",
+    "signature": [
+      "E:manifests_as",
+      "N:space"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M028",
+    "signature": [
+      "E:pervades",
+      "N:manifestation"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M029",
+    "signature": [
+      "N:manifestation",
+      "N:space"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M030",
+    "signature": [
+      "E:manifests_as",
+      "E:pervades",
+      "N:manifestation"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M031",
+    "signature": [
+      "E:manifests_as",
+      "E:pervades",
+      "N:space"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M032",
+    "signature": [
+      "E:manifests_as",
+      "E:pervades",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M033",
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:space"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M034",
+    "signature": [
+      "E:manifests_as",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M035",
+    "signature": [
+      "E:pervades",
+      "N:manifestation",
+      "N:space"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M036",
+    "signature": [
+      "E:pervades",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M037",
+    "signature": [
+      "N:manifestation",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M038",
+    "signature": [
+      "E:manifests_as",
+      "E:pervades",
+      "N:manifestation",
+      "N:space"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M039",
+    "signature": [
+      "E:manifests_as",
+      "E:pervades",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M040",
+    "signature": [
+      "E:manifests_as",
+      "E:pervades",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M041",
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M042",
+    "signature": [
+      "E:pervades",
+      "N:manifestation",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__046_e60fd06f",
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "greek_lucretius_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "De Rerum Natura": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M043",
+    "signature": [
+      "N:constituent",
+      "N:state"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__069_f01ebfe5",
+      "PHYS_QM_001",
+      "PHYS_ENTANGLE_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "Synthetic QM description": 1,
+      "Synthetic entanglement description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M044",
+    "signature": [
+      "N:state",
+      "N:whole"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__069_f01ebfe5",
+      "PHYS_QM_001",
+      "PHYS_ENTANGLE_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "Synthetic QM description": 1,
+      "Synthetic entanglement description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M045",
+    "signature": [
+      "N:constituent",
+      "N:state",
+      "N:whole"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__069_f01ebfe5",
+      "PHYS_QM_001",
+      "PHYS_ENTANGLE_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "Synthetic QM description": 1,
+      "Synthetic entanglement description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M046",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M047",
+    "signature": [
+      "E:propagates_through",
+      "N:disturbance",
+      "N:space"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_GREEK_TI_007_670254a7",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M048",
+    "signature": [
+      "E:pervades",
+      "E:transforms_into",
+      "N:space",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 4,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M049",
+    "signature": [
+      "N:matter",
+      "N:state"
+    ],
+    "support": 4,
+    "passages": [
+      "PHYS_EM_001",
+      "PHYS_QM_001",
+      "PHYS_QFT_001",
+      "PHYS_ENTANGLE_001"
+    ],
+    "traditions": {
+      "modern_physics": 4
+    },
+    "works": {
+      "Synthetic classical EM description": 1,
+      "Synthetic QM description": 1,
+      "Synthetic QFT description": 1,
+      "Synthetic entanglement description": 1
+    },
+    "nearest_physics": "classical_mechanics_like",
+    "physics_family": "classical"
+  },
+  {
+    "motif_id": "M050",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M051",
+    "signature": [
+      "E:composed_of",
+      "N:manifestation"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M052",
+    "signature": [
+      "E:manifests_as",
+      "E:transforms_into"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M053",
+    "signature": [
+      "E:manifests_as",
+      "N:constituent"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M054",
+    "signature": [
+      "E:manifests_as",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M055",
+    "signature": [
+      "E:manifests_as",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M056",
+    "signature": [
+      "E:transforms_into",
+      "N:manifestation"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M057",
+    "signature": [
+      "N:constituent",
+      "N:manifestation"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M058",
+    "signature": [
+      "N:manifestation",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M059",
+    "signature": [
+      "N:manifestation",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M060",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M061",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:manifestation"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M062",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M063",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M064",
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:manifestation"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M065",
+    "signature": [
+      "E:composed_of",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M066",
+    "signature": [
+      "E:composed_of",
+      "N:manifestation",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M067",
+    "signature": [
+      "E:manifests_as",
+      "E:transforms_into",
+      "N:manifestation"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M068",
+    "signature": [
+      "E:manifests_as",
+      "E:transforms_into",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M069",
+    "signature": [
+      "E:manifests_as",
+      "E:transforms_into",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M070",
+    "signature": [
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M071",
+    "signature": [
+      "E:manifests_as",
+      "N:constituent",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M072",
+    "signature": [
+      "E:manifests_as",
+      "N:constituent",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M073",
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M074",
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M075",
+    "signature": [
+      "E:manifests_as",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M076",
+    "signature": [
+      "E:manifests_as",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M077",
+    "signature": [
+      "E:transforms_into",
+      "N:manifestation",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M078",
+    "signature": [
+      "E:transforms_into",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M079",
+    "signature": [
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M080",
+    "signature": [
+      "N:constituent",
+      "N:manifestation",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M081",
+    "signature": [
+      "N:manifestation",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M082",
+    "signature": [
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M083",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M084",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M085",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M086",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M087",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:manifestation",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M088",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M089",
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M090",
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:manifestation",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M091",
+    "signature": [
+      "E:composed_of",
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M092",
+    "signature": [
+      "E:manifests_as",
+      "E:transforms_into",
+      "N:manifestation",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M093",
+    "signature": [
+      "E:manifests_as",
+      "E:transforms_into",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M094",
+    "signature": [
+      "E:manifests_as",
+      "E:transforms_into",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M095",
+    "signature": [
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M096",
+    "signature": [
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M097",
+    "signature": [
+      "E:manifests_as",
+      "N:constituent",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M098",
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M099",
+    "signature": [
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M100",
+    "signature": [
+      "E:transforms_into",
+      "N:manifestation",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M101",
+    "signature": [
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M102",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M103",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M104",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:constituent",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M105",
+    "signature": [
+      "E:composed_of",
+      "E:manifests_as",
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M106",
+    "signature": [
+      "E:composed_of",
+      "E:transforms_into",
+      "N:constituent",
+      "N:state",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__069_f01ebfe5"
+    ],
+    "traditions": {
+      "vedanta_pd": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M107",
+    "signature": [
+      "E:composed_of",
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M108",
+    "signature": [
+      "E:manifests_as",
+      "E:transforms_into",
+      "N:manifestation",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "vedanta_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M109",
+    "signature": [
+      "E:manifests_as",
+      "N:constituent",
+      "N:manifestation",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_VEDANTA__053_c2059922",
+      "PD_VEDANTA__063_57c07e83",
+      "PD_GREEK_LU_010_2fa7cb8b"
+    ],
+    "traditions": {
+      "vedanta_pd": 2,
+      "greek_lucretius_pd": 1
+    },
+    "works": {
+      "Upanishads (Paramananda tr.)": 2,
+      "De Rerum Natura": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M110",
+    "signature": [
+      "E:composed_of",
+      "E:pervades",
+      "N:constituent",
+      "N:space",
+      "N:substrate",
+      "N:whole"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_LU_010_2fa7cb8b",
+      "PD_GREEK_LU_023_ae912e85"
+    ],
+    "traditions": {
+      "greek_lucretius_pd": 2
+    },
+    "works": {
+      "De Rerum Natura": 2
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M111",
+    "signature": [
+      "E:propagates_through",
+      "N:disturbance"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_007_670254a7",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M112",
+    "signature": [
+      "E:propagates_through",
+      "N:space"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_007_670254a7",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M113",
+    "signature": [
+      "N:disturbance",
+      "N:space"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_007_670254a7",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M114",
+    "signature": [
+      "E:pervades",
+      "E:transforms_into"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M115",
+    "signature": [
+      "E:pervades",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M116",
+    "signature": [
+      "E:transforms_into",
+      "N:space"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M117",
+    "signature": [
+      "N:space",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M118",
+    "signature": [
+      "E:pervades",
+      "E:transforms_into",
+      "N:space"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M119",
+    "signature": [
+      "E:pervades",
+      "E:transforms_into",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M120",
+    "signature": [
+      "E:pervades",
+      "E:transforms_into",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M121",
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M122",
+    "signature": [
+      "E:pervades",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M123",
+    "signature": [
+      "E:transforms_into",
+      "N:space",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M124",
+    "signature": [
+      "E:transforms_into",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M125",
+    "signature": [
+      "N:space",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M126",
+    "signature": [
+      "E:pervades",
+      "E:transforms_into",
+      "N:space",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M127",
+    "signature": [
+      "E:pervades",
+      "E:transforms_into",
+      "N:space",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M128",
+    "signature": [
+      "E:pervades",
+      "E:transforms_into",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M129",
+    "signature": [
+      "E:pervades",
+      "N:space",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "classical_field_like",
+    "physics_family": "field_like"
+  },
+  {
+    "motif_id": "M130",
+    "signature": [
+      "E:transforms_into",
+      "N:space",
+      "N:state",
+      "N:substrate"
+    ],
+    "support": 3,
+    "passages": [
+      "PD_GREEK_TI_020_ccab6d71",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "greek_timaeus_pd": 1,
+      "modern_physics": 2
+    },
+    "works": {
+      "Timaeus": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M131",
+    "signature": [
+      "E:interacts_with",
+      "E:transforms_into"
+    ],
+    "support": 3,
+    "passages": [
+      "PHYS_NEWTON_001",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "modern_physics": 3
+    },
+    "works": {
+      "Synthetic Newtonian description": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M132",
+    "signature": [
+      "E:interacts_with",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PHYS_NEWTON_001",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "modern_physics": 3
+    },
+    "works": {
+      "Synthetic Newtonian description": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  },
+  {
+    "motif_id": "M133",
+    "signature": [
+      "E:interacts_with",
+      "E:transforms_into",
+      "N:state"
+    ],
+    "support": 3,
+    "passages": [
+      "PHYS_NEWTON_001",
+      "PHYS_EM_001",
+      "PHYS_QFT_001"
+    ],
+    "traditions": {
+      "modern_physics": 3
+    },
+    "works": {
+      "Synthetic Newtonian description": 1,
+      "Synthetic classical EM description": 1,
+      "Synthetic QFT description": 1
+    },
+    "nearest_physics": "unrelated_or_generic",
+    "physics_family": "unrelated"
+  }
+]
