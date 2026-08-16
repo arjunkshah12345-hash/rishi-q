@@ -10,8 +10,8 @@
     "extractor_passes_criterion",
     "validation_success_criterion_approved"
   ],
-  "timestamp_utc": "2026-08-16T19:44:39.739559+00:00",
-  "git_sha": "b6884e3a6781c453ec9c7ee05f089f361cd51d8d",
+  "timestamp_utc": "2026-08-16T19:46:38.999538+00:00",
+  "git_sha": "0aaca32c4e6abffa49ca12db0e192e194a0ad16c",
   "extractor_version": "structural_extractor_deterministic_v1",
   "ontology_version": "rishiq_concept_graph_v1",
   "fingerprint_hashes": {

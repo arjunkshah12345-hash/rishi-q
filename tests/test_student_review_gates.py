@@ -67,3 +67,31 @@ def test_check_freeze_gates_not_ready():
     assert g["all_pass"] is False
     assert g["method_freeze_status"] == "AWAITING_STUDENT_REVIEW"
     assert g["ancient_confirmatory"] == "LOCKED_NOT_READY"
+    assert g["gates"]["development_selection_finished"] is False
+    assert g["gates"]["power_updated"] is False
+
+
+def test_finalize_after_student_review_refuses_while_blank():
+    from rishiq.isef2027.post_student_finalize import finalize_after_student_review
+
+    out = finalize_after_student_review(ROOT)
+    assert out["status"] == "REFUSED"
+    assert out["method_freeze_status"] == "AWAITING_STUDENT_REVIEW"
+    assert out["true_final_method_holdout"] == "NOT_BUILT"
+
+
+def test_pre_freeze_summary_awaiting():
+    from rishiq.isef2027.post_student_finalize import pre_freeze_summary
+
+    s = pre_freeze_summary(ROOT)
+    assert s["METHOD_FREEZE_STATUS"] == "AWAITING_STUDENT_REVIEW"
+    assert s["TRUE_FINAL_METHOD_HOLDOUT"] == "NOT_BUILT"
+    assert s["ANCIENT_CONFIRMATORY"] == "LOCKED_NOT_READY"
+    assert "NOT_AVAILABLE" in str(s["EXTRACTOR_GOLD_METRICS"])
+
+
+def test_evaluate_final_refuses_without_freeze():
+    from rishiq.isef2027.method_freeze_gates import evaluate_final_validation_once
+
+    out = evaluate_final_validation_once(ROOT)
+    assert out["status"] == "REFUSED"

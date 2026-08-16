@@ -146,3 +146,9 @@ Do **not** delete entries. Student should mark review status.
 - **User prompt reference:** last pre-freeze pass; student review gates; no auto-approve; confirmatory LOCKED; holdout NOT_BUILT
 - **Task performed:** Built `rishiq-isef student-review`, `validate-student-review`, `evaluate-extractor-gold`, `freeze-method`, holdout build/eval stubs that refuse until freeze; blank criterion JSON files; gate tests
 - **Not done by AI:** fingerprint KEEP/MODIFY decisions; gold labels; success thresholds; method freeze confirmation; paper/abstract
+
+## 2026-08-16 — Cursor agent (finish remaining engineering; no student auto-approve)
+
+- **Task:** Wired `finalize-after-student-review` (DEV weight reselection + n_sim≥2000 power), `pre-freeze-summary`, freeze gates for `development_selection_finished` / `power_updated`, and post-freeze holdout build/one-shot eval (still refuse without freeze / acquired passages).
+- **Explicitly refused:** filling student fingerprint decisions, gold annotations, or setting `student_approved=true`.
+- **Status remains:** `AWAITING_STUDENT_REVIEW`

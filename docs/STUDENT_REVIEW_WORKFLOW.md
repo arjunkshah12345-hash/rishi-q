@@ -17,6 +17,12 @@ uv run rishiq-isef validate-student-review
 # After gold complete: Stage-1 metrics
 uv run rishiq-isef evaluate-extractor-gold
 
+# After student review + criterion files filled: DEV revalidation (n_sim≥2000)
+uv run rishiq-isef finalize-after-student-review
+
+# Required status block
+uv run rishiq-isef pre-freeze-summary
+
 # Gate scorecard + refresh freeze CANDIDATE
 uv run rishiq-isef check-freeze-gates
 
@@ -37,8 +43,9 @@ uv run rishiq-isef evaluate-final-validation-once
 
 ## Rules
 
-- No auto-approval.
+- No auto-approval. AI cannot fill fingerprint decisions or gold labels.
 - Extractor predictions hidden until gold annotation is `LOCK`ed.
 - AI fingerprint drafts stay under `protocol/isef2027_v2/fingerprint_review/`; student decisions in `artifacts/isef2027/student_review/`.
+- After review: run `finalize-after-student-review` once (weight reselection + power). At most **one** gold-guided extractor revision.
 - Ancient confirmatory stays `LOCKED_NOT_READY`.
-- True final holdout stays `NOT_BUILT` until after freeze.
+- True final holdout stays `NOT_BUILT` until after freeze + acquired candidates.

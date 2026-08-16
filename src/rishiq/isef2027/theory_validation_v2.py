@@ -291,18 +291,41 @@ def task_b_fingerprint_retrieval(
 
 
 def select_graph_weights_on_dev(root: Path, dev: list[dict]) -> dict[str, Any]:
+    """Prespecified grid once on DEVELOPMENT. Tie-breakers: masked MRR, lower empty rate, simpler weights."""
     grid = []
     for tw, hw in GRAPH_WEIGHT_GRID:
         res = task_b_fingerprint_retrieval(
             root, dev, typed_w=tw, hung_w=hw, masked=False, extractor="structural"
         )
+        masked = task_b_fingerprint_retrieval(
+            root, dev, typed_w=tw, hung_w=hw, masked=True, extractor="structural"
+        )
+        empty_rate = (res.get("empty_extraction_n") or 0) / res["n"] if res.get("n") else 1.0
+        # Prefer equal weights as "simpler" when other metrics tie (0.5/0.5 → 0 complexity penalty)
+        simplicity = abs(tw - hw)  # lower is simpler/equal
+        res = {
+            **res,
+            "masked_mrr": masked.get("mrr"),
+            "empty_extraction_rate": empty_rate,
+            "weight_simplicity": simplicity,
+        }
         grid.append(res)
-    best = max(grid, key=lambda x: (x["mrr"] or 0.0))
+
+    def _key(x: dict[str, Any]) -> tuple:
+        return (
+            x.get("mrr") or 0.0,
+            x.get("masked_mrr") or 0.0,
+            -(x.get("empty_extraction_rate") or 1.0),  # lower empty better
+            -(x.get("weight_simplicity") or 1.0),  # simpler/equal better
+        )
+
+    best = max(grid, key=_key)
     return {
         "grid": grid,
         "selected": {"typed_weight": best["typed_weight"], "hungarian_weight": best["hungarian_weight"]},
-        "selection_criterion": "max_dev_mrr_structural_extractor",
+        "selection_criterion": "max_dev_mrr_then_masked_mrr_then_lower_empty_then_simpler",
         "selected_on": "development_only",
+        "prespecified_grid": GRAPH_WEIGHT_GRID,
         "retired_proxy_selection": RETIRED_PROXY_SELECTION,
         "extractor": "structural_extractor_deterministic_v1",
     }
@@ -417,7 +440,12 @@ def _structural_scores_by_passage(root: Path, rows: list[dict], typed_w: float, 
     return out
 
 
-def run_development_method_selection(root: Path) -> dict[str, Any]:
+def run_development_method_selection(
+    root: Path,
+    *,
+    n_sim: int = 400,
+    post_student_review: bool = False,
+) -> dict[str, Any]:
     train = _load_split(root, "train")
     dev = _load_split(root, "development")
 
@@ -459,13 +487,19 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
 
     scores = _structural_scores_by_passage(root, dev, tw, hw)
     var_est = estimate_calibration_variance(dev, scores)
+    if post_student_review:
+        var_est = {
+            **var_est,
+            "note": "Work-level bootstrap after student review; post_student_review=true.",
+            "ready_to_freeze_N": False,
+        }
 
     from rishiq.isef2027.power_hier import PowerAssumptions, simulate_delta_q_power
 
     power_table = []
     bw = var_est["between_work_sd"] if isinstance(var_est.get("between_work_sd"), float) else 0.08
     ww = var_est["within_work_sd"] if isinstance(var_est.get("within_work_sd"), float) else 0.12
-    n_sim = 400
+    n_sim_use = max(int(n_sim), 2000) if post_student_review else int(n_sim)
     for effect, scenario in [(0.02, "pessimistic"), (0.05, "base"), (0.08, "base"), (0.12, "optimistic")]:
         for n_works in [6, 10, 15]:
             for ppw in [3, 5]:
@@ -475,9 +509,10 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
                     passages_per_work=ppw,
                     between_work_sd=bw,
                     within_work_sd=ww,
-                    n_sim=n_sim,
+                    n_sim=n_sim_use,
                     n_perm=79,
-                    notes="structural_dev_variance_calibrated",
+                    notes="structural_dev_variance_calibrated"
+                    + ("_post_student" if post_student_review else ""),
                 )
                 sim = simulate_delta_q_power(ass)
                 power_table.append(
@@ -490,7 +525,7 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
                         "mc_se": sim.get("monte_carlo_se"),
                         "sim_interval_95": sim.get("power_sim_interval_95"),
                         "scenario": scenario,
-                        "n_sim": n_sim,
+                        "n_sim": n_sim_use,
                     }
                 )
 
@@ -502,8 +537,12 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
     method_freeze = {
         "status": "NOT_READY_TO_FREEZE",
         "reasons": [
-            "physics_fingerprints_verified=false (student review required)",
-            "Stage-1 extraction gold annotations awaiting student approval",
+            "physics_fingerprints_verified=false (student review required)"
+            if not post_student_review
+            else "awaiting student criterion approval + freeze-method",
+            "Stage-1 extraction gold annotations awaiting student approval"
+            if not post_student_review
+            else "gold review complete — check extractor criterion",
             "true final method holdout NOT_BUILT (correct until after freeze)",
             "confirmatory corpus feasibility may constrain independent N",
         ],
@@ -512,6 +551,8 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
         "retired_proxy_graph_weights": RETIRED_PROXY_SELECTION,
         "final_holdout": "NOT_BUILT",
         "constructed_unevaluated": "CONSTRUCTED_UNEVALUATED_VALIDATION_SET",
+        "post_student_review": post_student_review,
+        "n_sim_per_cell": n_sim_use,
     }
 
     payload = attach_provenance(
@@ -519,6 +560,8 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
             "benchmark_id": "ISEF2027-THEORY-VAL-EXTERNAL-DEV-v2-structural",
             "contamination_state": ContaminationState.DEVELOPMENT_CONTAMINATED.value,
             "evidence_role": EvidenceRole.EXTERNAL_METHOD_DEVELOPMENT.value,
+            "post_student_review": post_student_review,
+            "n_sim_per_cell": n_sim_use,
             "n_train": len(train),
             "n_dev": len(dev),
             "n_passages": len(train) + len(dev),
@@ -550,7 +593,8 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
             real_text=True,
             phase="validation",
             source_split="train+development",
-            method_version="theory_val_external_dev_v2_structural",
+            method_version="theory_val_external_dev_v2_structural"
+            + ("_post_student" if post_student_review else ""),
             notes="True final holdout not built. Ancient confirmatory locked.",
         ),
     )
@@ -591,7 +635,8 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
                 "variance_source": var_est,
                 "rows": power_table,
                 "sample_size_justified": False,
-                "n_sim_per_cell": n_sim,
+                "n_sim_per_cell": n_sim_use,
+                "post_student_review": post_student_review,
             },
             indent=2,
             default=float,

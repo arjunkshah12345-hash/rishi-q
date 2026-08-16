@@ -285,6 +285,27 @@ def evaluate_extractor_gold_cmd() -> None:
         raise typer.Exit(code=2)
 
 
+@app.command("finalize-after-student-review")
+def finalize_after_student_review_cmd(
+    n_sim: int = typer.Option(2000, "--n-sim", help="Monte Carlo sims per power cell (min 2000 when post-student)"),
+) -> None:
+    """DEV revalidation + weight reselection + power after student review. Refuses if review incomplete."""
+    from rishiq.isef2027.post_student_finalize import finalize_after_student_review
+
+    out = finalize_after_student_review(_root(), n_sim=n_sim)
+    rprint(out)
+    if out.get("status") == "REFUSED":
+        raise typer.Exit(code=2)
+
+
+@app.command("pre-freeze-summary")
+def pre_freeze_summary_cmd() -> None:
+    """Print the required pre-freeze status block (no auto-approve)."""
+    from rishiq.isef2027.post_student_finalize import pre_freeze_summary
+
+    rprint(pre_freeze_summary(_root()))
+
+
 @app.command("check-freeze-gates")
 def check_freeze_gates_cmd() -> None:
     from rishiq.isef2027.method_freeze_gates import write_freeze_candidate_if_ready
