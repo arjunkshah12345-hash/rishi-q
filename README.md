@@ -20,10 +20,11 @@ New sealed-holdout / method-validation infrastructure:
 
 ```bash
 uv pip install -e ".[dev]"
-uv run rishiq-isef reproduce --config configs/isef2027.yaml
-uv run python scripts/build_isef2027_visuals.py
+uv run rishiq-isef reproduce-all --config configs/isef2027.yaml
 open visuals/isef2027/index.html
 ```
+
+Student blanks to fill (not AI): [`artifacts/isef2027/STUDENT_DECISIONS.yaml`](artifacts/isef2027/STUDENT_DECISIONS.yaml), [`protocol/isef2027_prereg_TEMPLATE.yaml`](protocol/isef2027_prereg_TEMPLATE.yaml)
 
 - Gap audit (technical only): [`docs/ISEF2027_GAP_AUDIT.md`](docs/ISEF2027_GAP_AUDIT.md)
 - AI usage log: [`AI_USAGE_LOG.md`](AI_USAGE_LOG.md)

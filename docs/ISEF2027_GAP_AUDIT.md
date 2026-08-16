@@ -33,4 +33,7 @@ It does **not** claim the project is “ISEF-winning.” It does **not** write t
 
 ## What “ready to freeze” means here
 
-Technical pipeline for **writing and preregistering** a confirmatory protocol: **approaching yes** for scaffolding, **no** for scientific freeze until student decisions in the table above are completed.
+Technical pipeline for **writing and preregistering** a confirmatory protocol: **YES for scaffolding completeness** (splits, scrubbing, benchmarks, batteries, registry, visuals, blank prereg template, decision checklist).
+
+**NO for scientific freeze** until `artifacts/isef2027/STUDENT_DECISIONS.yaml` items D01–D12 are completed by the student and OSF/AsPredicted is submitted.
+
