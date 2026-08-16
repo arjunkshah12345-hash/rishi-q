@@ -31,4 +31,7 @@ items:
     status: APPROVED_FROZEN
     date_approved: "2026-08-16"
   - id: osf_registration
-    status: PENDING_TOKEN_OR_GITHUB_RELEASE_TIMESTAMP
+    status: GITHUB_RELEASE_TIMESTAMPED
+    url: "https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1"
+    osf_api: PENDING_OSF_TOKEN
+    date_approved: "2026-08-16"
