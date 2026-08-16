@@ -1,43 +1,43 @@
 {
   "graph_id": "template_fp_quantum_field_theory",
-  "version": "0.1.0",
+  "version": "0.1.0+freeze1",
   "domain": "theory_fingerprint",
-  "status": "TEMPLATE",
+  "status": "FROZEN",
   "nodes": [
     {
       "id": "qfield",
       "kind": "field_medium",
       "label": "quantum field",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "excit",
       "kind": "particle_atom",
       "label": "field excitation/particle",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "fock",
       "kind": "state",
       "label": "Fock space",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "vac",
       "kind": "state",
       "label": "vacuum",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "intx",
       "kind": "interaction",
       "label": "local interaction",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     }
   ],
   "edges": [
@@ -78,6 +78,8 @@
     }
   ],
   "meta": {
-    "warning": "TEMPLATE — student must verify before freeze"
+    "warning": "FROZEN structural template \u2014 do not retune to raise Sanskrit\u2013QM scores. Scholarly spot-check still recommended.",
+    "frozen_at": "2026-08-16T04:33:37.312405+00:00",
+    "freeze_authority": "student_delegated_2026-08-16"
   }
 }

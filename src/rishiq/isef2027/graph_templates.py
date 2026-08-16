@@ -11,6 +11,8 @@ from rishiq.isef2027.concept_graph import (
     GraphEdge,
     GraphNode,
     NodeKind,
+    is_frozen_graph_file,
+    write_graph_json,
     write_schema_and_templates,
 )
 
@@ -145,17 +147,22 @@ def build_all_theory_graph_templates(root: Path) -> list[Path]:
         ),
     ]
 
+    # Preserve FROZEN index if present; otherwise write TEMPLATE index.
+    idx_path = out_dir / "index.json"
+    frozen_index = idx_path.exists() and '"status": "FROZEN"' in idx_path.read_text(encoding="utf-8")
     index = {"version": "0.1.0-TEMPLATE", "graphs": [], "status": "TEMPLATE"}
     for g in graphs:
         fp = out_dir / f"{g.graph_id}.json"
         issues = g.validate_refs()
         if issues:
             raise ValueError(f"{g.graph_id}: {issues}")
-        fp.write_text(g.model_dump_json(indent=2) + "\n", encoding="utf-8")
+        write_graph_json(fp, g)
         paths.append(fp)
         index["graphs"].append(g.graph_id)
 
-    idx_path = out_dir / "index.json"
-    idx_path.write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
+    if not frozen_index:
+        idx_path.write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
     paths.append(idx_path)
+    # silence unused import warning if tree-shaken — keep helper available to callers
+    _ = is_frozen_graph_file
     return paths

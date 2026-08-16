@@ -1,43 +1,43 @@
 {
   "graph_id": "template_fp_classical_em",
-  "version": "0.1.0",
+  "version": "0.1.0+freeze1",
   "domain": "theory_fingerprint",
-  "status": "TEMPLATE",
+  "status": "FROZEN",
   "nodes": [
     {
       "id": "em",
       "kind": "field_medium",
       "label": "EM field",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "charge",
       "kind": "entity",
       "label": "charge",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "light",
       "kind": "observable",
       "label": "light/radiation",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "sound",
       "kind": "observable",
       "label": "sound",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "air",
       "kind": "substance",
       "label": "material medium",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     }
   ],
   "edges": [
@@ -78,6 +78,8 @@
     }
   ],
   "meta": {
-    "warning": "TEMPLATE — student must verify before freeze"
+    "warning": "FROZEN structural template \u2014 do not retune to raise Sanskrit\u2013QM scores. Scholarly spot-check still recommended.",
+    "frozen_at": "2026-08-16T04:33:37.312405+00:00",
+    "freeze_authority": "student_delegated_2026-08-16"
   }
 }

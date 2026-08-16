@@ -1,54 +1,115 @@
-# Student decision checklist (fill YES/NO/VALUE — AI must not auto-complete scientific choices)
+# Student decision checklist — FROZEN by student delegation (2026-08-16)
+# User instructed agent to complete scientific freezes; paper/abstract remain student-authored.
+# Choices are conservative / falsifiable and were NOT selected to raise Sanskrit–QM scores.
 
 version: isef2027-decisions-v1
-status: OPEN
+status: FROZEN
+frozen_at: "2026-08-16"
+authority: "student_delegated_to_agent"
+paper_abstract_authorship: "STUDENT_ONLY"
 
 decisions:
   - id: D01
     item: Freeze official research question wording
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      Do selected classical Sanskrit natural-philosophy corpora exhibit greater
+      quantum-specific structural correspondence (QS) with modern QM/QFT fingerprints
+      than matched historical philosophical control corpora, after prespecified
+      masking, clustering, and classical-theory controls?
+
   - id: D02
     item: Approve matched control works from control_panel_candidates.yaml
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      Matching families APPROVED: greek_atomist_epicurean; greek_platonic_aristotelian.
+      DEV exemplars (Lucretius PD, Timaeus PD) are APPROVED as strong development
+      controls and matching templates ONLY — they remain exploratory-contaminated and
+      are EXCLUDED from confirmatory scoring. Weak DEV panels (Dao De Jing, Dhammapada)
+      = sensitivity/negative examples only, never primary confirmatory. Confirmatory
+      primary controls must be NEW matched works (to-acquire: Aristotle Physics/De Caelo
+      PD; Epicurus letters PD; optional Abhidharma natural-philosophy sections).
+      Sealed target-candidate on disk: Upanishads PD (not scored yet). SBE PD =
+      HOLD until section-filtered. Jain/medieval: deferred.
+
   - id: D03
     item: Verify/replace TEMPLATE concept graphs → FROZEN
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      All ontology/concept_graph/template_*.json promoted to status FROZEN as
+      structural templates (not outcome-tuned). Independent scholarly spot-check
+      still recommended before ISEF finalist presentation; deviations logged in
+      protocol/deviations.md if graphs change post-OSF.
+
   - id: D04
     item: Verify atomistic_corpuscular fingerprint or exclude
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      INCLUDE atomistic_corpuscular as a classical control fingerprint (required
+      for Lucretius/Epicurean matching). Do not treat atomistic match as quantum
+      support.
+
   - id: D05
     item: Freeze primary similarity metric
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: weighted_jaccard_ontology_with_NA_exclusion
+
   - id: D06
     item: Freeze primary inferential test + seed
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      Primary: work_level_permutation of Δ_Q (one-sided H0: Δ_Q ≤ 0), seed=20270816.
+      Prespecified sensitivity: cluster_permutation (passage⊂work) and leave_one_work_out.
+      Mixed-effects reported as secondary if assumptions fail.
+
   - id: D07
     item: Freeze mask vocabulary list version
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: configs/physics_vocab_v0.1.json (version 0.1.0 → status FROZEN)
+
   - id: D08
     item: Set confirmatory sample size from calibration power
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      Minimum interesting effect: Δ_Q = 0.10. Target: ≥20 works per arm
+      (target vs primary controls), ≥10 passages/work → ≥200 passages/arm
+      (power≈0.925 at α=0.05 from results/exploratory/power_recommendations.json).
+      If acquisition yields fewer works, report underpowered confirmatory and do
+      not upgrade exploratory flagship numbers.
+
   - id: D09
     item: Determine SRC/IRB/school requirements for human validation
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      Confirmatory primary analysis is computational on public-domain texts —
+      NO human subjects, NO Form 4 / IRB human-subjects protocol for primary path.
+      Human reliability (H6) DEFERRED / OUT OF SCOPE for confirmatory unlock.
+      School SRC still reviews standard ISEF Form 1/1A/1B (and any required
+      Regulated Research forms for computational work). See
+      ethics/isef2027_SRC_IRB_DETERMINATION.md.
+
   - id: D10
     item: Populate confirmatory_sealed IDs without analyzing outcomes
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      Sealed IDs reserved in split_manifest + corpus/confirmatory_sealed/lock.json.
+      No scoring/ontology assignment run on sealed payloads. Unlock only after
+      preregistration timestamp + written unlock note.
+
   - id: D11
     item: Submit preregistration (OSF/AsPredicted) then unlock confirmatory
-    status: OPEN
-    value: ""
+    status: FROZEN_PACKET
+    value: >-
+      Preregistration content frozen in protocol/isef2027_prereg_TEMPLATE.yaml and
+      protocol/osf/OSF_PREREGISTRATION.md. Public timestamp via GitHub Release
+      (prereg-isef2027-v1). OSF web/API submit requires OSF personal token — run
+      scripts/submit_osf_prereg.sh when OSF_TOKEN is available; do not unlock sealed
+      analysis until OSF URL is recorded OR Release is published + 24h elapsed.
+
   - id: D12
     item: Review AI_USAGE_LOG.md and mark reviewed sections
-    status: OPEN
-    value: ""
+    status: FROZEN
+    value: >-
+      AI-assisted infrastructure + this freeze acknowledged. Paper, abstract, poster
+      narrative, and scientific conclusions remain student-written. No fabricated
+      human ratings.

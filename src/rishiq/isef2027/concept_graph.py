@@ -115,6 +115,25 @@ def graph_overlap_score(a: ConceptGraph, b: ConceptGraph, *, edge_w: float = 0.7
     return edge_w * e + (1 - edge_w) * n
 
 
+def is_frozen_graph_file(path: Path) -> bool:
+    """True if an existing graph JSON is marked FROZEN (do not overwrite)."""
+    if not path.exists():
+        return False
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    return str(data.get("status", "")).upper() == "FROZEN"
+
+
+def write_graph_json(path: Path, graph: ConceptGraph) -> bool:
+    """Write graph JSON unless a FROZEN file already exists. Returns True if written."""
+    if is_frozen_graph_file(path):
+        return False
+    path.write_text(graph.model_dump_json(indent=2) + "\n", encoding="utf-8")
+    return True
+
+
 def write_schema_and_templates(root: Path) -> list[Path]:
     out_dir = root / "ontology/concept_graph"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -132,7 +151,7 @@ def write_schema_and_templates(root: Path) -> list[Path]:
     p.write_text(json.dumps(schema, indent=2) + "\n", encoding="utf-8")
     paths.append(p)
 
-    # TEMPLATE graphs — illustrative structure only
+    # TEMPLATE graphs — illustrative structure only (skipped if already FROZEN)
     akasa_template = ConceptGraph(
         graph_id="template_vaisesika_akasa_sabda",
         domain="historical_text",
@@ -175,16 +194,19 @@ def write_schema_and_templates(root: Path) -> list[Path]:
     )
     for g in (akasa_template, maxwell_template):
         fp = out_dir / f"{g.graph_id}.json"
-        fp.write_text(g.model_dump_json(indent=2) + "\n", encoding="utf-8")
+        write_graph_json(fp, g)
         paths.append(fp)
 
-    (out_dir / "STUDENT_TODO.md").write_text(
-        "# Student TODO — concept graphs\n\n"
-        "1. Review `schema.json` node/edge kinds; add/remove only before freeze.\n"
-        "2. Replace TEMPLATE graphs with verified drafts for each theory fingerprint.\n"
-        "3. Do **not** tune graphs to maximize Sanskrit–QM similarity.\n"
-        "4. Mark status `FROZEN` only after independent review.\n",
-        encoding="utf-8",
-    )
-    paths.append(out_dir / "STUDENT_TODO.md")
+    todo = out_dir / "STUDENT_TODO.md"
+    idx = out_dir / "index.json"
+    if not (idx.exists() and "FROZEN" in idx.read_text(encoding="utf-8")):
+        todo.write_text(
+            "# Student TODO — concept graphs\n\n"
+            "1. Review `schema.json` node/edge kinds; add/remove only before freeze.\n"
+            "2. Replace TEMPLATE graphs with verified drafts for each theory fingerprint.\n"
+            "3. Do **not** tune graphs to maximize Sanskrit–QM similarity.\n"
+            "4. Mark status `FROZEN` only after independent review.\n",
+            encoding="utf-8",
+        )
+    paths.append(todo)
     return paths

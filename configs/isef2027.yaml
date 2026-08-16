@@ -3,7 +3,9 @@
 
 experiment_family: ISEF2027
 phase: development_calibration
-seed: 42
+seed: 20270816
+# Confirmatory freezes recorded 2026-08-16 in STUDENT_DECISIONS + prereg YAML.
+# Primary metric/test: weighted_jaccard_ontology_with_NA_exclusion + work_level_permutation.
 
 fingerprint_dir: ontology/physics_fingerprints
 ontology_path: ontology/ontology_v0.1.yaml
@@ -21,13 +23,14 @@ masking:
   run_masked_and_unmasked: true
 
 inference_candidates:
+  primary: work_level_permutation
   methods:
-    - cluster_bootstrap
-    - cluster_permutation
     - work_level_permutation
+    - cluster_permutation
     - leave_one_work_out
+    - cluster_bootstrap
     - max_statistic_permutation
-  note: "Student selects and freezes which become primary confirmatory tests."
+  note: "FROZEN 2026-08-16: primary = work_level_permutation; others = sensitivity."
 
 baselines:
   - tfidf
@@ -40,6 +43,7 @@ adversarial:
 human_validation:
   collect_data: false
   prepare_only: true
+  confirmatory_scope: deferred_h6_no_recruitment
 
 warnings:
   - Never open confirmatory_sealed during this config.

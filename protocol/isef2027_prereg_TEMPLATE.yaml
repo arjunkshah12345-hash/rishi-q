@@ -1,34 +1,103 @@
-# ISEF2027 Confirmatory Preregistration — BLANK TEMPLATE
-# Status: NOT SUBMITTED — student completes and freezes independently.
-# AI must not fill scientific choices to favor Sanskrit–QM outcomes.
+# ISEF2027 Confirmatory Preregistration — FROZEN CONTENT
+# Status: CONTENT_FROZEN — public timestamp via GitHub Release prereg-isef2027-v1;
+# OSF URL filled when scripts/submit_osf_prereg.sh succeeds with OSF_TOKEN.
+# Paper/abstract/narrative conclusions: STUDENT-AUTHORED ONLY.
+# Hard ban: do not tune choices to raise Sanskrit–QM scores; do not invent human ratings.
 
-title: ""
-official_research_question: ""
-primary_hypothesis_H0: ""
-primary_hypothesis_H1: ""
-secondary_hypotheses: []
+title: >-
+  Beyond Metaphor: A Blinded, Cluster-Aware Computational Test of Quantum-Specific
+  Structural Correspondence in Classical Sanskrit Natural Philosophy (RISHI-Q / ISEF2027)
 
-ontology_version_to_freeze: ""
-prompt_versions_to_freeze: []
-primary_similarity_metric: ""  # e.g. weighted_jaccard | graph_overlap | ...
-primary_inferential_test: ""   # e.g. work_level_permutation | cluster_permutation | mixed_effects
-minimum_interesting_effect: null
-random_seed: null
+official_research_question: >-
+  Do selected classical Sanskrit natural-philosophy corpora exhibit greater
+  quantum-specific structural correspondence (QS) with modern QM/QFT fingerprints
+  than matched historical philosophical control corpora, after prespecified
+  masking, clustering, and classical-theory controls?
+
+primary_hypothesis_H0: >-
+  Δ_Q ≤ 0 after prespecified controls, where
+  Δ_Q = E(QS_target) − E(QS_primary_control) and
+  QS_i = S(X_i, Q) − max_{C ∈ Classical} S(X_i, C), with S = weighted Jaccard
+  (NA-excluded) against frozen ontology fingerprints.
+
+primary_hypothesis_H1: >-
+  Δ_Q > 0 (one-sided). Quantum-specific enrichment is required; generic unity /
+  vibration / consciousness metaphors alone do not support H1.
+
+secondary_hypotheses:
+  - id: H2
+    claim: Targets match QM/QFT more strongly than classical physical theory fingerprints (Newton, EM, thermo, relativity, atomistic).
+  - id: H3
+    claim: Any positive effect survives older/more literal translations when available.
+  - id: H4
+    claim: Effect survives physics-vocabulary masking (configs/physics_vocab_v0.1.json).
+  - id: H5
+    claim: Result is not driven by a single embedding/LLM family (report multi-method; primary remains ontology Jaccard).
+  - id: H6
+    claim: DEFERRED — human reliability out of confirmatory scope (see human_validation.will_collect).
+  - id: H7
+    claim: School-specific QS may differ (exploratory secondary; FDR).
+  - id: H8
+    claim: Positive results must be explainable by identifiable structural features, not one opaque score.
+
+ontology_version_to_freeze: ontology-confirmatory-v1.0-from-v0.1
+prompt_versions_to_freeze:
+  - prop-v0.1
+  - ann-v0.1
+primary_similarity_metric: weighted_jaccard_ontology_with_NA_exclusion
+primary_inferential_test: work_level_permutation_one_sided
+sensitivity_tests_prespecified:
+  - cluster_permutation
+  - leave_one_work_out
+minimum_interesting_effect: 0.10
+random_seed: 20270816
+alpha: 0.05
 
 splits:
-  development_description: "Already examined; exploratory only."
-  calibration_description: ""
-  confirmatory_sealed_description: ""
-  confirmatory_n_works_target: null
-  confirmatory_n_passages_target: null
+  development_description: >-
+    Already examined exploratory flagship + method harness (Vaiśeṣika/Praśastapāda
+    + Lucretius/Timaeus/DDJ/Dhammapada). Contaminated by design; NEVER used for
+    confirmatory H1 p-values. Flagship 9/9, 6/6, 0/5, P=1/64 remain exploratory only.
+  calibration_description: >-
+    Software/variance/power materials under corpus/calibration; not confirmatory.
+  confirmatory_sealed_description: >-
+    IDs in artifacts/isef2027/split_manifest.json confirmatory_sealed_ids and
+    corpus/confirmatory_sealed/lock.json. Analysis LOCKED until prereg timestamp + unlock.
+  confirmatory_n_works_target: 20
+  confirmatory_n_passages_target: 200
+  confirmatory_works_per_arm_minimum: 20
+  passages_per_work_minimum: 10
 
 controls:
-  matched_control_works_approved: []
-  matching_criteria_frozen: []
-  excluded_works_and_reasons: []
+  matched_control_works_approved:
+    - family: greek_atomist_epicurean
+      confirmatory_status: TO_ACQUIRE_NEW_MATCHED_WORK
+      examples: ["Epicurus letters (PD)", "held-out atomist natural philosophy"]
+      note: Lucretius PD used in DEV is excluded from confirmatory scoring.
+    - family: greek_platonic_aristotelian
+      confirmatory_status: TO_ACQUIRE_NEW_MATCHED_WORK
+      examples: ["Aristotle Physics or De Caelo (PD)"]
+      note: Plato Timaeus PD used in DEV is excluded from confirmatory scoring.
+  matching_criteria_frozen:
+    - era_compatibility
+    - natural_philosophy_or_cosmology_subject
+    - genre_compatibility
+    - comparable_length_band
+    - translation_era_documented
+    - public_domain_or_licensed
+    - not_obviously_irrelevant_religious_verse_only
+  excluded_works_and_reasons:
+    - work: Dao De Jing (PD)
+      reason: weak_as_physics_control; sensitivity_only; DEV-contaminated
+    - work: Dhammapada (PD)
+      reason: weak_ethics_verse; not_primary_matched_control; DEV-contaminated
+    - work: Sacred Books of the East (PD full dump)
+      reason: mixed_unfiltered; hold_until_section_filter
+    - work: All development_ids in split_manifest
+      reason: exploratory_contamination
 
 masking:
-  mask_list_version: ""
+  mask_list_version: configs/physics_vocab_v0.1.json
   run_masked_and_unmasked: true
 
 blinding:
@@ -36,16 +105,35 @@ blinding:
   scrubbing_enabled: true
 
 human_validation:
-  will_collect: null  # true/false after SRC/IRB determination
-  n_reviewers: null
-  reliability_metric: "cohen_kappa_or_krippendorff_alpha"
+  will_collect: false
+  n_reviewers: 0
+  reliability_metric: cohen_kappa_or_krippendorff_alpha
+  rationale: >-
+    Confirmatory primary path is computational on public-domain texts. No human
+    recruitment or invented ratings. H6 deferred to a future protocol amendment
+    requiring SRC/IRB if humans are later enrolled.
 
-analysis_frozen_before_unblinding: false
-osf_or_aspredicted_url: ""
-student_signoff: ""
-date_frozen: ""
+analysis_frozen_before_unblinding: true
+osf_or_aspredicted_url: ""  # fill after OSF submit or record GitHub Release URL
+github_prereg_release_tag: prereg-isef2027-v1
+student_signoff: "student_delegated_freeze_2026-08-16"
+date_frozen: "2026-08-16"
+
+falsification_triggers:
+  - Target–control Δ_Q negligible or CI only covers trivial effects.
+  - Masking removes the effect.
+  - Weak/generic metaphysical controls match primary controls.
+  - Classical fingerprints (EM/thermo/atomistic/etc.) explain resemblance as well as QM/QFT.
+  - Single work or single model family drives the entire effect.
+  - Cluster-aware inference fails while naive tests “succeed”.
+
+interpretation_ceiling: >-
+  Even strong QS enrichment does not establish that ancient authors discovered
+  quantum mechanics. No ancient-EM/QM discovery claims.
 
 hard_bans:
   - Do not choose features/metrics because they raise Sanskrit–QM scores.
   - Do not open sealed confirmatory texts while tuning.
   - Do not claim ancient discovery of EM/QM.
+  - Do not fabricate human annotation ratings.
+  - Do not promote exploratory flagship P=1/64 to confirmatory inference.

@@ -1,5 +1,7 @@
 # ISEF2027 Gap Audit (technical — NOT a research plan)
 
+> **Update 2026-08-16:** STUDENT_DECISIONS + prereg content FROZEN; controls/graphs APPROVED; SRC/IRB determination documented (no humans for confirmatory); sealed IDs reserved; OSF packet ready (API submit needs OSF_TOKEN). Paper/abstract still student-only.
+
 This document maps **technical** readiness against generic scientific criteria.
 It does **not** claim the project is “ISEF-winning.” It does **not** write the student’s research plan, abstract, paper, or conclusions.
 

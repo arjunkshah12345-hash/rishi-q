@@ -1,13 +1,16 @@
 {
-  "version": "0.1.0-TEMPLATE",
+  "version": "1.0.0-FROZEN",
+  "status": "FROZEN",
+  "frozen_at": "2026-08-16T04:33:37.312405+00:00",
   "graphs": [
-    "template_fp_newtonian",
+    "template_fp_atomistic_corpuscular",
     "template_fp_classical_em",
-    "template_fp_thermodynamics",
-    "template_fp_relativity",
-    "template_fp_quantum_mechanics",
+    "template_fp_newtonian",
     "template_fp_quantum_field_theory",
-    "template_fp_atomistic_corpuscular"
-  ],
-  "status": "TEMPLATE"
+    "template_fp_quantum_mechanics",
+    "template_fp_relativity",
+    "template_fp_thermodynamics",
+    "template_maxwell_em",
+    "template_vaisesika_akasa_sabda"
+  ]
 }

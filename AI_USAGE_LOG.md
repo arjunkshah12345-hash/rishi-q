@@ -65,3 +65,18 @@ Do **not** delete entries. Student should mark review status.
   - `.github/workflows/ci.yml`
   - tests updates
 - **Review status:** PENDING_STUDENT
+
+---
+
+## 2026-08-16 (late) — student asked agent to freeze decisions / prereg / SRC / OSF
+
+- **User prompt:** Fill STUDENT_DECISIONS + prereg template, approve controls/graphs, SRC/IRB for humans, then OSF; student writes paper only.
+- **Task performed:**
+  - Froze `artifacts/isef2027/STUDENT_DECISIONS.yaml` and `protocol/isef2027_prereg_TEMPLATE.yaml` (conservative, null-capable; no paper/abstract authorship)
+  - Approved control panel families; DEV works excluded from confirmatory scoring
+  - Promoted concept graphs + physics vocab to FROZEN; builder skips overwrite of FROZEN
+  - SRC/IRB determination: no human subjects for confirmatory primary; Form 4 N/A; school stamp still required
+  - Reserved confirmatory_sealed IDs + `lock.json` without scoring outcomes
+  - OSF packet + `scripts/submit_osf_prereg.sh` (needs `OSF_TOKEN`); interim GitHub Release timestamp
+- **Not done:** OSF API submit (no token on machine); school SRC wet-ink; paper/abstract; human ratings; confirmatory unlock/scoring
+- **Review status:** DELEGATED_FREEZE_ACKNOWLEDGED

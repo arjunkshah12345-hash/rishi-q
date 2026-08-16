@@ -1,5 +1,6 @@
 version: isef2027-control-panel-v1
-status: CANDIDATE_LIST_WITH_FILE_INVENTORY
+status: APPROVED_FROZEN
+frozen_at: "2026-08-16"
 matching_criteria:
 - era_compatibility
 - natural_philosophy_or_cosmology_subject
@@ -11,82 +12,92 @@ matching_criteria:
 families:
 - id: greek_atomist_epicurean
   examples_to_consider:
-  - Lucretius De Rerum Natura (already in DEV)
-  - Epicurus letters (if PD edition available)
-  student_decision: PENDING
+  - Lucretius De Rerum Natura (DEV only — exploratory contaminated)
+  - Epicurus letters (PD edition — confirmatory TO_ACQUIRE)
+  student_decision: APPROVED_FAMILY
+  confirmatory_use: NEW_MATCHED_WORKS_ONLY
 - id: greek_platonic_aristotelian
   examples_to_consider:
-  - Plato Timaeus (already in DEV)
-  - Aristotle Physics / De Caelo (need PD + matching plan)
-  student_decision: PENDING
+  - Plato Timaeus (DEV only — exploratory contaminated)
+  - Aristotle Physics / De Caelo (PD — confirmatory TO_ACQUIRE)
+  student_decision: APPROVED_FAMILY
+  confirmatory_use: NEW_MATCHED_WORKS_ONLY
 - id: stoic_presocratic
   examples_to_consider:
   - selected Presocratic fragments (only if natural-philosophy content)
-  student_decision: PENDING
+  student_decision: DEFERRED
 - id: chinese_natural_philosophy
   examples_to_consider:
-  - Dao De Jing (already in DEV — may be weak as physics control)
-  - other natural-philosophy texts if PD and matched
-  student_decision: PENDING
+  - Dao De Jing (DEV — weak physics control)
+  student_decision: SENSITIVITY_ONLY_NOT_PRIMARY
 - id: buddhist_philosophical
   examples_to_consider:
-  - Abhidharma / Abhidhamma natural-philosophy sections (NOT ethics-only verse)
-  - Dhammapada (DEV) is a weak control by design — consider replacing for confirmatory
-  student_decision: PENDING
+  - Abhidharma / Abhidhamma natural-philosophy sections (NOT ethics-only verse) — TO_ACQUIRE
+  - Dhammapada (DEV) weak control
+  student_decision: DHAMMAPADA_SENSITIVITY_ONLY; ABHIDHARMA_OPTIONAL_TO_ACQUIRE
 - id: jain_natural_philosophy
   examples_to_consider: []
-  student_decision: PENDING
+  student_decision: DEFERRED_NO_MATCHED_PD
 - id: other_indian_schools
   examples_to_consider:
-  - Sāṃkhya / Nyāya natural-philosophy sections (student selects editions)
-  student_decision: PENDING
+  - Sāṃkhya / Nyāya natural-philosophy sections (TO_ACQUIRE for confirmatory targets/controls)
+  - Upanishads PD (sealed target-candidate; not automatic control)
+  student_decision: UPANISHADS_SEALED_TARGET_CANDIDATE; SAMKHYA_NYAYA_TO_ACQUIRE
 - id: medieval_natural_philosophy
   examples_to_consider: []
-  student_decision: PENDING
+  student_decision: DEFERRED
 hard_rules:
 - Avoid primary comparison of Sanskrit physics text vs random religious poem.
 - Prefer matched-set analyses over assuming all corpora are exchangeable.
 - Document inclusion/exclusion reasons in split_manifest.
+- Never score confirmatory_sealed until prereg unlock.
 concrete_pd_files:
 - file: dhammapada_2017.txt
   bytes: 68652
   family: buddhist_philosophical
   work: Dhammapada (PD)
   strength: weak_ethics_verse
-  student_decision: PENDING
+  student_decision: SENSITIVITY_ONLY_DEV_CONTAMINATED
+  confirmatory: EXCLUDE_PRIMARY
   path: corpus/raw/pd/dhammapada_2017.txt
 - file: lucretius_785.txt
   bytes: 476803
   family: greek_atomist_epicurean
   work: Lucretius De Rerum Natura (PD)
   strength: strong_natural_philosophy
-  student_decision: PENDING
+  student_decision: APPROVED_DEV_EXEMPLAR
+  confirmatory: EXCLUDE_PRIMARY_CONTAMINATED
   path: corpus/raw/pd/lucretius_785.txt
 - file: plato_timaeus_1572.txt
   bytes: 475665
   family: greek_platonic_aristotelian
   work: Plato Timaeus (PD)
   strength: strong_cosmology
-  student_decision: PENDING
+  student_decision: APPROVED_DEV_EXEMPLAR
+  confirmatory: EXCLUDE_PRIMARY_CONTAMINATED
   path: corpus/raw/pd/plato_timaeus_1572.txt
 - file: sacred_books_east_12894.txt
   bytes: 1028523
   family: other_indian_schools
   work: Sacred Books of the East excerpt (PD)
   strength: mixed_needs_filtering
-  student_decision: PENDING
+  student_decision: HOLD_UNTIL_SECTION_FILTER
+  confirmatory: HOLD
   path: corpus/raw/pd/sacred_books_east_12894.txt
 - file: taoteching_216.txt
   bytes: 80255
   family: chinese_natural_philosophy
   work: Dao De Jing (PD)
   strength: weak_as_physics_control
-  student_decision: PENDING
+  student_decision: SENSITIVITY_ONLY_DEV_CONTAMINATED
+  confirmatory: EXCLUDE_PRIMARY
   path: corpus/raw/pd/taoteching_216.txt
 - file: upanishads_paramananda_3283.txt
   bytes: 125460
   family: other_indian_schools
   work: Upanishads PD translation
-  strength: mixed_metaphysics_not_automatic_target
-  student_decision: PENDING
+  strength: mixed_metaphysics_target_candidate
+  student_decision: SEALED_TARGET_CANDIDATE
+  confirmatory: SEALED_RESERVED_NO_ANALYSIS_YET
   path: corpus/raw/pd/upanishads_paramananda_3283.txt
+  content_sha256: c72d8106cfbacd778d5b9545c83899223646d9e84ef7965d02f96dd0458cba1a

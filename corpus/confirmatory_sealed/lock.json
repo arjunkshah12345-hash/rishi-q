@@ -1,0 +1,17 @@
+{
+  "status": "LOCKED",
+  "frozen_at": "2026-08-16",
+  "allow_open_sealed": false,
+  "confirmatory_sealed_ids": [
+    "seal-target-upanishads-pd",
+    "seal-hold-sbe-pd",
+    "seal-control-toacquire-aristotle-physics",
+    "seal-control-toacquire-epicurus-letters",
+    "seal-target-toacquire-nyaya-or-samkhya"
+  ],
+  "hashes_on_disk": {
+    "seal-target-upanishads-pd": "c72d8106cfbacd778d5b9545c83899223646d9e84ef7965d02f96dd0458cba1a",
+    "seal-hold-sbe-pd": "4d8fa1212c4ba298bda391a60158ecc65350c90c7210daccc02eda86abd8709b"
+  },
+  "analysis_ban": "No ontology scoring, QS, or inferential tests on sealed IDs until unlock note + prereg URL/release."
+}

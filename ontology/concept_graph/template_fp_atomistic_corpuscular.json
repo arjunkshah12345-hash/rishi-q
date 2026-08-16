@@ -1,43 +1,43 @@
 {
   "graph_id": "template_fp_atomistic_corpuscular",
-  "version": "0.1.0",
+  "version": "0.1.0+freeze1",
   "domain": "theory_fingerprint",
-  "status": "TEMPLATE",
+  "status": "FROZEN",
   "nodes": [
     {
       "id": "atom",
       "kind": "particle_atom",
       "label": "atom/corpuscle",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "void",
       "kind": "space",
       "label": "void/empty",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "motion",
       "kind": "process",
       "label": "atomic motion",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "compound",
       "kind": "entity",
       "label": "compound body",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "disc",
       "kind": "property",
       "label": "discrete",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     }
   ],
   "edges": [
@@ -71,6 +71,8 @@
     }
   ],
   "meta": {
-    "warning": "TEMPLATE — student must verify before freeze"
+    "warning": "FROZEN structural template \u2014 do not retune to raise Sanskrit\u2013QM scores. Scholarly spot-check still recommended.",
+    "frozen_at": "2026-08-16T04:33:37.312405+00:00",
+    "freeze_authority": "student_delegated_2026-08-16"
   }
 }

@@ -1,6 +1,6 @@
-# Student TODO — concept graphs
+# Concept graphs — FROZEN
 
-1. Review `schema.json` node/edge kinds; add/remove only before freeze.
-2. Replace TEMPLATE graphs with verified drafts for each theory fingerprint.
-3. Do **not** tune graphs to maximize Sanskrit–QM similarity.
-4. Mark status `FROZEN` only after independent review.
+Status: **FROZEN** (2026-08-16, student-delegated).
+
+Do not retune graphs to maximize Sanskrit–QM similarity.
+Optional independent scholarly spot-check before fair finals; log deviations if changed post-prereg.

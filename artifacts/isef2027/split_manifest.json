@@ -1,8 +1,8 @@
 {
   "version": "isef2027-splits-v1",
-  "generated_at": "2026-08-16T04:24:22.440869+00:00",
+  "generated_at": "2026-08-16T04:32:27.952629+00:00",
   "sealed": true,
-  "note": "confirmatory_sealed IDs must not be opened for analysis until configuration freeze + preregistration unlock.",
+  "note": "confirmatory_sealed IDs reserved without outcome analysis. DEV IDs listed in excluded_ids for confirmatory scoring (exploratory contamination). Do not open sealed analysis until prereg unlock.",
   "development_ids": [
     "dev-vais-gretil",
     "dev-pras-gretil",
@@ -94,8 +94,21 @@
     "cal-8cc805de79",
     "cal-9cd34f097c"
   ],
-  "confirmatory_sealed_ids": [],
-  "excluded_ids": [],
+  "confirmatory_sealed_ids": [
+    "seal-target-upanishads-pd",
+    "seal-hold-sbe-pd",
+    "seal-control-toacquire-aristotle-physics",
+    "seal-control-toacquire-epicurus-letters",
+    "seal-target-toacquire-nyaya-or-samkhya"
+  ],
+  "excluded_ids": [
+    "dev-ddj-pd",
+    "dev-dhammapada-pd",
+    "dev-lucretius-pd",
+    "dev-pras-gretil",
+    "dev-timaeus-pd",
+    "dev-vais-gretil"
+  ],
   "records": [
     {
       "anonymous_id": "dev-vais-gretil",
@@ -216,6 +229,86 @@
       "exclusion_reason": "",
       "role": "",
       "extra": {}
+    },
+    {
+      "anonymous_id": "seal-target-upanishads-pd",
+      "work": "Upanishads (Paramananda PD translation) \u2014 TARGET CANDIDATE",
+      "tradition": "Indian:Upanishadic",
+      "split": "confirmatory_sealed",
+      "inclusion_reason": "sealed_target_candidate_pd_on_disk",
+      "exclusion_reason": "",
+      "role": "target_candidate",
+      "licensing_public_domain": true,
+      "content_sha256": "c72d8106cfbacd778d5b9545c83899223646d9e84ef7965d02f96dd0458cba1a",
+      "source_path": "corpus/raw/pd/upanishads_paramananda_3283.txt",
+      "analysis_status": "LOCKED_NO_SCORING",
+      "extra": {
+        "note": "File hash locked; passages not extracted for confirmatory scoring yet."
+      }
+    },
+    {
+      "anonymous_id": "seal-hold-sbe-pd",
+      "work": "Sacred Books of the East (PD dump) \u2014 HOLD",
+      "tradition": "Indian:mixed",
+      "split": "confirmatory_sealed",
+      "inclusion_reason": "hash_reserved_pending_section_filter",
+      "exclusion_reason": "",
+      "role": "hold_until_filter",
+      "licensing_public_domain": true,
+      "content_sha256": "4d8fa1212c4ba298bda391a60158ecc65350c90c7210daccc02eda86abd8709b",
+      "source_path": "corpus/raw/pd/sacred_books_east_12894.txt",
+      "analysis_status": "LOCKED_NO_SCORING",
+      "extra": {
+        "note": "Do not use as primary control until natural-philosophy sections filtered."
+      }
+    },
+    {
+      "anonymous_id": "seal-control-toacquire-aristotle-physics",
+      "work": "Aristotle Physics or De Caelo (PD edition TO_ACQUIRE)",
+      "tradition": "Greek:Aristotelian",
+      "split": "confirmatory_sealed",
+      "inclusion_reason": "planned_matched_primary_control",
+      "exclusion_reason": "",
+      "role": "primary_control_planned",
+      "licensing_public_domain": true,
+      "content_sha256": "",
+      "source_path": "",
+      "analysis_status": "LOCKED_AWAITING_ACQUISITION",
+      "extra": {
+        "acquisition": "REQUIRED_BEFORE_UNLOCK_ANALYSIS"
+      }
+    },
+    {
+      "anonymous_id": "seal-control-toacquire-epicurus-letters",
+      "work": "Epicurus letters (PD edition TO_ACQUIRE)",
+      "tradition": "Greek:Epicurean",
+      "split": "confirmatory_sealed",
+      "inclusion_reason": "planned_matched_primary_control",
+      "exclusion_reason": "",
+      "role": "primary_control_planned",
+      "licensing_public_domain": true,
+      "content_sha256": "",
+      "source_path": "",
+      "analysis_status": "LOCKED_AWAITING_ACQUISITION",
+      "extra": {
+        "acquisition": "REQUIRED_BEFORE_UNLOCK_ANALYSIS"
+      }
+    },
+    {
+      "anonymous_id": "seal-target-toacquire-nyaya-or-samkhya",
+      "work": "Ny\u0101ya and/or S\u0101\u1e43khya natural-philosophy sections (TO_ACQUIRE)",
+      "tradition": "Indian:Nyaya_or_Samkhya",
+      "split": "confirmatory_sealed",
+      "inclusion_reason": "planned_additional_sanskrit_target_or_within_india_control",
+      "exclusion_reason": "",
+      "role": "target_or_within_india_control_planned",
+      "licensing_public_domain": true,
+      "content_sha256": "",
+      "source_path": "",
+      "analysis_status": "LOCKED_AWAITING_ACQUISITION",
+      "extra": {
+        "acquisition": "REQUIRED_TO_MEET_N20_PER_ARM"
+      }
     }
   ],
   "leakage_check": {

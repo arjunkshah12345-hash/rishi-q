@@ -1,43 +1,43 @@
 {
   "graph_id": "template_vaisesika_akasa_sabda",
-  "version": "0.1.0",
+  "version": "0.1.0+freeze1",
   "domain": "historical_text",
-  "status": "TEMPLATE",
+  "status": "FROZEN",
   "nodes": [
     {
       "id": "akasa",
       "kind": "field_medium",
       "label": "akasa",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "sabda",
       "kind": "observable",
       "label": "sabda/sound",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "tejas",
       "kind": "substance",
       "label": "tejas",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "heat",
       "kind": "property",
       "label": "heat",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "pervasion",
       "kind": "property",
       "label": "all-pervasive",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     }
   ],
   "edges": [
@@ -78,6 +78,8 @@
     }
   ],
   "meta": {
-    "warning": "TEMPLATE — student must verify against primary texts"
+    "warning": "FROZEN structural template \u2014 do not retune to raise Sanskrit\u2013QM scores. Scholarly spot-check still recommended.",
+    "frozen_at": "2026-08-16T04:33:37.312405+00:00",
+    "freeze_authority": "student_delegated_2026-08-16"
   }
 }

@@ -1,50 +1,50 @@
 {
   "graph_id": "template_fp_quantum_mechanics",
-  "version": "0.1.0",
+  "version": "0.1.0+freeze1",
   "domain": "theory_fingerprint",
-  "status": "TEMPLATE",
+  "status": "FROZEN",
   "nodes": [
     {
       "id": "state",
       "kind": "state",
       "label": "quantum state",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "obs",
       "kind": "measurement",
       "label": "observable/operator",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "obs2",
       "kind": "measurement",
       "label": "incompatible observable",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "super",
       "kind": "property",
       "label": "superposition",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "born",
       "kind": "process",
       "label": "Born-rule measurement",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "hbar",
       "kind": "property",
       "label": "Planck scale",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     }
   ],
   "edges": [
@@ -85,6 +85,8 @@
     }
   ],
   "meta": {
-    "warning": "TEMPLATE — student must verify before freeze"
+    "warning": "FROZEN structural template \u2014 do not retune to raise Sanskrit\u2013QM scores. Scholarly spot-check still recommended.",
+    "frozen_at": "2026-08-16T04:33:37.312405+00:00",
+    "freeze_authority": "student_delegated_2026-08-16"
   }
 }

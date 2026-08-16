@@ -1,36 +1,36 @@
 {
   "graph_id": "template_fp_thermodynamics",
-  "version": "0.1.0",
+  "version": "0.1.0+freeze1",
   "domain": "theory_fingerprint",
-  "status": "TEMPLATE",
+  "status": "FROZEN",
   "nodes": [
     {
       "id": "heat",
       "kind": "process",
       "label": "heat flow",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "entropy",
       "kind": "property",
       "label": "entropy",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "eq",
       "kind": "state",
       "label": "equilibrium",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     },
     {
       "id": "macro",
       "kind": "entity",
       "label": "macrostate",
       "notes": "",
-      "provenance": "STUDENT_OR_TEMPLATE"
+      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
     }
   ],
   "edges": [
@@ -57,6 +57,8 @@
     }
   ],
   "meta": {
-    "warning": "TEMPLATE — student must verify before freeze"
+    "warning": "FROZEN structural template \u2014 do not retune to raise Sanskrit\u2013QM scores. Scholarly spot-check still recommended.",
+    "frozen_at": "2026-08-16T04:33:37.312405+00:00",
+    "freeze_authority": "student_delegated_2026-08-16"
   }
 }

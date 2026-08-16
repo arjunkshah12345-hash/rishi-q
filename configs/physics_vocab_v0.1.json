@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "status": "PROPOSED",
+  "status": "FROZEN",
   "terms": [
     "energy",
     "field",
@@ -22,5 +22,6 @@
     "entanglement",
     "superposition",
     "waveform"
-  ]
+  ],
+  "frozen_at": "2026-08-16"
 }

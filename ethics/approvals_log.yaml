@@ -1,0 +1,34 @@
+# Approvals log (fill when school stamps forms)
+
+project: RISHI-Q / ISEF2027
+updated: "2026-08-16"
+
+items:
+  - id: src_determination_primary_no_humans
+    status: DOCUMENTED_AWAITING_SCHOOL_STAMP
+    path: ethics/isef2027_SRC_IRB_DETERMINATION.md
+    school_approver: ""
+    date_approved: ""
+  - id: isef_form_1
+    status: PACKET_READY_STUDENT_SUBMITS
+    notes: Standard adult sponsor / checklist — school portal
+  - id: isef_form_1a
+    status: PACKET_READY_STUDENT_SUBMITS
+  - id: isef_form_1b
+    status: PACKET_READY_STUDENT_SUBMITS
+  - id: isef_form_4_human_participants
+    status: NOT_APPLICABLE_PRIMARY_PATH
+    notes: Confirmatory will_collect=false; no human ratings invented or collected
+  - id: irb_full_protocol
+    status: NOT_REQUIRED_PRIMARY_PATH
+  - id: concept_graphs_frozen
+    status: APPROVED_FROZEN
+    date_approved: "2026-08-16"
+  - id: control_panel_frozen
+    status: APPROVED_FROZEN
+    date_approved: "2026-08-16"
+  - id: prereg_content_frozen
+    status: APPROVED_FROZEN
+    date_approved: "2026-08-16"
+  - id: osf_registration
+    status: PENDING_TOKEN_OR_GITHUB_RELEASE_TIMESTAMP
