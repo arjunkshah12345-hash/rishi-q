@@ -90,7 +90,7 @@ Details: [`chatgpt-handoff/PROCESS.md`](chatgpt-handoff/PROCESS.md) · [`docs/IS
 ## Reproduce
 
 ```bash
-git clone https://github.com/arjunkshah/rishi-q.git
+git clone https://github.com/arjunkshah12345-hash/rishi-q.git
 cd rishi-q
 uv venv && uv pip install -e ".[dev]"
 
