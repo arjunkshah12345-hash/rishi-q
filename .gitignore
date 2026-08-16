@@ -81,3 +81,5 @@ kaggle/rishiq_kaggle_bundle_public/
 # Explicit private maps
 **/blinding_map.PRIVATE.json
 **/blinding_map.PRIVATE.*
+**/*blind_mapping.PRIVATE.json
+**/*.PRIVATE.json

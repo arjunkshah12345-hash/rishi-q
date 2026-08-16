@@ -1,0 +1,130 @@
+{
+  "benchmark_id": "ISEF2027-METHOD-BENCH-v1",
+  "seed": 0,
+  "n_panels": 5,
+  "ontology_top1_accuracy": 0.8,
+  "rows": [
+    {
+      "panel": "newtonian",
+      "ontology_rank": {
+        "correct_key": "newtonian",
+        "rank": 1,
+        "top1": "newtonian",
+        "top1_correct": true,
+        "scores": {
+          "newtonian": 0.25,
+          "classical_em": 0.0625,
+          "thermodynamics": 0.14285714285714285,
+          "relativity": 0.125,
+          "quantum_mechanics": 0.0625,
+          "quantum_field_theory": 0.11764705882352941
+        }
+      },
+      "tfidf_vs_self": 0.33839358630782246,
+      "tfidf_vs_qft": 0.02459384646791838,
+      "hash_embed_vs_qft": 0.0771151579969265,
+      "tfidf_vs_generic_metaphysics": 0.014426800950096408,
+      "masked_tfidf_vs_qft": 0.03360116003606221
+    },
+    {
+      "panel": "classical_em",
+      "ontology_rank": {
+        "correct_key": "classical_em",
+        "rank": 1,
+        "top1": "classical_em",
+        "top1_correct": true,
+        "scores": {
+          "newtonian": 0.08333333333333333,
+          "classical_em": 0.42857142857142855,
+          "thermodynamics": 0.0,
+          "relativity": 0.09090909090909091,
+          "quantum_mechanics": 0.0,
+          "quantum_field_theory": 0.375
+        }
+      },
+      "tfidf_vs_self": 0.36707669799620213,
+      "tfidf_vs_qft": 0.023266265355888063,
+      "hash_embed_vs_qft": 0.012358299041139954,
+      "tfidf_vs_generic_metaphysics": 0.02881647279094858,
+      "masked_tfidf_vs_qft": 0.026988610739247812
+    },
+    {
+      "panel": "thermodynamics",
+      "ontology_rank": {
+        "correct_key": "thermodynamics",
+        "rank": 3,
+        "top1": "newtonian",
+        "top1_correct": false,
+        "scores": {
+          "newtonian": 0.0,
+          "classical_em": 0.0,
+          "thermodynamics": 0.0,
+          "relativity": 0.0,
+          "quantum_mechanics": 0.0,
+          "quantum_field_theory": 0.0
+        }
+      },
+      "tfidf_vs_self": 0.3492160793133839,
+      "tfidf_vs_qft": 0.026768330660865584,
+      "hash_embed_vs_qft": 0.08819457832034565,
+      "tfidf_vs_generic_metaphysics": 0.009390586012362832,
+      "masked_tfidf_vs_qft": 0.038045499998920956
+    },
+    {
+      "panel": "quantum_mechanics",
+      "ontology_rank": {
+        "correct_key": "quantum_mechanics",
+        "rank": 1,
+        "top1": "quantum_mechanics",
+        "top1_correct": true,
+        "scores": {
+          "newtonian": 0.0,
+          "classical_em": 0.0,
+          "thermodynamics": 0.0,
+          "relativity": 0.0,
+          "quantum_mechanics": 0.14285714285714285,
+          "quantum_field_theory": 0.125
+        }
+      },
+      "tfidf_vs_self": 0.3333333333333331,
+      "tfidf_vs_qft": 0.0184716724323514,
+      "hash_embed_vs_qft": 0.05068626393120212,
+      "tfidf_vs_generic_metaphysics": 0.0077931048273391645,
+      "masked_tfidf_vs_qft": 0.018584861925039033
+    },
+    {
+      "panel": "quantum_field_theory",
+      "ontology_rank": {
+        "correct_key": "quantum_field_theory",
+        "rank": 1,
+        "top1": "quantum_field_theory",
+        "top1_correct": true,
+        "scores": {
+          "newtonian": 0.14285714285714285,
+          "classical_em": 0.21052631578947367,
+          "thermodynamics": 0.0,
+          "relativity": 0.07142857142857142,
+          "quantum_mechanics": 0.09523809523809523,
+          "quantum_field_theory": 0.47058823529411764
+        }
+      },
+      "tfidf_vs_self": 0.34306419753908624,
+      "tfidf_vs_qft": 1.0,
+      "hash_embed_vs_qft": 1.0,
+      "tfidf_vs_generic_metaphysics": 0.01912905919513959,
+      "masked_tfidf_vs_qft": 1.0
+    }
+  ],
+  "graph_scores": {
+    "template_akasa_vs_maxwell": 0.0
+  },
+  "negative_controls": {
+    "generic_vs_em_tfidf": 0.02881647279094858,
+    "ethics_vs_qm_tfidf": 0.018128591547306817
+  },
+  "warnings": [
+    "METHOD VALIDATION ONLY \u2014 not evidence about classical Sanskrit corpora.",
+    "keyword_feature_proxy is a crude stand-in until human/model annotation is frozen.",
+    "hash embeddings are a local proxy; sentence-transformers remain optional ML secondary."
+  ]
+}

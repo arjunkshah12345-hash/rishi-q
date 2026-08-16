@@ -49,7 +49,14 @@ def reproduce_cmd(
 ) -> None:
     """Regenerate DEV/CALIBRATION harness artifacts. Never opens sealed confirmatory."""
     root = _root()
-    cfg = root / config if not config.is_absolute() else config
+    # Prefer repo-relative config even if the shell resolved a relative Path.
+    cfg = config if config.is_absolute() and config.exists() else (root / "configs/isef2027.yaml")
+    if config.is_absolute() and config.exists():
+        cfg = config
+    elif (root / config).exists():
+        cfg = root / config
+    else:
+        cfg = root / "configs/isef2027.yaml"
     summary = run_dev_calibration(root, cfg)
     rprint(
         {

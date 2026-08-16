@@ -32,3 +32,30 @@ Do **not** delete entries. Student should mark review status.
   - `~/AGENTS.md` + `~/.cursor/rules/github-account-routing.mdc` (earlier same day; GitHub routing)
 - **Student review required:** Yes — especially TEMPLATE graphs/fingerprints, control panel approvals, confirmatory protocol text (student-written), and any interpretation.
 - **Review status:** PENDING_STUDENT
+
+---
+
+## 2026-08-16 (later) — Cursor agent continuation (“keep going finish”)
+
+- **Model/tool:** Cursor agent (Composer)
+- **User prompt:** continue finishing ISEF2027 upgrade; approval to proceed
+- **Task performed:**
+  - Method identification benchmark (lexical / hash-embed / ontology / graph)
+  - Translation contamination + mask shift battery
+  - Blind export audit + private mapping hygiene
+  - Discovery→replication split demo
+  - Calibration manifest builder from PD passages
+  - Additional 3D/animated visuals (07–09)
+  - GitHub Actions CI workflow
+  - Wired all into `rishiq-isef reproduce`
+- **Files substantially AI-generated/modified:**
+  - `src/rishiq/isef2027/benchmark.py`
+  - `src/rishiq/isef2027/translation_battery.py`
+  - `src/rishiq/isef2027/blind_audit.py`
+  - `src/rishiq/isef2027/discovery_replication.py`
+  - `src/rishiq/isef2027/calibration.py`
+  - `src/rishiq/isef2027/runner.py`, `cli.py`
+  - `scripts/build_isef2027_visuals.py`
+  - `.github/workflows/ci.yml`
+  - tests updates
+- **Review status:** PENDING_STUDENT

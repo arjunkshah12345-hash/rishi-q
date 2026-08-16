@@ -1,0 +1,40 @@
+{
+  "n_passages": 40,
+  "n_blinded": 40,
+  "n_issues": 3,
+  "issues_sample": [
+    {
+      "type": "label_leak_in_blind_text",
+      "id": "PASSAGE_12b659d791",
+      "patterns": [
+        "\\bveda\\b"
+      ]
+    },
+    {
+      "type": "label_leak_in_blind_text",
+      "id": "PASSAGE_63ce360f31",
+      "patterns": [
+        "\\bindia\\b"
+      ]
+    },
+    {
+      "type": "label_leak_in_blind_text",
+      "id": "PASSAGE_648feea5e5",
+      "patterns": [
+        "\\bsanskrit\\b"
+      ]
+    }
+  ],
+  "status": "FAIL",
+  "mapping_kept_separate": true,
+  "note": "Unblinding key must remain private and off working annotation inputs.",
+  "blinded_sample": "results/isef2027/dev/blinded_sample.json",
+  "private_mapping": "results/isef2027/dev/blind_mapping.PRIVATE.json",
+  "dirty_text_leak_patterns": [
+    "\\bvai[s\u015b]e[s\u1e63]ika\\b",
+    "\\bindia\\b",
+    "\\bveda\\b",
+    "\\bmaxwell\\b"
+  ],
+  "dirty_text_detected": true
+}

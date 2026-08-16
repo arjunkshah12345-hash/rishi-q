@@ -25,10 +25,11 @@ It does **not** claim the project is “ISEF-winning.” It does **not** write t
 
 1. Control panel still too small / poorly matched for confirmatory claims.
 2. Concept graphs and atomistic fingerprint are TEMPLATES — not verified.
-3. Positive-control harness uses synthetic/toy texts — not yet a full theory-identification benchmark on real physics corpora.
-4. Embedding baseline not fully wired without optional ML extras.
-5. Sealed confirmatory set is empty — contamination risk is low only because nothing is there yet; process discipline still required.
-6. Exploratory flagship numbers could be misread as confirmatory if not labeled everywhere.
+3. Method benchmark ontology top-1 (~0.8 on pedagogy panels) uses a crude keyword→feature proxy — not frozen human annotation.
+4. Blind audit may FAIL on PD text that literally contains tradition names inside translations — requires stronger scrubbing / source-language pipelines.
+5. Embedding baseline is a hashing proxy unless ML extras + real models are enabled.
+6. Sealed confirmatory set is empty — contamination risk rises only when filled; process discipline still required.
+7. Exploratory flagship numbers could be misread as confirmatory if not labeled everywhere.
 
 ## What “ready to freeze” means here
 

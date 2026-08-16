@@ -315,6 +315,99 @@ def fig_claim_boundary_surface(go):
     return fig
 
 
+def fig_method_benchmark_bars(go):
+    """Bars from latest method_benchmark.json if present."""
+    path = ROOT / "results/isef2027/dev/method_benchmark.json"
+    if not path.exists():
+        fig = go.Figure()
+        fig.update_layout(title="Run reproduce first to populate method_benchmark.json", paper_bgcolor="#0b1220", font=dict(color="#e2e8f0"))
+        return fig
+    data = json.loads(path.read_text())
+    panels = [r["panel"] for r in data["rows"]]
+    correct = [1 if r["ontology_rank"]["top1_correct"] else 0 for r in data["rows"]]
+    fig = go.Figure(
+        data=[
+            go.Bar(x=panels, y=correct, marker_color=["#22c55e" if c else "#ef4444" for c in correct], name="top1 correct")
+        ]
+    )
+    fig.update_layout(
+        title=f"Method bench ontology top-1 (acc={data.get('ontology_top1_accuracy')})",
+        yaxis=dict(range=[0, 1.2], title="correct"),
+        paper_bgcolor="#0b1220",
+        plot_bgcolor="#0f172a",
+        font=dict(color="#e2e8f0"),
+        height=520,
+    )
+    return fig
+
+
+def fig_fingerprint_mds_3d(go):
+    """3D layout of theory fingerprints via SVD of feature matrices."""
+    from rishiq.fingerprints import load_all_fingerprints
+
+    fps = load_all_fingerprints(ROOT / "ontology/physics_fingerprints")
+    ids = list(fps.keys())
+    keys = sorted({k for fp in fps.values() for k in fp.features})
+    X = np.array([[float(fps[i].features.get(k, 0)) for k in keys] for i in ids], dtype=float)
+    X0 = X - X.mean(0, keepdims=True)
+    _, _, vt = np.linalg.svd(X0, full_matrices=False)
+    C = X0 @ vt[:3].T
+    colors = ["#94a3b8" if not fps[i].quantum else "#a78bfa" for i in ids]
+    fig = go.Figure(
+        go.Scatter3d(
+            x=C[:, 0], y=C[:, 1], z=C[:, 2], mode="markers+text", text=ids,
+            marker=dict(size=12, color=colors), textposition="top center",
+        )
+    )
+    fig.update_layout(
+        title="Theory fingerprint geometry (feature SVD) — classical vs quantum coloring",
+        scene=dict(bgcolor="#0b1220", xaxis=dict(gridcolor="#1e293b"), yaxis=dict(gridcolor="#1e293b"), zaxis=dict(gridcolor="#1e293b")),
+        paper_bgcolor="#0b1220",
+        font=dict(color="#e2e8f0"),
+        height=720,
+    )
+    return fig
+
+
+def fig_animated_em_vs_sound(go):
+    """Animation contrasting EM radiation along axis vs mechanical sound in a slab."""
+    frames = []
+    z = np.linspace(0, 4, 100)
+    for fi, t in enumerate(np.linspace(0, 2 * np.pi, 40)):
+        em = 0.4 * np.sin(8 * z - t)
+        sound = 0.25 * np.sin(5 * z - 0.7 * t) * np.exp(-0.15 * (z - 2) ** 2)
+        frames.append(
+            go.Frame(
+                data=[
+                    go.Scatter3d(x=em, y=np.zeros_like(z), z=z, mode="lines", line=dict(width=8, color="#fbbf24"), name="EM/light"),
+                    go.Scatter3d(x=np.zeros_like(z), y=sound, z=z, mode="lines", line=dict(width=8, color="#3b82f6"), name="sound in medium"),
+                ],
+                name=str(fi),
+            )
+        )
+    fig = go.Figure(
+        data=frames[0].data,
+        frames=frames,
+    )
+    fig.update_layout(
+        title="Animated contrast: EM radiation vs mechanical sound (schematic)",
+        scene=dict(bgcolor="#0b1220", xaxis=dict(gridcolor="#1e293b"), yaxis=dict(gridcolor="#1e293b"), zaxis=dict(gridcolor="#1e293b")),
+        paper_bgcolor="#0b1220",
+        font=dict(color="#e2e8f0"),
+        height=720,
+        updatemenus=[
+            dict(
+                type="buttons",
+                buttons=[
+                    dict(label="Play", method="animate", args=[None, {"frame": {"duration": 50, "redraw": True}, "fromcurrent": True}]),
+                    dict(label="Pause", method="animate", args=[[None], {"mode": "immediate"}]),
+                ],
+            )
+        ],
+    )
+    return fig
+
+
 def write_index(paths: list[Path]) -> Path:
     links = "\n".join(f'<li><a href="{p.name}">{p.stem}</a></li>' for p in paths)
     html = f"""<!DOCTYPE html>
@@ -353,6 +446,9 @@ def main() -> None:
         ("04_concept_graph_3d", fig_concept_graph_3d),
         ("05_animated_wave_medium", fig_animated_wave_medium),
         ("06_claim_boundary_surface", fig_claim_boundary_surface),
+        ("07_method_benchmark_bars", fig_method_benchmark_bars),
+        ("08_fingerprint_geometry_3d", fig_fingerprint_mds_3d),
+        ("09_animated_em_vs_sound", fig_animated_em_vs_sound),
     ]
     paths = []
     for name, fn in builders:

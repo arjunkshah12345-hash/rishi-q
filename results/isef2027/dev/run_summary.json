@@ -1,5 +1,5 @@
 {
-  "run_id": "ISEF2027-DEV-20260816T035149Z",
+  "run_id": "ISEF2027-DEV-20260816T041808Z",
   "phase": "development_calibration_harness",
   "seed": 42,
   "sealed_confirmatory_opened": false,
@@ -14,7 +14,12 @@
       "ontology/concept_graph/template_vaisesika_akasa_sabda.json",
       "ontology/concept_graph/template_maxwell_em.json",
       "ontology/concept_graph/STUDENT_TODO.md"
-    ]
+    ],
+    "method_benchmark": "results/isef2027/dev/method_benchmark.json",
+    "translation_battery": "results/isef2027/dev/translation_battery.json",
+    "blind_audit": "results/isef2027/dev/blind_audit.json",
+    "discovery_replication": "results/isef2027/dev/discovery_replication.json",
+    "calibration_manifest": "corpus/calibration/calibration_manifest.json"
   },
   "n_theory_fingerprints": 6,
   "theory_ids": [
@@ -116,10 +121,25 @@
       "method": "work_level_permutation"
     }
   },
+  "method_benchmark_summary": {
+    "ontology_top1_accuracy": 0.8,
+    "n_panels": 5,
+    "negative_controls": {
+      "generic_vs_em_tfidf": 0.02881647279094858,
+      "ethics_vs_qm_tfidf": 0.018128591547306817
+    }
+  },
+  "translation_battery_summary": {
+    "corr_year_vs_modernization_lexicon": 0.7788146763309313
+  },
+  "blind_audit_status": "FAIL",
+  "discovery_replication_survives_demo": true,
+  "calibration_n_records": 81,
   "warnings": [
     "Toy/dev metrics only \u2014 not confirmatory scientific results.",
     "TEMPLATE concept graphs are not student-verified.",
-    "Do not interpret these numbers as ancient-quantum evidence."
+    "Do not interpret these numbers as ancient-quantum evidence.",
+    "Method benchmark panels are modern pedagogy text for software validation."
   ],
   "registry_path": "results/isef2027/registry/experiments.jsonl"
 }

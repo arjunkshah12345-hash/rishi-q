@@ -11,13 +11,18 @@ import yaml
 
 from rishiq.isef2027.adversarial import run_adversarial_battery
 from rishiq.isef2027.baselines import binary_vector_jaccard, mean_tfidf_similarity, ranking_accuracy
+from rishiq.isef2027.benchmark import run_theory_identification_benchmark
+from rishiq.isef2027.blind_audit import run_blind_audit
+from rishiq.isef2027.calibration import build_calibration_from_pd
 from rishiq.isef2027.concept_graph import ConceptGraph, graph_overlap_score, write_schema_and_templates
+from rishiq.isef2027.discovery_replication import write_discovery_replication
 from rishiq.isef2027.freeze import freeze_dev
 from rishiq.isef2027.human_val import write_human_validation_pack
 from rishiq.isef2027.inference import cluster_effect_bundle, work_level_permutation
 from rishiq.isef2027.inventory import write_inventory
 from rishiq.isef2027.registry import hash_file, new_record, register_experiment
-from rishiq.isef2027.splits import assert_no_split_overlap, write_split_manifest
+from rishiq.isef2027.splits import write_split_manifest
+from rishiq.isef2027.translation_battery import run_translation_battery
 from rishiq.fingerprints import load_all_fingerprints
 
 
@@ -146,6 +151,13 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
         seed=seed,
     )
 
+    # 9) method benchmark + translation + blind + discovery/replication + calibration
+    bench = run_theory_identification_benchmark(root, seed=seed)
+    trans = run_translation_battery(root, seed=seed)
+    blind = run_blind_audit(root)
+    disc = write_discovery_replication(root, seed=seed)
+    calib = build_calibration_from_pd(root)
+
     summary = {
         "run_id": f"ISEF2027-DEV-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
         "phase": "development_calibration_harness",
@@ -158,6 +170,11 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
             "splits": str(split_path.relative_to(root)),
             "human_validation": str(hv_path.relative_to(root)),
             "concept_graphs": [str(p.relative_to(root)) for p in cg_paths],
+            "method_benchmark": "results/isef2027/dev/method_benchmark.json",
+            "translation_battery": "results/isef2027/dev/translation_battery.json",
+            "blind_audit": "results/isef2027/dev/blind_audit.json",
+            "discovery_replication": "results/isef2027/dev/discovery_replication.json",
+            "calibration_manifest": "corpus/calibration/calibration_manifest.json",
         },
         "n_theory_fingerprints": len(fps),
         "theory_ids": ids,
@@ -167,10 +184,24 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
         "positive_control_ranking": ranking,
         "adversarial": adv,
         "inference_demo": {"cluster_bundle": infer, "work_level_permutation": work_perm},
+        "method_benchmark_summary": {
+            "ontology_top1_accuracy": bench.get("ontology_top1_accuracy"),
+            "n_panels": bench.get("n_panels"),
+            "negative_controls": bench.get("negative_controls"),
+        },
+        "translation_battery_summary": {
+            "corr_year_vs_modernization_lexicon": trans.get("translator_year_demo", {}).get(
+                "corr_year_vs_modernization_lexicon"
+            ),
+        },
+        "blind_audit_status": blind.get("status"),
+        "discovery_replication_survives_demo": disc.get("survives_replication_demo_threshold"),
+        "calibration_n_records": calib.get("n_records"),
         "warnings": [
             "Toy/dev metrics only — not confirmatory scientific results.",
             "TEMPLATE concept graphs are not student-verified.",
             "Do not interpret these numbers as ancient-quantum evidence.",
+            "Method benchmark panels are modern pedagogy text for software validation.",
         ],
     }
 

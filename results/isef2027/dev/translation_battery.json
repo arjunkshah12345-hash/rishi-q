@@ -1,0 +1,184 @@
+{
+  "battery_id": "ISEF2027-TRANSLATION-v1",
+  "mask_terms": [
+    "atom",
+    "particle",
+    "wave",
+    "field",
+    "energy",
+    "quantum",
+    "vibration",
+    "ether",
+    "aether",
+    "space",
+    "force"
+  ],
+  "translator_year_demo": {
+    "n": 4,
+    "years": [
+      1880,
+      1890,
+      2015,
+      2020
+    ],
+    "modern_flags": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "modernization_scores": [
+      0.08333333333333333,
+      0.0,
+      0.1111111111111111,
+      0.14285714285714285
+    ],
+    "corr_year_vs_modernization_lexicon": 0.7788146763309313,
+    "tfidf_old_vs_modern": 0.044627162599931165,
+    "note": "Synthetic illustration of translator-era leakage risk \u2014 not historical data.",
+    "seed": 42
+  },
+  "masked_unmasked_shift": {
+    "newtonian": {
+      "raw_top1": "newtonian",
+      "masked_top1": "newtonian",
+      "raw_scores": {
+        "newtonian": 0.25,
+        "classical_em": 0.0625,
+        "thermodynamics": 0.14285714285714285,
+        "relativity": 0.125,
+        "quantum_mechanics": 0.0625,
+        "quantum_field_theory": 0.11764705882352941
+      },
+      "masked_scores": {
+        "newtonian": 0.25,
+        "classical_em": 0.0625,
+        "thermodynamics": 0.14285714285714285,
+        "relativity": 0.125,
+        "quantum_mechanics": 0.0625,
+        "quantum_field_theory": 0.11764705882352941
+      },
+      "top1_changed": false
+    },
+    "classical_em": {
+      "raw_top1": "classical_em",
+      "masked_top1": "classical_em",
+      "raw_scores": {
+        "newtonian": 0.08333333333333333,
+        "classical_em": 0.42857142857142855,
+        "thermodynamics": 0.0,
+        "relativity": 0.09090909090909091,
+        "quantum_mechanics": 0.0,
+        "quantum_field_theory": 0.375
+      },
+      "masked_scores": {
+        "newtonian": 0.08333333333333333,
+        "classical_em": 0.42857142857142855,
+        "thermodynamics": 0.0,
+        "relativity": 0.09090909090909091,
+        "quantum_mechanics": 0.0,
+        "quantum_field_theory": 0.375
+      },
+      "top1_changed": false
+    },
+    "thermodynamics": {
+      "raw_top1": "newtonian",
+      "masked_top1": "newtonian",
+      "raw_scores": {
+        "newtonian": 0.0,
+        "classical_em": 0.0,
+        "thermodynamics": 0.0,
+        "relativity": 0.0,
+        "quantum_mechanics": 0.0,
+        "quantum_field_theory": 0.0
+      },
+      "masked_scores": {
+        "newtonian": 0.0,
+        "classical_em": 0.0,
+        "thermodynamics": 0.0,
+        "relativity": 0.0,
+        "quantum_mechanics": 0.0,
+        "quantum_field_theory": 0.0
+      },
+      "top1_changed": false
+    },
+    "quantum_mechanics": {
+      "raw_top1": "quantum_mechanics",
+      "masked_top1": "quantum_mechanics",
+      "raw_scores": {
+        "newtonian": 0.0,
+        "classical_em": 0.0,
+        "thermodynamics": 0.0,
+        "relativity": 0.0,
+        "quantum_mechanics": 0.14285714285714285,
+        "quantum_field_theory": 0.125
+      },
+      "masked_scores": {
+        "newtonian": 0.0,
+        "classical_em": 0.0,
+        "thermodynamics": 0.0,
+        "relativity": 0.0,
+        "quantum_mechanics": 0.14285714285714285,
+        "quantum_field_theory": 0.125
+      },
+      "top1_changed": false
+    },
+    "quantum_field_theory": {
+      "raw_top1": "quantum_field_theory",
+      "masked_top1": "quantum_field_theory",
+      "raw_scores": {
+        "newtonian": 0.14285714285714285,
+        "classical_em": 0.21052631578947367,
+        "thermodynamics": 0.0,
+        "relativity": 0.07142857142857142,
+        "quantum_mechanics": 0.09523809523809523,
+        "quantum_field_theory": 0.47058823529411764
+      },
+      "masked_scores": {
+        "newtonian": 0.14285714285714285,
+        "classical_em": 0.21052631578947367,
+        "thermodynamics": 0.0,
+        "relativity": 0.07142857142857142,
+        "quantum_mechanics": 0.09523809523809523,
+        "quantum_field_theory": 0.47058823529411764
+      },
+      "top1_changed": false
+    }
+  },
+  "warnings": [
+    "Requires real multi-translation corpora before confirmatory claims.",
+    "Student must freeze mask list independently of Sanskrit\u2013QM outcomes."
+  ],
+  "pd_tradition_modernization_descriptive": [
+    {
+      "tradition": "buddhist_dhammapada_pd",
+      "n": 40,
+      "mean_modernization": 0.0005434782608695652
+    },
+    {
+      "tradition": "chinese_ddj_pd",
+      "n": 40,
+      "mean_modernization": 0.0005684754521963825
+    },
+    {
+      "tradition": "greek_lucretius_pd",
+      "n": 60,
+      "mean_modernization": 0.0020760595420119925
+    },
+    {
+      "tradition": "greek_timaeus_pd",
+      "n": 50,
+      "mean_modernization": 0.0015450166169870146
+    },
+    {
+      "tradition": "modern_physics",
+      "n": 6,
+      "mean_modernization": 0.018545792730237636
+    },
+    {
+      "tradition": "vedanta_pd",
+      "n": 80,
+      "mean_modernization": 0.0016778689850878415
+    }
+  ]
+}

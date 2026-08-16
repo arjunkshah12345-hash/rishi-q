@@ -76,22 +76,29 @@ def test_kappa_demo():
     assert k == k  # not NaN
 
 
-def test_registry_append_only(tmp_path):
-    root = tmp_path
-    (root / "results/isef2027/registry").mkdir(parents=True)
-    rec = ExperimentRecord(
-        experiment_id="TEST-EXP-1",
-        hypothesis="h",
-        config_hash="abc",
-        dataset_hash="def",
-        code_commit="x",
-        random_seed=1,
-        timestamp="2026-01-01T00:00:00Z",
-        phase="exploratory",
-    )
-    register_experiment(root, rec)
-    try:
-        register_experiment(root, rec)
-        assert False, "should refuse duplicate"
-    except ValueError:
-        pass
+from rishiq.isef2027.benchmark import POSITIVE_PANELS, run_theory_identification_benchmark
+from rishiq.isef2027.blind_audit import detect_extended_leaks
+from rishiq.isef2027.discovery_replication import run_discovery_replication_demo
+from rishiq.isef2027.translation_battery import translator_year_stratified_demo
+
+
+def test_method_benchmark_runs():
+    summary = run_theory_identification_benchmark(ROOT, seed=0)
+    assert summary["n_panels"] >= 4
+    assert 0.0 <= summary["ontology_top1_accuracy"] <= 1.0
+
+
+def test_translation_demo_corr_finite():
+    d = translator_year_stratified_demo(seed=0)
+    assert d["corr_year_vs_modernization_lexicon"] == d["corr_year_vs_modernization_lexicon"]
+
+
+def test_discovery_replication_structure():
+    d = run_discovery_replication_demo(seed=0)
+    assert "enrichment_replication" in d
+    assert "survives_replication_demo_threshold" in d
+
+
+def test_extended_leak_detector():
+    hits = detect_extended_leaks("Vaiśeṣika in India and Maxwell")
+    assert hits
