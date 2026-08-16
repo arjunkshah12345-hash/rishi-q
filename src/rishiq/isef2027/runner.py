@@ -224,10 +224,11 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
         "control_panel_n_pd_files": len(controls.get("pd_controls", [])),
         "warnings": [
             "Toy/dev metrics only — not confirmatory scientific results.",
-            "TEMPLATE concept graphs are not student-verified.",
+            "Concept graphs are FROZEN — do not retune to raise Sanskrit–QM scores.",
             "Do not interpret these numbers as ancient-quantum evidence.",
             "Method benchmark panels are modern pedagogy text for software validation.",
-            "Fill protocol/isef2027_prereg_TEMPLATE.yaml yourself before OSF submission.",
+            "Prereg frozen; public timestamp GitHub Release prereg-isef2027-v1 (OSF optional).",
+            "Sealed confirmatory analysis remains LOCKED; paper/abstract are student-authored.",
         ],
     }
 
