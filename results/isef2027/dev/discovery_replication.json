@@ -1,6 +1,6 @@
 {
   "pipeline_id": "ISEF2027-DISC-REPL-v1",
-  "seed": 42,
+  "seed": 20270816,
   "n_discover": 5,
   "n_replicate": 4,
   "motifs_top": [
@@ -10,10 +10,10 @@
     "auditory_objects",
     "objects_establishes",
     "establishes_pervasive",
-    "substance_actionless",
-    "actionless_relative",
-    "relative_dynamical",
-    "dynamical_field"
+    "heat_light",
+    "light_belong",
+    "belong_fiery",
+    "fiery_substance"
   ],
   "enrichment_discovery": {
     "discovery_hit_rate": 0.6,

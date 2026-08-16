@@ -1,0 +1,364 @@
+{
+  "method": "primary=0.55*typed_relation+0.45*hungarian",
+  "matrix": {
+    "template_fp_atomistic_corpuscular": {
+      "template_fp_atomistic_corpuscular": 1.0,
+      "template_fp_classical_em": 0.1575,
+      "template_fp_newtonian": 0.3706666666666667,
+      "template_fp_quantum_field_theory": 0.2179285714285714,
+      "template_fp_quantum_mechanics": 0.2314285714285714,
+      "template_fp_relativity": 0.31875,
+      "template_fp_thermodynamics": 0.29250000000000004
+    },
+    "template_fp_classical_em": {
+      "template_fp_atomistic_corpuscular": 0.1575,
+      "template_fp_classical_em": 1.0,
+      "template_fp_newtonian": 0.1425,
+      "template_fp_quantum_field_theory": 0.18562499999999998,
+      "template_fp_quantum_mechanics": 0.13050000000000003,
+      "template_fp_relativity": 0.16875,
+      "template_fp_thermodynamics": 0.18000000000000002
+    },
+    "template_fp_newtonian": {
+      "template_fp_atomistic_corpuscular": 0.3706666666666667,
+      "template_fp_classical_em": 0.1425,
+      "template_fp_newtonian": 1.0,
+      "template_fp_quantum_field_theory": 0.26625,
+      "template_fp_quantum_mechanics": 0.195,
+      "template_fp_relativity": 0.253125,
+      "template_fp_thermodynamics": 0.16875
+    },
+    "template_fp_quantum_field_theory": {
+      "template_fp_atomistic_corpuscular": 0.2179285714285714,
+      "template_fp_classical_em": 0.18562499999999998,
+      "template_fp_newtonian": 0.26625,
+      "template_fp_quantum_field_theory": 1.0,
+      "template_fp_quantum_mechanics": 0.17775000000000002,
+      "template_fp_relativity": 0.1546875,
+      "template_fp_thermodynamics": 0.21749999999999997
+    },
+    "template_fp_quantum_mechanics": {
+      "template_fp_atomistic_corpuscular": 0.2314285714285714,
+      "template_fp_classical_em": 0.13050000000000003,
+      "template_fp_newtonian": 0.195,
+      "template_fp_quantum_field_theory": 0.17775000000000002,
+      "template_fp_quantum_mechanics": 1.0,
+      "template_fp_relativity": 0.255,
+      "template_fp_thermodynamics": 0.28125
+    },
+    "template_fp_relativity": {
+      "template_fp_atomistic_corpuscular": 0.31875000000000003,
+      "template_fp_classical_em": 0.16875,
+      "template_fp_newtonian": 0.253125,
+      "template_fp_quantum_field_theory": 0.1546875,
+      "template_fp_quantum_mechanics": 0.255,
+      "template_fp_relativity": 1.0,
+      "template_fp_thermodynamics": 0.225
+    },
+    "template_fp_thermodynamics": {
+      "template_fp_atomistic_corpuscular": 0.29250000000000004,
+      "template_fp_classical_em": 0.18000000000000002,
+      "template_fp_newtonian": 0.16875,
+      "template_fp_quantum_field_theory": 0.21749999999999997,
+      "template_fp_quantum_mechanics": 0.28125,
+      "template_fp_relativity": 0.225,
+      "template_fp_thermodynamics": 1.0
+    }
+  },
+  "pairwise_detail": {
+    "template_fp_atomistic_corpuscular__template_fp_atomistic_corpuscular": {
+      "literal_id_overlap_baseline": 1.0,
+      "typed_relation_multiset": 1.0,
+      "hungarian_role_alignment": 1.0,
+      "primary_structural": 1.0
+    },
+    "template_fp_atomistic_corpuscular__template_fp_classical_em": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.35,
+      "primary_structural": 0.1575
+    },
+    "template_fp_atomistic_corpuscular__template_fp_newtonian": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.16666666666666666,
+      "hungarian_role_alignment": 0.62,
+      "primary_structural": 0.3706666666666667
+    },
+    "template_fp_atomistic_corpuscular__template_fp_quantum_field_theory": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.4842857142857142,
+      "primary_structural": 0.2179285714285714
+    },
+    "template_fp_atomistic_corpuscular__template_fp_quantum_mechanics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5142857142857142,
+      "primary_structural": 0.2314285714285714
+    },
+    "template_fp_atomistic_corpuscular__template_fp_relativity": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.7083333333333333,
+      "primary_structural": 0.31875
+    },
+    "template_fp_atomistic_corpuscular__template_fp_thermodynamics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.65,
+      "primary_structural": 0.29250000000000004
+    },
+    "template_fp_classical_em__template_fp_atomistic_corpuscular": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.35,
+      "primary_structural": 0.1575
+    },
+    "template_fp_classical_em__template_fp_classical_em": {
+      "literal_id_overlap_baseline": 1.0,
+      "typed_relation_multiset": 1.0,
+      "hungarian_role_alignment": 1.0,
+      "primary_structural": 1.0
+    },
+    "template_fp_classical_em__template_fp_newtonian": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.31666666666666665,
+      "primary_structural": 0.1425
+    },
+    "template_fp_classical_em__template_fp_quantum_field_theory": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.4125,
+      "primary_structural": 0.18562499999999998
+    },
+    "template_fp_classical_em__template_fp_quantum_mechanics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.29000000000000004,
+      "primary_structural": 0.13050000000000003
+    },
+    "template_fp_classical_em__template_fp_relativity": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.375,
+      "primary_structural": 0.16875
+    },
+    "template_fp_classical_em__template_fp_thermodynamics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.4,
+      "primary_structural": 0.18000000000000002
+    },
+    "template_fp_newtonian__template_fp_atomistic_corpuscular": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.16666666666666666,
+      "hungarian_role_alignment": 0.62,
+      "primary_structural": 0.3706666666666667
+    },
+    "template_fp_newtonian__template_fp_classical_em": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.31666666666666665,
+      "primary_structural": 0.1425
+    },
+    "template_fp_newtonian__template_fp_newtonian": {
+      "literal_id_overlap_baseline": 1.0,
+      "typed_relation_multiset": 1.0,
+      "hungarian_role_alignment": 1.0,
+      "primary_structural": 1.0
+    },
+    "template_fp_newtonian__template_fp_quantum_field_theory": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5916666666666667,
+      "primary_structural": 0.26625
+    },
+    "template_fp_newtonian__template_fp_quantum_mechanics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.43333333333333335,
+      "primary_structural": 0.195
+    },
+    "template_fp_newtonian__template_fp_relativity": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5625,
+      "primary_structural": 0.253125
+    },
+    "template_fp_newtonian__template_fp_thermodynamics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.375,
+      "primary_structural": 0.16875
+    },
+    "template_fp_quantum_field_theory__template_fp_atomistic_corpuscular": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.4842857142857142,
+      "primary_structural": 0.2179285714285714
+    },
+    "template_fp_quantum_field_theory__template_fp_classical_em": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.4125,
+      "primary_structural": 0.18562499999999998
+    },
+    "template_fp_quantum_field_theory__template_fp_newtonian": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5916666666666667,
+      "primary_structural": 0.26625
+    },
+    "template_fp_quantum_field_theory__template_fp_quantum_field_theory": {
+      "literal_id_overlap_baseline": 1.0,
+      "typed_relation_multiset": 1.0,
+      "hungarian_role_alignment": 1.0,
+      "primary_structural": 1.0
+    },
+    "template_fp_quantum_field_theory__template_fp_quantum_mechanics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.395,
+      "primary_structural": 0.17775000000000002
+    },
+    "template_fp_quantum_field_theory__template_fp_relativity": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.34375,
+      "primary_structural": 0.1546875
+    },
+    "template_fp_quantum_field_theory__template_fp_thermodynamics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.4833333333333333,
+      "primary_structural": 0.21749999999999997
+    },
+    "template_fp_quantum_mechanics__template_fp_atomistic_corpuscular": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5142857142857142,
+      "primary_structural": 0.2314285714285714
+    },
+    "template_fp_quantum_mechanics__template_fp_classical_em": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.29000000000000004,
+      "primary_structural": 0.13050000000000003
+    },
+    "template_fp_quantum_mechanics__template_fp_newtonian": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.43333333333333335,
+      "primary_structural": 0.195
+    },
+    "template_fp_quantum_mechanics__template_fp_quantum_field_theory": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.395,
+      "primary_structural": 0.17775000000000002
+    },
+    "template_fp_quantum_mechanics__template_fp_quantum_mechanics": {
+      "literal_id_overlap_baseline": 1.0,
+      "typed_relation_multiset": 1.0,
+      "hungarian_role_alignment": 1.0,
+      "primary_structural": 1.0
+    },
+    "template_fp_quantum_mechanics__template_fp_relativity": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5666666666666667,
+      "primary_structural": 0.255
+    },
+    "template_fp_quantum_mechanics__template_fp_thermodynamics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.625,
+      "primary_structural": 0.28125
+    },
+    "template_fp_relativity__template_fp_atomistic_corpuscular": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.7083333333333334,
+      "primary_structural": 0.31875000000000003
+    },
+    "template_fp_relativity__template_fp_classical_em": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.375,
+      "primary_structural": 0.16875
+    },
+    "template_fp_relativity__template_fp_newtonian": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5625,
+      "primary_structural": 0.253125
+    },
+    "template_fp_relativity__template_fp_quantum_field_theory": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.34375,
+      "primary_structural": 0.1546875
+    },
+    "template_fp_relativity__template_fp_quantum_mechanics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5666666666666667,
+      "primary_structural": 0.255
+    },
+    "template_fp_relativity__template_fp_relativity": {
+      "literal_id_overlap_baseline": 1.0,
+      "typed_relation_multiset": 1.0,
+      "hungarian_role_alignment": 1.0,
+      "primary_structural": 1.0
+    },
+    "template_fp_relativity__template_fp_thermodynamics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5,
+      "primary_structural": 0.225
+    },
+    "template_fp_thermodynamics__template_fp_atomistic_corpuscular": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.65,
+      "primary_structural": 0.29250000000000004
+    },
+    "template_fp_thermodynamics__template_fp_classical_em": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.4,
+      "primary_structural": 0.18000000000000002
+    },
+    "template_fp_thermodynamics__template_fp_newtonian": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.375,
+      "primary_structural": 0.16875
+    },
+    "template_fp_thermodynamics__template_fp_quantum_field_theory": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.4833333333333333,
+      "primary_structural": 0.21749999999999997
+    },
+    "template_fp_thermodynamics__template_fp_quantum_mechanics": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.625,
+      "primary_structural": 0.28125
+    },
+    "template_fp_thermodynamics__template_fp_relativity": {
+      "literal_id_overlap_baseline": 0.0,
+      "typed_relation_multiset": 0.0,
+      "hungarian_role_alignment": 0.5,
+      "primary_structural": 0.225
+    },
+    "template_fp_thermodynamics__template_fp_thermodynamics": {
+      "literal_id_overlap_baseline": 1.0,
+      "typed_relation_multiset": 1.0,
+      "hungarian_role_alignment": 1.0,
+      "primary_structural": 1.0
+    }
+  }
+}

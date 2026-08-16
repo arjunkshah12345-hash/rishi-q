@@ -4,14 +4,20 @@
   "newtonian__relativity": 0.3,
   "newtonian__quantum_mechanics": 0.10526315789473684,
   "newtonian__quantum_field_theory": 0.15,
+  "newtonian__atomistic_corpuscular": 0.4444444444444444,
   "classical_em__thermodynamics": 0.1875,
   "classical_em__relativity": 0.17647058823529413,
   "classical_em__quantum_mechanics": 0.07692307692307693,
   "classical_em__quantum_field_theory": 0.6666666666666666,
+  "classical_em__atomistic_corpuscular": 0.25,
   "thermodynamics__relativity": 0.2222222222222222,
   "thermodynamics__quantum_mechanics": 0.11764705882352941,
   "thermodynamics__quantum_field_theory": 0.10526315789473684,
+  "thermodynamics__atomistic_corpuscular": 0.375,
   "relativity__quantum_mechanics": 0.17647058823529413,
   "relativity__quantum_field_theory": 0.15789473684210525,
-  "quantum_mechanics__quantum_field_theory": 0.15384615384615385
+  "relativity__atomistic_corpuscular": 0.2,
+  "quantum_mechanics__quantum_field_theory": 0.15384615384615385,
+  "quantum_mechanics__atomistic_corpuscular": 0.17647058823529413,
+  "quantum_field_theory__atomistic_corpuscular": 0.1
 }

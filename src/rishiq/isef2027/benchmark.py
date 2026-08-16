@@ -87,13 +87,20 @@ def embedding_mean_similarity(a: list[str], b: list[str], seed: int = 42) -> flo
 
 
 def keyword_feature_proxy(text: str) -> dict[str, int]:
-    """Crude lexical→ontology proxy for method benchmarking (not confirmatory annotation)."""
+    """Crude lexical→ontology proxy for SOFTWARE_DEMO plumbing only.
+
+    Not claim-bearing validation. Thermodynamics historically failed here because
+    heat/entropy/temperature were unmapped — mappings below are demo fixes only.
+    """
     t = text.lower()
     feats = {
-        "O02": int(any(w in t for w in ("mass", "particle", "atom", "constituent"))),
+        "O02": int(any(w in t for w in ("mass", "particle", "atom", "constituent", "corpuscle"))),
         "O04": int(any(w in t for w in ("field", "medium", "wave"))),
-        "D01": int(any(w in t for w in ("force", "acceleration", "motion", "orbit"))),
+        "O06": int(any(w in t for w in ("entropy", "equilibrium", "macroscopic", "temperature", "thermal"))),
+        "D01": int(any(w in t for w in ("force", "acceleration", "motion", "orbit", "heat flow", "heat flows"))),
+        "D02": int(any(w in t for w in ("conserv", "first law", "energy transfer", "work and heat"))),
         "D04": int(any(w in t for w in ("equation", "law", "maxwell", "lagrangian"))),
+        "D05": int(any(w in t for w in ("irreversible", "reversible", "equilibrium", "state variable"))),
         "F01": int("field" in t),
         "F02": int(any(w in t for w in ("electromagnetic", "electric", "magnetic", "maxwell"))),
         "F03": int("light" in t or "radiation" in t),
@@ -103,6 +110,7 @@ def keyword_feature_proxy(text: str) -> dict[str, int]:
         "Q06": int("entangle" in t),
         "Q08": int(any(w in t for w in ("creation", "annihilation", "fock", "quantized field"))),
         "R01": int(any(w in t for w in ("field", "mediate", "interaction"))),
+        "M03": int(any(w in t for w in ("statistical", "entropy", "ignorance", "macroscopic"))),
     }
     return feats
 
@@ -176,9 +184,11 @@ def run_theory_identification_benchmark(root: Path, seed: int = 42) -> dict[str,
         },
         "warnings": [
             "METHOD VALIDATION ONLY — not evidence about classical Sanskrit corpora.",
-            "keyword_feature_proxy is a crude stand-in until human/model annotation is frozen.",
+            "keyword_feature_proxy is SOFTWARE_DEMO plumbing — not claim-bearing validation.",
             "hash embeddings are a local proxy; sentence-transformers remain optional ML secondary.",
+            "Prefer results/isef2027/validation/held_out_theory_identification.json for real method evidence.",
         ],
+        "evidence_class": "SOFTWARE_DEMO",
     }
     out = root / "results/isef2027/dev/method_benchmark.json"
     out.parent.mkdir(parents=True, exist_ok=True)

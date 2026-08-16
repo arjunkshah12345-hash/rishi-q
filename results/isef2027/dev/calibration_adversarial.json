@@ -1,13 +1,10 @@
 {
-  "battery_id": "ISEF2027-CAL-ADV-v1",
-  "seed": 42,
+  "battery_id": "ISEF2027-CAL-ADV-v2",
+  "seed": 20270816,
   "n_texts": 120,
   "scrub_mean_replacements": 0.1,
-  "scrub_pattern_freq": {
-    "geo_india": 6
-  },
   "adversarial": {
-    "seed": 42,
+    "seed": 20270816,
     "n_texts": 120,
     "mask_terms": [
       "atom",
@@ -36,126 +33,1126 @@
       "vedanta_pd",
       "vedanta_pd",
       "greek_lucretius_pd",
-      "vedanta_pd",
+      "greek_lucretius_pd",
       "vedanta_pd",
       "vedanta_pd"
     ],
-    "length_score_corr": 0.9998900698788116,
+    "length_score_corr": 0.0267357839802103,
     "leave_one_out_tradition": {
-      "vedanta_pd": 12.5,
-      "greek_lucretius_pd": -12.5
+      "vedanta_pd": 0.0,
+      "greek_lucretius_pd": 0.0
     },
     "interpretation_note": "Battery outputs are diagnostics for development/calibration. Do not select the friendliest p-value."
   },
-  "tfidf_raw_sim": 0.07245821980605385,
-  "tfidf_masked_sim": 0.07249984032605478,
-  "work_level_permutation": {
-    "observed_delta": 0.09496707213005079,
-    "p_ge_obs": 0.021,
-    "n_perm": 2000,
-    "seed": 42,
-    "method": "work_level_permutation"
+  "tests": {
+    "length_corr_on_modern_density": 0.0267357839802103,
+    "vocabulary_masking_tfidf_raw": 0.07245821980605385,
+    "vocabulary_masking_tfidf_masked": 0.07249984032605478,
+    "work_level_permutation_on_modern_density": {},
+    "leave_one_work_out": {
+      "De Rerum Natura": NaN,
+      "Upanishads (Paramananda tr.)": NaN
+    },
+    "random_label_permute_sample": [
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "greek_lucretius_pd",
+      "greek_lucretius_pd",
+      "vedanta_pd",
+      "vedanta_pd"
+    ]
   },
-  "leave_one_work_out_deltas": {
-    "C0": 0.0754886349417363,
-    "C1": 0.08486762932110048,
-    "C2": 0.11119626861740894,
-    "C3": 0.10474551616553929,
-    "W0": 0.09347512979587824,
-    "W1": 0.11370735961782336,
-    "W2": 0.08608243366871521,
-    "W3": 0.08303312596336843
-  },
-  "power_scaffold": {
+  "toy_power_SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE": {
+    "label": "SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE",
+    "method": "logistic_toy_power_curve",
+    "warning": "Do not use for confirmatory N. See power_hier_v2.",
     "grid": [
       {
-        "method": "logistic_toy_power_curve",
         "effect": 0.05,
         "n_per_group": 20,
         "approx_power": 0.9975273768433653,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+        "evidence_class": "SOFTWARE_DEMO"
       },
       {
-        "method": "logistic_toy_power_curve",
         "effect": 0.05,
         "n_per_group": 40,
         "approx_power": 0.9999991684719722,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+        "evidence_class": "SOFTWARE_DEMO"
       },
       {
-        "method": "logistic_toy_power_curve",
-        "effect": 0.05,
-        "n_per_group": 80,
-        "approx_power": 0.9999999999999065,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
-      },
-      {
-        "method": "logistic_toy_power_curve",
         "effect": 0.1,
         "n_per_group": 20,
         "approx_power": 0.9999991684719722,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+        "evidence_class": "SOFTWARE_DEMO"
       },
       {
-        "method": "logistic_toy_power_curve",
         "effect": 0.1,
         "n_per_group": 40,
         "approx_power": 0.9999999999999065,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+        "evidence_class": "SOFTWARE_DEMO"
       },
       {
-        "method": "logistic_toy_power_curve",
-        "effect": 0.1,
-        "n_per_group": 80,
-        "approx_power": 1.0,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
-      },
-      {
-        "method": "logistic_toy_power_curve",
         "effect": 0.2,
         "n_per_group": 20,
         "approx_power": 0.9999999999999065,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+        "evidence_class": "SOFTWARE_DEMO"
       },
       {
-        "method": "logistic_toy_power_curve",
         "effect": 0.2,
         "n_per_group": 40,
         "approx_power": 1.0,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
-      },
-      {
-        "method": "logistic_toy_power_curve",
-        "effect": 0.2,
-        "n_per_group": 80,
-        "approx_power": 1.0,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
-      },
-      {
-        "method": "logistic_toy_power_curve",
-        "effect": 0.3,
-        "n_per_group": 20,
-        "approx_power": 1.0,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
-      },
-      {
-        "method": "logistic_toy_power_curve",
-        "effect": 0.3,
-        "n_per_group": 40,
-        "approx_power": 1.0,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
-      },
-      {
-        "method": "logistic_toy_power_curve",
-        "effect": 0.3,
-        "n_per_group": 80,
-        "approx_power": 1.0,
-        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+        "evidence_class": "SOFTWARE_DEMO"
       }
     ]
   },
+  "hierarchical_power_v2": {
+    "grid_id": "ISEF2027-POWER-GRID-v2",
+    "n_cells": 24,
+    "rows": [
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.05,
+          "n_works_per_arm": 6,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.2375,
+        "monte_carlo_se": 0.047578060857920636,
+        "mean_observed_delta": 0.04593350452876097,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.05,
+          "n_works_per_arm": 6,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.2125,
+        "monte_carlo_se": 0.045736165941189254,
+        "mean_observed_delta": 0.042869693321745575,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.05,
+          "n_works_per_arm": 8,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.2,
+        "monte_carlo_se": 0.0447213595499958,
+        "mean_observed_delta": 0.045172241000001175,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.05,
+          "n_works_per_arm": 8,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.3,
+        "monte_carlo_se": 0.05123475382979799,
+        "mean_observed_delta": 0.05567091614917539,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.05,
+          "n_works_per_arm": 12,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.3625,
+        "monte_carlo_se": 0.053746366156234224,
+        "mean_observed_delta": 0.04672978808259276,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.05,
+          "n_works_per_arm": 12,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.325,
+        "monte_carlo_se": 0.05236590016413353,
+        "mean_observed_delta": 0.04402546458531713,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.05,
+          "n_works_per_arm": 20,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.55,
+        "monte_carlo_se": 0.05562148865321748,
+        "mean_observed_delta": 0.04992463021276013,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.05,
+          "n_works_per_arm": 20,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.5,
+        "monte_carlo_se": 0.05590169943749474,
+        "mean_observed_delta": 0.05186280415745174,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.1,
+          "n_works_per_arm": 6,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.525,
+        "monte_carlo_se": 0.05583177858531824,
+        "mean_observed_delta": 0.09593350452876098,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.1,
+          "n_works_per_arm": 6,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.5875,
+        "monte_carlo_se": 0.05503904863821685,
+        "mean_observed_delta": 0.09286969332174558,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.1,
+          "n_works_per_arm": 8,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.6125,
+        "monte_carlo_se": 0.054468310741200704,
+        "mean_observed_delta": 0.09517224100000118,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.1,
+          "n_works_per_arm": 8,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.6875,
+        "monte_carlo_se": 0.05182226234930312,
+        "mean_observed_delta": 0.10567091614917538,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.1,
+          "n_works_per_arm": 12,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.7875,
+        "monte_carlo_se": 0.04573616594118926,
+        "mean_observed_delta": 0.09672978808259276,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.1,
+          "n_works_per_arm": 12,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.7875,
+        "monte_carlo_se": 0.04573616594118926,
+        "mean_observed_delta": 0.09402546458531713,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.1,
+          "n_works_per_arm": 20,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.9375,
+        "monte_carlo_se": 0.027063293868263706,
+        "mean_observed_delta": 0.09992463021276013,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.1,
+          "n_works_per_arm": 20,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.95,
+        "monte_carlo_se": 0.02436698586202242,
+        "mean_observed_delta": 0.10186280415745172,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.15,
+          "n_works_per_arm": 6,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.75,
+        "monte_carlo_se": 0.04841229182759271,
+        "mean_observed_delta": 0.14593350452876094,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.15,
+          "n_works_per_arm": 6,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.8,
+        "monte_carlo_se": 0.04472135954999579,
+        "mean_observed_delta": 0.14286969332174557,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.15,
+          "n_works_per_arm": 8,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.8875,
+        "monte_carlo_se": 0.03532770690265646,
+        "mean_observed_delta": 0.14517224100000115,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.15,
+          "n_works_per_arm": 8,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 0.975,
+        "monte_carlo_se": 0.017455300054711183,
+        "mean_observed_delta": 0.1556709161491754,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.15,
+          "n_works_per_arm": 12,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 1.0,
+        "monte_carlo_se": 0.0,
+        "mean_observed_delta": 0.14672978808259277,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.15,
+          "n_works_per_arm": 12,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 1.0,
+        "monte_carlo_se": 0.0,
+        "mean_observed_delta": 0.14402546458531712,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.15,
+          "n_works_per_arm": 20,
+          "passages_per_work": 5,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 1.0,
+        "monte_carlo_se": 0.0,
+        "mean_observed_delta": 0.14992463021276012,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      },
+      {
+        "analysis_id": "ISEF2027-POWER-HIER-v2",
+        "primary_test": "work_level_permutation_one_sided_delta_q",
+        "assumptions": {
+          "effect_delta_q": 0.15,
+          "n_works_per_arm": 20,
+          "passages_per_work": 10,
+          "between_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "within_work_sd": "UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE",
+          "missingness_rate": 0.05,
+          "n_sim": 80,
+          "n_perm": 199,
+          "alpha": 0.05,
+          "seed": 20270816,
+          "notes": "",
+          "unknown_parameters": [
+            "between_work_sd",
+            "within_work_sd"
+          ],
+          "ready_for_sample_size_freeze": false
+        },
+        "provisional_defaults_used": true,
+        "ready_for_sample_size_freeze": false,
+        "n_sim": 80,
+        "empirical_power": 1.0,
+        "monte_carlo_se": 0.0,
+        "mean_observed_delta": 0.15186280415745174,
+        "label": "PROVISIONAL_SIMULATION_UNKNOWN_VARIANCE",
+        "evidence_class": "SOFTWARE_DEMO",
+        "provenance": {
+          "evidence_class": "SOFTWARE_DEMO",
+          "synthetic": true,
+          "real_text": false,
+          "blinded": false,
+          "phase": "calibration",
+          "source_split": "simulation",
+          "method_version": "power_hier_v2",
+          "student_reviewed_inputs": false,
+          "notes": "Hierarchical \u0394_Q power; not confirmatory evidence.",
+          "extra": {}
+        }
+      }
+    ],
+    "interpretation": "Do not freeze confirmatory N from provisional cells where variance is UNKNOWN. Use empirical ICC/variance from calibration real scores first.",
+    "evidence_class": "SOFTWARE_DEMO",
+    "provenance": {
+      "evidence_class": "SOFTWARE_DEMO",
+      "synthetic": true,
+      "real_text": false,
+      "blinded": false,
+      "phase": "calibration",
+      "source_split": "simulation",
+      "method_version": "power_hier_v2",
+      "student_reviewed_inputs": false,
+      "notes": "",
+      "extra": {}
+    }
+  },
   "warnings": [
-    "Calibration adversarial outputs are diagnostics, not confirmatory p-values.",
-    "Power scaffold requires student-frozen ICC/variance before prereg sample size."
-  ]
+    "Adversarial outputs on modern_density are DEVELOPMENT diagnostics, not confirmatory p-values.",
+    "Toy logistic power is SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE.",
+    "Hierarchical power uses UNKNOWN variance \u2192 not ready for sample-size freeze."
+  ],
+  "evidence_class": "DEVELOPMENT_ANALYSIS",
+  "provenance": {
+    "evidence_class": "DEVELOPMENT_ANALYSIS",
+    "synthetic": false,
+    "real_text": true,
+    "blinded": false,
+    "phase": "calibration",
+    "source_split": "calibration_or_dev_pd",
+    "method_version": "cal_adv_v2",
+    "student_reviewed_inputs": false,
+    "notes": "",
+    "extra": {}
+  }
 }

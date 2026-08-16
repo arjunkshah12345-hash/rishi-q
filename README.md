@@ -18,18 +18,19 @@
 
 ## Status at a glance
 
+Machine-readable: [`artifacts/isef2027/PROJECT_STATUS.json`](artifacts/isef2027/PROJECT_STATUS.json)
+
 | Gate | Status |
 |------|--------|
 | Flagship exploratory (`ISEF-AKASA-SOUND-FIELD`) | **Frozen & public** |
-| Confirmatory decisions + prereg content | **Frozen** ([release](https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1)) |
-| Concept graphs / controls / mask vocab | **Approved / FROZEN** |
-| Confirmatory sealed analysis | **LOCKED** (no scoring) |
-| Human ratings | **Not collected** (deferred; Form 4 N/A) |
-| School SRC stamp | Packet ready — you submit Forms 1/1A/1B |
-| OSF web mirror | Optional — needs `OSF_TOKEN` → `scripts/submit_osf_prereg.sh` |
-| Paper / abstract | **You write** — start at [`paper/STUDENT_WRITE_HERE.md`](paper/STUDENT_WRITE_HERE.md) |
+| V1 prereg GitHub Release | **Untouched historical timestamp** ([link](https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1)) — **superseded for future confirmatory by v2 development** |
+| V2 methodology | **`V2_CANDIDATE_REQUIRES_STUDENT_FREEZE`** — see [`docs/V1_TO_V2_METHOD_CORRECTIONS.md`](docs/V1_TO_V2_METHOD_CORRECTIONS.md) |
+| Confirmatory sealed | **IDs reserved; outcomes unscored; analysis LOCKED_NOT_READY** |
+| OSF | **Not submitted** |
+| Human ratings | **Not collected** |
+| Paper / abstract | **You write** — [`paper/STUDENT_WRITE_HERE.md`](paper/STUDENT_WRITE_HERE.md) |
 
-Full dashboard: [`docs/STATUS.md`](docs/STATUS.md)
+Full dashboard: [`docs/STATUS.md`](docs/STATUS.md) · Judge attacks: [`docs/JUDGE_ATTACK_MATRIX.md`](docs/JUDGE_ATTACK_MATRIX.md)
 
 ---
 

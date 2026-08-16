@@ -1,6 +1,6 @@
 {
   "freeze_id": "ISEF2027-DEV-FREEZE-v1",
-  "generated_at": "2026-08-16T04:24:29.541505+00:00",
+  "generated_at": "2026-08-16T04:55:05.125030+00:00",
   "status": "EXPLORATORY_FROZEN",
   "warning": "These hashes record what was known BEFORE ISEF2027 upgrades. Do not revise these files to strengthen claims. Fair-coin P=1/64 is NOT confirmatory inference.",
   "n_files_hashed": 32,
@@ -29,8 +29,8 @@
     },
     {
       "path": "ontology/physics_fingerprints/index.yaml",
-      "sha256": "b588bd817c7dbd91a8f76a5ea0034013294c29f2b386f2c7587c102d4025f7ff",
-      "bytes": 343
+      "sha256": "41254e0d4c011fdcb5505a0d2fcd4ebb015311f5e5e61f69e49543df58e59bba",
+      "bytes": 391
     },
     {
       "path": "ontology/physics_fingerprints/newtonian.yaml",
@@ -64,8 +64,8 @@
     },
     {
       "path": "configs/physics_vocab_v0.1.json",
-      "sha256": "f0f7f897d6375d11aa9ac91903da64b8fe8b9ad4d03bf5bd14d40ff40cae9cf4",
-      "bytes": 386
+      "sha256": "5389defac6bc9b0bc41d789ea43a9ae8b836a1d924ed8384f0be52fc0511cc60",
+      "bytes": 413
     },
     {
       "path": "configs/development.yaml",

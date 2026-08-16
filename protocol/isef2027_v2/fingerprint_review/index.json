@@ -1,0 +1,11 @@
+{
+  "packets": [
+    "protocol/isef2027_v2/fingerprint_review/review_newtonian.yaml",
+    "protocol/isef2027_v2/fingerprint_review/review_classical_em.yaml",
+    "protocol/isef2027_v2/fingerprint_review/review_thermodynamics.yaml",
+    "protocol/isef2027_v2/fingerprint_review/review_relativity.yaml",
+    "protocol/isef2027_v2/fingerprint_review/review_quantum_mechanics.yaml",
+    "protocol/isef2027_v2/fingerprint_review/review_quantum_field_theory.yaml",
+    "protocol/isef2027_v2/fingerprint_review/review_atomistic_corpuscular.yaml"
+  ]
+}

@@ -116,25 +116,51 @@ def build_skeleton_manifest(root: Path) -> SplitManifest:
 
 
 def write_split_manifest(root: Path) -> Path:
-    man = build_skeleton_manifest(root)
-    issues = assert_no_split_overlap(man)
+    """Write/update split manifest without wiping reserved sealed IDs."""
     out = root / "artifacts/isef2027/split_manifest.json"
     out.parent.mkdir(parents=True, exist_ok=True)
+
+    man = build_skeleton_manifest(root)
     payload = man.model_dump(mode="json")
+
+    if out.exists():
+        prev = json.loads(out.read_text(encoding="utf-8"))
+        # Preserve reserved sealed + calibration + excluded + non-dev records
+        payload["confirmatory_sealed_ids"] = prev.get("confirmatory_sealed_ids", [])
+        payload["calibration_ids"] = prev.get("calibration_ids", []) or payload["calibration_ids"]
+        payload["excluded_ids"] = prev.get("excluded_ids", [])
+        prev_records = prev.get("records", [])
+        sealed_recs = [r for r in prev_records if r.get("split") == "confirmatory_sealed"]
+        cal_recs = [r for r in prev_records if r.get("split") == "calibration"]
+        # Keep skeleton development records; append preserved sealed/cal
+        payload["records"] = payload["records"] + cal_recs + sealed_recs
+        if prev.get("note"):
+            payload["note"] = prev["note"]
+
+    issues = assert_no_split_overlap(SplitManifest.model_validate(payload))
     payload["leakage_check"] = {"issues": issues, "status": "PASS" if not issues else "FAIL"}
+    payload["generated_at"] = datetime.now(timezone.utc).isoformat()
     out.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
-    # Sealed directory sentinel — no text payloads
     sealed = root / "corpus/confirmatory_sealed"
     sealed.mkdir(parents=True, exist_ok=True)
-    (sealed / "README.md").write_text(
-        "# CONFIRMATORY SEALED\n\n"
-        "**DO NOT** place analyzed text here during development.\n"
-        "Populate only after protocol freeze; keep IDs listed in "
-        "`artifacts/isef2027/split_manifest.json`.\n"
-        "Status: EMPTY / LOCKED\n",
-        encoding="utf-8",
-    )
+    lock = sealed / "lock.json"
+    n_sealed = len(payload.get("confirmatory_sealed_ids", []))
+    if not lock.exists():
+        (sealed / "README.md").write_text(
+            "# CONFIRMATORY SEALED\n\n"
+            "**DO NOT** score sealed payloads during development.\n"
+            f"Reserved IDs: {n_sealed}. See lock.json + split_manifest.json.\n"
+            "Status: LOCKED\n",
+            encoding="utf-8",
+        )
+    else:
+        (sealed / "README.md").write_text(
+            "# CONFIRMATORY SEALED\n\n"
+            "**Status: LOCKED / RESERVED**\n\n"
+            f"Reserved IDs: {n_sealed}. Outcomes unscored. See `lock.json`.\n",
+            encoding="utf-8",
+        )
     cal = root / "corpus/calibration"
     cal.mkdir(parents=True, exist_ok=True)
     (cal / "README.md").write_text(

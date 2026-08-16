@@ -25,6 +25,13 @@ def _root() -> Path:
     return Path(__file__).resolve().parents[3]
 
 
+def _project_status(root: Path) -> dict:
+    path = root / "artifacts/isef2027/PROJECT_STATUS.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return {}
+
+
 @app.command("inventory")
 def inventory_cmd() -> None:
     path = write_inventory(_root())
@@ -49,8 +56,6 @@ def reproduce_cmd(
 ) -> None:
     """Regenerate DEV/CALIBRATION harness artifacts. Never opens sealed confirmatory."""
     root = _root()
-    # Prefer repo-relative config even if the shell resolved a relative Path.
-    cfg = config if config.is_absolute() and config.exists() else (root / "configs/isef2027.yaml")
     if config.is_absolute() and config.exists():
         cfg = config
     elif (root / config).exists():
@@ -62,49 +67,44 @@ def reproduce_cmd(
         {
             "run_id": summary["run_id"],
             "sealed_opened": summary["sealed_confirmatory_opened"],
+            "held_out_top1": summary.get("held_out_theory_validation_summary", {}).get("top1_accuracy"),
             "summary": summary["paths"],
-            "positive_control_top1_correct": summary["positive_control_ranking"]["top1_correct"],
         }
     )
 
 
 @app.command("status")
 def status_cmd() -> None:
-    """Print freeze / lock scorecard for the finished ISEF2027 package."""
-    import yaml
-
+    """Print PROJECT_STATUS.json + lock scorecard (single source of truth)."""
     root = _root()
-    decisions = yaml.safe_load((root / "artifacts/isef2027/STUDENT_DECISIONS.yaml").read_text())
+    st = _project_status(root)
     lock = json.loads((root / "corpus/confirmatory_sealed/lock.json").read_text(encoding="utf-8"))
-    graphs = json.loads((root / "ontology/concept_graph/index.json").read_text(encoding="utf-8"))
-    release = "https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1"
     try:
         assert_confirmatory_allowed(root)
         sealed = "UNLOCKED"
     except ConfirmatoryLockedError:
         sealed = "LOCKED"
 
-    rows = [
-        ("decisions", decisions.get("status", "?")),
-        ("concept_graphs", graphs.get("status", "?")),
-        ("sealed_analysis", sealed),
-        ("sealed_ids", str(len(lock.get("confirmatory_sealed_ids", [])))),
-        ("prereg_release", release),
-        ("paper_authorship", "STUDENT_ONLY"),
-        ("human_ratings", "NOT_COLLECTED"),
-    ]
-    rprint({"isef2027": {k: v for k, v in rows}})
-    for k, v in rows:
-        mark = "✓" if str(v).upper() in {"FROZEN", "LOCKED", "STUDENT_ONLY", "NOT_COLLECTED"} or k in {
-            "sealed_ids",
-            "prereg_release",
-        } else "·"
-        rprint(f"  {mark} {k}: {v}")
+    view = {
+        "v1_prereg_release": st.get("v1_prereg_release"),
+        "v1_label": st.get("v1_status_label"),
+        "v2_status": st.get("v2_status"),
+        "confirmatory_status": st.get("confirmatory_status", sealed),
+        "confirmatory_opened": st.get("confirmatory_opened", False),
+        "confirmatory_scored": st.get("confirmatory_scored", False),
+        "osf_registered": st.get("osf_registered", False),
+        "sealed_ids_reserved": len(lock.get("confirmatory_sealed_ids", [])),
+        "physics_fingerprints_verified": st.get("physics_fingerprints_verified"),
+        "power_analysis_valid": st.get("power_analysis_valid"),
+        "method_validation_complete": st.get("method_validation_complete"),
+    }
+    rprint(view)
+    for k, v in view.items():
+        rprint(f"  · {k}: {v}")
 
 
 @app.command("validate-freeze")
 def validate_freeze_cmd() -> None:
-    """Re-check SHA256 freeze manifest + lock invariants."""
     import subprocess
     import sys
 
@@ -115,18 +115,24 @@ def validate_freeze_cmd() -> None:
 @app.command("confirmatory-status")
 def confirmatory_status() -> None:
     root = _root()
+    st = _project_status(root)
     try:
         assert_confirmatory_allowed(root)
         rprint({"status": "UNLOCKED_BUT_RUNNER_NOT_ENABLED"})
     except ConfirmatoryLockedError as e:
-        rprint({"status": "LOCKED", "detail": str(e)})
+        rprint(
+            {
+                "status": "LOCKED",
+                "project_status": st.get("confirmatory_status", "LOCKED_NOT_READY"),
+                "detail": str(e),
+            }
+        )
 
 
 @app.command("reproduce-all")
 def reproduce_all_cmd(
     config: Path = typer.Option(Path("configs/isef2027.yaml"), "--config"),
 ) -> None:
-    """Full DEV harness + rebuild interactive visuals."""
     import subprocess
     import sys
 
@@ -145,6 +151,30 @@ def graphs_cmd() -> None:
 
     paths = build_all_theory_graph_templates(_root())
     rprint({"n": len(paths), "wrote": [str(p) for p in paths[-8:]]})
+
+
+@app.command("harden-v2")
+def harden_v2_cmd() -> None:
+    """Run v2 scientific hardening pipelines without opening sealed confirmatory."""
+    root = _root()
+    from rishiq.isef2027.corpus_manifest import build_confirmatory_candidate_manifest
+    from rishiq.isef2027.fingerprint_review import run_fingerprint_sanity, write_fingerprint_review_packets
+    from rishiq.isef2027.theory_validation import run_held_out_theory_validation
+    from rishiq.isef2027.translation_pairs import write_translation_pair_manifest_stub
+
+    held = run_held_out_theory_validation(root)
+    cand = build_confirmatory_candidate_manifest(root)
+    write_translation_pair_manifest_stub(root)
+    sanity = run_fingerprint_sanity(root)
+    write_fingerprint_review_packets(root)
+    rprint(
+        {
+            "held_out_top1": held["held_out"]["top1_accuracy"],
+            "weakest": held["held_out"]["weakest_theory_by_f1"],
+            "corpus_feasibility": cand["feasibility"],
+            "sanity_pass": sanity["pass_objective"],
+        }
+    )
 
 
 @app.command("show-summary")

@@ -9,28 +9,28 @@
       "kind": "space",
       "label": "spacetime",
       "notes": "",
-      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
+      "provenance": "AI_DRAFT_PENDING_STUDENT_REVIEW"
     },
     {
       "id": "light_c",
       "kind": "property",
       "label": "invariant c",
       "notes": "",
-      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
+      "provenance": "AI_DRAFT_PENDING_STUDENT_REVIEW"
     },
     {
       "id": "frame",
       "kind": "measurement",
       "label": "inertial frame",
       "notes": "",
-      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
+      "provenance": "AI_DRAFT_PENDING_STUDENT_REVIEW"
     },
     {
       "id": "matter",
       "kind": "entity",
       "label": "matter-energy",
       "notes": "",
-      "provenance": "STUDENT_APPROVED_VIA_DELEGATION"
+      "provenance": "AI_DRAFT_PENDING_STUDENT_REVIEW"
     }
   ],
   "edges": [
@@ -59,6 +59,9 @@
   "meta": {
     "warning": "FROZEN structural template \u2014 do not retune to raise Sanskrit\u2013QM scores. Scholarly spot-check still recommended.",
     "frozen_at": "2026-08-16T04:33:37.312405+00:00",
-    "freeze_authority": "student_delegated_2026-08-16"
-  }
+    "freeze_authority": "student_delegated_2026-08-16",
+    "v2_note": "V1 freeze release untouched; provenance corrected for v2 review. Not a v2 scientific freeze.",
+    "v2_status": "AI_DRAFT_PENDING_STUDENT_REVIEW"
+  },
+  "v2_review_status": "REQUIRES_STUDENT_REVIEW"
 }

@@ -1,0 +1,19 @@
+{
+  "corpus_id": "theory_validation_v1",
+  "n": 56,
+  "splits": {
+    "train": 32,
+    "dev": 13,
+    "test": 11
+  },
+  "theories": [
+    "newtonian",
+    "thermodynamics",
+    "classical_em",
+    "relativity",
+    "quantum_mechanics",
+    "quantum_field_theory",
+    "atomistic_corpuscular"
+  ],
+  "note": "Method validation only; not ancient-text confirmatory data."
+}

@@ -1,0 +1,45 @@
+# ISEF2027 confirmatory preregistration — V2 CANDIDATE
+
+status: V2_CANDIDATE_REQUIRES_STUDENT_FREEZE
+supersedes_for_future_analysis: prereg-isef2027-v1
+v1_release_untouched: https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1
+osf_registered: false
+do_not_publish_release: true
+
+title: >-
+  Beyond Metaphor: Blinded cluster-aware test of quantum-specific structural
+  correspondence in classical Sanskrit natural philosophy (RISHI-Q) — V2 candidate
+
+official_research_question: >-
+  REQUIRES_STUDENT_REVIEW — default draft retained from v1 wording pending student edit.
+
+primary_hypothesis_H0: "Δ_Q ≤ 0 after prespecified controls"
+primary_hypothesis_H1: "Δ_Q > 0 (one-sided); quantum-specific enrichment required"
+
+primary_similarity_metric: weighted_jaccard_ontology_with_NA_exclusion
+primary_inferential_test: work_level_permutation_one_sided
+structural_graph_primary: typed_relation_multiset_plus_hungarian_role_alignment
+random_seed: 20270816
+alpha: 0.05
+
+sample_size:
+  status: REQUIRES_STUDENT_REVIEW
+  v1_d08_carried_forward: false
+  justification: >-
+    Must come from hierarchical power simulation with empirically estimated
+    between/within-work variance — not toy logistic curves.
+  between_work_sd: UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE
+  within_work_sd: UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE
+  n_works_per_arm: null
+  passages_per_work: null
+  minimum_interesting_effect: REQUIRES_STUDENT_REVIEW
+
+human_validation:
+  will_collect: false
+  rationale: Deferred; no fabricated ratings.
+
+hard_bans:
+  - Do not score sealed confirmatory during v2 development.
+  - Do not use SOFTWARE_DEMO artifacts as confirmatory evidence.
+  - Do not claim ancient EM/QM discovery.
+  - Do not freeze sample size from placeholder power.

@@ -1,0 +1,60 @@
+# Student decisions — V2 (do not fake approvals)
+
+version: isef2027-decisions-v2
+status: V2_CANDIDATE_REQUIRES_STUDENT_FREEZE
+parent_v1: artifacts/isef2027/STUDENT_DECISIONS.yaml
+note: >-
+  V1 decisions remain historical record. Items below must be re-approved for v2.
+  AI must not mark FROZEN without real student review.
+
+decisions:
+  - id: V2-D01
+    item: Confirm or revise official research question wording
+    status: REQUIRES_STUDENT_REVIEW
+    value: ""
+  - id: V2-D02
+    item: Approve matched confirmatory control works from corpus inventory (not DEV exemplars)
+    status: REQUIRES_STUDENT_REVIEW
+    value: ""
+  - id: V2-D03
+    item: Review concept graphs / fingerprints via review packets (KEEP/MODIFY/DELETE)
+    status: REQUIRES_STUDENT_REVIEW
+    value: ""
+  - id: V2-D04
+    item: Include or exclude atomistic_corpuscular as classical competitor
+    status: REQUIRES_STUDENT_REVIEW
+    value: ""
+  - id: V2-D05
+    item: Freeze primary similarity metric (ontology Jaccard vs alternatives)
+    status: REQUIRES_STUDENT_REVIEW
+    value: "draft_default: weighted_jaccard_ontology_with_NA_exclusion"
+  - id: V2-D06
+    item: Freeze primary inferential test + seed
+    status: REQUIRES_STUDENT_REVIEW
+    value: "draft_default: work_level_permutation seed=20270816"
+  - id: V2-D07
+    item: Freeze mask vocabulary list version
+    status: REQUIRES_STUDENT_REVIEW
+    value: ""
+  - id: V2-D08
+    item: Set confirmatory sample size from hierarchical power + corpus feasibility
+    status: REQUIRES_STUDENT_REVIEW
+    value: >-
+      V1 D08 (≥20 works/arm) is NOT carried forward as established.
+      Variance parameters currently UNKNOWN_REQUIRES_EMPIRICAL_ESTIMATE.
+  - id: V2-D09
+    item: Reconfirm SRC/IRB determination if design changes (humans still deferred)
+    status: REQUIRES_STUDENT_REVIEW
+    value: ""
+  - id: V2-D10
+    item: Finalize confirmatory sealed work list after inventory (still unscored)
+    status: REQUIRES_STUDENT_REVIEW
+    value: ""
+  - id: V2-D11
+    item: Publish v2 prereg (GitHub/OSF) only after gates pass
+    status: BLOCKED_NOT_READY
+    value: "Do not publish v2 release yet."
+  - id: V2-D12
+    item: Review AI_USAGE_LOG and method-correction doc
+    status: REQUIRES_STUDENT_REVIEW
+    value: ""

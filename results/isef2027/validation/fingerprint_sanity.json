@@ -1,0 +1,15 @@
+{
+  "suite_id": "ISEF2027-FP-SANITY-v2",
+  "n_objective_failures": 0,
+  "issues": [],
+  "review_tasks": [
+    {
+      "task": "Confirm QM vs QFT distinguishable feature sets",
+      "shared_positives": 4,
+      "only_qm": 10,
+      "only_qft": 12,
+      "severity": "REQUIRES_STUDENT_REVIEW"
+    }
+  ],
+  "pass_objective": true
+}

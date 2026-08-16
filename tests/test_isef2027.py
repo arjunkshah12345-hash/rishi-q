@@ -32,7 +32,7 @@ def test_freeze_writes_manifest(tmp_path, monkeypatch):
     assert "sha256" in data
 
 
-def test_split_no_overlap():
+def test_split_skeleton_empty_sealed():
     man = build_skeleton_manifest(ROOT)
     assert assert_no_split_overlap(man) == []
     assert man.confirmatory_sealed_ids == []

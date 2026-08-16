@@ -36,27 +36,29 @@
     "corr_year_vs_modernization_lexicon": 0.7788146763309313,
     "tfidf_old_vs_modern": 0.044627162599931165,
     "note": "Synthetic illustration of translator-era leakage risk \u2014 not historical data.",
-    "seed": 42
+    "seed": 20270816
   },
   "masked_unmasked_shift": {
     "newtonian": {
-      "raw_top1": "newtonian",
-      "masked_top1": "newtonian",
+      "raw_top1": "atomistic_corpuscular",
+      "masked_top1": "atomistic_corpuscular",
       "raw_scores": {
-        "newtonian": 0.25,
-        "classical_em": 0.0625,
-        "thermodynamics": 0.14285714285714285,
-        "relativity": 0.125,
-        "quantum_mechanics": 0.0625,
-        "quantum_field_theory": 0.11764705882352941
+        "newtonian": 0.375,
+        "classical_em": 0.125,
+        "thermodynamics": 0.2857142857142857,
+        "relativity": 0.25,
+        "quantum_mechanics": 0.125,
+        "quantum_field_theory": 0.17647058823529413,
+        "atomistic_corpuscular": 0.42857142857142855
       },
       "masked_scores": {
-        "newtonian": 0.25,
-        "classical_em": 0.0625,
-        "thermodynamics": 0.14285714285714285,
-        "relativity": 0.125,
-        "quantum_mechanics": 0.0625,
-        "quantum_field_theory": 0.11764705882352941
+        "newtonian": 0.375,
+        "classical_em": 0.125,
+        "thermodynamics": 0.2857142857142857,
+        "relativity": 0.25,
+        "quantum_mechanics": 0.125,
+        "quantum_field_theory": 0.17647058823529413,
+        "atomistic_corpuscular": 0.42857142857142855
       },
       "top1_changed": false
     },
@@ -69,7 +71,8 @@
         "thermodynamics": 0.0,
         "relativity": 0.09090909090909091,
         "quantum_mechanics": 0.0,
-        "quantum_field_theory": 0.375
+        "quantum_field_theory": 0.375,
+        "atomistic_corpuscular": 0.0
       },
       "masked_scores": {
         "newtonian": 0.08333333333333333,
@@ -77,28 +80,31 @@
         "thermodynamics": 0.0,
         "relativity": 0.09090909090909091,
         "quantum_mechanics": 0.0,
-        "quantum_field_theory": 0.375
+        "quantum_field_theory": 0.375,
+        "atomistic_corpuscular": 0.0
       },
       "top1_changed": false
     },
     "thermodynamics": {
-      "raw_top1": "newtonian",
-      "masked_top1": "newtonian",
+      "raw_top1": "thermodynamics",
+      "masked_top1": "thermodynamics",
       "raw_scores": {
-        "newtonian": 0.0,
-        "classical_em": 0.0,
-        "thermodynamics": 0.0,
-        "relativity": 0.0,
-        "quantum_mechanics": 0.0,
-        "quantum_field_theory": 0.0
+        "newtonian": 0.5,
+        "classical_em": 0.1875,
+        "thermodynamics": 1.0,
+        "relativity": 0.2222222222222222,
+        "quantum_mechanics": 0.11764705882352941,
+        "quantum_field_theory": 0.10526315789473684,
+        "atomistic_corpuscular": 0.375
       },
       "masked_scores": {
-        "newtonian": 0.0,
-        "classical_em": 0.0,
-        "thermodynamics": 0.0,
-        "relativity": 0.0,
-        "quantum_mechanics": 0.0,
-        "quantum_field_theory": 0.0
+        "newtonian": 0.5,
+        "classical_em": 0.1875,
+        "thermodynamics": 1.0,
+        "relativity": 0.2222222222222222,
+        "quantum_mechanics": 0.11764705882352941,
+        "quantum_field_theory": 0.10526315789473684,
+        "atomistic_corpuscular": 0.375
       },
       "top1_changed": false
     },
@@ -111,7 +117,8 @@
         "thermodynamics": 0.0,
         "relativity": 0.0,
         "quantum_mechanics": 0.14285714285714285,
-        "quantum_field_theory": 0.125
+        "quantum_field_theory": 0.125,
+        "atomistic_corpuscular": 0.0
       },
       "masked_scores": {
         "newtonian": 0.0,
@@ -119,7 +126,8 @@
         "thermodynamics": 0.0,
         "relativity": 0.0,
         "quantum_mechanics": 0.14285714285714285,
-        "quantum_field_theory": 0.125
+        "quantum_field_theory": 0.125,
+        "atomistic_corpuscular": 0.0
       },
       "top1_changed": false
     },
@@ -132,7 +140,8 @@
         "thermodynamics": 0.0,
         "relativity": 0.07142857142857142,
         "quantum_mechanics": 0.09523809523809523,
-        "quantum_field_theory": 0.47058823529411764
+        "quantum_field_theory": 0.47058823529411764,
+        "atomistic_corpuscular": 0.07142857142857142
       },
       "masked_scores": {
         "newtonian": 0.14285714285714285,
@@ -140,7 +149,8 @@
         "thermodynamics": 0.0,
         "relativity": 0.07142857142857142,
         "quantum_mechanics": 0.09523809523809523,
-        "quantum_field_theory": 0.47058823529411764
+        "quantum_field_theory": 0.47058823529411764,
+        "atomistic_corpuscular": 0.07142857142857142
       },
       "top1_changed": false
     }

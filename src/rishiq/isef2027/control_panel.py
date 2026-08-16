@@ -86,11 +86,12 @@ def build_control_panel_inventory(root: Path) -> dict:
     out = root / "artifacts/isef2027/control_panel_inventory.json"
     out.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
-    # Refresh YAML decisions file with concrete files listed
+    # Refresh concrete file inventory in YAML without downgrading approved status
     yml = root / "artifacts/isef2027/control_panel_candidates.yaml"
     if yml.exists():
         data = yaml.safe_load(yml.read_text()) or {}
         data["concrete_pd_files"] = inventory
-        data["status"] = "CANDIDATE_LIST_WITH_FILE_INVENTORY"
+        if data.get("status") not in {"APPROVED_FROZEN", "APPROVED"}:
+            data["status"] = "CANDIDATE_LIST_WITH_FILE_INVENTORY"
         yml.write_text(yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
     return payload

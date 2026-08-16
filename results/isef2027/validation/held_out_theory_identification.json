@@ -1,0 +1,136 @@
+{
+  "benchmark_id": "ISEF2027-THEORY-VAL-HELDOUT-v1",
+  "scorer": "tfidf_centroid_train_only",
+  "n_train": 32,
+  "n_dev": 13,
+  "n_test": 11,
+  "labels": [
+    "atomistic_corpuscular",
+    "classical_em",
+    "quantum_field_theory",
+    "quantum_mechanics",
+    "relativity",
+    "thermodynamics"
+  ],
+  "top1_accuracy": 0.7272727272727273,
+  "macro_f1": 0.7111111111111111,
+  "mean_correct_rank": 1.7272727272727273,
+  "mean_margin_correct_minus_runnerup": 0.05550100562241016,
+  "confusion_matrix": {
+    "labels": [
+      "atomistic_corpuscular",
+      "classical_em",
+      "quantum_field_theory",
+      "quantum_mechanics",
+      "relativity",
+      "thermodynamics"
+    ],
+    "matrix": [
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  "per_theory": {
+    "atomistic_corpuscular": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "support": 2
+    },
+    "classical_em": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 1
+    },
+    "quantum_field_theory": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "support": 2
+    },
+    "quantum_mechanics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    "relativity": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 2
+    },
+    "thermodynamics": {
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "f1": 0.8,
+      "support": 2
+    }
+  },
+  "weakest_theory_by_f1": "quantum_mechanics",
+  "thermo_investigation": {
+    "thermo_in_test": 2,
+    "thermo_recall": 1.0,
+    "note": "If keyword-proxy top1 is low on thermo while TF-IDF is higher, failure was proxy/fingerprint coverage \u2014 not absence of thermo signal in text."
+  },
+  "evidence_class": "HELD_OUT_METHOD_VALIDATION",
+  "provenance": {
+    "evidence_class": "HELD_OUT_METHOD_VALIDATION",
+    "synthetic": false,
+    "real_text": true,
+    "blinded": false,
+    "phase": "validation",
+    "source_split": "test",
+    "method_version": "theory_val_tfidf_v1",
+    "student_reviewed_inputs": false,
+    "notes": "Train centroids fit before test evaluation; test labels unused for fitting.",
+    "extra": {}
+  }
+}

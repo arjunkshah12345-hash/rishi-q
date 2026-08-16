@@ -17,15 +17,22 @@ from rishiq.isef2027.calibration import build_calibration_from_pd
 from rishiq.isef2027.calibration_batteries import run_calibration_batteries
 from rishiq.isef2027.concept_graph import ConceptGraph, graph_overlap_score
 from rishiq.isef2027.control_panel import build_control_panel_inventory
+from rishiq.isef2027.corpus_manifest import build_confirmatory_candidate_manifest
 from rishiq.isef2027.discovery_replication import write_discovery_replication
+from rishiq.isef2027.evidence import EvidenceClass
+from rishiq.isef2027.fingerprint_review import run_fingerprint_sanity, write_fingerprint_review_packets
 from rishiq.isef2027.freeze import freeze_dev
+from rishiq.isef2027.graph_similarity import pairwise_fingerprint_matrix, structural_similarity_bundle
 from rishiq.isef2027.graph_templates import build_all_theory_graph_templates
 from rishiq.isef2027.human_val import write_human_validation_pack
 from rishiq.isef2027.inference import cluster_effect_bundle, work_level_permutation
+from rishiq.isef2027.invariants import assert_sealed_lock_invariants
 from rishiq.isef2027.inventory import write_inventory
 from rishiq.isef2027.registry import hash_file, new_record, register_experiment
 from rishiq.isef2027.splits import write_split_manifest
+from rishiq.isef2027.theory_validation import run_held_out_theory_validation
 from rishiq.isef2027.translation_battery import run_translation_battery
+from rishiq.isef2027.translation_pairs import write_translation_pair_manifest_stub
 from rishiq.fingerprints import load_all_fingerprints
 
 
@@ -163,22 +170,39 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
     calib = build_calibration_from_pd(root)
     cal_adv = run_calibration_batteries(root, seed=seed)
 
-    # pairwise graph overlaps among fingerprint templates
+    # pairwise graph overlaps among fingerprint templates (literal + structural)
     graph_dir = root / "ontology/concept_graph"
     fp_graphs = sorted(graph_dir.glob("template_fp_*.json"))
     graph_pair = {}
-    loaded = []
+    loaded_map = {}
     for p in fp_graphs:
-        loaded.append((p.stem, ConceptGraph.model_validate_json(p.read_text())))
-    for i, (a_id, a_g) in enumerate(loaded):
-        for b_id, b_g in loaded[i + 1 :]:
-            graph_pair[f"{a_id}__{b_id}"] = graph_overlap_score(a_g, b_g)
+        g = ConceptGraph.model_validate_json(p.read_text())
+        loaded_map[p.stem] = g
+    for i, a_id in enumerate(sorted(loaded_map)):
+        for b_id in sorted(loaded_map)[i + 1 :]:
+            graph_pair[f"{a_id}__{b_id}"] = structural_similarity_bundle(
+                loaded_map[a_id], loaded_map[b_id]
+            )
+    struct_matrix = pairwise_fingerprint_matrix(loaded_map)
+    (out_dir / "graph_structural_similarity.json").write_text(
+        json.dumps(struct_matrix, indent=2) + "\n", encoding="utf-8"
+    )
+
+    # v2 hardening: held-out theory val, corpus metadata, reviews, translation infra
+    held = run_held_out_theory_validation(root)
+    cand = build_confirmatory_candidate_manifest(root)
+    write_translation_pair_manifest_stub(root)
+    sanity = run_fingerprint_sanity(root)
+    write_fingerprint_review_packets(root)
+    sealed_issues = assert_sealed_lock_invariants(root)
 
     summary = {
         "run_id": f"ISEF2027-DEV-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
         "phase": "development_calibration_harness",
+        "evidence_class": "DEVELOPMENT_ANALYSIS",
         "seed": seed,
         "sealed_confirmatory_opened": False,
+        "sealed_lock_issues": sealed_issues,
         "split_leakage_issues": leak_issues,
         "paths": {
             "inventory": str(inv_path.relative_to(root)),
@@ -187,31 +211,48 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
             "human_validation": str(hv_path.relative_to(root)),
             "concept_graphs": [str(p.relative_to(root)) for p in cg_paths],
             "method_benchmark": "results/isef2027/dev/method_benchmark.json",
+            "held_out_theory_validation": "results/isef2027/validation/held_out_theory_identification.json",
+            "graph_structural": "results/isef2027/dev/graph_structural_similarity.json",
             "translation_battery": "results/isef2027/dev/translation_battery.json",
             "blind_audit": "results/isef2027/dev/blind_audit.json",
             "discovery_replication": "results/isef2027/dev/discovery_replication.json",
             "calibration_manifest": "corpus/calibration/calibration_manifest.json",
             "calibration_adversarial": "results/isef2027/dev/calibration_adversarial.json",
             "control_panel_inventory": "artifacts/isef2027/control_panel_inventory.json",
-            "prereg_template": "protocol/isef2027_prereg_TEMPLATE.yaml",
-            "student_decisions": "artifacts/isef2027/STUDENT_DECISIONS.yaml",
+            "confirmatory_candidates": "artifacts/isef2027/confirmatory_candidate_manifest.json",
+            "project_status": "artifacts/isef2027/PROJECT_STATUS.json",
+            "v2_prereg_candidate": "protocol/isef2027_v2/prereg_CANDIDATE.yaml",
+            "prereg_v1_historical": "protocol/isef2027_prereg_TEMPLATE.yaml",
+            "student_decisions_v1": "artifacts/isef2027/STUDENT_DECISIONS.yaml",
+            "student_decisions_v2": "artifacts/isef2027/STUDENT_DECISIONS_V2.yaml",
         },
         "n_theory_fingerprints": len(fps),
         "theory_ids": ids,
         "n_concept_graph_templates": len(fp_graphs) + 2,
         "concept_graph_overlap_akasa_vs_maxwell_TEMPLATE": graph_score,
-        "fingerprint_graph_pairwise_overlap": graph_pair,
+        "fingerprint_graph_pairwise_structural": graph_pair,
         "fingerprint_pairwise_jaccard": fp_jaccard,
         "tfidf_vais_vs_maxwell_toy": tfidf_vm,
         "positive_control_ranking": ranking,
         "adversarial": adv,
         "inference_demo": {"cluster_bundle": infer, "work_level_permutation": work_perm},
         "method_benchmark_summary": {
+            "evidence_class": "SOFTWARE_DEMO",
             "ontology_top1_accuracy": bench.get("ontology_top1_accuracy"),
             "n_panels": bench.get("n_panels"),
             "negative_controls": bench.get("negative_controls"),
         },
+        "held_out_theory_validation_summary": {
+            "evidence_class": "HELD_OUT_METHOD_VALIDATION",
+            "top1_accuracy": held["held_out"].get("top1_accuracy"),
+            "macro_f1": held["held_out"].get("macro_f1"),
+            "weakest_theory_by_f1": held["held_out"].get("weakest_theory_by_f1"),
+            "keyword_proxy_demo_top1": held["keyword_proxy_demo"].get("top1_accuracy"),
+        },
+        "corpus_feasibility": cand.get("feasibility"),
+        "fingerprint_sanity_pass_objective": sanity.get("pass_objective"),
         "translation_battery_summary": {
+            "evidence_class": "SOFTWARE_DEMO",
             "corr_year_vs_modernization_lexicon": trans.get("translator_year_demo", {}).get(
                 "corr_year_vs_modernization_lexicon"
             ),
@@ -224,11 +265,13 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
         "control_panel_n_pd_files": len(controls.get("pd_controls", [])),
         "warnings": [
             "Toy/dev metrics only — not confirmatory scientific results.",
-            "Concept graphs are FROZEN — do not retune to raise Sanskrit–QM scores.",
+            "V1 prereg release untouched but SUPERSEDED for future confirmatory by v2 development.",
+            "Concept-graph provenance is AI_DRAFT_PENDING_STUDENT_REVIEW for v2.",
             "Do not interpret these numbers as ancient-quantum evidence.",
-            "Method benchmark panels are modern pedagogy text for software validation.",
-            "Prereg frozen; public timestamp GitHub Release prereg-isef2027-v1 (OSF optional).",
-            "Sealed confirmatory analysis remains LOCKED; paper/abstract are student-authored.",
+            "Keyword/method_benchmark panels are SOFTWARE_DEMO; prefer held-out theory validation.",
+            "Hierarchical power uses UNKNOWN variance — sample size not freeze-ready.",
+            "Sealed confirmatory analysis remains LOCKED / unscored.",
+            "OSF not submitted.",
         ],
     }
 
@@ -253,6 +296,11 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
         blinded=False,
         config_frozen_beforehand=False,
         notes="Harness run; sealed set not opened.",
+        evidence_class=EvidenceClass.DEVELOPMENT_ANALYSIS,
+        synthetic=False,
+        method_version="isef2027_harness_v2",
+        source_split="development",
+        student_reviewed_inputs=False,
     )
     reg_path = register_experiment(root, rec)
     summary["registry_path"] = str(reg_path.relative_to(root))

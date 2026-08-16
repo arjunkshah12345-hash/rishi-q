@@ -6,11 +6,13 @@ theories:
 - relativity
 - quantum_mechanics
 - quantum_field_theory
+- atomistic_corpuscular
 classical_theories:
 - newtonian
 - classical_em
 - thermodynamics
 - relativity
+- atomistic_corpuscular
 quantum_theories:
 - quantum_mechanics
 - quantum_field_theory

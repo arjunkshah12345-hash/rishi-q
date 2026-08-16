@@ -13,17 +13,44 @@ jobs:
       - uses: astral-sh/setup-uv@v4
         with:
           enable-cache: true
-      - name: Install
-        run: uv pip install --system -e ".[dev]"
-      - name: Unit tests
+      - name: Install (uv project env)
+        run: |
+          uv python install 3.12
+          uv sync --extra dev
+      - name: Unit + ISEF2027 tests
         run: uv run pytest -q
-      - name: Freeze integrity
+      - name: Freeze integrity (v1 artifacts preserved)
         run: uv run python scripts/validate_isef2027_freeze.py
+      - name: Schema + split leakage + sealed lock invariants
+        run: uv run pytest -q tests/test_isef2027_invariants.py tests/test_stats_leakage.py
       - name: ISEF2027 status + harness
         run: |
           uv run rishiq-isef status
           uv run rishiq-isef reproduce --config configs/isef2027.yaml
-      - name: Confirmatory still locked
+      - name: Confirmatory still locked / unscored
         run: |
           out=$(uv run rishiq-isef confirmatory-status)
           echo "$out" | grep -q LOCKED
+          test ! -f results/confirmatory/run_summary.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          lock = json.loads(Path("corpus/confirmatory_sealed/lock.json").read_text())
+          assert lock["status"] == "LOCKED"
+          assert lock["allow_open_sealed"] is False
+          man = json.loads(Path("artifacts/isef2027/split_manifest.json").read_text())
+          sealed = set(man["confirmatory_sealed_ids"])
+          assert sealed.isdisjoint(set(man["development_ids"]))
+          assert sealed.isdisjoint(set(man["calibration_ids"]))
+          # No confirmatory score artifacts
+          for p in Path("results").rglob("*"):
+              if not p.is_file():
+                  continue
+              low = str(p).lower()
+              if "confirmatory" in low and p.suffix in {".json", ".csv", ".parquet"}:
+                  if "lock" in p.name.lower() or "readme" in p.name.lower():
+                      continue
+                  text = p.read_text(errors="ignore")
+                  assert "qs_score" not in text.lower() or "LOCKED" in text
+          print("sealed lock invariants OK")
+          PY

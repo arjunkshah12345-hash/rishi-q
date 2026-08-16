@@ -91,3 +91,18 @@ Do **not** delete entries. Student should mark review status.
 - Visuals gallery index upgrade; CI runs full pytest + freeze check
 - Version 0.2.0; CITATION.cff remote fixed to arjunkshah12345-hash
 - Still student-only: paper/abstract; school SRC stamp; optional OSF token; sealed PD acquisitions
+
+---
+
+## 2026-08-16 — scientific hardening pass (v2 candidate)
+
+- Fixed CI to `uv sync --extra dev`
+- Sealed-lock invariants + tests; split manifest preserves reserved sealed IDs
+- V1 release untouched; `docs/V1_TO_V2_METHOD_CORRECTIONS.md` + `protocol/isef2027_v2/`
+- Evidence classes; registry enforcement; PROJECT_STATUS.json
+- Structural graph similarity (typed relation + Hungarian)
+- Held-out theory validation corpus (TF-IDF); keyword proxy quarantined as SOFTWARE_DEMO
+- Hierarchical Δ_Q power with UNKNOWN variance; toy power labeled SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE
+- Confirmatory candidate metadata manifest (unscored); translation-pair schema
+- Fingerprint review packets; sanity suite; judge attack matrix
+- Confirmatory status remains LOCKED_NOT_READY

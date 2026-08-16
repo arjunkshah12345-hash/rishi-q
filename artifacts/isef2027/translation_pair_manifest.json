@@ -1,0 +1,40 @@
+{
+  "manifest_id": "ISEF2027-TRANSLATION-PAIRS-v2",
+  "n_works": 3,
+  "pairs": [
+    {
+      "work_id": "bhagavad_gita",
+      "note": "Many English translations across eras; acquire PD-only editions",
+      "status": "TO_ACQUIRE_PD_EDITIONS",
+      "source_passage_ids_aligned": false
+    },
+    {
+      "work_id": "upanishads_select",
+      "note": "Multiple PD translations exist; align by verse ID before scoring",
+      "status": "PARTIAL_LOCAL_ONE_TRANSLATION_ONLY",
+      "local_path": "corpus/raw/pd/upanishads_paramananda_3283.txt",
+      "source_passage_ids_aligned": false
+    },
+    {
+      "work_id": "lucretius",
+      "note": "DEV contaminated for confirmatory; usable for translation-shift DEVELOPMENT study only",
+      "status": "DEV_ONLY_TRANSLATION_STUDY_CANDIDATE",
+      "source_passage_ids_aligned": false
+    }
+  ],
+  "scored": false,
+  "synthetic_demo_separate_file": "results/isef2027/dev/translation_battery.json",
+  "evidence_class": "METADATA_ONLY",
+  "provenance": {
+    "evidence_class": "METADATA_ONLY",
+    "synthetic": false,
+    "real_text": false,
+    "blinded": false,
+    "phase": "development",
+    "source_split": "metadata",
+    "method_version": "translation_pairs_v2",
+    "student_reviewed_inputs": false,
+    "notes": "Infrastructure only; no structural scores computed on confirmatory sealed data.",
+    "extra": {}
+  }
+}

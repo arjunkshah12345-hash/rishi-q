@@ -1,0 +1,20 @@
+{
+  "unit": "same_underlying_passage_across_translations",
+  "fields": [
+    "source_passage_id",
+    "work_id",
+    "language_source",
+    "translation_id",
+    "translator",
+    "translator_year",
+    "literal_vs_free",
+    "edition",
+    "source_url",
+    "text",
+    "lexical_modernization_score",
+    "structural_scores_by_theory",
+    "masked_structural_scores_by_theory"
+  ],
+  "analysis": "paired_or_hierarchical_by_source_passage_id",
+  "unknown_policy": "leave null; do not infer style from vibes"
+}
