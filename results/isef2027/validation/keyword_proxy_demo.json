@@ -7,13 +7,13 @@
   "provenance": {
     "evidence_class": "SOFTWARE_DEMO",
     "synthetic": false,
-    "real_text": true,
+    "real_text": false,
     "blinded": false,
     "phase": "validation",
-    "source_split": "test",
+    "source_split": "test_development_contaminated",
     "method_version": "keyword_proxy_v0",
     "student_reviewed_inputs": false,
-    "notes": "Plumbing comparison only.",
+    "notes": "Plumbing comparison only on curated pedagogy.",
     "extra": {}
   }
 }

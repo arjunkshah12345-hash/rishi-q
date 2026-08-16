@@ -23,7 +23,7 @@
       },
       "tfidf_vs_self": 0.33839358630782246,
       "tfidf_vs_qft": 0.02459384646791838,
-      "hash_embed_vs_qft": 0.02772768678553757,
+      "hash_embed_vs_qft": 0.07893327060166852,
       "tfidf_vs_generic_metaphysics": 0.014426800950096408,
       "masked_tfidf_vs_qft": 0.03360116003606221
     },
@@ -46,7 +46,7 @@
       },
       "tfidf_vs_self": 0.36707669799620213,
       "tfidf_vs_qft": 0.023266265355888063,
-      "hash_embed_vs_qft": 0.06463275034798308,
+      "hash_embed_vs_qft": 0.0820202136976434,
       "tfidf_vs_generic_metaphysics": 0.02881647279094858,
       "masked_tfidf_vs_qft": 0.026988610739247812
     },
@@ -69,7 +69,7 @@
       },
       "tfidf_vs_self": 0.3492160793133839,
       "tfidf_vs_qft": 0.026768330660865584,
-      "hash_embed_vs_qft": 0.10035155477913417,
+      "hash_embed_vs_qft": 0.08143593424447898,
       "tfidf_vs_generic_metaphysics": 0.009390586012362832,
       "masked_tfidf_vs_qft": 0.038045499998920956
     },
@@ -92,7 +92,7 @@
       },
       "tfidf_vs_self": 0.3333333333333331,
       "tfidf_vs_qft": 0.0184716724323514,
-      "hash_embed_vs_qft": 0.02589816375201779,
+      "hash_embed_vs_qft": 0.05265940527116422,
       "tfidf_vs_generic_metaphysics": 0.0077931048273391645,
       "masked_tfidf_vs_qft": 0.018584861925039033
     },

@@ -1,0 +1,66 @@
+[
+  {
+    "key": "quantum_field_theory",
+    "title": "Quantum_field_theory",
+    "url": "https://en.wikipedia.org/wiki/Quantum_field_theory",
+    "license": "CC BY-SA 4.0",
+    "chars": 143047,
+    "words": 12941
+  },
+  {
+    "key": "quantum_mechanics",
+    "title": "Quantum_mechanics",
+    "url": "https://en.wikipedia.org/wiki/Quantum_mechanics",
+    "license": "CC BY-SA 4.0",
+    "chars": 76982,
+    "words": 8076
+  },
+  {
+    "key": "special_relativity",
+    "title": "Special_relativity",
+    "url": "https://en.wikipedia.org/wiki/Special_relativity",
+    "license": "CC BY-SA 4.0",
+    "chars": 180925,
+    "words": 18850
+  },
+  {
+    "key": "general_relativity",
+    "title": "General_relativity",
+    "url": "https://en.wikipedia.org/wiki/General_relativity",
+    "license": "CC BY-SA 4.0",
+    "chars": 81943,
+    "words": 11016
+  },
+  {
+    "key": "thermodynamics",
+    "title": "Thermodynamics",
+    "url": "https://en.wikipedia.org/wiki/Thermodynamics",
+    "license": "CC BY-SA 4.0",
+    "chars": 32787,
+    "words": 4799
+  },
+  {
+    "key": "classical_mechanics",
+    "title": "Classical_mechanics",
+    "url": "https://en.wikipedia.org/wiki/Classical_mechanics",
+    "license": "CC BY-SA 4.0",
+    "chars": 45959,
+    "words": 5591
+  },
+  {
+    "key": "maxwells_equations",
+    "title": "Maxwells_equations",
+    "url": "https://en.wikipedia.org/wiki/Maxwells_equations",
+    "license": "CC BY-SA 4.0",
+    "chars": 0,
+    "words": 0
+  },
+  {
+    "key": "atomic_theory",
+    "title": "Atomic_theory",
+    "url": "https://en.wikipedia.org/wiki/Atomic_theory",
+    "license": "CC BY-SA 4.0",
+    "chars": 0,
+    "words": 0
+  }
+]

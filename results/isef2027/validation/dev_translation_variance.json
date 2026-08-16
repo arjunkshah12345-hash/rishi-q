@@ -1,0 +1,121 @@
+{
+  "study_id": "ISEF2027-DEV-TRANSLATION-VARIANCE-v1",
+  "n_pairs": 11,
+  "mean_lexical_cosine": 0.24653882795761375,
+  "mean_lexical_cosine_masked": 0.2484294684795096,
+  "pairs": [
+    {
+      "work_id": "thomson_tait_np",
+      "passage_a": "thomson_tait_np-0000",
+      "passage_b": "thomson_tait_np-0001",
+      "lexical_cosine": 0.08827087903470911,
+      "lexical_cosine_masked": 0.08827087903470911,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "maxwell_theory_of_heat",
+      "passage_a": "maxwell_theory_of_heat-0000",
+      "passage_b": "maxwell_theory_of_heat-0001",
+      "lexical_cosine": 0.0,
+      "lexical_cosine_masked": 0.0,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "maxwell_elementary_electricity",
+      "passage_a": "maxwell_elementary_electricity-0000",
+      "passage_b": "maxwell_elementary_electricity-0001",
+      "lexical_cosine": 0.2636350694358401,
+      "lexical_cosine_masked": 0.2636350694358401,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "huygens_light",
+      "passage_a": "huygens_light-0000",
+      "passage_b": "huygens_light-0001",
+      "lexical_cosine": 0.3776796242521163,
+      "lexical_cosine_masked": 0.3776796242521163,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "dalton_chemical_philosophy",
+      "passage_a": "dalton_chemical_philosophy-0000",
+      "passage_b": "dalton_chemical_philosophy-0001",
+      "lexical_cosine": 0.24180220977856873,
+      "lexical_cosine_masked": 0.24180220977856873,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "openstax_university-physics-volume-2",
+      "passage_a": "openstax_university-physics-volume-2-1-1-temperature-and-thermal-equilibrium-00",
+      "passage_b": "openstax_university-physics-volume-2-1-1-temperature-and-thermal-equilibrium-01",
+      "lexical_cosine": 0.4087228800697643,
+      "lexical_cosine_masked": 0.4087228800697643,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_qed",
+      "passage_a": "wikipedia_qed-0000",
+      "passage_b": "wikipedia_qed-0001",
+      "lexical_cosine": 0.40922981693350674,
+      "lexical_cosine_masked": 0.42877935968833847,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_qm",
+      "passage_a": "wikipedia_qm-0000",
+      "passage_b": "wikipedia_qm-0001",
+      "lexical_cosine": 0.16777925127926174,
+      "lexical_cosine_masked": 0.16777925127926172,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_sr",
+      "passage_a": "wikipedia_sr-0000",
+      "passage_b": "wikipedia_sr-0001",
+      "lexical_cosine": 0.349858093583017,
+      "lexical_cosine_masked": 0.349858093583017,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_cm",
+      "passage_a": "wikipedia_cm-0000",
+      "passage_b": "wikipedia_cm-0001",
+      "lexical_cosine": 0.22851626015945145,
+      "lexical_cosine_masked": 0.22976376314547375,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_atomism",
+      "passage_a": "wikipedia_atomism-0000",
+      "passage_b": "wikipedia_atomism-0001",
+      "lexical_cosine": 0.17643302300751607,
+      "lexical_cosine_masked": 0.17643302300751607,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    }
+  ],
+  "limitation": "True multi-translator PD pairs should replace this within-work proxy before confirmatory design freeze.",
+  "evidence_class": "DEVELOPMENT_ANALYSIS",
+  "provenance": {
+    "evidence_class": "DEVELOPMENT_ANALYSIS",
+    "synthetic": false,
+    "real_text": true,
+    "blinded": false,
+    "phase": "validation",
+    "source_split": "development",
+    "method_version": "dev_translation_variance_v1",
+    "student_reviewed_inputs": false,
+    "notes": "Confirmatory sealed texts unused.",
+    "extra": {}
+  }
+}

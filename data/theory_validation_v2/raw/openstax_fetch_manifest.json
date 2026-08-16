@@ -1,0 +1,20 @@
+[
+  {
+    "book": "university-physics-volume-1",
+    "n": 70,
+    "file": "openstax_up_v1_chapters.jsonl",
+    "license": "CC BY 4.0"
+  },
+  {
+    "book": "university-physics-volume-2",
+    "n": 70,
+    "file": "openstax_up_v2_chapters.jsonl",
+    "license": "CC BY 4.0"
+  },
+  {
+    "book": "university-physics-volume-3",
+    "n": 70,
+    "file": "openstax_up_v3_chapters.jsonl",
+    "license": "CC BY 4.0"
+  }
+]

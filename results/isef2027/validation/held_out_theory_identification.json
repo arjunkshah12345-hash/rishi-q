@@ -1,5 +1,7 @@
 {
-  "benchmark_id": "ISEF2027-THEORY-VAL-HELDOUT-v2",
+  "benchmark_id": "ISEF2027-THEORY-VAL-PEDAGOGY-DEV-v1",
+  "evidence_role": "CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK",
+  "contamination_state": "DEVELOPMENT_CONTAMINATED",
   "scorer": "tfidf_linearsvc_train_only",
   "secondary_scorer": "tfidf_centroid_train_only",
   "n_train": 48,
@@ -143,20 +145,25 @@
   "thermo_investigation": {
     "thermo_f1": 0.6666666666666666,
     "thermo_recall": 1.0,
-    "note": "Keyword-proxy thermo failure was mapping coverage; SVM/TF-IDF is claim-bearing path."
+    "note": "Keyword-proxy thermo failure was mapping coverage; pedagogy SVM is development diagnostic only."
   },
-  "qm_vs_qft_note": "Centroid confused QM/QFT; LinearSVC is primary for that reason.",
-  "evidence_class": "HELD_OUT_METHOD_VALIDATION",
+  "qm_vs_qft_note": "Centroid confused QM/QFT; LinearSVC was chosen partly after observing that test behavior \u2014 hence DEVELOPMENT_CONTAMINATED, not pristine holdout.",
+  "scientific_claim_status": "DEVELOPMENT_RESULT_NOT_FINAL_METHOD_EVIDENCE",
+  "holdout_reset_doc": "docs/THEORY_VALIDATION_HOLDOUT_RESET.md",
+  "evidence_class": "DEVELOPMENT_ANALYSIS",
   "provenance": {
-    "evidence_class": "HELD_OUT_METHOD_VALIDATION",
+    "evidence_class": "DEVELOPMENT_ANALYSIS",
     "synthetic": false,
-    "real_text": true,
+    "real_text": false,
     "blinded": false,
     "phase": "validation",
-    "source_split": "test",
-    "method_version": "theory_val_tfidf_svm_v2",
+    "source_split": "test_development_contaminated",
+    "method_version": "theory_val_pedagogy_dev_v1",
     "student_reviewed_inputs": false,
-    "notes": "Train fit before test evaluation; test labels unused for fitting.",
-    "extra": {}
+    "notes": "Preserved historical scores as development results. Not HELD_OUT_METHOD_VALIDATION in the strong scientific sense.",
+    "extra": {
+      "evidence_role": "CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK",
+      "contamination_state": "DEVELOPMENT_CONTAMINATED"
+    }
   }
 }

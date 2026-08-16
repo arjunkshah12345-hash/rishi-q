@@ -106,3 +106,22 @@ Do **not** delete entries. Student should mark review status.
 - Confirmatory candidate metadata manifest (unscored); translation-pair schema
 - Fingerprint review packets; sanity suite; judge attack matrix
 - Confirmatory status remains LOCKED_NOT_READY
+
+## 2026-08-16 — Cursor agent (Pass 3: external + graph validation)
+
+- **Model/tool:** Cursor agent (Composer / Auto), local tools
+- **User prompt reference:** Pass 3 external method validation and graph-metric validation; confirmatory LOCKED; no accuracy chasing
+- **Task performed:**
+  - Downgraded pedagogy corpus to CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK; documented holdout reset
+  - Fixed Hungarian unmatched-node penalty (Option B coverage)
+  - Graph transformation robustness benchmark
+  - External PD/OpenStax corpus with eligibility rules + source-group splits
+  - Dev-only method selection, masking, LOSO/LOAO, variance/power sensitivity, ledger, final-holdout guard
+  - Fingerprint graph review packets (blank decisions); README/status cleanup
+- **Files substantially AI-generated/modified:**
+  - `src/rishiq/isef2027/graph_similarity.py`, `graph_robustness.py`, `theory_validation*.py`, `source_eligibility.py`, `final_holdout_guard.py`, …
+  - `data/theory_validation_v2/**`, `docs/THEORY_VALIDATION_HOLDOUT_RESET.md`
+  - `tests/test_graph_and_theory_val.py`, `README.md`, `artifacts/isef2027/PROJECT_STATUS.json`
+- **Student must review:** fingerprint KEEP/MODIFY decisions; source eligibility; whether corpus size/coverage suffices; method freeze before any final holdout eval
+- **Not done by AI:** official ISEF paper/abstract/poster; confirmatory unlock; final holdout evaluation
+

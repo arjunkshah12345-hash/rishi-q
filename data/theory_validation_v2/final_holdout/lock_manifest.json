@@ -1,0 +1,26 @@
+{
+  "status": "FINAL_METHOD_HOLDOUT_UNEVALUATED",
+  "contamination_state": "UNSEEN",
+  "evidence_role": "FINAL_METHOD_HOLDOUT",
+  "n_passages": 584,
+  "works": [
+    "clausius_mechanical_heat",
+    "openstax_university-physics-volume-3",
+    "tesla_high_frequency",
+    "wikipedia_maxwell",
+    "wikipedia_qft",
+    "wikipedia_thermo"
+  ],
+  "authors": [
+    "clausius",
+    "openstax_university-physics-volume-3",
+    "tesla",
+    "wikipedia_maxwell",
+    "wikipedia_qft",
+    "wikipedia_thermo"
+  ],
+  "holdout_passages_sha256": "cb003e3aed2feb2613a4b7be92562d5bd2e34cba994a7cf336f7aa7719eafe97",
+  "full_corpus_passages_sha256": "2410e8a13d6324ec6221f383f78558f69b85b744c2ce6b9530c2c1361e95a6b8",
+  "evaluated": false,
+  "access_log": "data/theory_validation_v2/final_holdout/access_log.jsonl"
+}

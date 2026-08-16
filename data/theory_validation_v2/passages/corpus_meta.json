@@ -1,0 +1,104 @@
+{
+  "corpus_id": "theory_validation_external_v2",
+  "evidence_role": "EXTERNAL_METHOD_DEVELOPMENT",
+  "n_passages": 2154,
+  "n_works": 26,
+  "n_authors": 24,
+  "theories": [
+    "newtonian",
+    "thermodynamics",
+    "classical_em",
+    "relativity",
+    "quantum_mechanics",
+    "quantum_field_theory",
+    "atomistic_corpuscular"
+  ],
+  "per_theory": {
+    "newtonian": 406,
+    "thermodynamics": 371,
+    "classical_em": 586,
+    "relativity": 195,
+    "quantum_mechanics": 176,
+    "quantum_field_theory": 171,
+    "atomistic_corpuscular": 249
+  },
+  "splits": {
+    "train": {
+      "n": 762,
+      "works": [
+        "carnot_motive_power",
+        "einstein_relativity_popular",
+        "faraday_experimental_v1",
+        "lucretius_drn",
+        "maxwell_treatise_em_v1",
+        "newton_opticks",
+        "openstax_university-physics-volume-1",
+        "wikipedia_gr",
+        "wikipedia_particle"
+      ],
+      "authors": [
+        "carnot",
+        "einstein",
+        "faraday",
+        "lucretius",
+        "maxwell",
+        "newton",
+        "openstax_university-physics-volume-1",
+        "wikipedia_gr",
+        "wikipedia_particle"
+      ]
+    },
+    "development": {
+      "n": 808,
+      "works": [
+        "dalton_chemical_philosophy",
+        "huygens_light",
+        "maxwell_elementary_electricity",
+        "maxwell_theory_of_heat",
+        "openstax_university-physics-volume-2",
+        "thomson_tait_np",
+        "wikipedia_atomism",
+        "wikipedia_cm",
+        "wikipedia_qed",
+        "wikipedia_qm",
+        "wikipedia_sr"
+      ],
+      "authors": [
+        "dalton",
+        "huygens",
+        "maxwell",
+        "openstax_university-physics-volume-2",
+        "thomson_tait",
+        "wikipedia_atomism",
+        "wikipedia_cm",
+        "wikipedia_qed",
+        "wikipedia_qm",
+        "wikipedia_sr"
+      ]
+    },
+    "final_holdout": {
+      "n": 584,
+      "works": [
+        "clausius_mechanical_heat",
+        "openstax_university-physics-volume-3",
+        "tesla_high_frequency",
+        "wikipedia_maxwell",
+        "wikipedia_qft",
+        "wikipedia_thermo"
+      ],
+      "authors": [
+        "clausius",
+        "openstax_university-physics-volume-3",
+        "tesla",
+        "wikipedia_maxwell",
+        "wikipedia_qft",
+        "wikipedia_thermo"
+      ]
+    }
+  },
+  "work_overlap_issues": [],
+  "hard_negative_n": 96,
+  "corpus_hash": "2410e8a13d6324ec6221f383f78558f69b85b744c2ce6b9530c2c1361e95a6b8",
+  "holdout_hash": "cb003e3aed2feb2613a4b7be92562d5bd2e34cba994a7cf336f7aa7719eafe97",
+  "note": "External independently authored passages with provenance. Final holdout must not be evaluated until method freeze."
+}

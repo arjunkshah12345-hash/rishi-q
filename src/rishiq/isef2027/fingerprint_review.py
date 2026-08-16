@@ -94,6 +94,60 @@ def run_fingerprint_sanity(root: Path) -> dict[str, Any]:
     return payload
 
 
+def write_graph_fingerprint_review_packets(root: Path) -> Path:
+    """Student review templates for concept-graph fingerprints (choices left blank)."""
+    gdir = root / "ontology/concept_graph"
+    out_dir = root / "protocol/isef2027_v2/fingerprint_review/graph_packets"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    index = []
+    for path in sorted(gdir.glob("template_fp_*.json")):
+        data = json.loads(path.read_text(encoding="utf-8"))
+        tid = path.stem.replace("template_fp_", "")
+        packet = {
+            "theory_id": tid,
+            "graph_file": str(path.relative_to(root)),
+            "provenance": "AI_DRAFT_PENDING_STUDENT_REVIEW",
+            "instructions": (
+                "For each node and edge, set decision to KEEP|MODIFY|DELETE|UNSURE|SOURCE_NEEDED. "
+                "Fill required_source only when citing a textbook/paper you have read. "
+                "Do not invent citations. Leave decisions blank until reviewed."
+            ),
+            "nodes": [
+                {
+                    "node_id": n.get("id"),
+                    "kind": n.get("kind"),
+                    "label": n.get("label"),
+                    "why_relation_or_role": n.get("notes", ""),
+                    "central_or_optional": "",
+                    "ambiguity_flag": "",
+                    "required_source": "",
+                    "decision": "",
+                }
+                for n in data.get("nodes", [])
+            ],
+            "edges": [
+                {
+                    "source": e.get("source"),
+                    "target": e.get("target"),
+                    "relation_type": e.get("kind"),
+                    "why_relation_exists": e.get("notes", ""),
+                    "central_or_optional": "",
+                    "ambiguity_flag": "",
+                    "required_source": "",
+                    "decision": "",
+                }
+                for e in data.get("edges", [])
+            ],
+            "student_signoff": "",
+            "date": "",
+        }
+        out = out_dir / f"graph_review_{tid}.yaml"
+        out.write_text(yaml.safe_dump(packet, sort_keys=False), encoding="utf-8")
+        index.append(str(out.relative_to(root)))
+    (out_dir / "index.json").write_text(json.dumps({"packets": index}, indent=2) + "\n", encoding="utf-8")
+    return out_dir
+
+
 def write_fingerprint_review_packets(root: Path) -> Path:
     """One packet per theory: student KEEP/MODIFY/DELETE/UNSURE/SOURCE_NEEDED."""
     fps = load_all_fingerprints(root / "ontology/physics_fingerprints")
@@ -106,7 +160,7 @@ def write_fingerprint_review_packets(root: Path) -> Path:
             "provenance": "AI_DRAFT_PENDING_STUDENT_REVIEW",
             "instructions": (
                 "For each feature, set decision to KEEP|MODIFY|DELETE|UNSURE|SOURCE_NEEDED "
-                "and a short rationale. Do not invent citations."
+                "and a short rationale. Do not invent citations. Choices must not be auto-filled."
             ),
             "features": [
                 {
@@ -115,6 +169,7 @@ def write_fingerprint_review_packets(root: Path) -> Path:
                     "decision": "",
                     "rationale": "",
                     "source_needed": False,
+                    "required_source": "",
                 }
                 for fid, val in sorted(fp.features.items())
             ],
@@ -124,10 +179,14 @@ def write_fingerprint_review_packets(root: Path) -> Path:
         path = out_dir / f"review_{tid}.yaml"
         path.write_text(yaml.safe_dump(packet, sort_keys=False), encoding="utf-8")
         index.append(str(path.relative_to(root)))
+    write_graph_fingerprint_review_packets(root)
     (out_dir / "README.md").write_text(
         "# Fingerprint review packets\n\n"
         "All AI-drafted fingerprints await real student review.\n"
-        "Do not treat v1 `STUDENT_APPROVED_VIA_DELEGATION` as v2 scientific approval.\n",
+        "Feature packets: `review_*.yaml`.\n"
+        "Graph packets: `graph_packets/graph_review_*.yaml`.\n"
+        "Do not treat v1 `STUDENT_APPROVED_VIA_DELEGATION` as v2 scientific approval.\n"
+        "Do not auto-fill KEEP/MODIFY/DELETE decisions.\n",
         encoding="utf-8",
     )
     (out_dir / "index.json").write_text(json.dumps({"packets": index}, indent=2) + "\n", encoding="utf-8")

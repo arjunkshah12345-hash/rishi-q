@@ -12,7 +12,7 @@
 > **Yes** an open, falsifiable, multi-civilization structural comparison package.
 
 **Your job as author:** write the paper / abstract / poster.  
-**This repo:** evidence, methods, freezes, visuals, reproducibility — already done.
+**This repo** contains the exploratory evidence and a V2 research framework currently undergoing external method validation (reproducibility tooling, freezes, visuals). It is **not** finished science: confirmatory analysis remains locked, fingerprints await student review, and the final method holdout is unevaluated.
 
 ---
 
@@ -22,9 +22,11 @@ Machine-readable: [`artifacts/isef2027/PROJECT_STATUS.json`](artifacts/isef2027/
 
 | Gate | Status |
 |------|--------|
-| Flagship exploratory (`ISEF-AKASA-SOUND-FIELD`) | **Frozen & public** |
+| Flagship exploratory (`ISEF-AKASA-SOUND-FIELD`) | **Frozen & public** (exploratory) |
 | V1 prereg GitHub Release | **Untouched historical timestamp** ([link](https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1)) — **superseded for future confirmatory by v2 development** |
 | V2 methodology | **`V2_CANDIDATE_REQUIRES_STUDENT_FREEZE`** — see [`docs/V1_TO_V2_METHOD_CORRECTIONS.md`](docs/V1_TO_V2_METHOD_CORRECTIONS.md) |
+| Pedagogy theory benchmark | **Development contaminated** — not final holdout ([reset doc](docs/THEORY_VALIDATION_HOLDOUT_RESET.md)) |
+| External method validation | **In progress** — source-grouped corpus v2; final holdout **UNEVALUATED** |
 | Confirmatory sealed | **IDs reserved; outcomes unscored; analysis LOCKED_NOT_READY** |
 | OSF | **Not submitted** |
 | Human ratings | **Not collected** |

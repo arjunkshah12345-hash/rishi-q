@@ -1,0 +1,98 @@
+theory_id: quantum_mechanics
+graph_file: ontology/concept_graph/template_fp_quantum_mechanics.json
+provenance: AI_DRAFT_PENDING_STUDENT_REVIEW
+instructions: For each node and edge, set decision to KEEP|MODIFY|DELETE|UNSURE|SOURCE_NEEDED.
+  Fill required_source only when citing a textbook/paper you have read. Do not invent
+  citations. Leave decisions blank until reviewed.
+nodes:
+- node_id: state
+  kind: state
+  label: quantum state
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: obs
+  kind: measurement
+  label: observable/operator
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: obs2
+  kind: measurement
+  label: incompatible observable
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: super
+  kind: property
+  label: superposition
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: born
+  kind: process
+  label: Born-rule measurement
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: hbar
+  kind: property
+  label: Planck scale
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+edges:
+- source: state
+  target: super
+  relation_type: HAS_PROPERTY
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- source: obs
+  target: state
+  relation_type: INTERACTS_WITH
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- source: born
+  target: obs
+  relation_type: DEPENDS_ON
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- source: state
+  target: hbar
+  relation_type: DEPENDS_ON
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- source: obs
+  target: obs2
+  relation_type: DISTINCT_FROM
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+student_signoff: ''
+date: ''

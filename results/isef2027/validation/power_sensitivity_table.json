@@ -1,0 +1,221 @@
+{
+  "variance_source": {
+    "status": "PROVISIONAL_FROM_DEV_PROXY",
+    "n_works": 11,
+    "mean_passages_per_work": 73.45454545454545,
+    "between_work_sd": 0.09118816704243983,
+    "within_work_sd": 0.15159238039362222,
+    "icc": 0.2657018872316558,
+    "between_work_sd_ci95": [
+      0.037952968322343,
+      0.12024344419610676
+    ],
+    "within_work_sd_ci95": [
+      0.12169640886767182,
+      0.1743725431488088
+    ],
+    "icc_ci95": [
+      0.06370342879914843,
+      0.417261129524208
+    ],
+    "missingness_rate_estimate": 0.0,
+    "score_definition": "dev_lexical_proxy_for_variance_structure_only",
+    "ready_to_freeze_N": false,
+    "note": "Proxy scores \u2014 replace with real method scores after freeze candidate exists."
+  },
+  "rows": [
+    {
+      "effect": 0.02,
+      "works_per_arm": 6,
+      "passages_per_work": 3,
+      "estimated_power": 0.1125,
+      "mc_se": 0.03532770690265645,
+      "scenario": "pessimistic"
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 6,
+      "passages_per_work": 5,
+      "estimated_power": 0.125,
+      "mc_se": 0.0369754986443726,
+      "scenario": "pessimistic"
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 10,
+      "passages_per_work": 3,
+      "estimated_power": 0.1,
+      "mc_se": 0.03354101966249685,
+      "scenario": "pessimistic"
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 10,
+      "passages_per_work": 5,
+      "estimated_power": 0.1125,
+      "mc_se": 0.03532770690265645,
+      "scenario": "pessimistic"
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 15,
+      "passages_per_work": 3,
+      "estimated_power": 0.1125,
+      "mc_se": 0.03532770690265645,
+      "scenario": "pessimistic"
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 15,
+      "passages_per_work": 5,
+      "estimated_power": 0.1,
+      "mc_se": 0.03354101966249685,
+      "scenario": "pessimistic"
+    },
+    {
+      "effect": 0.05,
+      "works_per_arm": 6,
+      "passages_per_work": 3,
+      "estimated_power": 0.225,
+      "mc_se": 0.046687123492457745,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.05,
+      "works_per_arm": 6,
+      "passages_per_work": 5,
+      "estimated_power": 0.225,
+      "mc_se": 0.046687123492457745,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.05,
+      "works_per_arm": 10,
+      "passages_per_work": 3,
+      "estimated_power": 0.275,
+      "mc_se": 0.04992181386928964,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.05,
+      "works_per_arm": 10,
+      "passages_per_work": 5,
+      "estimated_power": 0.3,
+      "mc_se": 0.05123475382979799,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.05,
+      "works_per_arm": 15,
+      "passages_per_work": 3,
+      "estimated_power": 0.2125,
+      "mc_se": 0.045736165941189254,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.05,
+      "works_per_arm": 15,
+      "passages_per_work": 5,
+      "estimated_power": 0.2125,
+      "mc_se": 0.045736165941189254,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.08,
+      "works_per_arm": 6,
+      "passages_per_work": 3,
+      "estimated_power": 0.35,
+      "mc_se": 0.05332682251925385,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.08,
+      "works_per_arm": 6,
+      "passages_per_work": 5,
+      "estimated_power": 0.3,
+      "mc_se": 0.05123475382979799,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.08,
+      "works_per_arm": 10,
+      "passages_per_work": 3,
+      "estimated_power": 0.45,
+      "mc_se": 0.05562148865321748,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.08,
+      "works_per_arm": 10,
+      "passages_per_work": 5,
+      "estimated_power": 0.5375,
+      "mc_se": 0.05574425418821208,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.08,
+      "works_per_arm": 15,
+      "passages_per_work": 3,
+      "estimated_power": 0.4375,
+      "mc_se": 0.0554632479665589,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.08,
+      "works_per_arm": 15,
+      "passages_per_work": 5,
+      "estimated_power": 0.4625,
+      "mc_se": 0.05574425418821208,
+      "scenario": "base"
+    },
+    {
+      "effect": 0.12,
+      "works_per_arm": 6,
+      "passages_per_work": 3,
+      "estimated_power": 0.4875,
+      "mc_se": 0.05588422742599203,
+      "scenario": "optimistic"
+    },
+    {
+      "effect": 0.12,
+      "works_per_arm": 6,
+      "passages_per_work": 5,
+      "estimated_power": 0.4375,
+      "mc_se": 0.0554632479665589,
+      "scenario": "optimistic"
+    },
+    {
+      "effect": 0.12,
+      "works_per_arm": 10,
+      "passages_per_work": 3,
+      "estimated_power": 0.6625,
+      "mc_se": 0.052867020674518816,
+      "scenario": "optimistic"
+    },
+    {
+      "effect": 0.12,
+      "works_per_arm": 10,
+      "passages_per_work": 5,
+      "estimated_power": 0.725,
+      "mc_se": 0.04992181386928964,
+      "scenario": "optimistic"
+    },
+    {
+      "effect": 0.12,
+      "works_per_arm": 15,
+      "passages_per_work": 3,
+      "estimated_power": 0.825,
+      "mc_se": 0.042481613669916075,
+      "scenario": "optimistic"
+    },
+    {
+      "effect": 0.12,
+      "works_per_arm": 15,
+      "passages_per_work": 5,
+      "estimated_power": 0.85,
+      "mc_se": 0.03992179855667828,
+      "scenario": "optimistic"
+    }
+  ],
+  "sample_size_justified": false
+}

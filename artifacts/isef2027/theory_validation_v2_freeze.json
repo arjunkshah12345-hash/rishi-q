@@ -1,0 +1,9 @@
+{
+  "artifact": "theory_validation_v2_freeze",
+  "corpus_hash": "2410e8a13d6324ec6221f383f78558f69b85b744c2ce6b9530c2c1361e95a6b8",
+  "holdout_hash": "cb003e3aed2feb2613a4b7be92562d5bd2e34cba994a7cf336f7aa7719eafe97",
+  "eligibility_rules": "data/theory_validation_v2/eligibility/source_eligibility_v1.json",
+  "method_frozen": false,
+  "final_holdout_evaluated": false,
+  "created": "2026-08-16"
+}

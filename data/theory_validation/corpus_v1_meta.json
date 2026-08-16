@@ -1,5 +1,7 @@
 {
-  "corpus_id": "theory_validation_v1",
+  "corpus_id": "theory_validation_v1_pedagogy",
+  "evidence_role": "CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK",
+  "contamination_state_test": "DEVELOPMENT_CONTAMINATED",
   "n": 76,
   "splits": {
     "train": 48,
@@ -15,5 +17,7 @@
     "quantum_field_theory",
     "atomistic_corpuscular"
   ],
-  "note": "Method validation only; not ancient-text confirmatory data."
+  "real_text_strong_sense": false,
+  "provenance": "Internally curated pedagogical sentences authored inside this repository. Useful for software development and sanity checks \u2014 NOT final method evidence.",
+  "note": "Downgraded Pass 3: CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK. See docs/THEORY_VALIDATION_HOLDOUT_RESET.md."
 }

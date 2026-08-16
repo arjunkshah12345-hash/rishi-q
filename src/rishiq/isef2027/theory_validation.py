@@ -1,8 +1,11 @@
-"""Known-theory identification validation with train/dev/test separation.
+"""Curated pedagogy theory-identification benchmark (development only).
 
-Primary held-out scorer: TF-IDF + linear SVM fit on TRAIN only (no keyword→ontology proxy).
-Centroid TF-IDF kept as secondary diagnostic.
-Keyword proxy retained only under evidence_class=SOFTWARE_DEMO for plumbing comparisons.
+Pass 3: this corpus is NOT externally sourced scientific holdout evidence.
+Evidence role: CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK.
+Former test split: DEVELOPMENT_CONTAMINATED (influenced LinearSVC selection).
+
+See docs/THEORY_VALIDATION_HOLDOUT_RESET.md.
+External validation lives in theory_validation_v2*.
 """
 
 from __future__ import annotations
@@ -20,6 +23,7 @@ from sklearn.svm import LinearSVC
 from rishiq.fingerprints import load_all_fingerprints
 from rishiq.isef2027.baselines import binary_vector_jaccard
 from rishiq.isef2027.benchmark import keyword_feature_proxy
+from rishiq.isef2027.contamination import ContaminationState, EvidenceRole
 from rishiq.isef2027.evidence import EvidenceClass, ProvenanceEnvelope, attach_provenance
 
 THEORIES = [
@@ -156,11 +160,21 @@ def build_theory_validation_corpus(root: Path) -> Path:
         for r in rows:
             f.write(json.dumps(r) + "\n")
     meta = {
-        "corpus_id": "theory_validation_v1",
+        "corpus_id": "theory_validation_v1_pedagogy",
+        "evidence_role": EvidenceRole.CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK.value,
+        "contamination_state_test": ContaminationState.DEVELOPMENT_CONTAMINATED.value,
         "n": len(rows),
         "splits": {s: sum(1 for r in rows if r["split"] == s) for s in ("train", "dev", "test")},
         "theories": THEORIES,
-        "note": "Method validation only; not ancient-text confirmatory data.",
+        "real_text_strong_sense": False,
+        "provenance": (
+            "Internally curated pedagogical sentences authored inside this repository. "
+            "Useful for software development and sanity checks — NOT final method evidence."
+        ),
+        "note": (
+            "Downgraded Pass 3: CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK. "
+            "See docs/THEORY_VALIDATION_HOLDOUT_RESET.md."
+        ),
     }
     (out.parent / "corpus_v1_meta.json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
     return out
@@ -265,7 +279,9 @@ def run_held_out_theory_validation(root: Path) -> dict[str, Any]:
 
     held = attach_provenance(
         {
-            "benchmark_id": "ISEF2027-THEORY-VAL-HELDOUT-v2",
+            "benchmark_id": "ISEF2027-THEORY-VAL-PEDAGOGY-DEV-v1",
+            "evidence_role": EvidenceRole.CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK.value,
+            "contamination_state": ContaminationState.DEVELOPMENT_CONTAMINATED.value,
             "scorer": "tfidf_linearsvc_train_only",
             "secondary_scorer": "tfidf_centroid_train_only",
             "n_train": len(train),
@@ -283,18 +299,30 @@ def run_held_out_theory_validation(root: Path) -> dict[str, Any]:
             "thermo_investigation": {
                 "thermo_f1": per_theory.get("thermodynamics", {}).get("f1"),
                 "thermo_recall": per_theory.get("thermodynamics", {}).get("recall"),
-                "note": "Keyword-proxy thermo failure was mapping coverage; SVM/TF-IDF is claim-bearing path.",
+                "note": "Keyword-proxy thermo failure was mapping coverage; pedagogy SVM is development diagnostic only.",
             },
-            "qm_vs_qft_note": "Centroid confused QM/QFT; LinearSVC is primary for that reason.",
+            "qm_vs_qft_note": (
+                "Centroid confused QM/QFT; LinearSVC was chosen partly after observing that "
+                "test behavior — hence DEVELOPMENT_CONTAMINATED, not pristine holdout."
+            ),
+            "scientific_claim_status": "DEVELOPMENT_RESULT_NOT_FINAL_METHOD_EVIDENCE",
+            "holdout_reset_doc": "docs/THEORY_VALIDATION_HOLDOUT_RESET.md",
         },
         ProvenanceEnvelope(
-            evidence_class=EvidenceClass.HELD_OUT_METHOD_VALIDATION,
+            evidence_class=EvidenceClass.DEVELOPMENT_ANALYSIS,
             synthetic=False,
-            real_text=True,
+            real_text=False,  # curated pedagogy, not external independent text
             phase="validation",
-            source_split="test",
-            method_version="theory_val_tfidf_svm_v2",
-            notes="Train fit before test evaluation; test labels unused for fitting.",
+            source_split="test_development_contaminated",
+            method_version="theory_val_pedagogy_dev_v1",
+            notes=(
+                "Preserved historical scores as development results. "
+                "Not HELD_OUT_METHOD_VALIDATION in the strong scientific sense."
+            ),
+            extra={
+                "evidence_role": EvidenceRole.CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK.value,
+                "contamination_state": ContaminationState.DEVELOPMENT_CONTAMINATED.value,
+            },
         ),
     )
 
@@ -308,11 +336,11 @@ def run_held_out_theory_validation(root: Path) -> dict[str, Any]:
         ProvenanceEnvelope(
             evidence_class=EvidenceClass.SOFTWARE_DEMO,
             synthetic=False,
-            real_text=True,
+            real_text=False,
             phase="validation",
-            source_split="test",
+            source_split="test_development_contaminated",
             method_version="keyword_proxy_v0",
-            notes="Plumbing comparison only.",
+            notes="Plumbing comparison only on curated pedagogy.",
         ),
     )
 

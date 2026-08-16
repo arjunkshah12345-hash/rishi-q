@@ -18,19 +18,23 @@
   "physics_fingerprints_verified": false,
   "method_validation_complete": false,
   "power_analysis_valid": false,
+  "graph_method_implemented": true,
+  "graph_algorithm_unit_validated": true,
   "graph_method_validated": false,
-  "confirmatory_corpus_adequate": false,
+  "external_validation_corpus_built": true,
+  "final_method_holdout_evaluated": false,
+  "final_method_holdout_status": "UNEVALUATED",
   "sample_size_justified": false,
+  "confirmatory_corpus_adequate": false,
   "documentation_internally_consistent": false,
+  "pedagogy_benchmark_role": "CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK",
+  "pedagogy_test_contamination_state": "DEVELOPMENT_CONTAMINATED",
+  "method_freeze_status": "NOT_READY_TO_FREEZE",
   "notes": [
     "V1 GitHub Release must remain untouched.",
     "Confirmatory sealed payloads must not be scored during v2 development.",
-    "Toy/logistic power outputs are SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE."
-  ],
-  "method_validation_held_out_top1": 0.5714285714285714,
-  "method_validation_weakest_theory": "newtonian",
-  "graph_method_implemented": true,
-  "power_analysis_code_ready": true,
-  "method_validation_macro_f1": 0.5809523809523809,
-  "method_validation_scorer": "tfidf_linearsvc_train_only"
+    "Pedagogy corpus downgraded Pass 3 — not HELD_OUT_METHOD_VALIDATION.",
+    "External corpus v2 built with source-group splits; final holdout unevaluated.",
+    "Toy/logistic power outputs remain SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE until ICC stable."
+  ]
 }

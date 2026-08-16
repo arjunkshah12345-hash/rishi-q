@@ -1,0 +1,90 @@
+theory_id: quantum_field_theory
+graph_file: ontology/concept_graph/template_fp_quantum_field_theory.json
+provenance: AI_DRAFT_PENDING_STUDENT_REVIEW
+instructions: For each node and edge, set decision to KEEP|MODIFY|DELETE|UNSURE|SOURCE_NEEDED.
+  Fill required_source only when citing a textbook/paper you have read. Do not invent
+  citations. Leave decisions blank until reviewed.
+nodes:
+- node_id: qfield
+  kind: field_medium
+  label: quantum field
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: excit
+  kind: particle_atom
+  label: field excitation/particle
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: fock
+  kind: state
+  label: Fock space
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: vac
+  kind: state
+  label: vacuum
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- node_id: intx
+  kind: interaction
+  label: local interaction
+  why_relation_or_role: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+edges:
+- source: excit
+  target: qfield
+  relation_type: COMPOSED_OF
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- source: excit
+  target: fock
+  relation_type: LOCATED_IN
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- source: intx
+  target: qfield
+  relation_type: CAUSES
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- source: vac
+  target: qfield
+  relation_type: HAS_PROPERTY
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+- source: excit
+  target: qfield
+  relation_type: OBSERVABLE_AS
+  why_relation_exists: ''
+  central_or_optional: ''
+  ambiguity_flag: ''
+  required_source: ''
+  decision: ''
+student_signoff: ''
+date: ''

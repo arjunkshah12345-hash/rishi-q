@@ -159,22 +159,86 @@ def harden_v2_cmd() -> None:
     root = _root()
     from rishiq.isef2027.corpus_manifest import build_confirmatory_candidate_manifest
     from rishiq.isef2027.fingerprint_review import run_fingerprint_sanity, write_fingerprint_review_packets
+    from rishiq.isef2027.graph_robustness import run_graph_transformation_benchmark
     from rishiq.isef2027.theory_validation import run_held_out_theory_validation
+    from rishiq.isef2027.theory_validation_v2_corpus import build_external_theory_corpus
     from rishiq.isef2027.translation_pairs import write_translation_pair_manifest_stub
 
     held = run_held_out_theory_validation(root)
+    grap = run_graph_transformation_benchmark(root)
+    try:
+        meta = build_external_theory_corpus(root)
+    except Exception as e:
+        meta = {"error": str(e)}
     cand = build_confirmatory_candidate_manifest(root)
     write_translation_pair_manifest_stub(root)
     sanity = run_fingerprint_sanity(root)
     write_fingerprint_review_packets(root)
     rprint(
         {
-            "held_out_top1": held["held_out"]["top1_accuracy"],
-            "weakest": held["held_out"]["weakest_theory_by_f1"],
+            "pedagogy_dev_top1": held["held_out"]["top1_accuracy"],
+            "pedagogy_role": held["held_out"].get("evidence_role"),
+            "graph_identical": grap["results"]["identical"]["hungarian_role_alignment"],
+            "external_corpus": meta,
             "corpus_feasibility": cand["feasibility"],
             "sanity_pass": sanity["pass_objective"],
         }
     )
+
+
+@app.command("build-external-theory-corpus")
+def build_external_corpus_cmd() -> None:
+    from rishiq.isef2027.theory_validation_v2_corpus import build_external_theory_corpus
+
+    meta = build_external_theory_corpus(_root())
+    rprint(meta)
+
+
+@app.command("select-method-dev")
+def select_method_dev_cmd() -> None:
+    """Train/dev model selection only — never loads final holdout."""
+    from rishiq.isef2027.theory_validation_v2 import run_development_method_selection
+
+    out = run_development_method_selection(_root())
+    rprint(
+        {
+            "selected_task_a": out["selected_task_a_on_dev"]["model"],
+            "macro_f1": out["selected_task_a_on_dev"]["metrics"]["macro_f1"],
+            "graph_weights": out["graph_weight_selection"]["selected"],
+            "method_freeze": out["method_freeze"]["status"],
+            "final_holdout": "UNEVALUATED",
+        }
+    )
+
+
+@app.command("graph-robustness")
+def graph_robustness_cmd() -> None:
+    from rishiq.isef2027.graph_robustness import run_graph_transformation_benchmark
+
+    out = run_graph_transformation_benchmark(_root())
+    rprint({"wrote": "results/isef2027/validation/graph_transformation_robustness.json", "n_curve": len(out["results"]["robustness_curve"])})
+
+
+@app.command("validate-final-method")
+def validate_final_method_cmd(
+    unlock_token: str = typer.Option(..., "--unlock-token", help="Required deliberate unlock"),
+) -> None:
+    """Evaluate final method holdout ONCE after freeze. Refuses if gates incomplete."""
+    from rishiq.isef2027.final_holdout_guard import assert_final_holdout_access_allowed
+
+    root = _root()
+    try:
+        assert_final_holdout_access_allowed(root, unlock_token)
+    except PermissionError as e:
+        rprint({"status": "BLOCKED", "detail": str(e)})
+        raise typer.Exit(code=2)
+    rprint(
+        {
+            "status": "GATES_PASSED_BUT_EVAL_NOT_IMPLEMENTED_IN_PASS3",
+            "note": "Pass 3 leaves FINAL_METHOD_HOLDOUT_UNEVALUATED until student freeze.",
+        }
+    )
+    raise typer.Exit(code=3)
 
 
 @app.command("show-summary")
