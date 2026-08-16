@@ -1,0 +1,83 @@
+{
+  "graph_id": "template_fp_classical_em",
+  "version": "0.1.0",
+  "domain": "theory_fingerprint",
+  "status": "TEMPLATE",
+  "nodes": [
+    {
+      "id": "em",
+      "kind": "field_medium",
+      "label": "EM field",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "charge",
+      "kind": "entity",
+      "label": "charge",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "light",
+      "kind": "observable",
+      "label": "light/radiation",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "sound",
+      "kind": "observable",
+      "label": "sound",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "air",
+      "kind": "substance",
+      "label": "material medium",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    }
+  ],
+  "edges": [
+    {
+      "source": "charge",
+      "target": "em",
+      "kind": "CAUSES",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "light",
+      "target": "em",
+      "kind": "PROPAGATES_THROUGH",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "em",
+      "target": "light",
+      "kind": "CARRIES",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "sound",
+      "target": "em",
+      "kind": "DISTINCT_FROM",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "sound",
+      "target": "air",
+      "kind": "PROPAGATES_THROUGH",
+      "weight": 1.0,
+      "notes": ""
+    }
+  ],
+  "meta": {
+    "warning": "TEMPLATE — student must verify before freeze"
+  }
+}

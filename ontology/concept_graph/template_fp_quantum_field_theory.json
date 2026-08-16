@@ -1,0 +1,83 @@
+{
+  "graph_id": "template_fp_quantum_field_theory",
+  "version": "0.1.0",
+  "domain": "theory_fingerprint",
+  "status": "TEMPLATE",
+  "nodes": [
+    {
+      "id": "qfield",
+      "kind": "field_medium",
+      "label": "quantum field",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "excit",
+      "kind": "particle_atom",
+      "label": "field excitation/particle",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "fock",
+      "kind": "state",
+      "label": "Fock space",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "vac",
+      "kind": "state",
+      "label": "vacuum",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "intx",
+      "kind": "interaction",
+      "label": "local interaction",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    }
+  ],
+  "edges": [
+    {
+      "source": "excit",
+      "target": "qfield",
+      "kind": "COMPOSED_OF",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "excit",
+      "target": "fock",
+      "kind": "LOCATED_IN",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "intx",
+      "target": "qfield",
+      "kind": "CAUSES",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "vac",
+      "target": "qfield",
+      "kind": "HAS_PROPERTY",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "excit",
+      "target": "qfield",
+      "kind": "OBSERVABLE_AS",
+      "weight": 1.0,
+      "notes": ""
+    }
+  ],
+  "meta": {
+    "warning": "TEMPLATE — student must verify before freeze"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0-TEMPLATE",
+  "graphs": [
+    "template_fp_newtonian",
+    "template_fp_classical_em",
+    "template_fp_thermodynamics",
+    "template_fp_relativity",
+    "template_fp_quantum_mechanics",
+    "template_fp_quantum_field_theory",
+    "template_fp_atomistic_corpuscular"
+  ],
+  "status": "TEMPLATE"
+}

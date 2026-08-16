@@ -1,6 +1,6 @@
 {
   "freeze_id": "ISEF2027-DEV-FREEZE-v1",
-  "generated_at": "2026-08-16T04:18:11.128334+00:00",
+  "generated_at": "2026-08-16T04:24:29.541505+00:00",
   "status": "EXPLORATORY_FROZEN",
   "warning": "These hashes record what was known BEFORE ISEF2027 upgrades. Do not revise these files to strengthen claims. Fair-coin P=1/64 is NOT confirmatory inference.",
   "n_files_hashed": 32,

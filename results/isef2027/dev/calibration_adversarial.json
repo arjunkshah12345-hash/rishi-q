@@ -1,0 +1,161 @@
+{
+  "battery_id": "ISEF2027-CAL-ADV-v1",
+  "seed": 42,
+  "n_texts": 120,
+  "scrub_mean_replacements": 0.1,
+  "scrub_pattern_freq": {
+    "geo_india": 6
+  },
+  "adversarial": {
+    "seed": 42,
+    "n_texts": 120,
+    "mask_terms": [
+      "atom",
+      "particle",
+      "wave",
+      "field",
+      "energy",
+      "quantum",
+      "vibration",
+      "ether",
+      "aether",
+      "space",
+      "force"
+    ],
+    "masked_texts_sample": [
+      "Every Upanishad begins with a Peace Chant (Shanti-patha) to create the proper atmosphere of purity and serenity. To study about God the whole nature must be prepared, so unitedly and with loving hearts teacher and disciples prayed to the Supreme Being for His grace and protection. It is not possible to comprehend the subtle problems of life unless the thought is tranquil and the [MASK] concentrated. Until our mind is withdrawn from the varied distractions and agitations of worldly affairs, we cannot enter into the spirit of higher religious study. No study is of avail so long as our inner being is not attuned. We must hold a peaceful attitude towards all living things; and if it is lacking, we must strive fervently to cultivate it through suggestion by chanting or repeating some holy text. The same lesson is taught by Jesus the Christ when He says: \"If thou bring thy gift to the altar and there rememberest that thy brother hath aught against thee; leave there thy gift before the altar and go thy way; first be reconciled to thy brother, and then come and offer thy gift.\"",
+      "Oneness of the Soul and God, and the value of both faith and works as means of ultimate attainment are the leading themes of this Upanishad. The general teaching of the Upanishads is that works alone, even the highest, can bring only temporary happiness and must inevitably bind a man unless through them he gains knowledge of his real Self. To help him acquire this knowledge is the aim of this and all Upanishads.",
+      "The indefinite term \"That\" is used in the Upanishads to designate the Invisible-Absolute, because no word or name can fully define It. A finite object, like a table or a tree, can be defined; but God, who is infinite and unbounded, cannot be expressed by finite language. Therefore the Rishis or Divine Seers, desirous not to limit the Unlimited, chose the indefinite term \"That\" to designate the Absolute."
+    ],
+    "n_feature_shuffles": 120,
+    "permuted_labels_sample": [
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "greek_lucretius_pd",
+      "vedanta_pd",
+      "vedanta_pd",
+      "vedanta_pd"
+    ],
+    "length_score_corr": 0.9998900698788116,
+    "leave_one_out_tradition": {
+      "vedanta_pd": 12.5,
+      "greek_lucretius_pd": -12.5
+    },
+    "interpretation_note": "Battery outputs are diagnostics for development/calibration. Do not select the friendliest p-value."
+  },
+  "tfidf_raw_sim": 0.07245821980605385,
+  "tfidf_masked_sim": 0.07249984032605478,
+  "work_level_permutation": {
+    "observed_delta": 0.09496707213005079,
+    "p_ge_obs": 0.021,
+    "n_perm": 2000,
+    "seed": 42,
+    "method": "work_level_permutation"
+  },
+  "leave_one_work_out_deltas": {
+    "C0": 0.0754886349417363,
+    "C1": 0.08486762932110048,
+    "C2": 0.11119626861740894,
+    "C3": 0.10474551616553929,
+    "W0": 0.09347512979587824,
+    "W1": 0.11370735961782336,
+    "W2": 0.08608243366871521,
+    "W3": 0.08303312596336843
+  },
+  "power_scaffold": {
+    "grid": [
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.05,
+        "n_per_group": 20,
+        "approx_power": 0.9975273768433653,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.05,
+        "n_per_group": 40,
+        "approx_power": 0.9999991684719722,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.05,
+        "n_per_group": 80,
+        "approx_power": 0.9999999999999065,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.1,
+        "n_per_group": 20,
+        "approx_power": 0.9999991684719722,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.1,
+        "n_per_group": 40,
+        "approx_power": 0.9999999999999065,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.1,
+        "n_per_group": 80,
+        "approx_power": 1.0,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.2,
+        "n_per_group": 20,
+        "approx_power": 0.9999999999999065,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.2,
+        "n_per_group": 40,
+        "approx_power": 1.0,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.2,
+        "n_per_group": 80,
+        "approx_power": 1.0,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.3,
+        "n_per_group": 20,
+        "approx_power": 1.0,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.3,
+        "n_per_group": 40,
+        "approx_power": 1.0,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      },
+      {
+        "method": "logistic_toy_power_curve",
+        "effect": 0.3,
+        "n_per_group": 80,
+        "approx_power": 1.0,
+        "note": "Placeholder power curve until student freezes ICC/variance from calibration."
+      }
+    ]
+  },
+  "warnings": [
+    "Calibration adversarial outputs are diagnostics, not confirmatory p-values.",
+    "Power scaffold requires student-frozen ICC/variance before prereg sample size."
+  ]
+}

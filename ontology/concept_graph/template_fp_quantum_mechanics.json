@@ -1,0 +1,90 @@
+{
+  "graph_id": "template_fp_quantum_mechanics",
+  "version": "0.1.0",
+  "domain": "theory_fingerprint",
+  "status": "TEMPLATE",
+  "nodes": [
+    {
+      "id": "state",
+      "kind": "state",
+      "label": "quantum state",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "obs",
+      "kind": "measurement",
+      "label": "observable/operator",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "obs2",
+      "kind": "measurement",
+      "label": "incompatible observable",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "super",
+      "kind": "property",
+      "label": "superposition",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "born",
+      "kind": "process",
+      "label": "Born-rule measurement",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "hbar",
+      "kind": "property",
+      "label": "Planck scale",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    }
+  ],
+  "edges": [
+    {
+      "source": "state",
+      "target": "super",
+      "kind": "HAS_PROPERTY",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "obs",
+      "target": "state",
+      "kind": "INTERACTS_WITH",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "born",
+      "target": "obs",
+      "kind": "DEPENDS_ON",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "state",
+      "target": "hbar",
+      "kind": "DEPENDS_ON",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "obs",
+      "target": "obs2",
+      "kind": "DISTINCT_FROM",
+      "weight": 1.0,
+      "notes": ""
+    }
+  ],
+  "meta": {
+    "warning": "TEMPLATE — student must verify before freeze"
+  }
+}

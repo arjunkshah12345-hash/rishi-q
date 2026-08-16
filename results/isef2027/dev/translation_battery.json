@@ -145,6 +145,34 @@
       "top1_changed": false
     }
   },
+  "translation_demo": {
+    "status": "OK",
+    "n": 3,
+    "styles": [
+      "literal",
+      "older_scholarly",
+      "recent_scholarly"
+    ],
+    "years": [
+      1880,
+      1920,
+      2018
+    ],
+    "modernization_by_row": [
+      0.047619047619047616,
+      0.047619047619047616,
+      0.2222222222222222
+    ],
+    "tci": [
+      {
+        "passage_family_id": "DEMO_SUBSTRATE_001",
+        "QS_modern_mean": 0.0,
+        "QS_older_mean": 0.0,
+        "TCI": 0.0,
+        "interpretation": "near_zero"
+      }
+    ]
+  },
   "warnings": [
     "Requires real multi-translation corpora before confirmatory claims.",
     "Student must freeze mask list independently of Sanskrit\u2013QM outcomes."

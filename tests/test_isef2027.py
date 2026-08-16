@@ -99,6 +99,16 @@ def test_discovery_replication_structure():
     assert "survives_replication_demo_threshold" in d
 
 
-def test_extended_leak_detector():
-    hits = detect_extended_leaks("Vaiśeṣika in India and Maxwell")
-    assert hits
+def test_scrub_removes_tradition_names():
+    from rishiq.isef2027.scrub import scrub_text
+
+    r = scrub_text("Vaiśeṣika in India cites Maxwell and the Veda.")
+    assert "Maxwell" not in r.text or "[SCRUBBED]" in r.text
+    assert r.n_replacements >= 1
+
+
+def test_graph_templates_build():
+    from rishiq.isef2027.graph_templates import build_all_theory_graph_templates
+
+    paths = build_all_theory_graph_templates(ROOT)
+    assert any("template_fp_classical_em" in str(p) for p in paths)

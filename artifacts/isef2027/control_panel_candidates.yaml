@@ -1,56 +1,92 @@
-# Candidate matched historical control panel — STUDENT APPROVAL REQUIRED
-# Do NOT auto-include because a name appears here.
-# Criteria: era, subject (natural philosophy/cosmology), genre, length, translation era,
-# completeness, availability, relationship to natural philosophy.
-
 version: isef2027-control-panel-v1
-status: CANDIDATE_LIST_NOT_APPROVED
+status: CANDIDATE_LIST_WITH_FILE_INVENTORY
 matching_criteria:
-  - era_compatibility
-  - natural_philosophy_or_cosmology_subject
-  - genre_compatibility
-  - comparable_length_band
-  - translation_era_documented
-  - public_domain_or_licensed
-  - not_obviously_irrelevant_religious_verse_only
-
+- era_compatibility
+- natural_philosophy_or_cosmology_subject
+- genre_compatibility
+- comparable_length_band
+- translation_era_documented
+- public_domain_or_licensed
+- not_obviously_irrelevant_religious_verse_only
 families:
-  - id: greek_atomist_epicurean
-    examples_to_consider:
-      - Lucretius De Rerum Natura (already in DEV)
-      - Epicurus letters (if PD edition available)
-    student_decision: PENDING
-  - id: greek_platonic_aristotelian
-    examples_to_consider:
-      - Plato Timaeus (already in DEV)
-      - Aristotle Physics / De Caelo (need PD + matching plan)
-    student_decision: PENDING
-  - id: stoic_presocratic
-    examples_to_consider:
-      - selected Presocratic fragments (only if natural-philosophy content)
-    student_decision: PENDING
-  - id: chinese_natural_philosophy
-    examples_to_consider:
-      - Dao De Jing (already in DEV — may be weak as physics control)
-      - other natural-philosophy texts if PD and matched
-    student_decision: PENDING
-  - id: buddhist_philosophical
-    examples_to_consider:
-      - Abhidharma / Abhidhamma natural-philosophy sections (NOT ethics-only verse)
-      - Dhammapada (DEV) is a weak control by design — consider replacing for confirmatory
-    student_decision: PENDING
-  - id: jain_natural_philosophy
-    examples_to_consider: []
-    student_decision: PENDING
-  - id: other_indian_schools
-    examples_to_consider:
-      - Sāṃkhya / Nyāya natural-philosophy sections (student selects editions)
-    student_decision: PENDING
-  - id: medieval_natural_philosophy
-    examples_to_consider: []
-    student_decision: PENDING
-
+- id: greek_atomist_epicurean
+  examples_to_consider:
+  - Lucretius De Rerum Natura (already in DEV)
+  - Epicurus letters (if PD edition available)
+  student_decision: PENDING
+- id: greek_platonic_aristotelian
+  examples_to_consider:
+  - Plato Timaeus (already in DEV)
+  - Aristotle Physics / De Caelo (need PD + matching plan)
+  student_decision: PENDING
+- id: stoic_presocratic
+  examples_to_consider:
+  - selected Presocratic fragments (only if natural-philosophy content)
+  student_decision: PENDING
+- id: chinese_natural_philosophy
+  examples_to_consider:
+  - Dao De Jing (already in DEV — may be weak as physics control)
+  - other natural-philosophy texts if PD and matched
+  student_decision: PENDING
+- id: buddhist_philosophical
+  examples_to_consider:
+  - Abhidharma / Abhidhamma natural-philosophy sections (NOT ethics-only verse)
+  - Dhammapada (DEV) is a weak control by design — consider replacing for confirmatory
+  student_decision: PENDING
+- id: jain_natural_philosophy
+  examples_to_consider: []
+  student_decision: PENDING
+- id: other_indian_schools
+  examples_to_consider:
+  - Sāṃkhya / Nyāya natural-philosophy sections (student selects editions)
+  student_decision: PENDING
+- id: medieval_natural_philosophy
+  examples_to_consider: []
+  student_decision: PENDING
 hard_rules:
-  - Avoid primary comparison of Sanskrit physics text vs random religious poem.
-  - Prefer matched-set analyses over assuming all corpora are exchangeable.
-  - Document inclusion/exclusion reasons in split_manifest.
+- Avoid primary comparison of Sanskrit physics text vs random religious poem.
+- Prefer matched-set analyses over assuming all corpora are exchangeable.
+- Document inclusion/exclusion reasons in split_manifest.
+concrete_pd_files:
+- file: dhammapada_2017.txt
+  bytes: 68652
+  family: buddhist_philosophical
+  work: Dhammapada (PD)
+  strength: weak_ethics_verse
+  student_decision: PENDING
+  path: corpus/raw/pd/dhammapada_2017.txt
+- file: lucretius_785.txt
+  bytes: 476803
+  family: greek_atomist_epicurean
+  work: Lucretius De Rerum Natura (PD)
+  strength: strong_natural_philosophy
+  student_decision: PENDING
+  path: corpus/raw/pd/lucretius_785.txt
+- file: plato_timaeus_1572.txt
+  bytes: 475665
+  family: greek_platonic_aristotelian
+  work: Plato Timaeus (PD)
+  strength: strong_cosmology
+  student_decision: PENDING
+  path: corpus/raw/pd/plato_timaeus_1572.txt
+- file: sacred_books_east_12894.txt
+  bytes: 1028523
+  family: other_indian_schools
+  work: Sacred Books of the East excerpt (PD)
+  strength: mixed_needs_filtering
+  student_decision: PENDING
+  path: corpus/raw/pd/sacred_books_east_12894.txt
+- file: taoteching_216.txt
+  bytes: 80255
+  family: chinese_natural_philosophy
+  work: Dao De Jing (PD)
+  strength: weak_as_physics_control
+  student_decision: PENDING
+  path: corpus/raw/pd/taoteching_216.txt
+- file: upanishads_paramananda_3283.txt
+  bytes: 125460
+  family: other_indian_schools
+  work: Upanishads PD translation
+  strength: mixed_metaphysics_not_automatic_target
+  student_decision: PENDING
+  path: corpus/raw/pd/upanishads_paramananda_3283.txt

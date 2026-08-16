@@ -78,6 +78,31 @@ def confirmatory_status() -> None:
         rprint({"status": "LOCKED", "detail": str(e)})
 
 
+@app.command("reproduce-all")
+def reproduce_all_cmd(
+    config: Path = typer.Option(Path("configs/isef2027.yaml"), "--config"),
+) -> None:
+    """Full DEV harness + rebuild interactive visuals."""
+    import subprocess
+    import sys
+
+    reproduce_cmd(config=config)
+    root = _root()
+    script = root / "scripts" / "build_isef2027_visuals.py"
+    proc = subprocess.run([sys.executable, str(script)], cwd=str(root))
+    if proc.returncode != 0:
+        raise typer.Exit(code=proc.returncode)
+    rprint({"visuals": str((root / "visuals/isef2027/index.html"))})
+
+
+@app.command("graphs")
+def graphs_cmd() -> None:
+    from rishiq.isef2027.graph_templates import build_all_theory_graph_templates
+
+    paths = build_all_theory_graph_templates(_root())
+    rprint({"n": len(paths), "wrote": [str(p) for p in paths[-8:]]})
+
+
 @app.command("show-summary")
 def show_summary(path: Path = Path("results/isef2027/dev/run_summary.json")) -> None:
     p = _root() / path if not path.is_absolute() else path

@@ -1,0 +1,76 @@
+{
+  "graph_id": "template_fp_atomistic_corpuscular",
+  "version": "0.1.0",
+  "domain": "theory_fingerprint",
+  "status": "TEMPLATE",
+  "nodes": [
+    {
+      "id": "atom",
+      "kind": "particle_atom",
+      "label": "atom/corpuscle",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "void",
+      "kind": "space",
+      "label": "void/empty",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "motion",
+      "kind": "process",
+      "label": "atomic motion",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "compound",
+      "kind": "entity",
+      "label": "compound body",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "disc",
+      "kind": "property",
+      "label": "discrete",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    }
+  ],
+  "edges": [
+    {
+      "source": "compound",
+      "target": "atom",
+      "kind": "COMPOSED_OF",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "atom",
+      "target": "void",
+      "kind": "LOCATED_IN",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "motion",
+      "target": "atom",
+      "kind": "HAS_PROPERTY",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "atom",
+      "target": "disc",
+      "kind": "HAS_PROPERTY",
+      "weight": 1.0,
+      "notes": ""
+    }
+  ],
+  "meta": {
+    "warning": "TEMPLATE — student must verify before freeze"
+  }
+}

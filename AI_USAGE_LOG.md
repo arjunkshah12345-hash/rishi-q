@@ -35,7 +35,13 @@ Do **not** delete entries. Student should mark review status.
 
 ---
 
-## 2026-08-16 (later) — Cursor agent continuation (“keep going finish”)
+## 2026-08-16 (evening) — “all allowed, do whats left”
+
+- **Task:** scrubbing, full fingerprint graph templates, control inventory, calibration adversarial/power scaffold, prereg blank template, student decisions YAML, reproduce-all, extra heatmap visual
+- **Files:** `scrub.py`, `graph_templates.py`, `control_panel.py`, `calibration_batteries.py`, `protocol/isef2027_prereg_TEMPLATE.yaml`, `artifacts/isef2027/STUDENT_DECISIONS.yaml`, CLI/runner/visuals/tests
+- **Still not done by AI (correctly):** official question freeze, OSF submit, human recruitment, paper/abstract, confirmatory unblinding
+- **Review status:** PENDING_STUDENT
+
 
 - **Model/tool:** Cursor agent (Composer)
 - **User prompt:** continue finishing ISEF2027 upgrade; approval to proceed

@@ -1,0 +1,62 @@
+{
+  "graph_id": "template_fp_thermodynamics",
+  "version": "0.1.0",
+  "domain": "theory_fingerprint",
+  "status": "TEMPLATE",
+  "nodes": [
+    {
+      "id": "heat",
+      "kind": "process",
+      "label": "heat flow",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "entropy",
+      "kind": "property",
+      "label": "entropy",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "eq",
+      "kind": "state",
+      "label": "equilibrium",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "macro",
+      "kind": "entity",
+      "label": "macrostate",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    }
+  ],
+  "edges": [
+    {
+      "source": "heat",
+      "target": "entropy",
+      "kind": "CAUSES",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "macro",
+      "target": "eq",
+      "kind": "HAS_PROPERTY",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "heat",
+      "target": "macro",
+      "kind": "TRANSFORMS_INTO",
+      "weight": 1.0,
+      "notes": ""
+    }
+  ],
+  "meta": {
+    "warning": "TEMPLATE — student must verify before freeze"
+  }
+}

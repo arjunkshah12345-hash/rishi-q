@@ -14,9 +14,12 @@ from rishiq.isef2027.baselines import binary_vector_jaccard, mean_tfidf_similari
 from rishiq.isef2027.benchmark import run_theory_identification_benchmark
 from rishiq.isef2027.blind_audit import run_blind_audit
 from rishiq.isef2027.calibration import build_calibration_from_pd
-from rishiq.isef2027.concept_graph import ConceptGraph, graph_overlap_score, write_schema_and_templates
+from rishiq.isef2027.calibration_batteries import run_calibration_batteries
+from rishiq.isef2027.concept_graph import ConceptGraph, graph_overlap_score
+from rishiq.isef2027.control_panel import build_control_panel_inventory
 from rishiq.isef2027.discovery_replication import write_discovery_replication
 from rishiq.isef2027.freeze import freeze_dev
+from rishiq.isef2027.graph_templates import build_all_theory_graph_templates
 from rishiq.isef2027.human_val import write_human_validation_pack
 from rishiq.isef2027.inference import cluster_effect_bundle, work_level_permutation
 from rishiq.isef2027.inventory import write_inventory
@@ -81,8 +84,9 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
     inv_path = write_inventory(root)
     freeze_path = freeze_dev(root)
     split_path = write_split_manifest(root)
-    cg_paths = write_schema_and_templates(root)
+    cg_paths = build_all_theory_graph_templates(root)
     hv_path = write_human_validation_pack(root)
+    controls = build_control_panel_inventory(root)
 
     split_payload = json.loads(split_path.read_text(encoding="utf-8"))
     leak_issues = split_payload.get("leakage_check", {}).get("issues", [])
@@ -157,6 +161,18 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
     blind = run_blind_audit(root)
     disc = write_discovery_replication(root, seed=seed)
     calib = build_calibration_from_pd(root)
+    cal_adv = run_calibration_batteries(root, seed=seed)
+
+    # pairwise graph overlaps among fingerprint templates
+    graph_dir = root / "ontology/concept_graph"
+    fp_graphs = sorted(graph_dir.glob("template_fp_*.json"))
+    graph_pair = {}
+    loaded = []
+    for p in fp_graphs:
+        loaded.append((p.stem, ConceptGraph.model_validate_json(p.read_text())))
+    for i, (a_id, a_g) in enumerate(loaded):
+        for b_id, b_g in loaded[i + 1 :]:
+            graph_pair[f"{a_id}__{b_id}"] = graph_overlap_score(a_g, b_g)
 
     summary = {
         "run_id": f"ISEF2027-DEV-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
@@ -175,10 +191,16 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
             "blind_audit": "results/isef2027/dev/blind_audit.json",
             "discovery_replication": "results/isef2027/dev/discovery_replication.json",
             "calibration_manifest": "corpus/calibration/calibration_manifest.json",
+            "calibration_adversarial": "results/isef2027/dev/calibration_adversarial.json",
+            "control_panel_inventory": "artifacts/isef2027/control_panel_inventory.json",
+            "prereg_template": "protocol/isef2027_prereg_TEMPLATE.yaml",
+            "student_decisions": "artifacts/isef2027/STUDENT_DECISIONS.yaml",
         },
         "n_theory_fingerprints": len(fps),
         "theory_ids": ids,
+        "n_concept_graph_templates": len(fp_graphs) + 2,
         "concept_graph_overlap_akasa_vs_maxwell_TEMPLATE": graph_score,
+        "fingerprint_graph_pairwise_overlap": graph_pair,
         "fingerprint_pairwise_jaccard": fp_jaccard,
         "tfidf_vais_vs_maxwell_toy": tfidf_vm,
         "positive_control_ranking": ranking,
@@ -195,13 +217,17 @@ def run_dev_calibration(root: Path, config_path: Path) -> dict:
             ),
         },
         "blind_audit_status": blind.get("status"),
+        "blind_scrub_replacements_total": blind.get("scrub_replacements_total"),
         "discovery_replication_survives_demo": disc.get("survives_replication_demo_threshold"),
         "calibration_n_records": calib.get("n_records"),
+        "calibration_adversarial_n_texts": cal_adv.get("n_texts"),
+        "control_panel_n_pd_files": len(controls.get("pd_controls", [])),
         "warnings": [
             "Toy/dev metrics only — not confirmatory scientific results.",
             "TEMPLATE concept graphs are not student-verified.",
             "Do not interpret these numbers as ancient-quantum evidence.",
             "Method benchmark panels are modern pedagogy text for software validation.",
+            "Fill protocol/isef2027_prereg_TEMPLATE.yaml yourself before OSF submission.",
         ],
     }
 

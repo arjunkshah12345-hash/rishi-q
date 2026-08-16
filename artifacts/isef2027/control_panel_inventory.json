@@ -1,0 +1,80 @@
+{
+  "status": "INVENTORY_FOR_STUDENT_APPROVAL",
+  "pd_controls": [
+    {
+      "file": "dhammapada_2017.txt",
+      "bytes": 68652,
+      "family": "buddhist_philosophical",
+      "work": "Dhammapada (PD)",
+      "strength": "weak_ethics_verse",
+      "student_decision": "PENDING",
+      "path": "corpus/raw/pd/dhammapada_2017.txt"
+    },
+    {
+      "file": "lucretius_785.txt",
+      "bytes": 476803,
+      "family": "greek_atomist_epicurean",
+      "work": "Lucretius De Rerum Natura (PD)",
+      "strength": "strong_natural_philosophy",
+      "student_decision": "PENDING",
+      "path": "corpus/raw/pd/lucretius_785.txt"
+    },
+    {
+      "file": "plato_timaeus_1572.txt",
+      "bytes": 475665,
+      "family": "greek_platonic_aristotelian",
+      "work": "Plato Timaeus (PD)",
+      "strength": "strong_cosmology",
+      "student_decision": "PENDING",
+      "path": "corpus/raw/pd/plato_timaeus_1572.txt"
+    },
+    {
+      "file": "sacred_books_east_12894.txt",
+      "bytes": 1028523,
+      "family": "other_indian_schools",
+      "work": "Sacred Books of the East excerpt (PD)",
+      "strength": "mixed_needs_filtering",
+      "student_decision": "PENDING",
+      "path": "corpus/raw/pd/sacred_books_east_12894.txt"
+    },
+    {
+      "file": "taoteching_216.txt",
+      "bytes": 80255,
+      "family": "chinese_natural_philosophy",
+      "work": "Dao De Jing (PD)",
+      "strength": "weak_as_physics_control",
+      "student_decision": "PENDING",
+      "path": "corpus/raw/pd/taoteching_216.txt"
+    },
+    {
+      "file": "upanishads_paramananda_3283.txt",
+      "bytes": 125460,
+      "family": "other_indian_schools",
+      "work": "Upanishads PD translation",
+      "strength": "mixed_metaphysics_not_automatic_target",
+      "student_decision": "PENDING",
+      "path": "corpus/raw/pd/upanishads_paramananda_3283.txt"
+    }
+  ],
+  "gretil_dev": [
+    {
+      "file": "vaisesika_sutra_gretil.txt",
+      "bytes": 26474,
+      "role": "development_primary_or_commentary",
+      "path": "corpus/development/vaisesika_sutra_gretil.txt",
+      "student_decision": "IN_DEV_FREEZE"
+    },
+    {
+      "file": "prasastapada_gretil.txt",
+      "bytes": 97399,
+      "role": "development_primary_or_commentary",
+      "path": "corpus/development/prasastapada_gretil.txt",
+      "student_decision": "IN_DEV_FREEZE"
+    }
+  ],
+  "hard_rules": [
+    "Do not auto-include weak ethics-only panels as primary confirmatory controls.",
+    "Prefer matched natural-philosophy works.",
+    "Document inclusion/exclusion reasons in split_manifest."
+  ]
+}

@@ -1,0 +1,51 @@
+# ISEF2027 Confirmatory Preregistration — BLANK TEMPLATE
+# Status: NOT SUBMITTED — student completes and freezes independently.
+# AI must not fill scientific choices to favor Sanskrit–QM outcomes.
+
+title: ""
+official_research_question: ""
+primary_hypothesis_H0: ""
+primary_hypothesis_H1: ""
+secondary_hypotheses: []
+
+ontology_version_to_freeze: ""
+prompt_versions_to_freeze: []
+primary_similarity_metric: ""  # e.g. weighted_jaccard | graph_overlap | ...
+primary_inferential_test: ""   # e.g. work_level_permutation | cluster_permutation | mixed_effects
+minimum_interesting_effect: null
+random_seed: null
+
+splits:
+  development_description: "Already examined; exploratory only."
+  calibration_description: ""
+  confirmatory_sealed_description: ""
+  confirmatory_n_works_target: null
+  confirmatory_n_passages_target: null
+
+controls:
+  matched_control_works_approved: []
+  matching_criteria_frozen: []
+  excluded_works_and_reasons: []
+
+masking:
+  mask_list_version: ""
+  run_masked_and_unmasked: true
+
+blinding:
+  annotators_blinded_to_tradition: true
+  scrubbing_enabled: true
+
+human_validation:
+  will_collect: null  # true/false after SRC/IRB determination
+  n_reviewers: null
+  reliability_metric: "cohen_kappa_or_krippendorff_alpha"
+
+analysis_frozen_before_unblinding: false
+osf_or_aspredicted_url: ""
+student_signoff: ""
+date_frozen: ""
+
+hard_bans:
+  - Do not choose features/metrics because they raise Sanskrit–QM scores.
+  - Do not open sealed confirmatory texts while tuning.
+  - Do not claim ancient discovery of EM/QM.

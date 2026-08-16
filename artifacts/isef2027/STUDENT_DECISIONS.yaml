@@ -1,0 +1,54 @@
+# Student decision checklist (fill YES/NO/VALUE — AI must not auto-complete scientific choices)
+
+version: isef2027-decisions-v1
+status: OPEN
+
+decisions:
+  - id: D01
+    item: Freeze official research question wording
+    status: OPEN
+    value: ""
+  - id: D02
+    item: Approve matched control works from control_panel_candidates.yaml
+    status: OPEN
+    value: ""
+  - id: D03
+    item: Verify/replace TEMPLATE concept graphs → FROZEN
+    status: OPEN
+    value: ""
+  - id: D04
+    item: Verify atomistic_corpuscular fingerprint or exclude
+    status: OPEN
+    value: ""
+  - id: D05
+    item: Freeze primary similarity metric
+    status: OPEN
+    value: ""
+  - id: D06
+    item: Freeze primary inferential test + seed
+    status: OPEN
+    value: ""
+  - id: D07
+    item: Freeze mask vocabulary list version
+    status: OPEN
+    value: ""
+  - id: D08
+    item: Set confirmatory sample size from calibration power
+    status: OPEN
+    value: ""
+  - id: D09
+    item: Determine SRC/IRB/school requirements for human validation
+    status: OPEN
+    value: ""
+  - id: D10
+    item: Populate confirmatory_sealed IDs without analyzing outcomes
+    status: OPEN
+    value: ""
+  - id: D11
+    item: Submit preregistration (OSF/AsPredicted) then unlock confirmatory
+    status: OPEN
+    value: ""
+  - id: D12
+    item: Review AI_USAGE_LOG.md and mark reviewed sections
+    status: OPEN
+    value: ""

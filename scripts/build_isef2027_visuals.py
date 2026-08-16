@@ -408,6 +408,36 @@ def fig_animated_em_vs_sound(go):
     return fig
 
 
+def fig_fingerprint_graph_heatmap(go):
+    path = ROOT / "results/isef2027/dev/run_summary.json"
+    if not path.exists():
+        fig = go.Figure()
+        fig.update_layout(title="Run reproduce first", paper_bgcolor="#0b1220", font=dict(color="#e2e8f0"))
+        return fig
+    data = json.loads(path.read_text())
+    pairs = data.get("fingerprint_graph_pairwise_overlap", {})
+    ids = sorted({p.split("__")[0].replace("template_fp_", "") for p in pairs} | {p.split("__")[1].replace("template_fp_", "") for p in pairs})
+    import numpy as np
+
+    M = np.zeros((len(ids), len(ids)))
+    for i, a in enumerate(ids):
+        for j, b in enumerate(ids):
+            if i == j:
+                M[i, j] = 1.0
+            else:
+                key = f"template_fp_{a}__template_fp_{b}"
+                key2 = f"template_fp_{b}__template_fp_{a}"
+                M[i, j] = pairs.get(key, pairs.get(key2, 0.0))
+    fig = go.Figure(data=go.Heatmap(z=M, x=ids, y=ids, colorscale="Viridis"))
+    fig.update_layout(
+        title="TEMPLATE fingerprint concept-graph pairwise overlap",
+        paper_bgcolor="#0b1220",
+        font=dict(color="#e2e8f0"),
+        height=640,
+    )
+    return fig
+
+
 def write_index(paths: list[Path]) -> Path:
     links = "\n".join(f'<li><a href="{p.name}">{p.stem}</a></li>' for p in paths)
     html = f"""<!DOCTYPE html>
@@ -449,6 +479,7 @@ def main() -> None:
         ("07_method_benchmark_bars", fig_method_benchmark_bars),
         ("08_fingerprint_geometry_3d", fig_fingerprint_mds_3d),
         ("09_animated_em_vs_sound", fig_animated_em_vs_sound),
+        ("10_fingerprint_graph_heatmap", fig_fingerprint_graph_heatmap),
     ]
     paths = []
     for name, fn in builders:

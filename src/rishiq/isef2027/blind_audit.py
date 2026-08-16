@@ -32,18 +32,29 @@ def detect_extended_leaks(text: str) -> list[str]:
     return hits
 
 
-def audit_blinded_export(passages: list[Passage], salt: str = "rishiq-isef2027") -> dict[str, Any]:
-    blinded, mapping = blind_corpus(passages, salt=salt, mapping_path=None)
+from rishiq.isef2027.scrub import scrub_text
+
+
+def audit_blinded_export(passages: list[Passage], salt: str = "rishiq-isef2027", *, apply_scrub: bool = True) -> dict[str, Any]:
+    # Work on copies with scrubbed translation text for the blind payload
+    working: list[Passage] = []
+    scrub_hits = 0
+    for p in passages:
+        text = p.translation or p.source_text
+        if apply_scrub:
+            sr = scrub_text(text)
+            scrub_hits += sr.n_replacements
+            text = sr.text
+        working.append(p.model_copy(update={"translation": text}))
+
+    blinded, mapping = blind_corpus(working, salt=salt, mapping_path=None)
     issues = []
     for b in blinded:
         leaks = detect_extended_leaks(b.text)
-        # Mapping must not be embedded in text
         if b.anonymous_id in b.text:
             issues.append({"type": "anon_id_in_text", "id": b.anonymous_id})
         if leaks:
             issues.append({"type": "label_leak_in_blind_text", "id": b.anonymous_id, "patterns": leaks})
-        # Reject if tradition-like words appear in anonymized payload fields
-    # Ensure mapping values (true IDs) never appear in blinded texts
     true_ids = set(mapping.values())
     for b in blinded:
         for tid in true_ids:
@@ -53,6 +64,8 @@ def audit_blinded_export(passages: list[Passage], salt: str = "rishiq-isef2027")
     return {
         "n_passages": len(passages),
         "n_blinded": len(blinded),
+        "scrub_replacements_total": scrub_hits,
+        "apply_scrub": apply_scrub,
         "n_issues": len(issues),
         "issues_sample": issues[:50],
         "status": "FAIL" if issues else "PASS",

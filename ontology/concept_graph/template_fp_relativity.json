@@ -1,0 +1,62 @@
+{
+  "graph_id": "template_fp_relativity",
+  "version": "0.1.0",
+  "domain": "theory_fingerprint",
+  "status": "TEMPLATE",
+  "nodes": [
+    {
+      "id": "spacetime",
+      "kind": "space",
+      "label": "spacetime",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "light_c",
+      "kind": "property",
+      "label": "invariant c",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "frame",
+      "kind": "measurement",
+      "label": "inertial frame",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "matter",
+      "kind": "entity",
+      "label": "matter-energy",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    }
+  ],
+  "edges": [
+    {
+      "source": "matter",
+      "target": "spacetime",
+      "kind": "LOCATED_IN",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "spacetime",
+      "target": "light_c",
+      "kind": "HAS_PROPERTY",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "frame",
+      "target": "light_c",
+      "kind": "DEPENDS_ON",
+      "weight": 1.0,
+      "notes": ""
+    }
+  ],
+  "meta": {
+    "warning": "TEMPLATE — student must verify before freeze"
+  }
+}

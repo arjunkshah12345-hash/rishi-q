@@ -1,0 +1,69 @@
+{
+  "graph_id": "template_fp_newtonian",
+  "version": "0.1.0",
+  "domain": "theory_fingerprint",
+  "status": "TEMPLATE",
+  "nodes": [
+    {
+      "id": "mass",
+      "kind": "particle_atom",
+      "label": "mass point",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "force",
+      "kind": "interaction",
+      "label": "force",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "space",
+      "kind": "space",
+      "label": "absolute space",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "time",
+      "kind": "time",
+      "label": "absolute time",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "traj",
+      "kind": "process",
+      "label": "trajectory",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    }
+  ],
+  "edges": [
+    {
+      "source": "force",
+      "target": "traj",
+      "kind": "CAUSES",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "mass",
+      "target": "space",
+      "kind": "LOCATED_IN",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "traj",
+      "target": "time",
+      "kind": "DEPENDS_ON",
+      "weight": 1.0,
+      "notes": ""
+    }
+  ],
+  "meta": {
+    "warning": "TEMPLATE — student must verify before freeze"
+  }
+}

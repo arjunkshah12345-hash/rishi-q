@@ -87,12 +87,60 @@ def masked_unmasked_theory_shift(root: Path) -> dict[str, Any]:
     return out
 
 
+def translation_demo_tci(root: Path) -> dict[str, Any]:
+    """Reuse existing synthetic multi-translation demo parquet if present."""
+    pq = root / "corpus/development/translation_demo_passages.parquet"
+    scores_pq = root / "results/exploratory/translation_demo/passage_scores.parquet"
+    if not pq.exists():
+        return {"status": "SKIP", "reason": "missing translation_demo_passages.parquet"}
+    df = pd.read_parquet(pq)
+    styles = df["translation_style"].tolist() if "translation_style" in df.columns else []
+    years = df["translation_year"].tolist() if "translation_year" in df.columns else []
+    texts = df["translation"].astype(str).tolist()
+    # modernization by style
+    from rishiq.isef2027.adversarial import DEFAULT_MASK_TERMS
+    import re
+
+    def mod(t: str) -> float:
+        hits = sum(1 for w in DEFAULT_MASK_TERMS if re.search(rf"\b{re.escape(w)}\b", t.lower()))
+        return hits / max(len(t.split()), 1)
+
+    mods = [mod(t) for t in texts]
+    payload: dict[str, Any] = {
+        "status": "OK",
+        "n": len(texts),
+        "styles": styles,
+        "years": years,
+        "modernization_by_row": mods,
+    }
+    if scores_pq.exists():
+        try:
+            from rishiq.normalize.translation import translation_contamination_index
+
+            sc = pd.read_parquet(scores_pq)
+            if "passage_family_id" not in sc.columns:
+                sc["passage_family_id"] = "DEMO_SUBSTRATE_001"
+            if "translation_style" not in sc.columns and "passage_id" in sc.columns:
+                sc["translation_style"] = sc["passage_id"].astype(str).str.split("__").str[-1]
+            payload["tci"] = translation_contamination_index(sc)
+            if hasattr(payload["tci"], "to_dict"):
+                payload["tci"] = payload["tci"].to_dict(orient="records")
+            elif hasattr(payload["tci"], "item"):
+                payload["tci"] = float(payload["tci"])
+            else:
+                payload["tci"] = json.loads(json.dumps(payload["tci"], default=str))
+        except Exception as e:
+            payload["tci_error"] = str(e)
+    return payload
+
+
 def run_translation_battery(root: Path, seed: int = 42) -> dict[str, Any]:
     payload = {
         "battery_id": "ISEF2027-TRANSLATION-v1",
         "mask_terms": DEFAULT_MASK_TERMS,
         "translator_year_demo": translator_year_stratified_demo(seed=seed),
         "masked_unmasked_shift": masked_unmasked_theory_shift(root),
+        "translation_demo": translation_demo_tci(root),
         "warnings": [
             "Requires real multi-translation corpora before confirmatory claims.",
             "Student must freeze mask list independently of Sanskrit–QM outcomes.",

@@ -1,5 +1,5 @@
 {
-  "run_id": "ISEF2027-DEV-20260816T041808Z",
+  "run_id": "ISEF2027-DEV-20260816T042423Z",
   "phase": "development_calibration_harness",
   "seed": 42,
   "sealed_confirmatory_opened": false,
@@ -13,13 +13,25 @@
       "ontology/concept_graph/schema.json",
       "ontology/concept_graph/template_vaisesika_akasa_sabda.json",
       "ontology/concept_graph/template_maxwell_em.json",
-      "ontology/concept_graph/STUDENT_TODO.md"
+      "ontology/concept_graph/STUDENT_TODO.md",
+      "ontology/concept_graph/template_fp_newtonian.json",
+      "ontology/concept_graph/template_fp_classical_em.json",
+      "ontology/concept_graph/template_fp_thermodynamics.json",
+      "ontology/concept_graph/template_fp_relativity.json",
+      "ontology/concept_graph/template_fp_quantum_mechanics.json",
+      "ontology/concept_graph/template_fp_quantum_field_theory.json",
+      "ontology/concept_graph/template_fp_atomistic_corpuscular.json",
+      "ontology/concept_graph/index.json"
     ],
     "method_benchmark": "results/isef2027/dev/method_benchmark.json",
     "translation_battery": "results/isef2027/dev/translation_battery.json",
     "blind_audit": "results/isef2027/dev/blind_audit.json",
     "discovery_replication": "results/isef2027/dev/discovery_replication.json",
-    "calibration_manifest": "corpus/calibration/calibration_manifest.json"
+    "calibration_manifest": "corpus/calibration/calibration_manifest.json",
+    "calibration_adversarial": "results/isef2027/dev/calibration_adversarial.json",
+    "control_panel_inventory": "artifacts/isef2027/control_panel_inventory.json",
+    "prereg_template": "protocol/isef2027_prereg_TEMPLATE.yaml",
+    "student_decisions": "artifacts/isef2027/STUDENT_DECISIONS.yaml"
   },
   "n_theory_fingerprints": 6,
   "theory_ids": [
@@ -30,7 +42,31 @@
     "quantum_mechanics",
     "quantum_field_theory"
   ],
+  "n_concept_graph_templates": 9,
   "concept_graph_overlap_akasa_vs_maxwell_TEMPLATE": 0.0,
+  "fingerprint_graph_pairwise_overlap": {
+    "template_fp_atomistic_corpuscular__template_fp_classical_em": 0.0,
+    "template_fp_atomistic_corpuscular__template_fp_newtonian": 0.0,
+    "template_fp_atomistic_corpuscular__template_fp_quantum_field_theory": 0.0,
+    "template_fp_atomistic_corpuscular__template_fp_quantum_mechanics": 0.0,
+    "template_fp_atomistic_corpuscular__template_fp_relativity": 0.0,
+    "template_fp_atomistic_corpuscular__template_fp_thermodynamics": 0.0,
+    "template_fp_classical_em__template_fp_newtonian": 0.0,
+    "template_fp_classical_em__template_fp_quantum_field_theory": 0.0,
+    "template_fp_classical_em__template_fp_quantum_mechanics": 0.0,
+    "template_fp_classical_em__template_fp_relativity": 0.0,
+    "template_fp_classical_em__template_fp_thermodynamics": 0.0,
+    "template_fp_newtonian__template_fp_quantum_field_theory": 0.0,
+    "template_fp_newtonian__template_fp_quantum_mechanics": 0.0,
+    "template_fp_newtonian__template_fp_relativity": 0.0,
+    "template_fp_newtonian__template_fp_thermodynamics": 0.0,
+    "template_fp_quantum_field_theory__template_fp_quantum_mechanics": 0.0,
+    "template_fp_quantum_field_theory__template_fp_relativity": 0.0,
+    "template_fp_quantum_field_theory__template_fp_thermodynamics": 0.0,
+    "template_fp_quantum_mechanics__template_fp_relativity": 0.0,
+    "template_fp_quantum_mechanics__template_fp_thermodynamics": 0.0,
+    "template_fp_relativity__template_fp_thermodynamics": 0.0
+  },
   "fingerprint_pairwise_jaccard": {
     "newtonian__classical_em": 0.23529411764705882,
     "newtonian__thermodynamics": 0.5,
@@ -132,14 +168,18 @@
   "translation_battery_summary": {
     "corr_year_vs_modernization_lexicon": 0.7788146763309313
   },
-  "blind_audit_status": "FAIL",
+  "blind_audit_status": "PASS",
+  "blind_scrub_replacements_total": 10,
   "discovery_replication_survives_demo": true,
   "calibration_n_records": 81,
+  "calibration_adversarial_n_texts": 120,
+  "control_panel_n_pd_files": 6,
   "warnings": [
     "Toy/dev metrics only \u2014 not confirmatory scientific results.",
     "TEMPLATE concept graphs are not student-verified.",
     "Do not interpret these numbers as ancient-quantum evidence.",
-    "Method benchmark panels are modern pedagogy text for software validation."
+    "Method benchmark panels are modern pedagogy text for software validation.",
+    "Fill protocol/isef2027_prereg_TEMPLATE.yaml yourself before OSF submission."
   ],
   "registry_path": "results/isef2027/registry/experiments.jsonl"
 }
