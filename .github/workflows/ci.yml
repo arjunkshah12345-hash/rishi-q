@@ -17,6 +17,7 @@ jobs:
         run: |
           uv python install 3.12
           uv sync --extra dev
+          uv run python -c "from rishiq.models import Passage; print('models_ok', Passage.__name__)"
       - name: Unit + ISEF2027 tests
         run: uv run pytest -q
       - name: Freeze integrity (v1 artifacts preserved)

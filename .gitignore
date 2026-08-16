@@ -63,9 +63,9 @@ corpus/**/*.private.json
 # Local notebooks checkpoints
 .ipynb_checkpoints/
 
-# Large ML caches
+# Large ML caches (downloaded weights only — never ignore src/rishiq/models/)
 .cache/
-models/
+/models/
 *.pt
 *.bin
 *.safetensors

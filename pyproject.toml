@@ -66,6 +66,9 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/rishiq"]
 
+[tool.hatch.build.targets.sdist]
+include = ["src/rishiq", "tests", "configs", "ontology", "protocol", "artifacts/isef2027", "data", "scripts", "pyproject.toml", "README.md", "LICENSE"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
