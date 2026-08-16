@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_skeleton_dev_empty_sealed_by_design():
-    """Skeleton builder still starts sealed empty; live manifest may reserve IDs."""
+    """Skeleton builder still starts sealed empty; live lock may reserve IDs."""
     man = build_skeleton_manifest(ROOT)
     assert assert_no_split_overlap(man) == []
     assert man.confirmatory_sealed_ids == []
@@ -28,6 +28,19 @@ def test_live_manifest_sealed_may_exist_without_overlap():
     assert not (sealed & set(man["development_ids"]))
     assert not (sealed & set(man["calibration_ids"]))
     assert man["leakage_check"]["status"] == "PASS"
+
+
+def test_sealed_outcomes_remain_unscored():
+    """Sealed IDs may exist; no confirmatory QS / run artifacts may exist."""
+    lock = json.loads((ROOT / "corpus/confirmatory_sealed/lock.json").read_text(encoding="utf-8"))
+    assert lock.get("status") == "LOCKED"
+    assert lock.get("allow_open_sealed") is False
+    assert len(lock.get("confirmatory_sealed_ids") or []) > 0
+    assert not (ROOT / "results/confirmatory/run_summary.json").exists()
+    assert not (ROOT / "results/confirmatory/qs_scores.json").exists()
+    assert not (ROOT / "results/confirmatory").exists() or not any(
+        (ROOT / "results/confirmatory").glob("**/qs*")
+    )
 
 
 def test_sealed_lock_invariants_pass():

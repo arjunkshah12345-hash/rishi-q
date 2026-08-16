@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 from rishiq.isef2027.adversarial import mask_vocabulary
@@ -32,10 +33,23 @@ def test_freeze_writes_manifest(tmp_path, monkeypatch):
     assert "sha256" in data
 
 
-def test_split_skeleton_empty_sealed():
+def test_split_skeleton_starts_without_sealed_ids():
+    """Skeleton builder intentionally starts sealed empty; live lock may reserve IDs."""
     man = build_skeleton_manifest(ROOT)
     assert assert_no_split_overlap(man) == []
+    # Skeleton only — NOT the live project invariant.
     assert man.confirmatory_sealed_ids == []
+
+
+def test_live_lock_sealed_ids_exist_and_outcomes_unscored():
+    """Correct project invariant: sealed IDs may exist; outcomes remain unread."""
+    lock = json.loads((ROOT / "corpus/confirmatory_sealed/lock.json").read_text(encoding="utf-8"))
+    assert lock.get("status") == "LOCKED"
+    assert lock.get("allow_open_sealed") is False
+    sealed = lock.get("confirmatory_sealed_ids") or []
+    assert isinstance(sealed, list) and len(sealed) > 0
+    assert not (ROOT / "results/confirmatory/run_summary.json").exists()
+    assert not (ROOT / "results/confirmatory/qs_scores.json").exists()
 
 
 def test_concept_graph_overlap():
