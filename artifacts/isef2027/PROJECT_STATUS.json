@@ -29,7 +29,7 @@
   "documentation_internally_consistent": false,
   "pedagogy_benchmark_role": "CURATED_PEDAGOGY_DEVELOPMENT_BENCHMARK",
   "pedagogy_test_contamination_state": "DEVELOPMENT_CONTAMINATED",
-  "method_freeze_status": "NOT_READY_TO_FREEZE",
+  "method_freeze_status": "AWAITING_STUDENT_REVIEW",
   "notes": [
     "V1 GitHub Release must remain untouched.",
     "Confirmatory sealed payloads must not be scored during v2 development.",
@@ -45,5 +45,8 @@
   "n_authors": 13,
   "n_source_families": 15,
   "structural_extractor": "structural_extractor_deterministic_v1",
-  "confirmatory_feasibility": "PROJECT_FEASIBLE_WITH_REDUCED_EFFECT_SENSITIVITY"
+  "confirmatory_feasibility": "PROJECT_FEASIBLE_WITH_REDUCED_EFFECT_SENSITIVITY",
+  "extraction_gold_approved": false,
+  "validation_success_criterion_approved": false,
+  "student_review_cli": "rishiq-isef student-review"
 }

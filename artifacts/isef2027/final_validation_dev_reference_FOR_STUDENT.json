@@ -1,0 +1,21 @@
+{
+  "purpose": "REFERENCE_ONLY_NOT_A_SUCCESS_CRITERION",
+  "chance_baselines_7way": {
+    "top1": 0.14285714285714285,
+    "top2": 0.2857142857142857
+  },
+  "development_structural_snapshot": {
+    "top1": 0.2582278481012658,
+    "top2": 0.42278481012658226,
+    "mrr": 0.4732700421940929,
+    "masked_top1": 0.2468354430379747,
+    "empty_extraction_rate": 0.22784810126582278,
+    "note": "Pre-student-review DEVELOPMENT snapshot; may change after fingerprint/extractor finalization."
+  },
+  "development_lexical_task_a_snapshot": {
+    "top1": 0.49240506329113926,
+    "top2": 0.640506329113924,
+    "macro_f1": 0.4491513386697313
+  },
+  "warning": "Do not set final-holdout thresholds solely to pass these numbers."
+}

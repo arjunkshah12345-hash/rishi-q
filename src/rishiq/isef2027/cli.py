@@ -223,22 +223,108 @@ def graph_robustness_cmd() -> None:
 def validate_final_method_cmd(
     unlock_token: str = typer.Option(..., "--unlock-token", help="Required deliberate unlock"),
 ) -> None:
-    """Evaluate final method holdout ONCE after freeze. Refuses if gates incomplete."""
-    from rishiq.isef2027.final_holdout_guard import assert_final_holdout_access_allowed
-
-    root = _root()
-    try:
-        assert_final_holdout_access_allowed(root, unlock_token)
-    except PermissionError as e:
-        rprint({"status": "BLOCKED", "detail": str(e)})
-        raise typer.Exit(code=2)
+    """Deprecated alias — use evaluate-final-validation-once after freeze + holdout build."""
     rprint(
         {
-            "status": "GATES_PASSED_BUT_EVAL_NOT_IMPLEMENTED_IN_PASS3",
-            "note": "Pass 3 leaves FINAL_METHOD_HOLDOUT_UNEVALUATED until student freeze.",
+            "status": "USE_evaluate-final-validation-once",
+            "note": "True holdout remains NOT_BUILT until student freeze + build-final-validation-holdout.",
         }
     )
     raise typer.Exit(code=3)
+
+
+@app.command("student-review")
+def student_review_cmd(
+    status_only: bool = typer.Option(False, "--status-only", help="Print progress; no prompts"),
+    fingerprints: bool = typer.Option(False, "--fingerprints", help="Fingerprint review only"),
+    gold: bool = typer.Option(False, "--gold", help="Next gold passage only"),
+    theory: str | None = typer.Option(None, "--theory", help="Single theory id for fingerprint review"),
+) -> None:
+    """Interactive student review: fingerprints → gold (extractor hidden until lock)."""
+    from rishiq.isef2027.student_review_workflow import (
+        ensure_student_artifacts,
+        review_status,
+        run_fingerprint_review_interactive,
+        run_gold_annotation_interactive,
+        run_student_review_menu,
+    )
+
+    root = _root()
+    ensure_student_artifacts(root)
+    if status_only:
+        rprint(review_status(root))
+        return
+    if fingerprints:
+        rprint(run_fingerprint_review_interactive(root, theory_id=theory))
+        return
+    if gold:
+        rprint(run_gold_annotation_interactive(root))
+        return
+    rprint(run_student_review_menu(root))
+
+
+@app.command("validate-student-review")
+def validate_student_review_cmd() -> None:
+    """Fail unless fingerprints + gold are complete and machine-valid."""
+    from rishiq.isef2027.student_review_validate import validate_student_review
+
+    out = validate_student_review(_root())
+    rprint(out)
+    if not out.get("ok"):
+        raise typer.Exit(code=1)
+
+
+@app.command("evaluate-extractor-gold")
+def evaluate_extractor_gold_cmd() -> None:
+    """Stage-1 metrics vs student gold only (development)."""
+    from rishiq.isef2027.extractor_gold_eval import evaluate_extractor_gold
+
+    out = evaluate_extractor_gold(_root())
+    rprint(out)
+    if out.get("status", "").startswith("NOT_AVAILABLE"):
+        raise typer.Exit(code=2)
+
+
+@app.command("check-freeze-gates")
+def check_freeze_gates_cmd() -> None:
+    from rishiq.isef2027.method_freeze_gates import write_freeze_candidate_if_ready
+
+    rprint(write_freeze_candidate_if_ready(_root()))
+
+
+@app.command("freeze-method")
+def freeze_method_cmd(
+    confirm: str | None = typer.Option(None, "--confirm", help="Must be FREEZE to commit"),
+) -> None:
+    """Immutable method freeze — refuses unless all student + engineering gates pass."""
+    from rishiq.isef2027.method_freeze_gates import freeze_method
+
+    out = freeze_method(_root(), confirm=confirm)
+    rprint(out)
+    if out.get("status") not in {"FROZEN", "CONFIRMATION_REQUIRED"}:
+        raise typer.Exit(code=2)
+
+
+@app.command("build-final-validation-holdout")
+def build_final_holdout_cmd() -> None:
+    """Post-freeze only. Does not score."""
+    from rishiq.isef2027.method_freeze_gates import build_final_validation_holdout
+
+    out = build_final_validation_holdout(_root())
+    rprint(out)
+    if out.get("status") == "REFUSED":
+        raise typer.Exit(code=2)
+
+
+@app.command("evaluate-final-validation-once")
+def evaluate_final_once_cmd() -> None:
+    """One-shot final validation after freeze + holdout build. No retune."""
+    from rishiq.isef2027.method_freeze_gates import evaluate_final_validation_once
+
+    out = evaluate_final_validation_once(_root())
+    rprint(out)
+    if out.get("status") == "REFUSED":
+        raise typer.Exit(code=2)
 
 
 @app.command("show-summary")

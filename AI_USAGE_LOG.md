@@ -139,3 +139,10 @@ Do **not** delete entries. Student should mark review status.
 - **Student must review:** fingerprint KEEP/MODIFY decisions; source eligibility; whether corpus size/coverage suffices; method freeze before any final holdout eval
 - **Not done by AI:** official ISEF paper/abstract/poster; confirmatory unlock; final holdout evaluation
 
+
+## 2026-08-16 — Cursor agent (last pre-freeze: student review workflow)
+
+- **Model/tool:** Cursor agent (Composer / Auto)
+- **User prompt reference:** last pre-freeze pass; student review gates; no auto-approve; confirmatory LOCKED; holdout NOT_BUILT
+- **Task performed:** Built `rishiq-isef student-review`, `validate-student-review`, `evaluate-extractor-gold`, `freeze-method`, holdout build/eval stubs that refuse until freeze; blank criterion JSON files; gate tests
+- **Not done by AI:** fingerprint KEEP/MODIFY decisions; gold labels; success thresholds; method freeze confirmation; paper/abstract

@@ -24,6 +24,7 @@ Last updated: 2026-08-16 (final pre-confirmatory readiness pass)
 | Exploratory flagship | **A** | Frozen; honest Maxwell 0/5 |
 | V1 prereg timestamp | **Historical** | Untouched release; superseded for future confirmatory |
 | V2 methodology | **In progress** | See `docs/V1_TO_V2_METHOD_CORRECTIONS.md` |
+| Student review | **AWAITING_STUDENT_REVIEW** |
 | Method validation | **Family-clean train/dev; true holdout NOT_BUILT** | Constructed set demoted; structural extractor live |
 | Power / sample size | **Not freeze-ready** | Structural ICC from DEV; student N not frozen |
 | Graph algorithm | **Unit-validated** | Typed coverage × Hungarian Option B |

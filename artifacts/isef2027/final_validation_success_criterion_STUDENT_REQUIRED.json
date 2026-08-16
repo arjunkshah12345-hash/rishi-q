@@ -1,0 +1,11 @@
+{
+  "primary_metric": null,
+  "minimum_primary_value": null,
+  "secondary_requirements": [],
+  "masked_requirement": null,
+  "source_family_requirement": null,
+  "failure_rule": null,
+  "student_approved": false,
+  "approved_at": null,
+  "note": "Student decides BEFORE true final holdout construction. Do not optimize to make method pass."
+}

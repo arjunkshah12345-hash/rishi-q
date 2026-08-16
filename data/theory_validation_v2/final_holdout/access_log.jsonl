@@ -17,3 +17,7 @@
 {"timestamp": "2026-08-16T17:18:16.688426+00:00", "event": "ACCESS_DENIED", "reason": "missing_or_invalid_unlock_token", "token_provided": true}
 {"timestamp": "2026-08-16T17:19:03.232392+00:00", "event": "ACCESS_DENIED", "reason": "missing_or_invalid_unlock_token", "token_provided": false}
 {"timestamp": "2026-08-16T17:19:03.232664+00:00", "event": "ACCESS_DENIED", "reason": "missing_or_invalid_unlock_token", "token_provided": true}
+{"timestamp": "2026-08-16T19:44:45.066548+00:00", "event": "ACCESS_DENIED", "reason": "missing_or_invalid_unlock_token", "token_provided": false}
+{"timestamp": "2026-08-16T19:44:45.067061+00:00", "event": "ACCESS_DENIED", "reason": "missing_or_invalid_unlock_token", "token_provided": true}
+{"timestamp": "2026-08-16T19:45:16.904185+00:00", "event": "ACCESS_DENIED", "reason": "missing_or_invalid_unlock_token", "token_provided": false}
+{"timestamp": "2026-08-16T19:45:16.905528+00:00", "event": "ACCESS_DENIED", "reason": "missing_or_invalid_unlock_token", "token_provided": true}
