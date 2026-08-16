@@ -1,0 +1,2 @@
+n_traditions_compared,tradition_names,p_exactly_one_R2_and_it_is_Vaisesika_under_fair_coin_R2,observed_unique_R2_holder,kanada_vector_count_among_64,hamming_to_maxwell_observed,p_random_vector_hamming_to_maxwell_ge_observed,interpretation
+6,"['Vaiśeṣika', 'Lucretius', 'Timaeus', 'Dao De Jing', 'Dhammapada', 'Maxwell']",0.015625,Vaiśeṣika,1,4,0.34375,"Under a null where each tradition independently has R2~Bern(0.5), the chance that exactly one tradition has R2 and it is Vaiśeṣika is 0.0156. This is a descriptive null, not a historical generative model."

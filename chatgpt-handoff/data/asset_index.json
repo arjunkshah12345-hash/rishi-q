@@ -1,0 +1,252 @@
+[
+  {
+    "path": "data/summary.json",
+    "type": "json",
+    "role": "primary_results"
+  },
+  {
+    "path": "data/expansion_v2.json",
+    "type": "json",
+    "role": "primary_results"
+  },
+  {
+    "path": "data/VERDICT.md",
+    "type": "md",
+    "role": "verdict_novelty"
+  },
+  {
+    "path": "data/NOVELTY.md",
+    "type": "md",
+    "role": "verdict_novelty"
+  },
+  {
+    "path": "figures/fig41_isef_akasa_sound_field.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig42_isef_process.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig43_isef_timeline.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig44_isef_radar.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig45_isef_distance.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig46_isef_evidence.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig47_isef_claim_filter.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig48_isef_ontology_graph.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig49_isef_expansion_board.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig40_vaisesika_akasa_sabda.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig39_em_quantum_proof_hunt.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig35_capra_claim_autopsy.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig37_claim_verdicts.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig38_flagship_poster.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "figures/fig_isef_board.png",
+    "type": "png",
+    "role": "existing_figure"
+  },
+  {
+    "path": "scripts/run_isef_akasa_sound_field.py",
+    "type": "py",
+    "role": "repro_script"
+  },
+  {
+    "path": "scripts/make_isef_extra_figures.py",
+    "type": "py",
+    "role": "repro_script"
+  },
+  {
+    "path": "scripts/run_isef_expansion_v2.py",
+    "type": "py",
+    "role": "repro_script"
+  },
+  {
+    "path": "scripts/build_chatgpt_handoff.py",
+    "type": "py",
+    "role": "repro_script"
+  },
+  {
+    "path": "data/FLAGSHIP_FINDING.md",
+    "type": "md",
+    "role": "project_flag"
+  },
+  {
+    "path": "data/PROOF_HUNT.md",
+    "type": "md",
+    "role": "project_flag"
+  },
+  {
+    "path": "data/HEADLINE_FINDING.md",
+    "type": "md",
+    "role": "project_flag"
+  },
+  {
+    "path": "corpus_snippets/vaisesika_sutra_gretil.txt",
+    "type": "txt",
+    "role": "primary_text"
+  },
+  {
+    "path": "corpus_snippets/prasastapada_gretil.txt",
+    "type": "txt",
+    "role": "primary_text"
+  },
+  {
+    "path": "paper_legacy_do_not_use/",
+    "type": "dir",
+    "role": "legacy_ignore_style"
+  },
+  {
+    "path": "tables/T_kanada_attestation.csv",
+    "role": "table"
+  },
+  {
+    "path": "tables/C_prasastapada_replication.csv",
+    "role": "table"
+  },
+  {
+    "path": "tables/M_maxwell_confrontation.csv",
+    "role": "table"
+  },
+  {
+    "path": "tables/R_six_tradition_vectors.csv",
+    "role": "table"
+  },
+  {
+    "path": "tables/hamming_distances.csv",
+    "role": "table"
+  },
+  {
+    "path": "tables/null_models.csv",
+    "role": "table"
+  },
+  {
+    "path": "tables/hamming_matrix_6x6.csv",
+    "role": "table"
+  },
+  {
+    "path": "tables/scorecard.csv",
+    "role": "table"
+  },
+  {
+    "path": "evidence/EXCERPTS.md",
+    "role": "evidence"
+  },
+  {
+    "path": "evidence/evidence.json",
+    "role": "evidence"
+  },
+  {
+    "path": "figures/fig50_T_attestation_bars.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig51_maxwell_zero_hits.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig52_prasastapada_replication.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig53_R2_uniqueness.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig54_rubric_heatmap.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig55_hamming_matrix.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig56_scorecard.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig57_null_p_one_over_64.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig58_vaisesika_vs_maxwell.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig59_process_stages.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig60_claim_boundary.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig61_feature_prevalence.png",
+    "type": "png",
+    "role": "new_figure"
+  },
+  {
+    "path": "figures/fig62_distance_to_maxwell.png",
+    "type": "png",
+    "role": "new_figure"
+  }
+]

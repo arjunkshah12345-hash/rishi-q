@@ -1,147 +1,159 @@
 # RISHI-Q
 
-**Beyond Metaphor: A Blinded Computational Test of Quantum-Structural Analogues in Classical Sanskrit Thought**
+**Computational comparative history of physics** — classical Sanskrit natural philosophy tested against Greek, Chinese, Buddhist, and modern electromagnetic controls.
 
-## What it is
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/flagship-ISEF--AKASA--SOUND--FIELD-0f2744)](FLAGSHIP_FINDING.md)
+[![Maxwell hits](https://img.shields.io/badge/Maxwell%20hits-0%2F5-b91c1c)](chatgpt-handoff/tables/M_maxwell_confrontation.csv)
+[![Kaṇāda](https://img.shields.io/badge/Ka%E1%B9%87%C4%81da-9%2F9-15803d)](chatgpt-handoff/tables/T_kanada_attestation.csv)
 
-RISHI-Q is a computational research framework for asking whether selected classical Sanskrit philosophical texts exhibit **quantum-specific structural correspondences** relative to matched historical controls — after source blinding, translation controls, vocabulary masking, and statistical safeguards.
+> **Not** a Capra-style claim that ancient India discovered electromagnetism or quantum mechanics.  
+> **Yes** an open, falsifiable, multi-civilization structural comparison package.
 
-A negative result is a successful scientific result.
+---
 
-RISHI-Q has two complementary systems:
+## Flagship result — ISEF-AKASA-SOUND-FIELD
+
+| Gate | Score |
+|------|------:|
+| Kaṇāda primary attestation (T1–T9) | **9/9** |
+| Praśastapāda commentarial replication (C1–C6) | **6/6** |
+| Maxwell EM structural hits (M1–M5) | **0/5** |
+| R2 (sound ↔ pervasive medium) unique among 6 traditions | **Yes** |
+| Fair-coin descriptive null \(P\) | **1/64 = 0.015625** |
+
+**Doctrine under test:** In Vaiśeṣika (Kaṇāda), *ākāśa* is a pervasive substance whose distinctive mark is sound (*śabda*); light/heat belong to *tejas*.
+
+**Verdict:** `GROUNDBREAKING_COMPARATIVE_PACKAGE_NOT_ANCIENT_EM`
+
+<p align="center">
+  <img src="chatgpt-handoff/figures/fig56_scorecard.png" width="720" alt="Primary scorecard" />
+</p>
+
+<p align="center">
+  <img src="chatgpt-handoff/figures/fig54_rubric_heatmap.png" width="720" alt="Six-tradition rubric heatmap" />
+</p>
+
+---
+
+## Start here (pick one)
+
+| You want… | Go to |
+|-----------|--------|
+| **Write an ISEF report** (ChatGPT / human) | [`chatgpt-handoff/`](chatgpt-handoff/) — upload the folder or zip; paste [`CHATGPT_PROMPT.md`](chatgpt-handoff/CHATGPT_PROMPT.md) |
+| **Headline numbers only** | [`FLAGSHIP_FINDING.md`](FLAGSHIP_FINDING.md) · [`chatgpt-handoff/data/FACTS.json`](chatgpt-handoff/data/FACTS.json) |
+| **All figures** | [`chatgpt-handoff/figures/`](chatgpt-handoff/figures/) (28 PNGs, fig35–fig62) |
+| **All tables** | [`chatgpt-handoff/tables/`](chatgpt-handoff/tables/) |
+| **Reproduce analyses** | Commands below |
+| **Broader RISHI-Q framework** (confirmatory firewall, discovery system) | Rest of this README |
+
+---
+
+## Repository map
+
+```
+rishi-q/
+├── FLAGSHIP_FINDING.md          ← locked lead claim
+├── chatgpt-handoff/             ← complete report-writing pack
+│   ├── CHATGPT_PROMPT.md
+│   ├── CONSTRAINTS.md           ← hard do / don't
+│   ├── PROCESS.md · METHODS.md
+│   ├── data/                    ← FACTS.json, summary, expansion, novelty
+│   ├── tables/                  ← CSVs
+│   ├── figures/                 ← all visualizations
+│   ├── evidence/                ← sutra excerpts
+│   └── corpus_snippets/         ← GRETIL caches
+├── results/exploratory/isef_akasa_sound_field/
+├── scripts/run_isef_*.py
+├── paper/figures/fig4*.png · fig5*.png · fig6*.png
+├── corpus/development/          ← GRETIL Vaiśeṣika + Praśastapāda
+└── protocol/ · ontology/ · src/ ← full RISHI-Q research stack
+```
+
+---
+
+## Process iterations (flagship)
+
+1. Filter Capra / popular EM–QM anticipation claims  
+2. Lock obscure doctrine: *ākāśa–śabda* + *tejas*  
+3. GRETIL Kaṇāda attestation → **9/9**  
+4. Maxwell structural foil → **0/5**  
+5. Six-tradition rubric (Vaiśeṣika, Lucretius, *Timaeus*, Dao De Jing, Dhammapada, Maxwell)  
+6. Praśastapāda replication → **6/6**  
+7. Descriptive nulls + novelty audit  
+8. Handoff pack for external report writing  
+
+Details: [`chatgpt-handoff/PROCESS.md`](chatgpt-handoff/PROCESS.md) · [`docs/ISEF_ITERATIONS.md`](docs/ISEF_ITERATIONS.md)
+
+---
+
+## Reproduce
+
+```bash
+git clone https://github.com/arjunkshah/rishi-q.git
+cd rishi-q
+uv venv && uv pip install -e ".[dev]"
+
+uv run python scripts/run_isef_akasa_sound_field.py
+uv run python scripts/make_isef_extra_figures.py
+uv run python scripts/run_isef_expansion_v2.py
+uv run python scripts/build_chatgpt_handoff.py
+```
+
+---
+
+## Claim boundary
+
+| CLAIM | REFUSE |
+|-------|--------|
+| Recoverable sound-medium ontology | Ancient Maxwell discovery |
+| Primary + commentarial attestation | Ancient quantum mechanics |
+| R2 unique on 6-tradition panel | *ākāśa* = EM / quantum vacuum |
+| Open falsification vs Maxwell | Lab detection of *ākāśa* |
+| Descriptive null + novelty audit | “First notice of *ākāśa*–sound” |
+
+<p align="center">
+  <img src="chatgpt-handoff/figures/fig60_claim_boundary.png" width="720" alt="Claim boundary" />
+</p>
+
+---
+
+## What RISHI-Q is (broader project)
+
+A computational research framework for testing whether classical Sanskrit philosophical texts exhibit **quantum-specific structural correspondences** relative to matched historical controls — after blinding, translation controls, vocabulary masking, and statistical safeguards.
 
 | System | Role |
 |--------|------|
-| **A — Confirmatory** | Preregistered test of quantum-specific structural correspondence (locked until OSF) |
-| **B — Discovery** | Unsupervised concept graphs → Rishi Motifs → post-hoc physics mapping, surprisal, temporal, translation-shift, claims-vs-data |
+| **A — Confirmatory** | Preregistered test (locked until OSF) |
+| **B — Discovery** | Motifs, surprisal, temporal, translation-shift, claims-vs-data |
 
-Success is **not** defined as proving ancient quantum anticipation. Prefer novel, robust structural findings — including negative/claim-contradicting ones.
+A negative result is a successful scientific result.
 
-## What it is NOT
+Hard rules (examples): unity ≠ entanglement; vibration ≠ QFT; prefer **NA** over **YES** when ambiguous.
 
-- Not a proof that Hindu scriptures discovered quantum mechanics
-- Not a cosine-similarity demo between Upaniṣads and QFT Wikipedia pages
-- Not a spiritual affirmation project
-- Not ready for confirmatory claims until preregistration and human validation
+See `protocol/`, `ontology/`, `docs/`, and `discovery_report.md` for the wider stack.
 
-## Research question
+---
 
-> Do selected classical Sanskrit philosophical corpora exhibit statistically greater structural correspondence with modern quantum mechanics and quantum field theory than appropriately matched historical philosophical control corpora?
-
-## Central distinction
-
-| Level | Kind | Evidentiary weight |
-|-------|------|--------------------|
-| I | Generic metaphysical (unity, change, hidden reality) | Weak for quantum claims |
-| II | Field-like / classical structure | May resemble classical fields, not automatically quantum |
-| III | Quantum-specific (nonseparability, incompatible observables, quantized excitations, …) | Stronger, still not “discovery” |
-
-Hard rules (examples): unity ≠ entanglement; vibration ≠ QFT; prāṇa ≠ energy; prefer **NA** over **YES** when ambiguous.
-
-## Scientific safeguards
-
-- Physics-derived ontology frozen before confirmatory testing
-- Source-label blinding
-- Evidence spans required for positive labels
-- Development vs confirmatory firewall
-- Translation treated as experimental variable
-- Physics vocabulary masking
-- Cluster-aware inference
-- Negative controls and adversarial robustness battery
-- Human validation required (not fabricated here)
-- Preregistration required before confirmatory unlock
-
-## Status (2026-08-15)
+## Status
 
 | Gate | Status |
 |------|--------|
-| Preregistration | `READY_FOR_EXTERNAL_PREREGISTRATION` (draft only) |
-| Human validation | `REQUIRES_EXTERNAL_HUMAN_VALIDATION` |
-| Confirmatory analysis | **LOCKED** |
-| Expert Sanskrit / physics review | `REQUIRES_EXPERT_REVIEW` |
+| Flagship ISEF package | **Public / reproducible** |
+| Preregistration (confirmatory QM) | `READY_FOR_EXTERNAL_PREREGISTRATION` |
+| Confirmatory QM analysis | **LOCKED** |
+| Human / expert validation | Required before confirmatory unlock |
 
-See `protocol/methodology_status.md`.
-
-## Architecture
-
-- **Local (MacBook Air):** corpus/metadata, DuckDB/Parquet, ontology, statistics, tests, paper
-- **Kaggle (optional GPU):** transformer annotation, embeddings, multi-model replication, large simulations
-- **Primary signal:** explicit ontology labels — embeddings are secondary only
-
-## Installation
-
-```bash
-uv venv
-uv pip install -e ".[dev]"
-```
-
-Optional ML extras (mainly for Kaggle): `uv pip install -e ".[ml]"`
-
-## Quick start (synthetic end-to-end)
-
-```bash
-uv run python -m rishiq.ingest.synthetic
-uv run rishiq validate-ontology ontology/ontology_v0.1.yaml
-uv run rishiq annotate --config configs/development.yaml
-uv run rishiq analyze
-uv run pytest -q
-```
-
-### Protocol §95 development prototype
-
-```bash
-uv run python scripts/build_prototype100.py
-uv run python scripts/run_protocol_analyses.py
-uv run python scripts/build_paper_assets.py
-open paper/preview.html
-```
-
-### System B discovery engine
-
-```bash
-uv run python scripts/run_pd_pilot.py          # if PD annotations missing
-uv run python scripts/run_discovery_engine.py
-uv run python scripts/run_novelty_search.py    # best-effort literature pass
-uv run python scripts/build_all_visualizations.py
-uv run python scripts/build_paper_assets.py
-open paper/preview.html
-# outputs: discovery_report.md, results/discovery/, novelty/, paper/figures/fig01–fig31
-```
-
-Confirmatory entrypoint stays locked:
-
-```bash
-uv run rishiq confirmatory   # exits locked until unlock file exists
-```
-
-## Dataset structure
-
-- `corpus/development/` — exploratory (contaminated by design decisions)
-- `corpus/confirmatory_locked/` — empty until preregistration
-- `corpus/manifests/sources.csv` — bibliographic + licensing audit
-- Copyrighted translations: metadata/pointers only unless redistribution is permitted
-
-## Kaggle
-
-See `kaggle/README.md`. Notebooks expect uploaded Parquet/YAML inputs and write compact outputs + manifests.
-
-## Reproducibility
-
-Every run should write an experiment manifest (`git_commit`, dataset/ontology hashes, model, seed, package versions). Results without provenance are invalid.
-
-## Citation
-
-See `CITATION.cff`.
-
-## Paper drafting
-
-- LaTeX: `paper/main.tex`
-- HTML preview with figures: `paper/preview.html`
-- Regenerate exhibits: `uv run python scripts/build_paper_assets.py`
-- Journey log: `docs/RESEARCH_JOURNEY.md`
-- Methods appendix: `docs/METHODS_APPENDIX.md`
-- Skeptic FAQ: `docs/SKEPTIC_FAQ.md`
+---
 
 ## License
 
-MIT for software. Corpus texts remain under their own licenses (`docs/DATA_STATEMENT.md`).
+MIT — see [`LICENSE`](LICENSE).
+
+## Citation
+
+See [`CITATION.cff`](CITATION.cff). For the flagship experiment, cite this repository and experiment ID `ISEF-AKASA-SOUND-FIELD`.
+
+## Author
+
+**Arjun Shah** — Stratford Preparatory Milpitas · Independent research / RISHI-Q

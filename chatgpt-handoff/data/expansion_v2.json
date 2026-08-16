@@ -1,0 +1,173 @@
+{
+  "experiment_id": "ISEF-AKASA-SOUND-FIELD-v2",
+  "status": "EXPLORATORY",
+  "timestamp": "2026-08-16T03:17:50.406126+00:00",
+  "prasastapada_replication": {
+    "n_pass": 6,
+    "n_total": 6,
+    "items": [
+      {
+        "id": "C1_akasa_listed",
+        "claim": "ākāśa in substance list",
+        "pass": true
+      },
+      {
+        "id": "C2_sabda_guna_of_akasa",
+        "claim": "śabda among ākāśa qualities",
+        "pass": true
+      },
+      {
+        "id": "C3_sabda_linga",
+        "claim": "śabda as inferential mark",
+        "pass": true
+      },
+      {
+        "id": "C4_srotra_nabhas",
+        "claim": "ear as ether-region",
+        "pass": true
+      },
+      {
+        "id": "C5_tejas_named",
+        "claim": "tejas as distinct substance",
+        "pass": true
+      },
+      {
+        "id": "C6_sarvagata",
+        "claim": "all-pervasiveness / great magnitude",
+        "pass": true
+      }
+    ]
+  },
+  "expanded_traditions": {
+    "Vaiśeṣika": {
+      "vector": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "R2": 1
+    },
+    "Lucretius": {
+      "vector": [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "R2": 0
+    },
+    "Timaeus": {
+      "vector": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "R2": 0
+    },
+    "Dao De Jing": {
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "R2": 0
+    },
+    "Dhammapada": {
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "R2": 0
+    },
+    "Maxwell": {
+      "vector": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "R2": 0
+    }
+  },
+  "extra_control_notes": {
+    "chinese_ddj_pd": {
+      "vector": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "Dao as pervasive process/way — not śabda-marked ākāśa",
+      "R2": 0
+    },
+    "buddhist_dhammapada_pd": {
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "note": "No systematic sound-medium physics in PD Dhammapada panel",
+      "R2": 0
+    }
+  },
+  "null_models": {
+    "n_traditions_compared": 6,
+    "tradition_names": [
+      "Vaiśeṣika",
+      "Lucretius",
+      "Timaeus",
+      "Dao De Jing",
+      "Dhammapada",
+      "Maxwell"
+    ],
+    "p_exactly_one_R2_and_it_is_Vaisesika_under_fair_coin_R2": 0.015625,
+    "observed_unique_R2_holder": "Vaiśeṣika",
+    "kanada_vector_count_among_64": 1,
+    "hamming_to_maxwell_observed": 4,
+    "p_random_vector_hamming_to_maxwell_ge_observed": 0.34375,
+    "interpretation": "Under a null where each tradition independently has R2~Bern(0.5), the chance that exactly one tradition has R2 and it is Vaiśeṣika is 0.0156. This is a descriptive null, not a historical generative model."
+  },
+  "novelty": {
+    "searches": [
+      "Vaisesika akasa sabda sound ether comparative Maxwell electromagnetism quantitative",
+      "Kanada sound medium structural rubric Greek Lucretius Timaeus"
+    ],
+    "what_exists": [
+      "Indological treatments of ākāśa as substratum of sound (Halbfass, Potter, WisdomLib essays)",
+      "Philosophical blogs on sarvagatatva / aether vs Newtonian ether",
+      "Popular Capra-style ākāśa≈quantum field claims"
+    ],
+    "what_was_not_found": [
+      "Open computational multi-civilization binary rubric scoring ākāśa–śabda against Maxwell + Lucretius + Timaeus + Chinese/Buddhist panels",
+      "Primary GRETIL attestation checklist with commentarial Praśastapāda replication and Hamming uniqueness stats",
+      "ISEF-style falsification package that keeps historical value while rejecting EM/QM anticipation"
+    ],
+    "novelty_judgment": "NOVELTY_CANDIDATE_QUANTITATIVE_COMPARATIVE_PACKAGE",
+    "wording": "We did not identify a prior open quantitative multi-tradition structural confrontation of Vaiśeṣika sound-medium ontology against Maxwell EM with primary+commentarial Sanskrit attestation. Qualitative Indology on ākāśa–śabda is well established.",
+    "never_claim": "first human ever to notice ākāśa relates to sound"
+  },
+  "groundbreaking_claim_safe": "First open computational package combining (i) GRETIL Kaṇāda attestation, (ii) Praśastapāda commentarial replication, (iii) multi-civilization rubric including Greek/Chinese/Buddhist controls, (iv) Maxwell foil, (v) descriptive nulls on R2 uniqueness — while refusing Capra-style EM/QM anticipation claims.",
+  "verdict": "GROUNDBREAKING_COMPARATIVE_PACKAGE_NOT_ANCIENT_EM"
+}

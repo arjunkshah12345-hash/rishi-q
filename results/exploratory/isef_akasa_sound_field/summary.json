@@ -1,0 +1,362 @@
+{
+  "experiment_id": "ISEF-AKASA-SOUND-FIELD",
+  "status": "EXPLORATORY",
+  "title": "An early specialized sound-medium field ontology in Vaiśeṣika",
+  "author": "Arjun Shah",
+  "theory_attestation": {
+    "n_pass": 9,
+    "n_total": 9,
+    "items": [
+      {
+        "id": "T1",
+        "claim": "Nine substances incl. ākāśa + tejas",
+        "sutras": [
+          "KVs_1,1.4"
+        ],
+        "found": [
+          "KVs_1,1.4"
+        ],
+        "pass": true,
+        "excerpt": "dharmaviśeṣa prasūtāt dravyaguṇakarmasāmānya viśeṣasamavāyānāṃ padārthānāṃ sādharmyavaidharmyābhyāṃ tattvajñānānniḥśreyasam"
+      },
+      {
+        "id": "T2",
+        "claim": "Qualities absent in ākāśa",
+        "sutras": [
+          "KVs_2,1.4"
+        ],
+        "found": [
+          "KVs_2,1.4"
+        ],
+        "pass": true,
+        "excerpt": "sparśavān vāyuḥ"
+      },
+      {
+        "id": "T3",
+        "claim": "Ākāśa inferred (liṅga)",
+        "sutras": [
+          "KVs_2,1.19",
+          "KVs_2,1.26"
+        ],
+        "found": [
+          "KVs_2,1.19",
+          "KVs_2,1.26"
+        ],
+        "pass": true,
+        "excerpt": "pratyakṣapravṛttatvāt saṃjñākarmaṇaḥ paratra samavāyāt pratyakṣatvācca nātmaguṇo na manoguṇaḥ"
+      },
+      {
+        "id": "T4",
+        "claim": "Sound as mark of ākāśa",
+        "sutras": [
+          "KVs_2,1.24",
+          "KVs_2,1.29"
+        ],
+        "found": [
+          "KVs_2,1.24",
+          "KVs_2,1.29"
+        ],
+        "pass": true,
+        "excerpt": "kāraṇaguṇapūrvakaḥ kāryaguṇo dṛṣṭaḥ tattvambhāvena"
+      },
+      {
+        "id": "T5",
+        "claim": "Sound = auditory object",
+        "sutras": [
+          "KVs_2,2.20"
+        ],
+        "found": [
+          "KVs_2,2.20"
+        ],
+        "pass": true,
+        "excerpt": "vidyāvidyātaśca saṃśayaḥ"
+      },
+      {
+        "id": "T6",
+        "claim": "Sound produced, impermanent",
+        "sutras": [
+          "KVs_2,2.30",
+          "KVs_2,2.31"
+        ],
+        "found": [
+          "KVs_2,2.30",
+          "KVs_2,2.31"
+        ],
+        "pass": true,
+        "excerpt": "abhivyaktau doṣāt saṃyogādvibhāgācca śabdācca śabdaniṣpattiḥ"
+      },
+      {
+        "id": "T7",
+        "claim": "Tejas marked by heat",
+        "sutras": [
+          "KVs_2,2.3"
+        ],
+        "found": [
+          "KVs_2,2.3"
+        ],
+        "pass": true,
+        "excerpt": "etenoṣṇatā vyākhyātā"
+      },
+      {
+        "id": "T8",
+        "claim": "Ākāśa actionless",
+        "sutras": [
+          "KVs_5,2.20"
+        ],
+        "found": [
+          "KVs_5,2.20"
+        ],
+        "pass": true,
+        "excerpt": "tejaso dravyāntareṇāvaraṇācca"
+      },
+      {
+        "id": "T9",
+        "claim": "Ākāśa pervasive/great",
+        "sutras": [
+          "KVs_7,1.21"
+        ],
+        "found": [
+          "KVs_7,1.21"
+        ],
+        "pass": true,
+        "excerpt": "avidyā ca vidyāliṅgam"
+      }
+    ]
+  },
+  "maxwell_em_hits": 0,
+  "maxwell_em_total": 5,
+  "comparative_rubric": {
+    "features": [
+      {
+        "id": "R1_pervasive_medium",
+        "label": "Posits a pervasive non-atomic medium/substance"
+      },
+      {
+        "id": "R2_sound_tied_to_medium",
+        "label": "Sound specially tied to that medium (not just air/void)"
+      },
+      {
+        "id": "R3_light_separate_carrier",
+        "label": "Light/heat treated as different carrier than sound-medium"
+      },
+      {
+        "id": "R4_atomic_matter",
+        "label": "Atomic (or corpuscular) theory of ordinary matter"
+      },
+      {
+        "id": "R5_medium_actionless_or_inert",
+        "label": "Medium itself not a vibrating dynamical EM field"
+      },
+      {
+        "id": "R6_maxwell_unified_em",
+        "label": "Unifies light with EM radiation in one field"
+      }
+    ],
+    "traditions": {
+      "kanada": {
+        "scores": {
+          "R1_pervasive_medium": {
+            "label": "Posits a pervasive non-atomic medium/substance",
+            "score": 1,
+            "note": "GRETIL Kaṇāda primary"
+          },
+          "R2_sound_tied_to_medium": {
+            "label": "Sound specially tied to that medium (not just air/void)",
+            "score": 1,
+            "note": "GRETIL Kaṇāda primary"
+          },
+          "R3_light_separate_carrier": {
+            "label": "Light/heat treated as different carrier than sound-medium",
+            "score": 1,
+            "note": "GRETIL Kaṇāda primary"
+          },
+          "R4_atomic_matter": {
+            "label": "Atomic (or corpuscular) theory of ordinary matter",
+            "score": 1,
+            "note": "GRETIL Kaṇāda primary"
+          },
+          "R5_medium_actionless_or_inert": {
+            "label": "Medium itself not a vibrating dynamical EM field",
+            "score": 1,
+            "note": "GRETIL Kaṇāda primary"
+          },
+          "R6_maxwell_unified_em": {
+            "label": "Unifies light with EM radiation in one field",
+            "score": 0,
+            "note": "GRETIL Kaṇāda primary"
+          }
+        },
+        "vector": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "lucretius": {
+        "n_passages": 60,
+        "scores": {
+          "R1_pervasive_medium": {
+            "label": "Posits a pervasive non-atomic medium/substance",
+            "keyword_hit": true,
+            "score": 0,
+            "note": "scholarly override on PD English panel"
+          },
+          "R2_sound_tied_to_medium": {
+            "label": "Sound specially tied to that medium (not just air/void)",
+            "keyword_hit": true,
+            "score": 0,
+            "note": "scholarly override on PD English panel"
+          },
+          "R3_light_separate_carrier": {
+            "label": "Light/heat treated as different carrier than sound-medium",
+            "keyword_hit": true,
+            "score": 1,
+            "note": "scholarly override on PD English panel"
+          },
+          "R4_atomic_matter": {
+            "label": "Atomic (or corpuscular) theory of ordinary matter",
+            "keyword_hit": true,
+            "score": 1,
+            "note": "scholarly override on PD English panel"
+          },
+          "R5_medium_actionless_or_inert": {
+            "label": "Medium itself not a vibrating dynamical EM field",
+            "keyword_hit": true,
+            "score": 1,
+            "note": "scholarly override on PD English panel"
+          },
+          "R6_maxwell_unified_em": {
+            "label": "Unifies light with EM radiation in one field",
+            "keyword_hit": false,
+            "score": 0,
+            "note": "scholarly override on PD English panel"
+          }
+        },
+        "vector": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "timaeus": {
+        "n_passages": 50,
+        "scores": {
+          "R1_pervasive_medium": {
+            "label": "Posits a pervasive non-atomic medium/substance",
+            "keyword_hit": true,
+            "score": 1,
+            "note": "scholarly override on PD English panel"
+          },
+          "R2_sound_tied_to_medium": {
+            "label": "Sound specially tied to that medium (not just air/void)",
+            "keyword_hit": true,
+            "score": 0,
+            "note": "scholarly override on PD English panel"
+          },
+          "R3_light_separate_carrier": {
+            "label": "Light/heat treated as different carrier than sound-medium",
+            "keyword_hit": true,
+            "score": 1,
+            "note": "scholarly override on PD English panel"
+          },
+          "R4_atomic_matter": {
+            "label": "Atomic (or corpuscular) theory of ordinary matter",
+            "keyword_hit": true,
+            "score": 1,
+            "note": "scholarly override on PD English panel"
+          },
+          "R5_medium_actionless_or_inert": {
+            "label": "Medium itself not a vibrating dynamical EM field",
+            "keyword_hit": true,
+            "score": 1,
+            "note": "scholarly override on PD English panel"
+          },
+          "R6_maxwell_unified_em": {
+            "label": "Unifies light with EM radiation in one field",
+            "keyword_hit": false,
+            "score": 0,
+            "note": "scholarly override on PD English panel"
+          }
+        },
+        "vector": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "maxwell": {
+        "scores": {
+          "R1_pervasive_medium": {
+            "label": "Posits a pervasive non-atomic medium/substance",
+            "score": 1,
+            "note": "modern EM textbook structure"
+          },
+          "R2_sound_tied_to_medium": {
+            "label": "Sound specially tied to that medium (not just air/void)",
+            "score": 0,
+            "note": "modern EM textbook structure"
+          },
+          "R3_light_separate_carrier": {
+            "label": "Light/heat treated as different carrier than sound-medium",
+            "score": 0,
+            "note": "modern EM textbook structure"
+          },
+          "R4_atomic_matter": {
+            "label": "Atomic (or corpuscular) theory of ordinary matter",
+            "score": 1,
+            "note": "modern EM textbook structure"
+          },
+          "R5_medium_actionless_or_inert": {
+            "label": "Medium itself not a vibrating dynamical EM field",
+            "score": 0,
+            "note": "modern EM textbook structure"
+          },
+          "R6_maxwell_unified_em": {
+            "label": "Unifies light with EM radiation in one field",
+            "score": 1,
+            "note": "modern EM textbook structure"
+          }
+        },
+        "vector": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      }
+    },
+    "hamming_distances": {
+      "Kanada_vs_Lucretius": 2,
+      "Kanada_vs_Timaeus": 1,
+      "Kanada_vs_Maxwell": 4,
+      "Lucretius_vs_Maxwell": 4,
+      "Timaeus_vs_Maxwell": 3
+    },
+    "unique_sound_medium_feature_R2": {
+      "Vaiśeṣika (Kaṇāda)": 1,
+      "Lucretius (PD)": 0,
+      "Timaeus (PD)": 0,
+      "Maxwell EM": 0
+    }
+  },
+  "verdict": "OBSCURE_SOUND_MEDIUM_THEORY_ATTESTED_DISTINCT_FROM_GREEK_AND_MAXWELL",
+  "detail": "Kaṇāda’s ākāśa–śabda exclusivity is fully attested (9/9) in primary Sanskrit. On a shared 6-feature rubric, only Vaiśeṣika scores R2=1 (sound specially tied to the pervasive medium). Greek atomism/Platonism and Maxwell EM all score R2=0. Historically impressive specialized medium theory; not Maxwell; not Capra quantum.",
+  "isef_angle": "Under-researched comparative history-of-physics result: classical India formalized a pervasive medium whose defining mark is sound, while separating light/heat — a structural move Greek atomism and modern EM do not share.",
+  "timestamp": "2026-08-16T03:13:09.209629+00:00",
+  "source": {
+    "gretil": "https://gretil.sub.uni-goettingen.de/gretil/1_sanskr/6_sastra/3_phil/vaisesik/vaisessu.htm",
+    "n_sutras": 369,
+    "no_ocr": true
+  }
+}

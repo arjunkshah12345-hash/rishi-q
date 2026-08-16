@@ -25,10 +25,12 @@ htmlcov/
 .vscode/
 *.swp
 
-# Data products (regenerable; keep fixtures)
+# Data products (regenerable; keep fixtures + published ISEF pack)
 results/exploratory/**
 !results/exploratory/README.md
 !results/exploratory/.gitkeep
+!results/exploratory/isef_akasa_sound_field/
+!results/exploratory/isef_akasa_sound_field/**
 results/confirmatory/**
 !results/confirmatory/README.md
 !results/confirmatory/.gitkeep
@@ -36,6 +38,20 @@ results/confirmatory/**
 !tests/fixtures/**/*.parquet
 !corpus/development/synthetic_passages.parquet
 !corpus/validation/**/*.parquet
+
+# Handoff zip is regenerable; keep the folder
+chatgpt-handoff.zip
+
+# LaTeX junk
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
 
 # Private blinding maps (never publish)
 corpus/**/blinding_map.json
