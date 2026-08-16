@@ -91,8 +91,12 @@ def simulate_delta_q_power(assumptions: PowerAssumptions) -> dict[str, Any]:
 
     n_ok = max(len(deltas), 1)
     power = rejects / assumptions.n_sim
-    # Monte Carlo SE
+    # Monte Carlo SE of binomial proportion
     mc_se = float(np.sqrt(power * (1 - power) / assumptions.n_sim))
+    # Normal approx 95% simulation interval for power estimate
+    z = 1.96
+    lo = float(max(0.0, power - z * mc_se))
+    hi = float(min(1.0, power + z * mc_se))
     payload = {
         "analysis_id": "ISEF2027-POWER-HIER-v2",
         "primary_test": "work_level_permutation_one_sided_delta_q",
@@ -102,6 +106,7 @@ def simulate_delta_q_power(assumptions: PowerAssumptions) -> dict[str, Any]:
         "n_sim": assumptions.n_sim,
         "empirical_power": power,
         "monte_carlo_se": mc_se,
+        "power_sim_interval_95": [lo, hi],
         "mean_observed_delta": float(np.mean(deltas)) if deltas else float("nan"),
         "label": "DESIGN_SIMULATION"
         if ready

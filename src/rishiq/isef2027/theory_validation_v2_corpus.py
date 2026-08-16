@@ -11,6 +11,7 @@ from typing import Any
 
 from rishiq.isef2027.contamination import ContaminationState, EvidenceRole
 from rishiq.isef2027.source_eligibility import PRESPECIFIED_SOURCES, write_eligibility_manifest
+from rishiq.isef2027.source_families import annotate_row, assert_no_family_overlap
 
 THEORIES = [
     "newtonian",
@@ -22,29 +23,48 @@ THEORIES = [
     "atomistic_corpuscular",
 ]
 
-# Prespecified work → split assignment (no work appears in >1 split).
-# Prefer author separation where possible; Maxwell thermo vs Maxwell EM share author
-# but different works — still keep same author out of train+final when feasible.
+# Family-clean DEVELOPMENT splits (no source_family overlap train↔dev).
+# Former final_holdout is demoted to constructed_unevaluated — NOT a pristine holdout.
+# True FINAL_METHOD_HOLDOUT is NOT built in this pass (see docs).
 WORK_SPLIT_PLAN: dict[str, str] = {
-    # TRAIN
+    # TRAIN — OpenStax family entirely here; Maxwell author entirely here
     "newton_opticks": "train",
     "carnot_motive_power": "train",
     "maxwell_treatise_em_v1": "train",
+    "maxwell_elementary_electricity": "train",
+    "maxwell_theory_of_heat": "train",
     "faraday_experimental_v1": "train",
     "lucretius_drn": "train",
     "einstein_relativity_popular": "train",
     "openstax_university-physics-volume-1": "train",
-    # DEV
+    "openstax_university-physics-volume-2": "train",
+    "openstax_university-physics-volume-3": "train",
+    # DEVELOPMENT — Wikipedia family entirely here; no OpenStax / Maxwell
     "thomson_tait_np": "development",
-    "maxwell_elementary_electricity": "development",
-    "maxwell_theory_of_heat": "development",
+    "clausius_mechanical_heat": "development",
     "dalton_chemical_philosophy": "development",
-    "openstax_university-physics-volume-2": "development",
     "huygens_light": "development",
-    # FINAL HOLDOUT — no work overlap; avoid Maxwell author in final
-    "clausius_mechanical_heat": "final_holdout",
-    "tesla_high_frequency": "final_holdout",
-    "openstax_university-physics-volume-3": "final_holdout",
+    "tesla_high_frequency": "development",
+    "wikipedia_qft": "development",
+    "wikipedia_qed": "development",
+    "wikipedia_particle": "development",
+    "wikipedia_qm": "development",
+    "wikipedia_sr": "development",
+    "wikipedia_gr": "development",
+    "wikipedia_thermo": "development",
+    "wikipedia_cm": "development",
+    "wikipedia_maxwell": "development",
+    "wikipedia_atomism": "development",
+}
+
+# Historical constructed set (former final_holdout content) — demoted, not rebuilt as true holdout
+CONSTRUCTED_UNEVALUATED_WORKS: set[str] = {
+    "clausius_mechanical_heat",
+    "tesla_high_frequency",
+    "openstax_university-physics-volume-3",
+    "wikipedia_maxwell",
+    "wikipedia_qft",
+    "wikipedia_thermo",
 }
 
 
@@ -210,25 +230,30 @@ def _passages_from_raw_book(root: Path, spec: dict[str, Any], max_passages: int 
 
 
 def _passages_from_wikipedia(root: Path, max_passages: int = 40) -> list[dict[str, Any]]:
-    """CC BY-SA encyclopedia articles — theory from article topic, not classifier scores."""
+    """CC BY-SA encyclopedia articles — theory from article topic, not classifier scores.
+
+    All Wikipedia physics pages share source_family=wikipedia_physics and must
+    occupy a single split (see WORK_SPLIT_PLAN).
+    """
     wiki_dir = root / "data/theory_validation_v2/raw/wikipedia"
     catalog = [
-        ("quantum_field_theory.txt", "quantum_field_theory", "Quantum field theory", "final_holdout", "wikipedia_qft"),
-        ("quantum_electrodynamics.txt", "quantum_field_theory", "Quantum electrodynamics", "development", "wikipedia_qed"),
-        ("particle_physics.txt", "quantum_field_theory", "Particle physics", "train", "wikipedia_particle"),
-        ("quantum_mechanics.txt", "quantum_mechanics", "Quantum mechanics", "development", "wikipedia_qm"),
-        ("special_relativity.txt", "relativity", "Special relativity", "development", "wikipedia_sr"),
-        ("general_relativity.txt", "relativity", "General relativity", "train", "wikipedia_gr"),
-        ("thermodynamics.txt", "thermodynamics", "Thermodynamics", "final_holdout", "wikipedia_thermo"),
-        ("classical_mechanics.txt", "newtonian", "Classical mechanics", "development", "wikipedia_cm"),
-        ("maxwells_equations.txt", "classical_em", "Maxwell's equations", "final_holdout", "wikipedia_maxwell"),
-        ("atomism.txt", "atomistic_corpuscular", "Atomism", "development", "wikipedia_atomism"),
+        ("quantum_field_theory.txt", "quantum_field_theory", "Quantum field theory", "wikipedia_qft"),
+        ("quantum_electrodynamics.txt", "quantum_field_theory", "Quantum electrodynamics", "wikipedia_qed"),
+        ("particle_physics.txt", "quantum_field_theory", "Particle physics", "wikipedia_particle"),
+        ("quantum_mechanics.txt", "quantum_mechanics", "Quantum mechanics", "wikipedia_qm"),
+        ("special_relativity.txt", "relativity", "Special relativity", "wikipedia_sr"),
+        ("general_relativity.txt", "relativity", "General relativity", "wikipedia_gr"),
+        ("thermodynamics.txt", "thermodynamics", "Thermodynamics", "wikipedia_thermo"),
+        ("classical_mechanics.txt", "newtonian", "Classical mechanics", "wikipedia_cm"),
+        ("maxwells_equations.txt", "classical_em", "Maxwell's equations", "wikipedia_maxwell"),
+        ("atomism.txt", "atomistic_corpuscular", "Atomism", "wikipedia_atomism"),
     ]
     rows: list[dict[str, Any]] = []
-    for fname, theory, title, split, work_id in catalog:
+    for fname, theory, title, work_id in catalog:
         path = wiki_dir / fname
         if not path.exists() or path.stat().st_size < 500:
             continue
+        split = WORK_SPLIT_PLAN.get(work_id, "development")
         text = path.read_text(encoding="utf-8", errors="ignore")
         paras = _paragraphs(text, min_w=50, max_w=200)
         if len(paras) > max_passages:
@@ -254,7 +279,7 @@ def _passages_from_wikipedia(root: Path, max_passages: int = 40) -> list[dict[st
                     "sha256": sha256_text(p),
                     "split": split,
                     "work_id": work_id,
-                    "author_family": work_id,
+                    "author_family": "wikipedia_contributors",
                     "source_id": work_id,
                     "text": p,
                     "hard_negative_or_cross_theory_context": hard,
@@ -310,7 +335,7 @@ def _passages_from_openstax(root: Path, fname: str, work_id: str, book: str, max
                     "sha256": sha256_text(w),
                     "split": split,
                     "work_id": work_id,
-                    "author_family": work_id,  # volume-level family to avoid cross-split author leakage
+                    "author_family": "openstax",
                     "source_id": f"openstax_{book}",
                     "text": w,
                     "hard_negative_or_cross_theory_context": hard,
@@ -333,6 +358,52 @@ def assert_no_work_overlap(rows: list[dict[str, Any]]) -> list[str]:
             if inter:
                 issues.append(f"work_overlap {a}∩{b}: {sorted(inter)}")
     return issues
+
+
+def demote_constructed_unevaluated_holdout(root: Path) -> dict[str, Any]:
+    """Rename scientific status of the former final holdout; preserve hashes/files.
+
+    Does NOT delete passages or rewrite sha256 history. True pristine holdout is NOT_BUILT.
+    """
+    hold_dir = root / "data/theory_validation_v2/final_holdout"
+    lock_path = hold_dir / "lock_manifest.json"
+    if not lock_path.exists():
+        return {"status": "MISSING_PRIOR_HOLDOUT"}
+    prior = json.loads(lock_path.read_text(encoding="utf-8"))
+    prior_status = prior.get("status")
+    prior["prior_status"] = prior_status
+    prior["status"] = "CONSTRUCTED_UNEVALUATED_VALIDATION_SET"
+    prior["scientific_status"] = "CONSTRUCTED_UNEVALUATED_VALIDATION_SET"
+    prior["contamination_state"] = ContaminationState.DEVELOPMENT_CONTAMINATED.value
+    prior["evidence_role"] = EvidenceRole.EXTERNAL_METHOD_DEVELOPMENT.value
+    prior["evaluated"] = False
+    prior["true_final_method_holdout"] = "NOT_BUILT"
+    prior["demotion_note"] = (
+        "Labels and texts were committed before family-clean splits; "
+        "source-family overlap existed vs train/dev. Preserved for history; "
+        "not pristine unseen final evidence. Do not evaluate as final method holdout."
+    )
+    # Preserve historical passage hash fields under explicit names
+    if "holdout_passages_sha256" in prior:
+        prior["constructed_passages_sha256"] = prior["holdout_passages_sha256"]
+    lock_path.write_text(json.dumps(prior, indent=2) + "\n", encoding="utf-8")
+
+    # Mirror status marker for discoverability (do not rewrite passage files)
+    marker = hold_dir / "SCIENTIFIC_STATUS.json"
+    marker.write_text(
+        json.dumps(
+            {
+                "status": "CONSTRUCTED_UNEVALUATED_VALIDATION_SET",
+                "true_final_method_holdout": "NOT_BUILT",
+                "evaluated": False,
+                "preserved_lock": str(lock_path.relative_to(root)),
+            },
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    return prior
 
 
 def build_external_theory_corpus(root: Path) -> dict[str, Any]:
@@ -368,95 +439,93 @@ def build_external_theory_corpus(root: Path) -> dict[str, Any]:
     )
     rows.extend(_passages_from_wikipedia(root))
 
-    issues = assert_no_work_overlap(rows)
+    # Canonical family fields (do not invent volume/article-level families)
+    rows = [annotate_row(r) for r in rows]
+
+    # Active development corpus: train + development only (no true final holdout)
+    active = [r for r in rows if r["split"] in ("train", "development")]
+    issues = assert_no_work_overlap(active)
     if issues:
         raise RuntimeError("source split leakage: " + "; ".join(issues))
+    fam_issues = assert_no_family_overlap(active, "source_family")
+    hard_fam = [x for x in fam_issues if x.startswith("HARD_")]
+    if hard_fam:
+        raise RuntimeError("source_family split leakage: " + "; ".join(hard_fam))
+    author_issues = assert_no_family_overlap(active, "author_family")
 
     out_dir = root / "data/theory_validation_v2/passages"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Write full corpus (dev-visible parts only for normal loads)
     all_path = out_dir / "corpus_external_v2.jsonl"
     with all_path.open("w", encoding="utf-8") as f:
-        for r in rows:
+        for r in active:
             f.write(json.dumps(r) + "\n")
 
-    # Split files
     for split_name, fname in [
         ("train", "train.jsonl"),
         ("development", "development.jsonl"),
-        ("final_holdout", "final_holdout_TEXTS_LOCKED.jsonl"),
     ]:
-        subset = [r for r in rows if r["split"] == split_name]
+        subset = [r for r in active if r["split"] == split_name]
         with (out_dir / fname).open("w", encoding="utf-8") as f:
             for r in subset:
                 f.write(json.dumps(r) + "\n")
 
-    # Labels separately for final holdout (procedural discipline)
-    hold = [r for r in rows if r["split"] == "final_holdout"]
-    hold_dir = root / "data/theory_validation_v2/final_holdout"
-    hold_dir.mkdir(parents=True, exist_ok=True)
-    labels = [
-        {
-            "passage_id": r["passage_id"],
-            "theory_label": r["theory_label"],
-            "work_id": r["work_id"],
-            "sha256": r["sha256"],
-            "label_tag": r["label_tag"],
-        }
-        for r in hold
-    ]
-    (hold_dir / "labels.jsonl").write_text(
-        "".join(json.dumps(x) + "\n" for x in labels), encoding="utf-8"
-    )
-    # Texts without labels for accidental peek resistance (still on disk, but CLI gated)
-    texts_only = [{k: v for k, v in r.items() if k != "theory_label"} for r in hold]
-    (hold_dir / "texts_unlabeled.jsonl").write_text(
-        "".join(json.dumps(x) + "\n" for x in texts_only), encoding="utf-8"
+    # Do not materialize a new final_holdout from this rebuild.
+    # Empty placeholder documents that true holdout is NOT_BUILT.
+    (out_dir / "final_holdout_TEXTS_LOCKED.jsonl").write_text("", encoding="utf-8")
+    (out_dir / "TRUE_FINAL_HOLDOUT_STATUS.json").write_text(
+        json.dumps(
+            {
+                "status": "NOT_BUILT",
+                "reason": "True final method holdout may be built only AFTER student method freeze.",
+            },
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
     )
 
-    corpus_hash = sha256_text("".join(sorted(r["sha256"] for r in rows)))
-    hold_hash = sha256_text("".join(sorted(r["sha256"] for r in hold)))
+    demoted = demote_constructed_unevaluated_holdout(root)
 
-    lock = {
-        "status": "FINAL_METHOD_HOLDOUT_UNEVALUATED",
-        "contamination_state": ContaminationState.UNSEEN.value,
-        "evidence_role": EvidenceRole.FINAL_METHOD_HOLDOUT.value,
-        "n_passages": len(hold),
-        "works": sorted({r["work_id"] for r in hold}),
-        "authors": sorted({r["author_family"] for r in hold}),
-        "holdout_passages_sha256": hold_hash,
-        "full_corpus_passages_sha256": corpus_hash,
-        "evaluated": False,
-        "access_log": str((hold_dir / "access_log.jsonl").relative_to(root)),
-    }
-    (hold_dir / "lock_manifest.json").write_text(json.dumps(lock, indent=2) + "\n", encoding="utf-8")
+    corpus_hash = sha256_text("".join(sorted(r["sha256"] for r in active)))
+    constructed_hash = demoted.get("constructed_passages_sha256") or demoted.get("holdout_passages_sha256")
+
+    train_sf = sorted({r["source_family"] for r in active if r["split"] == "train"})
+    dev_sf = sorted({r["source_family"] for r in active if r["split"] == "development"})
+    train_af = sorted({r["author_family"] for r in active if r["split"] == "train"})
+    dev_af = sorted({r["author_family"] for r in active if r["split"] == "development"})
 
     meta = {
-        "corpus_id": "theory_validation_external_v2",
+        "corpus_id": "theory_validation_external_v2_family_clean",
         "evidence_role": EvidenceRole.EXTERNAL_METHOD_DEVELOPMENT.value,
-        "n_passages": len(rows),
-        "n_works": len({r["work_id"] for r in rows}),
-        "n_authors": len({r["author_family"] for r in rows}),
+        "n_passages": len(active),
+        "n_works": len({r["work_id"] for r in active}),
+        "n_authors": len({r["author_family"] for r in active}),
+        "n_source_families": len({r["source_family"] for r in active}),
         "theories": THEORIES,
-        "per_theory": {
-            t: sum(1 for r in rows if r["theory_label"] == t) for t in THEORIES
-        },
+        "per_theory": {t: sum(1 for r in active if r["theory_label"] == t) for t in THEORIES},
         "splits": {
             s: {
-                "n": sum(1 for r in rows if r["split"] == s),
-                "works": sorted({r["work_id"] for r in rows if r["split"] == s}),
-                "authors": sorted({r["author_family"] for r in rows if r["split"] == s}),
+                "n": sum(1 for r in active if r["split"] == s),
+                "works": sorted({r["work_id"] for r in active if r["split"] == s}),
+                "authors": sorted({r["author_family"] for r in active if r["split"] == s}),
+                "source_families": sorted({r["source_family"] for r in active if r["split"] == s}),
             }
-            for s in ("train", "development", "final_holdout")
+            for s in ("train", "development")
         },
+        "source_family_overlap_train_dev": sorted(set(train_sf) & set(dev_sf)),
+        "author_family_overlap_train_dev": sorted(set(train_af) & set(dev_af)),
         "work_overlap_issues": issues,
-        "hard_negative_n": sum(1 for r in rows if r["hard_negative_or_cross_theory_context"]),
+        "source_family_issues": fam_issues,
+        "author_family_issues": author_issues,
+        "hard_negative_n": sum(1 for r in active if r["hard_negative_or_cross_theory_context"]),
         "corpus_hash": corpus_hash,
-        "holdout_hash": hold_hash,
+        "constructed_unevaluated_hash": constructed_hash,
+        "true_final_method_holdout": "NOT_BUILT",
+        "constructed_unevaluated_status": demoted.get("status"),
         "note": (
-            "External independently authored passages with provenance. "
-            "Final holdout must not be evaluated until method freeze."
+            "Family-clean train/development only. Former final holdout demoted to "
+            "CONSTRUCTED_UNEVALUATED_VALIDATION_SET. True final holdout NOT_BUILT."
         ),
     }
     (out_dir / "corpus_meta.json").write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
@@ -464,7 +533,8 @@ def build_external_theory_corpus(root: Path) -> dict[str, Any]:
     freeze = {
         "artifact": "theory_validation_v2_freeze",
         "corpus_hash": corpus_hash,
-        "holdout_hash": hold_hash,
+        "constructed_unevaluated_hash": constructed_hash,
+        "true_final_method_holdout": "NOT_BUILT",
         "eligibility_rules": "data/theory_validation_v2/eligibility/source_eligibility_v1.json",
         "method_frozen": False,
         "final_holdout_evaluated": False,

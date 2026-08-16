@@ -107,6 +107,20 @@ Do **not** delete entries. Student should mark review status.
 - Fingerprint review packets; sanity suite; judge attack matrix
 - Confirmatory status remains LOCKED_NOT_READY
 
+## 2026-08-16 — Cursor agent (final pre-confirmatory readiness pass)
+
+- **Model/tool:** Cursor agent (Composer / Auto), local tools
+- **User prompt reference:** FINAL pre-confirmatory engineering/scientific-readiness pass; no architecture redesign; confirmatory LOCKED
+- **Task performed:**
+  - CI green (STATUS.md freeze hash + sealed-ID invariant clarification)
+  - Source-family / author-family splits; demoted former final holdout to CONSTRUCTED_UNEVALUATED_VALIDATION_SET; true holdout NOT_BUILT
+  - Deterministic theory-agnostic structural extractor; lexical graph marked baseline-only
+  - Typed Jaccard × coverage; retired proxy graph weights; DEV-only reselection
+  - Blank extraction gold templates; real PD translation pairs; feasibility inventory; freeze CANDIDATE
+  - Student fingerprint checklist (not auto-approved)
+- **Student must review:** fingerprints; gold annotations; freeze candidate; success criterion
+- **Not done by AI:** paper/abstract/poster; confirmatory unlock; true final holdout build/eval; student scientific conclusions
+
 ## 2026-08-16 — Cursor agent (Pass 3: external + graph validation)
 
 - **Model/tool:** Cursor agent (Composer / Auto), local tools

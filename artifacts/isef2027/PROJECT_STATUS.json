@@ -33,8 +33,17 @@
   "notes": [
     "V1 GitHub Release must remain untouched.",
     "Confirmatory sealed payloads must not be scored during v2 development.",
-    "Pedagogy corpus downgraded Pass 3 — not HELD_OUT_METHOD_VALIDATION.",
+    "Pedagogy corpus downgraded Pass 3 \u2014 not HELD_OUT_METHOD_VALIDATION.",
     "External corpus v2 built with source-group splits; final holdout unevaluated.",
     "Toy/logistic power outputs remain SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE until ICC stable."
-  ]
+  ],
+  "true_final_method_holdout": "NOT_BUILT",
+  "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED",
+  "ancient_confirmatory_status": "LOCKED_NOT_READY",
+  "n_passages": 2154,
+  "n_works": 26,
+  "n_authors": 13,
+  "n_source_families": 15,
+  "structural_extractor": "structural_extractor_deterministic_v1",
+  "confirmatory_feasibility": "PROJECT_FEASIBLE_WITH_REDUCED_EFFECT_SENSITIVITY"
 }

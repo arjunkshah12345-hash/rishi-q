@@ -1,9 +1,10 @@
 {
-  "corpus_id": "theory_validation_external_v2",
+  "corpus_id": "theory_validation_external_v2_family_clean",
   "evidence_role": "EXTERNAL_METHOD_DEVELOPMENT",
   "n_passages": 2154,
   "n_works": 26,
-  "n_authors": 24,
+  "n_authors": 13,
+  "n_source_families": 15,
   "theories": [
     "newtonian",
     "thermodynamics",
@@ -24,81 +25,87 @@
   },
   "splits": {
     "train": {
-      "n": 762,
+      "n": 1364,
       "works": [
         "carnot_motive_power",
         "einstein_relativity_popular",
         "faraday_experimental_v1",
         "lucretius_drn",
+        "maxwell_elementary_electricity",
+        "maxwell_theory_of_heat",
         "maxwell_treatise_em_v1",
         "newton_opticks",
         "openstax_university-physics-volume-1",
-        "wikipedia_gr",
-        "wikipedia_particle"
+        "openstax_university-physics-volume-2",
+        "openstax_university-physics-volume-3"
       ],
       "authors": [
-        "carnot",
-        "einstein",
-        "faraday",
+        "albert_einstein",
+        "isaac_newton",
+        "james_clerk_maxwell",
         "lucretius",
-        "maxwell",
-        "newton",
-        "openstax_university-physics-volume-1",
-        "wikipedia_gr",
-        "wikipedia_particle"
+        "michael_faraday",
+        "openstax",
+        "sadi_carnot"
+      ],
+      "source_families": [
+        "carnot_motive_power",
+        "einstein_relativity_popular",
+        "faraday_experimental_researches",
+        "lucretius_de_rerum_natura",
+        "maxwell_elementary_electricity",
+        "maxwell_theory_of_heat",
+        "maxwell_treatise_em",
+        "newton_opticks_editions",
+        "openstax_university_physics"
       ]
     },
     "development": {
-      "n": 808,
+      "n": 790,
       "works": [
+        "clausius_mechanical_heat",
         "dalton_chemical_philosophy",
         "huygens_light",
-        "maxwell_elementary_electricity",
-        "maxwell_theory_of_heat",
-        "openstax_university-physics-volume-2",
+        "tesla_high_frequency",
         "thomson_tait_np",
         "wikipedia_atomism",
         "wikipedia_cm",
+        "wikipedia_gr",
+        "wikipedia_maxwell",
+        "wikipedia_particle",
         "wikipedia_qed",
+        "wikipedia_qft",
         "wikipedia_qm",
-        "wikipedia_sr"
+        "wikipedia_sr",
+        "wikipedia_thermo"
       ],
       "authors": [
-        "dalton",
-        "huygens",
-        "maxwell",
-        "openstax_university-physics-volume-2",
+        "christiaan_huygens",
+        "john_dalton",
+        "nikola_tesla",
+        "rudolf_clausius",
         "thomson_tait",
-        "wikipedia_atomism",
-        "wikipedia_cm",
-        "wikipedia_qed",
-        "wikipedia_qm",
-        "wikipedia_sr"
-      ]
-    },
-    "final_holdout": {
-      "n": 584,
-      "works": [
-        "clausius_mechanical_heat",
-        "openstax_university-physics-volume-3",
-        "tesla_high_frequency",
-        "wikipedia_maxwell",
-        "wikipedia_qft",
-        "wikipedia_thermo"
+        "wikipedia_contributors"
       ],
-      "authors": [
-        "clausius",
-        "openstax_university-physics-volume-3",
-        "tesla",
-        "wikipedia_maxwell",
-        "wikipedia_qft",
-        "wikipedia_thermo"
+      "source_families": [
+        "clausius_mechanical_heat",
+        "dalton_chemical_philosophy",
+        "huygens_treatise_on_light",
+        "tesla_high_frequency",
+        "treatise_natural_philosophy",
+        "wikipedia_physics"
       ]
     }
   },
+  "source_family_overlap_train_dev": [],
+  "author_family_overlap_train_dev": [],
   "work_overlap_issues": [],
+  "source_family_issues": [],
+  "author_family_issues": [],
   "hard_negative_n": 96,
   "corpus_hash": "2410e8a13d6324ec6221f383f78558f69b85b744c2ce6b9530c2c1361e95a6b8",
-  "holdout_hash": "cb003e3aed2feb2613a4b7be92562d5bd2e34cba994a7cf336f7aa7719eafe97",
-  "note": "External independently authored passages with provenance. Final holdout must not be evaluated until method freeze."
+  "constructed_unevaluated_hash": "cb003e3aed2feb2613a4b7be92562d5bd2e34cba994a7cf336f7aa7719eafe97",
+  "true_final_method_holdout": "NOT_BUILT",
+  "constructed_unevaluated_status": "CONSTRUCTED_UNEVALUATED_VALIDATION_SET",
+  "note": "Family-clean train/development only. Former final holdout demoted to CONSTRUCTED_UNEVALUATED_VALIDATION_SET. True final holdout NOT_BUILT."
 }

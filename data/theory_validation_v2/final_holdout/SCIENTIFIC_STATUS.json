@@ -1,0 +1,6 @@
+{
+  "status": "CONSTRUCTED_UNEVALUATED_VALIDATION_SET",
+  "true_final_method_holdout": "NOT_BUILT",
+  "evaluated": false,
+  "preserved_lock": "data/theory_validation_v2/final_holdout/lock_manifest.json"
+}

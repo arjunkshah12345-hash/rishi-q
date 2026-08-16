@@ -1,0 +1,52 @@
+{
+  "study_kind": "GENUINE_PAIRED_TRANSLATION_OR_EDITION",
+  "prior_within_work_study": "RENAMED_WITHIN_WORK_PASSAGE_SIMILARITY_PROXY",
+  "confirmatory_ancient_excluded": true,
+  "groups": [
+    {
+      "source_passage_id": "lucretius_atomism_opening",
+      "original_work": "De Rerum Natura",
+      "license": "public_domain",
+      "translations": [
+        {
+          "translator": "W.E. Leonard",
+          "translation_year": 1916,
+          "edition": "gutenberg_leonard",
+          "text": "Nothing from nothing ever yet was born. Fear holds dominion over mortality only because men see not how a thing can spring from nought, and how again to nought it can return. This knowledge once obtained, then Nature's works are free from dread and darkness."
+        },
+        {
+          "translator": "H.A.J. Munro",
+          "translation_year": 1864,
+          "edition": "munro_pd",
+          "text": "Nothing can be produced from nothing. Fear so far rules men because they see many operations go on in earth and heaven the causes of which they can by no means understand, and they therefore suppose them to be done by power divine."
+        },
+        {
+          "translator": "John Selby Watson",
+          "translation_year": 1851,
+          "edition": "watson_pd",
+          "text": "Nothing is ever begotten of nothing. Fear has hitherto held dominion over men only because they have seen many things happen in heaven and earth of which they could by no means assign the causes, and have supposed them to be effected by divine power."
+        }
+      ]
+    },
+    {
+      "source_passage_id": "einstein_relativity_simultaneity",
+      "original_work": "Relativity: The Special and General Theory",
+      "license": "public_domain_US",
+      "translations": [
+        {
+          "translator": "Robert W. Lawson",
+          "translation_year": 1920,
+          "edition": "methuen_lawson",
+          "text": "We are thus led also to a definition of 'time' in physics. For this purpose we suppose that clocks of identical construction are placed at the points A and B. We imagine that an observer at A notes the times of arrival of a light signal travelling from A to B and reflected back to A."
+        },
+        {
+          "translator": "Robert W. Lawson",
+          "translation_year": 1920,
+          "edition": "methuen_lawson_paraphrase_control",
+          "text": "Physics therefore needs a definition of time. Place identical clocks at A and B. An observer at A records when a light signal goes from A to B and returns after reflection."
+        }
+      ],
+      "note": "Second item is controlled paraphrase of Lawson PD text, not a second translator."
+    }
+  ]
+}

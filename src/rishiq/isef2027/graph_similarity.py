@@ -2,16 +2,13 @@
 
 Methods kept (scientifically justified subset):
   A) Typed relation multiset Jaccard on (src_kind, edge_kind, tgt_kind)
+     — coverage-adjusted for primary score (node_cov × relation_cov)
   E) Optimal assignment of nodes by kind + neighborhood signatures (Hungarian)
-
-Hungarian size-mismatch policy (Pass 3 Option B):
-  similarity = matched_quality * coverage
-  coverage = n_real_matches / max(|A|, |B|)
-  Dummy-pad assignment cells are NOT discarded from the size penalty:
-  unmatched node mass lowers coverage even when matched pairs are perfect.
+     — Option B: quality × coverage
 
 Primary structural blend weights are configurable; default is provisional
-until development-only weight selection freezes a candidate.
+until development-only weight selection freezes a candidate AFTER real
+structural extraction exists (not lexical proxy).
 """
 
 from __future__ import annotations
@@ -22,16 +19,14 @@ from typing import Any
 import numpy as np
 from scipy.optimize import linear_sum_assignment
 
-from rishiq.isef2027.concept_graph import ConceptGraph, EdgeKind, graph_overlap_score
+from rishiq.isef2027.concept_graph import ConceptGraph, graph_overlap_score
 
-# Provisional defaults — may be overwritten by frozen method config after DEV selection.
 DEFAULT_TYPED_WEIGHT = 0.55
 DEFAULT_HUNGARIAN_WEIGHT = 0.45
 PAD_COST = 3.0
 
 
 def typed_relation_multiset(g: ConceptGraph) -> Counter[tuple[str, str, str]]:
-    """Method A: ignore node IDs; count (source_kind, edge_kind, target_kind)."""
     kind = {n.id: n.kind.value for n in g.nodes}
     c: Counter[tuple[str, str, str]] = Counter()
     for e in g.edges:
@@ -52,6 +47,21 @@ def multiset_jaccard(a: Counter, b: Counter) -> float:
 
 def typed_relation_similarity(a: ConceptGraph, b: ConceptGraph) -> float:
     return multiset_jaccard(typed_relation_multiset(a), typed_relation_multiset(b))
+
+
+def typed_relation_similarity_coverage_adjusted(a: ConceptGraph, b: ConceptGraph) -> float:
+    """Typed Jaccard × relation_coverage × node_coverage."""
+    base = typed_relation_similarity(a, b)
+    na, nb = len(a.nodes), len(b.nodes)
+    ea, eb = len(a.edges), len(b.edges)
+    if max(na, nb) == 0:
+        return 1.0 if na == nb else 0.0
+    node_cov = min(na, nb) / max(na, nb)
+    if max(ea, eb) == 0:
+        rel_cov = 1.0 if ea == eb else 0.0
+    else:
+        rel_cov = min(ea, eb) / max(ea, eb)
+    return float(base * node_cov * rel_cov)
 
 
 def _node_signature(g: ConceptGraph, node_id: str) -> tuple[str, Counter[str], Counter[str]]:
@@ -87,16 +97,7 @@ def _sig_distance(sa: tuple[str, Counter, Counter], sb: tuple[str, Counter, Coun
 
 
 def hungarian_role_alignment_similarity(a: ConceptGraph, b: ConceptGraph) -> float:
-    """Method E with explicit size-mismatch penalty (Option B).
-
-    1. Build padded square cost matrix (pad cost = PAD_COST).
-    2. Hungarian assignment.
-    3. Quality = 1 - mean(cost) over *real–real* matches only (cost mapped /2).
-    4. Coverage = n_real_matches / max(|A|, |B|).
-    5. Return quality * coverage.
-
-    Unmatched nodes therefore lower similarity even when matched pairs are perfect.
-    """
+    """Method E with explicit size-mismatch penalty (Option B)."""
     na = [n.id for n in a.nodes]
     nb = [n.id for n in b.nodes]
     if not na and not nb:
@@ -129,11 +130,13 @@ def structural_similarity_bundle(
 ) -> dict[str, float]:
     tw = DEFAULT_TYPED_WEIGHT if typed_weight is None else float(typed_weight)
     hw = DEFAULT_HUNGARIAN_WEIGHT if hungarian_weight is None else float(hungarian_weight)
-    tr = typed_relation_similarity(a, b)
+    tr_raw = typed_relation_similarity(a, b)
+    tr = typed_relation_similarity_coverage_adjusted(a, b)
     hu = hungarian_role_alignment_similarity(a, b)
     return {
         "literal_id_overlap_baseline": graph_overlap_score(a, b),
-        "typed_relation_multiset": tr,
+        "typed_relation_multiset": tr_raw,
+        "typed_relation_coverage_adjusted": tr,
         "hungarian_role_alignment": hu,
         "primary_structural": float(tw * tr + hw * hu),
         "typed_weight": tw,
@@ -160,8 +163,8 @@ def pairwise_fingerprint_matrix(
             mat[i][j] = bund["primary_structural"]
             detail[f"{i}__{j}"] = bund
     return {
-        "method": f"primary={tw}*typed_relation+{hw}*hungarian_coverage_penalized",
-        "size_mismatch_policy": "Option_B_quality_times_coverage",
+        "method": f"primary={tw}*typed_relation_coverage_adjusted+{hw}*hungarian_coverage_penalized",
+        "size_mismatch_policy": "Option_B_plus_typed_node_relation_coverage",
         "matrix": mat,
         "pairwise_detail": detail,
     }

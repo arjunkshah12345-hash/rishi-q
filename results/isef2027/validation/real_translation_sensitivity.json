@@ -1,0 +1,130 @@
+{
+  "study_id": "ISEF2027-REAL-TRANSLATION-SENSITIVITY-v1",
+  "n_groups": 2,
+  "comparisons": [
+    {
+      "source_passage_id": "lucretius_atomism_opening",
+      "n_translations": 3,
+      "mean_pairwise_structural_sim": 0.3333333333333333,
+      "rankings": [
+        {
+          "edition": "gutenberg_leonard",
+          "translator": "W.E. Leonard",
+          "top3": [
+            "classical_em",
+            "quantum_field_theory",
+            "atomistic_corpuscular"
+          ],
+          "scores": {
+            "classical_em": 0.0,
+            "quantum_field_theory": 0.0,
+            "atomistic_corpuscular": 0.0,
+            "relativity": 0.0,
+            "quantum_mechanics": 0.0,
+            "newtonian": 0.0,
+            "thermodynamics": 0.0
+          }
+        },
+        {
+          "edition": "munro_pd",
+          "translator": "H.A.J. Munro",
+          "top3": [
+            "thermodynamics",
+            "classical_em",
+            "relativity"
+          ],
+          "scores": {
+            "classical_em": 0.12150000000000001,
+            "quantum_field_theory": 0.07650000000000003,
+            "atomistic_corpuscular": 0.09000000000000001,
+            "relativity": 0.1125,
+            "quantum_mechanics": 0.0375,
+            "newtonian": 0.08249999999999999,
+            "thermodynamics": 0.140625
+          }
+        },
+        {
+          "edition": "watson_pd",
+          "translator": "John Selby Watson",
+          "top3": [
+            "classical_em",
+            "quantum_field_theory",
+            "atomistic_corpuscular"
+          ],
+          "scores": {
+            "classical_em": 0.0,
+            "quantum_field_theory": 0.0,
+            "atomistic_corpuscular": 0.0,
+            "relativity": 0.0,
+            "quantum_mechanics": 0.0,
+            "newtonian": 0.0,
+            "thermodynamics": 0.0
+          }
+        }
+      ],
+      "top1_agreement": false
+    },
+    {
+      "source_passage_id": "einstein_relativity_simultaneity",
+      "n_translations": 2,
+      "mean_pairwise_structural_sim": 1.0,
+      "rankings": [
+        {
+          "edition": "methuen_lawson",
+          "translator": "Robert W. Lawson",
+          "top3": [
+            "relativity",
+            "classical_em",
+            "newtonian"
+          ],
+          "scores": {
+            "classical_em": 0.11249999999999999,
+            "quantum_field_theory": 0.0675,
+            "atomistic_corpuscular": 0.0675,
+            "relativity": 0.140625,
+            "quantum_mechanics": 0.09375,
+            "newtonian": 0.11249999999999999,
+            "thermodynamics": 0.084375
+          }
+        },
+        {
+          "edition": "methuen_lawson_paraphrase_control",
+          "translator": "Robert W. Lawson",
+          "top3": [
+            "relativity",
+            "classical_em",
+            "newtonian"
+          ],
+          "scores": {
+            "classical_em": 0.11249999999999999,
+            "quantum_field_theory": 0.0675,
+            "atomistic_corpuscular": 0.0675,
+            "relativity": 0.140625,
+            "quantum_mechanics": 0.09375,
+            "newtonian": 0.11249999999999999,
+            "thermodynamics": 0.084375
+          }
+        }
+      ],
+      "top1_agreement": true
+    }
+  ],
+  "proxy_study_relabel": {
+    "prior_artifact": "results/isef2027/validation/dev_translation_variance.json",
+    "accurate_name": "WITHIN_WORK_PASSAGE_SIMILARITY_PROXY"
+  },
+  "limitation": "Small PD seed set; expand before freeze if needed.",
+  "evidence_class": "DEVELOPMENT_ANALYSIS",
+  "provenance": {
+    "evidence_class": "DEVELOPMENT_ANALYSIS",
+    "synthetic": false,
+    "real_text": true,
+    "blinded": false,
+    "phase": "validation",
+    "source_split": "development_safe_pd_pairs",
+    "method_version": "real_translation_v1",
+    "student_reviewed_inputs": false,
+    "notes": "No confirmatory ancient texts.",
+    "extra": {}
+  }
+}

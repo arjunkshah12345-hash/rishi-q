@@ -1,221 +1,366 @@
 {
   "variance_source": {
-    "status": "PROVISIONAL_FROM_DEV_PROXY",
-    "n_works": 11,
-    "mean_passages_per_work": 73.45454545454545,
-    "between_work_sd": 0.09118816704243983,
-    "within_work_sd": 0.15159238039362222,
-    "icc": 0.2657018872316558,
+    "status": "FROM_DEV_STRUCTURAL_CORRECT_SCORE",
+    "n_works": 15,
+    "mean_passages_per_work": 52.666666666666664,
+    "between_work_sd": 0.04112893059226594,
+    "within_work_sd": 0.1107338154601045,
+    "icc": 0.12122985855339605,
     "between_work_sd_ci95": [
-      0.037952968322343,
-      0.12024344419610676
+      0.028057212419546083,
+      0.049556361239003734
     ],
     "within_work_sd_ci95": [
-      0.12169640886767182,
-      0.1743725431488088
+      0.10145102570345839,
+      0.12076402510090269
     ],
     "icc_ci95": [
-      0.06370342879914843,
-      0.417261129524208
+      0.05586773987293443,
+      0.1777618060557457
     ],
     "missingness_rate_estimate": 0.0,
-    "score_definition": "dev_lexical_proxy_for_variance_structure_only",
+    "score_definition": "correct_theory_structural_similarity_on_development",
     "ready_to_freeze_N": false,
-    "note": "Proxy scores \u2014 replace with real method scores after freeze candidate exists."
+    "note": "Work-level bootstrap; fingerprints still pending student review."
   },
   "rows": [
     {
       "effect": 0.02,
       "works_per_arm": 6,
       "passages_per_work": 3,
-      "estimated_power": 0.1125,
-      "mc_se": 0.03532770690265645,
-      "scenario": "pessimistic"
+      "power": 0.12,
+      "estimated_power": 0.12,
+      "mc_se": 0.01624807680927192,
+      "sim_interval_95": [
+        0.08815376945382702,
+        0.15184623054617297
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.02,
       "works_per_arm": 6,
       "passages_per_work": 5,
+      "power": 0.1075,
+      "estimated_power": 0.1075,
+      "mc_se": 0.015487394067434327,
+      "sim_interval_95": [
+        0.07714470762782871,
+        0.13785529237217128
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 10,
+      "passages_per_work": 3,
+      "power": 0.125,
       "estimated_power": 0.125,
-      "mc_se": 0.0369754986443726,
-      "scenario": "pessimistic"
+      "mc_se": 0.016535945694153693,
+      "sim_interval_95": [
+        0.09258954643945877,
+        0.15741045356054123
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.02,
       "works_per_arm": 10,
-      "passages_per_work": 3,
-      "estimated_power": 0.1,
-      "mc_se": 0.03354101966249685,
-      "scenario": "pessimistic"
-    },
-    {
-      "effect": 0.02,
-      "works_per_arm": 10,
       "passages_per_work": 5,
-      "estimated_power": 0.1125,
-      "mc_se": 0.03532770690265645,
-      "scenario": "pessimistic"
+      "power": 0.19,
+      "estimated_power": 0.19,
+      "mc_se": 0.019615045245933032,
+      "sim_interval_95": [
+        0.15155451131797126,
+        0.22844548868202874
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.02,
       "works_per_arm": 15,
       "passages_per_work": 3,
-      "estimated_power": 0.1125,
-      "mc_se": 0.03532770690265645,
-      "scenario": "pessimistic"
+      "power": 0.1775,
+      "estimated_power": 0.1775,
+      "mc_se": 0.019104564245226847,
+      "sim_interval_95": [
+        0.14005505407935537,
+        0.21494494592064461
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.02,
       "works_per_arm": 15,
       "passages_per_work": 5,
-      "estimated_power": 0.1,
-      "mc_se": 0.03354101966249685,
-      "scenario": "pessimistic"
+      "power": 0.1775,
+      "estimated_power": 0.1775,
+      "mc_se": 0.019104564245226847,
+      "sim_interval_95": [
+        0.14005505407935537,
+        0.21494494592064461
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.05,
       "works_per_arm": 6,
       "passages_per_work": 3,
-      "estimated_power": 0.225,
-      "mc_se": 0.046687123492457745,
-      "scenario": "base"
+      "power": 0.2775,
+      "estimated_power": 0.2775,
+      "mc_se": 0.02238826422481207,
+      "sim_interval_95": [
+        0.23361900211936837,
+        0.3213809978806317
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.05,
       "works_per_arm": 6,
       "passages_per_work": 5,
-      "estimated_power": 0.225,
-      "mc_se": 0.046687123492457745,
-      "scenario": "base"
+      "power": 0.3275,
+      "estimated_power": 0.3275,
+      "mc_se": 0.023465067121148406,
+      "sim_interval_95": [
+        0.2815084684425491,
+        0.3734915315574509
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.05,
       "works_per_arm": 10,
       "passages_per_work": 3,
-      "estimated_power": 0.275,
-      "mc_se": 0.04992181386928964,
-      "scenario": "base"
+      "power": 0.4325,
+      "estimated_power": 0.4325,
+      "mc_se": 0.02477113996165699,
+      "sim_interval_95": [
+        0.3839485656751523,
+        0.4810514343248477
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.05,
       "works_per_arm": 10,
       "passages_per_work": 5,
-      "estimated_power": 0.3,
-      "mc_se": 0.05123475382979799,
-      "scenario": "base"
+      "power": 0.51,
+      "estimated_power": 0.51,
+      "mc_se": 0.024994999499899976,
+      "sim_interval_95": [
+        0.46100980098019606,
+        0.558990199019804
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.05,
       "works_per_arm": 15,
       "passages_per_work": 3,
-      "estimated_power": 0.2125,
-      "mc_se": 0.045736165941189254,
-      "scenario": "base"
+      "power": 0.49,
+      "estimated_power": 0.49,
+      "mc_se": 0.024994999499899976,
+      "sim_interval_95": [
+        0.44100980098019604,
+        0.5389901990198039
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.05,
       "works_per_arm": 15,
       "passages_per_work": 5,
-      "estimated_power": 0.2125,
-      "mc_se": 0.045736165941189254,
-      "scenario": "base"
+      "power": 0.62,
+      "estimated_power": 0.62,
+      "mc_se": 0.024269322199023193,
+      "sim_interval_95": [
+        0.5724321284899145,
+        0.6675678715100855
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.08,
       "works_per_arm": 6,
       "passages_per_work": 3,
-      "estimated_power": 0.35,
-      "mc_se": 0.05332682251925385,
-      "scenario": "base"
+      "power": 0.5275,
+      "estimated_power": 0.5275,
+      "mc_se": 0.02496215886096393,
+      "sim_interval_95": [
+        0.4785741686325107,
+        0.5764258313674893
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.08,
       "works_per_arm": 6,
       "passages_per_work": 5,
-      "estimated_power": 0.3,
-      "mc_se": 0.05123475382979799,
-      "scenario": "base"
+      "power": 0.575,
+      "estimated_power": 0.575,
+      "mc_se": 0.024717149916606486,
+      "sim_interval_95": [
+        0.5265543861634513,
+        0.6234456138365486
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.08,
       "works_per_arm": 10,
       "passages_per_work": 3,
-      "estimated_power": 0.45,
-      "mc_se": 0.05562148865321748,
-      "scenario": "base"
+      "power": 0.7125,
+      "estimated_power": 0.7125,
+      "mc_se": 0.022629833737789592,
+      "sim_interval_95": [
+        0.6681455258739324,
+        0.7568544741260677
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.08,
       "works_per_arm": 10,
       "passages_per_work": 5,
-      "estimated_power": 0.5375,
-      "mc_se": 0.05574425418821208,
-      "scenario": "base"
+      "power": 0.8375,
+      "estimated_power": 0.8375,
+      "mc_se": 0.01844544320421713,
+      "sim_interval_95": [
+        0.8013469313197344,
+        0.8736530686802656
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.08,
       "works_per_arm": 15,
       "passages_per_work": 3,
-      "estimated_power": 0.4375,
-      "mc_se": 0.0554632479665589,
-      "scenario": "base"
+      "power": 0.845,
+      "estimated_power": 0.845,
+      "mc_se": 0.01809523417919757,
+      "sim_interval_95": [
+        0.8095333410087727,
+        0.8804666589912272
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.08,
       "works_per_arm": 15,
       "passages_per_work": 5,
-      "estimated_power": 0.4625,
-      "mc_se": 0.05574425418821208,
-      "scenario": "base"
+      "power": 0.94,
+      "estimated_power": 0.94,
+      "mc_se": 0.011874342087037922,
+      "sim_interval_95": [
+        0.9167262895094056,
+        0.9632737104905943
+      ],
+      "scenario": "base",
+      "n_sim": 400
     },
     {
       "effect": 0.12,
       "works_per_arm": 6,
       "passages_per_work": 3,
-      "estimated_power": 0.4875,
-      "mc_se": 0.05588422742599203,
-      "scenario": "optimistic"
+      "power": 0.8225,
+      "estimated_power": 0.8225,
+      "mc_se": 0.019104564245226847,
+      "sim_interval_95": [
+        0.7850550540793554,
+        0.8599449459206446
+      ],
+      "scenario": "optimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.12,
       "works_per_arm": 6,
       "passages_per_work": 5,
-      "estimated_power": 0.4375,
-      "mc_se": 0.0554632479665589,
-      "scenario": "optimistic"
+      "power": 0.89,
+      "estimated_power": 0.89,
+      "mc_se": 0.015644487847162013,
+      "sim_interval_95": [
+        0.8593368038195625,
+        0.9206631961804376
+      ],
+      "scenario": "optimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.12,
       "works_per_arm": 10,
       "passages_per_work": 3,
-      "estimated_power": 0.6625,
-      "mc_se": 0.052867020674518816,
-      "scenario": "optimistic"
+      "power": 0.965,
+      "estimated_power": 0.965,
+      "mc_se": 0.009188987974744557,
+      "sim_interval_95": [
+        0.9469895835695006,
+        0.9830104164304994
+      ],
+      "scenario": "optimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.12,
       "works_per_arm": 10,
       "passages_per_work": 5,
-      "estimated_power": 0.725,
-      "mc_se": 0.04992181386928964,
-      "scenario": "optimistic"
+      "power": 0.99,
+      "estimated_power": 0.99,
+      "mc_se": 0.004974937185533102,
+      "sim_interval_95": [
+        0.9802491231163551,
+        0.9997508768836448
+      ],
+      "scenario": "optimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.12,
       "works_per_arm": 15,
       "passages_per_work": 3,
-      "estimated_power": 0.825,
-      "mc_se": 0.042481613669916075,
-      "scenario": "optimistic"
+      "power": 0.99,
+      "estimated_power": 0.99,
+      "mc_se": 0.004974937185533102,
+      "sim_interval_95": [
+        0.9802491231163551,
+        0.9997508768836448
+      ],
+      "scenario": "optimistic",
+      "n_sim": 400
     },
     {
       "effect": 0.12,
       "works_per_arm": 15,
       "passages_per_work": 5,
-      "estimated_power": 0.85,
-      "mc_se": 0.03992179855667828,
-      "scenario": "optimistic"
+      "power": 1.0,
+      "estimated_power": 1.0,
+      "mc_se": 0.0,
+      "sim_interval_95": [
+        1.0,
+        1.0
+      ],
+      "scenario": "optimistic",
+      "n_sim": 400
     }
   ],
-  "sample_size_justified": false
+  "sample_size_justified": false,
+  "n_sim_per_cell": 400
 }

@@ -1,0 +1,681 @@
+{
+  "pass": "final_pre_confirmatory_readiness",
+  "method_freeze_status": "NOT_READY_TO_FREEZE",
+  "true_final_theory_holdout": "NOT_BUILT",
+  "constructed_unevaluated": "CONSTRUCTED_UNEVALUATED_VALIDATION_SET",
+  "ancient_confirmatory": "LOCKED_NOT_READY",
+  "ci_note": "run tests separately",
+  "corpus": {
+    "n_passages": 2154,
+    "n_works": 26,
+    "n_authors": 13,
+    "n_source_families": 15,
+    "source_family_overlap_train_dev": [],
+    "author_family_overlap_train_dev": []
+  },
+  "extraction_stage1": {
+    "status": "AWAITING_STUDENT_GOLD_APPROVAL",
+    "n_templates": 40,
+    "n_approved": 0,
+    "extractor_version": "structural_extractor_deterministic_v1",
+    "node_precision": null,
+    "node_recall": null,
+    "node_f1": null,
+    "relation_precision": null,
+    "relation_recall": null,
+    "relation_f1": null,
+    "typed_relation_f1": null
+  },
+  "gold_templates": {
+    "n_templates": 40,
+    "status": "BLANK_AWAITING_STUDENT_REVIEW",
+    "student_approved_n": 0,
+    "note": "Do not treat machine-filled labels as gold. Student reviews own project annotations.",
+    "path": "data/theory_validation_v2/extraction_gold/gold_templates_BLANK.jsonl"
+  },
+  "task_b_dev": {
+    "task": "B_structural_fingerprint_retrieval",
+    "extractor": "structural_extractor_deterministic_v1",
+    "claim_bearing": true,
+    "typed_weight": 0.25,
+    "hungarian_weight": 0.75,
+    "masked": false,
+    "n": 790,
+    "empty_extraction_n": 180,
+    "mean_correct_rank": 3.3645569620253166,
+    "mrr": 0.4732700421940929,
+    "top1_retrieval": 0.2582278481012658,
+    "top2_retrieval": 0.42278481012658226,
+    "mean_correct_vs_next_margin": -0.03448510620444956,
+    "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+  },
+  "task_b_masked": {
+    "task": "B_structural_fingerprint_retrieval",
+    "extractor": "structural_extractor_deterministic_v1",
+    "claim_bearing": true,
+    "typed_weight": 0.25,
+    "hungarian_weight": 0.75,
+    "masked": true,
+    "n": 790,
+    "empty_extraction_n": 186,
+    "mean_correct_rank": 3.4139240506329114,
+    "mrr": 0.46507233273056064,
+    "top1_retrieval": 0.2468354430379747,
+    "top2_retrieval": 0.4151898734177215,
+    "mean_correct_vs_next_margin": -0.035337298447860155,
+    "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+  },
+  "task_b_lexical_baseline": {
+    "task": "B_structural_fingerprint_retrieval",
+    "extractor": "LEXICAL_GRAPH_PROXY_BASELINE",
+    "claim_bearing": false,
+    "typed_weight": 0.25,
+    "hungarian_weight": 0.75,
+    "masked": false,
+    "n": 790,
+    "empty_extraction_n": 574,
+    "mean_correct_rank": 3.5316455696202533,
+    "mrr": 0.45088306208559376,
+    "top1_retrieval": 0.23544303797468355,
+    "top2_retrieval": 0.3822784810126582,
+    "mean_correct_vs_next_margin": -0.011485100210970463,
+    "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; baseline only \u2014 not claim-bearing."
+  },
+  "task_a_selected": {
+    "model": "tfidf_centroid",
+    "metrics": {
+      "top1_accuracy": 0.49240506329113926,
+      "macro_f1": 0.4491513386697313,
+      "labels": [
+        "atomistic_corpuscular",
+        "classical_em",
+        "newtonian",
+        "quantum_field_theory",
+        "quantum_mechanics",
+        "relativity",
+        "thermodynamics"
+      ],
+      "per_theory": {
+        "atomistic_corpuscular": {
+          "precision": 0.375,
+          "recall": 0.1,
+          "f1": 0.15789473684210525,
+          "support": 120
+        },
+        "classical_em": {
+          "precision": 0.45614035087719296,
+          "recall": 0.78,
+          "f1": 0.5756457564575646,
+          "support": 200
+        },
+        "newtonian": {
+          "precision": 0.3939393939393939,
+          "recall": 0.21666666666666667,
+          "f1": 0.27956989247311825,
+          "support": 120
+        },
+        "quantum_field_theory": {
+          "precision": 0.7931034482758621,
+          "recall": 0.20909090909090908,
+          "f1": 0.33093525179856115,
+          "support": 110
+        },
+        "quantum_mechanics": {
+          "precision": 0.5094339622641509,
+          "recall": 0.675,
+          "f1": 0.5806451612903226,
+          "support": 40
+        },
+        "relativity": {
+          "precision": 0.5517241379310345,
+          "recall": 0.6,
+          "f1": 0.5748502994011976,
+          "support": 80
+        },
+        "thermodynamics": {
+          "precision": 0.5359116022099447,
+          "recall": 0.8083333333333333,
+          "f1": 0.6445182724252492,
+          "support": 120
+        }
+      },
+      "bootstrap": {
+        "top1_mean": 0.4910411392405063,
+        "top1_ci95_low": 0.45819620253164556,
+        "top1_ci95_high": 0.5227848101265823
+      },
+      "top2_accuracy": 0.640506329113924
+    },
+    "hyperparameters": {
+      "ngram": [
+        1,
+        2
+      ]
+    }
+  },
+  "loso": {
+    "work": {
+      "grouping": "work_id",
+      "n_folds": 26,
+      "folds": [
+        {
+          "held_out_group": "carnot_motive_power",
+          "n_test": 80,
+          "top1": 0.575,
+          "macro_f1": 0.18253968253968253
+        },
+        {
+          "held_out_group": "clausius_mechanical_heat",
+          "n_test": 80,
+          "top1": 0.625,
+          "macro_f1": 0.15384615384615385
+        },
+        {
+          "held_out_group": "dalton_chemical_philosophy",
+          "n_test": 80,
+          "top1": 0.0125,
+          "macro_f1": 0.008230452674897118
+        },
+        {
+          "held_out_group": "einstein_relativity_popular",
+          "n_test": 80,
+          "top1": 0.25,
+          "macro_f1": 0.06666666666666667
+        },
+        {
+          "held_out_group": "faraday_experimental_v1",
+          "n_test": 80,
+          "top1": 0.8,
+          "macro_f1": 0.2222222222222222
+        },
+        {
+          "held_out_group": "huygens_light",
+          "n_test": 80,
+          "top1": 0.25,
+          "macro_f1": 0.06666666666666667
+        },
+        {
+          "held_out_group": "lucretius_drn",
+          "n_test": 80,
+          "top1": 0.05,
+          "macro_f1": 0.019047619047619046
+        },
+        {
+          "held_out_group": "maxwell_elementary_electricity",
+          "n_test": 80,
+          "top1": 0.8125,
+          "macro_f1": 0.22413793103448276
+        },
+        {
+          "held_out_group": "maxwell_theory_of_heat",
+          "n_test": 80,
+          "top1": 0.525,
+          "macro_f1": 0.1721311475409836
+        },
+        {
+          "held_out_group": "maxwell_treatise_em_v1",
+          "n_test": 80,
+          "top1": 0.6875,
+          "macro_f1": 0.13580246913580246
+        },
+        {
+          "held_out_group": "newton_opticks",
+          "n_test": 80,
+          "top1": 0.0,
+          "macro_f1": 0.0
+        },
+        {
+          "held_out_group": "openstax_university-physics-volume-1",
+          "n_test": 210,
+          "top1": 0.24285714285714285,
+          "macro_f1": 0.11868747956848642
+        },
+        {
+          "held_out_group": "openstax_university-physics-volume-2",
+          "n_test": 210,
+          "top1": 0.7857142857142857,
+          "macro_f1": 0.3929994011258834
+        },
+        {
+          "held_out_group": "openstax_university-physics-volume-3",
+          "n_test": 304,
+          "top1": 0.2598684210526316,
+          "macro_f1": 0.2958239313577432
+        },
+        {
+          "held_out_group": "tesla_high_frequency",
+          "n_test": 80,
+          "top1": 0.7875,
+          "macro_f1": 0.17622377622377622
+        },
+        {
+          "held_out_group": "thomson_tait_np",
+          "n_test": 80,
+          "top1": 0.0875,
+          "macro_f1": 0.03218390804597701
+        },
+        {
+          "held_out_group": "wikipedia_atomism",
+          "n_test": 40,
+          "top1": 0.225,
+          "macro_f1": 0.06122448979591837
+        },
+        {
+          "held_out_group": "wikipedia_cm",
+          "n_test": 40,
+          "top1": 0.325,
+          "macro_f1": 0.07008086253369272
+        },
+        {
+          "held_out_group": "wikipedia_gr",
+          "n_test": 40,
+          "top1": 0.375,
+          "macro_f1": 0.0909090909090909
+        },
+        {
+          "held_out_group": "wikipedia_maxwell",
+          "n_test": 40,
+          "top1": 0.55,
+          "macro_f1": 0.10138248847926268
+        },
+        {
+          "held_out_group": "wikipedia_particle",
+          "n_test": 32,
+          "top1": 0.6875,
+          "macro_f1": 0.2037037037037037
+        },
+        {
+          "held_out_group": "wikipedia_qed",
+          "n_test": 38,
+          "top1": 0.3684210526315789,
+          "macro_f1": 0.10769230769230768
+        },
+        {
+          "held_out_group": "wikipedia_qft",
+          "n_test": 40,
+          "top1": 0.6,
+          "macro_f1": 0.125
+        },
+        {
+          "held_out_group": "wikipedia_qm",
+          "n_test": 40,
+          "top1": 0.3,
+          "macro_f1": 0.07692307692307693
+        },
+        {
+          "held_out_group": "wikipedia_sr",
+          "n_test": 40,
+          "top1": 0.7,
+          "macro_f1": 0.20588235294117646
+        },
+        {
+          "held_out_group": "wikipedia_thermo",
+          "n_test": 40,
+          "top1": 0.75,
+          "macro_f1": 0.17142857142857143
+        }
+      ],
+      "mean_top1": 0.44737926547137075,
+      "mean_macro_f1": 0.133901402003994
+    },
+    "author_family": {
+      "grouping": "author_family",
+      "n_folds": 13,
+      "folds": [
+        {
+          "held_out_group": "albert_einstein",
+          "n_test": 80,
+          "top1": 0.25,
+          "macro_f1": 0.06666666666666667
+        },
+        {
+          "held_out_group": "christiaan_huygens",
+          "n_test": 80,
+          "top1": 0.25,
+          "macro_f1": 0.06666666666666667
+        },
+        {
+          "held_out_group": "isaac_newton",
+          "n_test": 80,
+          "top1": 0.0,
+          "macro_f1": 0.0
+        },
+        {
+          "held_out_group": "james_clerk_maxwell",
+          "n_test": 240,
+          "top1": 0.6666666666666666,
+          "macro_f1": 0.20584415584415586
+        },
+        {
+          "held_out_group": "john_dalton",
+          "n_test": 80,
+          "top1": 0.0125,
+          "macro_f1": 0.008230452674897118
+        },
+        {
+          "held_out_group": "lucretius",
+          "n_test": 80,
+          "top1": 0.05,
+          "macro_f1": 0.019047619047619046
+        },
+        {
+          "held_out_group": "michael_faraday",
+          "n_test": 80,
+          "top1": 0.8,
+          "macro_f1": 0.2222222222222222
+        },
+        {
+          "held_out_group": "nikola_tesla",
+          "n_test": 80,
+          "top1": 0.7875,
+          "macro_f1": 0.17622377622377622
+        },
+        {
+          "held_out_group": "openstax",
+          "n_test": 724,
+          "top1": 0.44337016574585636,
+          "macro_f1": 0.37362589260117546
+        },
+        {
+          "held_out_group": "rudolf_clausius",
+          "n_test": 80,
+          "top1": 0.625,
+          "macro_f1": 0.15384615384615385
+        },
+        {
+          "held_out_group": "sadi_carnot",
+          "n_test": 80,
+          "top1": 0.575,
+          "macro_f1": 0.18253968253968253
+        },
+        {
+          "held_out_group": "thomson_tait",
+          "n_test": 80,
+          "top1": 0.0875,
+          "macro_f1": 0.03218390804597701
+        },
+        {
+          "held_out_group": "wikipedia_contributors",
+          "n_test": 390,
+          "top1": 0.47692307692307695,
+          "macro_f1": 0.47464214064660243
+        }
+      ],
+      "mean_top1": 0.38649691610273845,
+      "mean_macro_f1": 0.15244148746350733
+    },
+    "source_family": {
+      "grouping": "source_family",
+      "n_folds": 15,
+      "folds": [
+        {
+          "held_out_group": "carnot_motive_power",
+          "n_test": 80,
+          "top1": 0.575,
+          "macro_f1": 0.18253968253968253
+        },
+        {
+          "held_out_group": "clausius_mechanical_heat",
+          "n_test": 80,
+          "top1": 0.625,
+          "macro_f1": 0.15384615384615385
+        },
+        {
+          "held_out_group": "dalton_chemical_philosophy",
+          "n_test": 80,
+          "top1": 0.0125,
+          "macro_f1": 0.008230452674897118
+        },
+        {
+          "held_out_group": "einstein_relativity_popular",
+          "n_test": 80,
+          "top1": 0.25,
+          "macro_f1": 0.06666666666666667
+        },
+        {
+          "held_out_group": "faraday_experimental_researches",
+          "n_test": 80,
+          "top1": 0.8,
+          "macro_f1": 0.2222222222222222
+        },
+        {
+          "held_out_group": "huygens_treatise_on_light",
+          "n_test": 80,
+          "top1": 0.25,
+          "macro_f1": 0.06666666666666667
+        },
+        {
+          "held_out_group": "lucretius_de_rerum_natura",
+          "n_test": 80,
+          "top1": 0.05,
+          "macro_f1": 0.019047619047619046
+        },
+        {
+          "held_out_group": "maxwell_elementary_electricity",
+          "n_test": 80,
+          "top1": 0.8125,
+          "macro_f1": 0.22413793103448276
+        },
+        {
+          "held_out_group": "maxwell_theory_of_heat",
+          "n_test": 80,
+          "top1": 0.525,
+          "macro_f1": 0.1721311475409836
+        },
+        {
+          "held_out_group": "maxwell_treatise_em",
+          "n_test": 80,
+          "top1": 0.6875,
+          "macro_f1": 0.13580246913580246
+        },
+        {
+          "held_out_group": "newton_opticks_editions",
+          "n_test": 80,
+          "top1": 0.0,
+          "macro_f1": 0.0
+        },
+        {
+          "held_out_group": "openstax_university_physics",
+          "n_test": 724,
+          "top1": 0.44337016574585636,
+          "macro_f1": 0.37362589260117546
+        },
+        {
+          "held_out_group": "tesla_high_frequency",
+          "n_test": 80,
+          "top1": 0.7875,
+          "macro_f1": 0.17622377622377622
+        },
+        {
+          "held_out_group": "treatise_natural_philosophy",
+          "n_test": 80,
+          "top1": 0.0875,
+          "macro_f1": 0.03218390804597701
+        },
+        {
+          "held_out_group": "wikipedia_physics",
+          "n_test": 390,
+          "top1": 0.47692307692307695,
+          "macro_f1": 0.47464214064660243
+        }
+      ],
+      "mean_top1": 0.4255195495112622,
+      "mean_macro_f1": 0.1538644485928472
+    }
+  },
+  "graph_robustness_keys": [
+    "identical",
+    "isomorphic_renamed",
+    "size_mismatch_2_vs_20",
+    "empty_vs_nonempty",
+    "unrelated_same_size",
+    "duplicate_inflation",
+    "robustness_curve",
+    "expectations"
+  ],
+  "translation_real": {
+    "n_groups": 2,
+    "comparisons": [
+      {
+        "source_passage_id": "lucretius_atomism_opening",
+        "n_translations": 3,
+        "mean_pairwise_structural_sim": 0.3333333333333333,
+        "rankings": [
+          {
+            "edition": "gutenberg_leonard",
+            "translator": "W.E. Leonard",
+            "top3": [
+              "classical_em",
+              "quantum_field_theory",
+              "atomistic_corpuscular"
+            ],
+            "scores": {
+              "classical_em": 0.0,
+              "quantum_field_theory": 0.0,
+              "atomistic_corpuscular": 0.0,
+              "relativity": 0.0,
+              "quantum_mechanics": 0.0,
+              "newtonian": 0.0,
+              "thermodynamics": 0.0
+            }
+          },
+          {
+            "edition": "munro_pd",
+            "translator": "H.A.J. Munro",
+            "top3": [
+              "thermodynamics",
+              "classical_em",
+              "relativity"
+            ],
+            "scores": {
+              "classical_em": 0.12150000000000001,
+              "quantum_field_theory": 0.07650000000000003,
+              "atomistic_corpuscular": 0.09000000000000001,
+              "relativity": 0.1125,
+              "quantum_mechanics": 0.0375,
+              "newtonian": 0.08249999999999999,
+              "thermodynamics": 0.140625
+            }
+          },
+          {
+            "edition": "watson_pd",
+            "translator": "John Selby Watson",
+            "top3": [
+              "classical_em",
+              "quantum_field_theory",
+              "atomistic_corpuscular"
+            ],
+            "scores": {
+              "classical_em": 0.0,
+              "quantum_field_theory": 0.0,
+              "atomistic_corpuscular": 0.0,
+              "relativity": 0.0,
+              "quantum_mechanics": 0.0,
+              "newtonian": 0.0,
+              "thermodynamics": 0.0
+            }
+          }
+        ],
+        "top1_agreement": false
+      },
+      {
+        "source_passage_id": "einstein_relativity_simultaneity",
+        "n_translations": 2,
+        "mean_pairwise_structural_sim": 1.0,
+        "rankings": [
+          {
+            "edition": "methuen_lawson",
+            "translator": "Robert W. Lawson",
+            "top3": [
+              "relativity",
+              "classical_em",
+              "newtonian"
+            ],
+            "scores": {
+              "classical_em": 0.11249999999999999,
+              "quantum_field_theory": 0.0675,
+              "atomistic_corpuscular": 0.0675,
+              "relativity": 0.140625,
+              "quantum_mechanics": 0.09375,
+              "newtonian": 0.11249999999999999,
+              "thermodynamics": 0.084375
+            }
+          },
+          {
+            "edition": "methuen_lawson_paraphrase_control",
+            "translator": "Robert W. Lawson",
+            "top3": [
+              "relativity",
+              "classical_em",
+              "newtonian"
+            ],
+            "scores": {
+              "classical_em": 0.11249999999999999,
+              "quantum_field_theory": 0.0675,
+              "atomistic_corpuscular": 0.0675,
+              "relativity": 0.140625,
+              "quantum_mechanics": 0.09375,
+              "newtonian": 0.11249999999999999,
+              "thermodynamics": 0.084375
+            }
+          }
+        ],
+        "top1_agreement": true
+      }
+    ]
+  },
+  "variance": {
+    "status": "FROM_DEV_STRUCTURAL_CORRECT_SCORE",
+    "n_works": 15,
+    "mean_passages_per_work": 52.666666666666664,
+    "between_work_sd": 0.04112893059226594,
+    "within_work_sd": 0.1107338154601045,
+    "icc": 0.12122985855339605,
+    "between_work_sd_ci95": [
+      0.028057212419546083,
+      0.049556361239003734
+    ],
+    "within_work_sd_ci95": [
+      0.10145102570345839,
+      0.12076402510090269
+    ],
+    "icc_ci95": [
+      0.05586773987293443,
+      0.1777618060557457
+    ],
+    "missingness_rate_estimate": 0.0,
+    "score_definition": "correct_theory_structural_similarity_on_development",
+    "ready_to_freeze_N": false,
+    "note": "Work-level bootstrap; fingerprints still pending student review."
+  },
+  "power_rows_n": 24,
+  "feasibility": "PROJECT_FEASIBLE_WITH_REDUCED_EFFECT_SENSITIVITY",
+  "fingerprint_flags": [],
+  "eligibility": {
+    "eligibility": {
+      "rules_id": "final_method_holdout_eligibility_v1",
+      "require_unseen_source_family_vs_train_dev": true,
+      "prefer_unseen_author_family": true,
+      "min_works_per_theory": 1,
+      "prefer_multiple_works_per_theory": true,
+      "licenses_allowed": [
+        "public_domain",
+        "CC BY",
+        "CC BY-SA",
+        "CC0"
+      ],
+      "exclude_confirmatory_ancient": true,
+      "exclude_constructed_unevaluated_reuse_as_pristine": true,
+      "do_not_materialize_labels_into_development_files": true,
+      "evaluate_once_after_method_freeze": true
+    },
+    "n_candidates": 4,
+    "status": "NOT_BUILT"
+  },
+  "blockers": [
+    "Stage-1 extraction gold not student-approved",
+    "physics_fingerprints_verified=false",
+    "validation success criterion not student-approved"
+  ],
+  "student_checklist": "docs/STUDENT_FINGERPRINT_REVIEW_CHECKLIST.md"
+}

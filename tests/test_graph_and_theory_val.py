@@ -119,19 +119,69 @@ def test_graph_transform_benchmark_runs():
     out = run_graph_transformation_benchmark(ROOT)
     assert out["results"]["identical"]["hungarian_role_alignment"] > 0.95
     assert out["results"]["size_mismatch_2_vs_20"]["hungarian_role_alignment"] < 0.3
+    assert out["results"]["size_mismatch_2_vs_20"]["typed_relation_coverage_adjusted"] < 0.25
     assert out["results"]["empty_vs_nonempty"]["hungarian_role_alignment"] == 0.0
 
 
-def test_external_corpus_source_group_no_overlap():
+def test_typed_coverage_adjusted_penalizes_isolated_bloat():
+    from rishiq.isef2027.graph_similarity import typed_relation_similarity_coverage_adjusted
+
+    small = ConceptGraph(
+        graph_id="small",
+        domain="theory_fingerprint",
+        nodes=[
+            GraphNode(id="a", kind=NodeKind.entity, label="a"),
+            GraphNode(id="b", kind=NodeKind.field_medium, label="b"),
+        ],
+        edges=[GraphEdge(source="a", target="b", kind=EdgeKind.CAUSES)],
+    )
+    bloated = small.model_copy(deep=True)
+    for i in range(18):
+        bloated.nodes.append(GraphNode(id=f"j{i}", kind=NodeKind.entity, label=f"j{i}"))
+    raw = typed_relation_similarity(small, bloated)
+    adj = typed_relation_similarity_coverage_adjusted(small, bloated)
+    assert raw == 1.0
+    assert adj < 0.2
+
+
+def test_external_corpus_source_family_no_overlap():
+    from rishiq.isef2027.source_families import assert_no_family_overlap
+    import json
+
     meta = build_external_theory_corpus(ROOT)
     assert meta["n_passages"] > 50
     assert meta["work_overlap_issues"] == []
-    works = {s: set(meta["splits"][s]["works"]) for s in ("train", "development", "final_holdout")}
+    assert meta["source_family_overlap_train_dev"] == []
+    assert meta["true_final_method_holdout"] == "NOT_BUILT"
+    works = {s: set(meta["splits"][s]["works"]) for s in ("train", "development")}
     assert not (works["train"] & works["development"])
-    assert not (works["train"] & works["final_holdout"])
-    assert not (works["development"] & works["final_holdout"])
-    lock = (ROOT / "data/theory_validation_v2/final_holdout/lock_manifest.json").read_text()
-    assert "UNEVALUATED" in lock or "UNSEEN" in lock
+    lock = json.loads((ROOT / "data/theory_validation_v2/final_holdout/lock_manifest.json").read_text())
+    assert lock["status"] == "CONSTRUCTED_UNEVALUATED_VALIDATION_SET"
+    # family fields present on rows
+    train = [
+        json.loads(l)
+        for l in (ROOT / "data/theory_validation_v2/passages/train.jsonl").read_text().splitlines()
+        if l.strip()
+    ]
+    assert train and "source_family" in train[0]
+    issues = assert_no_family_overlap(train + [
+        json.loads(l)
+        for l in (ROOT / "data/theory_validation_v2/passages/development.jsonl").read_text().splitlines()
+        if l.strip()
+    ], "source_family")
+    assert not any(x.startswith("HARD_") for x in issues)
+
+
+def test_structural_extractor_theory_agnostic_api():
+    from rishiq.isef2027.structural_extractor import extract_structure
+
+    text = "A particle interacts with a field and energy propagates through the medium."
+    # Must not require theory label
+    out = extract_structure(text)
+    assert out.extractor_version
+    assert len(out.nodes) >= 2
+    g = out.to_concept_graph()
+    assert len(g.nodes) >= 2
 
 
 def test_final_holdout_guard_blocks_without_token():
@@ -144,7 +194,7 @@ def test_final_holdout_guard_blocks_without_token():
 def test_assert_no_work_overlap_detects_leak():
     rows = [
         {"split": "train", "work_id": "A"},
-        {"split": "final_holdout", "work_id": "A"},
+        {"split": "development", "work_id": "A"},
     ]
     issues = assert_no_work_overlap(rows)
     assert issues

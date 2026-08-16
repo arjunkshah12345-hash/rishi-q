@@ -1,0 +1,17 @@
+{
+  "rules_id": "final_method_holdout_eligibility_v1",
+  "require_unseen_source_family_vs_train_dev": true,
+  "prefer_unseen_author_family": true,
+  "min_works_per_theory": 1,
+  "prefer_multiple_works_per_theory": true,
+  "licenses_allowed": [
+    "public_domain",
+    "CC BY",
+    "CC BY-SA",
+    "CC0"
+  ],
+  "exclude_confirmatory_ancient": true,
+  "exclude_constructed_unevaluated_reuse_as_pristine": true,
+  "do_not_materialize_labels_into_development_files": true,
+  "evaluate_once_after_method_freeze": true
+}

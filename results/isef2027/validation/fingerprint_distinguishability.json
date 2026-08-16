@@ -1,0 +1,229 @@
+{
+  "physics_fingerprints_verified": false,
+  "student_review_required": true,
+  "n_fingerprints": 7,
+  "nearest_neighbor": {
+    "atomistic_corpuscular": {
+      "neighbor": "newtonian",
+      "similarity": 0.34775
+    },
+    "classical_em": {
+      "neighbor": "quantum_field_theory",
+      "similarity": 0.18562499999999998
+    },
+    "newtonian": {
+      "neighbor": "atomistic_corpuscular",
+      "similarity": 0.34775
+    },
+    "quantum_field_theory": {
+      "neighbor": "newtonian",
+      "similarity": 0.26625
+    },
+    "quantum_mechanics": {
+      "neighbor": "atomistic_corpuscular",
+      "similarity": 0.19285714285714284
+    },
+    "relativity": {
+      "neighbor": "atomistic_corpuscular",
+      "similarity": 0.25500000000000006
+    },
+    "thermodynamics": {
+      "neighbor": "atomistic_corpuscular",
+      "similarity": 0.234
+    }
+  },
+  "flags": [],
+  "pairwise": [
+    {
+      "a": "atomistic_corpuscular",
+      "b": "classical_em",
+      "shared_features": 0,
+      "unique_a": 4,
+      "unique_b": 5,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.1575
+    },
+    {
+      "a": "atomistic_corpuscular",
+      "b": "newtonian",
+      "shared_features": 1,
+      "unique_a": 3,
+      "unique_b": 2,
+      "typed_jaccard": 0.16666666666666666,
+      "primary_structural": 0.34775
+    },
+    {
+      "a": "atomistic_corpuscular",
+      "b": "quantum_field_theory",
+      "shared_features": 0,
+      "unique_a": 4,
+      "unique_b": 5,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.2179285714285714
+    },
+    {
+      "a": "atomistic_corpuscular",
+      "b": "quantum_mechanics",
+      "shared_features": 0,
+      "unique_a": 4,
+      "unique_b": 5,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.19285714285714284
+    },
+    {
+      "a": "atomistic_corpuscular",
+      "b": "relativity",
+      "shared_features": 0,
+      "unique_a": 4,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.255
+    },
+    {
+      "a": "atomistic_corpuscular",
+      "b": "thermodynamics",
+      "shared_features": 0,
+      "unique_a": 4,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.234
+    },
+    {
+      "a": "classical_em",
+      "b": "newtonian",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.1425
+    },
+    {
+      "a": "classical_em",
+      "b": "quantum_field_theory",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 5,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.18562499999999998
+    },
+    {
+      "a": "classical_em",
+      "b": "quantum_mechanics",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 5,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.10875000000000001
+    },
+    {
+      "a": "classical_em",
+      "b": "relativity",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.13500000000000004
+    },
+    {
+      "a": "classical_em",
+      "b": "thermodynamics",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.14400000000000004
+    },
+    {
+      "a": "newtonian",
+      "b": "quantum_field_theory",
+      "shared_features": 0,
+      "unique_a": 3,
+      "unique_b": 5,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.26625
+    },
+    {
+      "a": "newtonian",
+      "b": "quantum_mechanics",
+      "shared_features": 0,
+      "unique_a": 3,
+      "unique_b": 5,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.16250000000000003
+    },
+    {
+      "a": "newtonian",
+      "b": "relativity",
+      "shared_features": 0,
+      "unique_a": 3,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.2025
+    },
+    {
+      "a": "newtonian",
+      "b": "thermodynamics",
+      "shared_features": 0,
+      "unique_a": 3,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.13500000000000004
+    },
+    {
+      "a": "quantum_field_theory",
+      "b": "quantum_mechanics",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 5,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.14812500000000003
+    },
+    {
+      "a": "quantum_field_theory",
+      "b": "relativity",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.12375000000000001
+    },
+    {
+      "a": "quantum_field_theory",
+      "b": "thermodynamics",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.174
+    },
+    {
+      "a": "quantum_mechanics",
+      "b": "relativity",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.17
+    },
+    {
+      "a": "quantum_mechanics",
+      "b": "thermodynamics",
+      "shared_features": 0,
+      "unique_a": 5,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.1875
+    },
+    {
+      "a": "relativity",
+      "b": "thermodynamics",
+      "shared_features": 0,
+      "unique_a": 3,
+      "unique_b": 3,
+      "typed_jaccard": 0.0,
+      "primary_structural": 0.225
+    }
+  ],
+  "matrix_method": "primary=0.55*typed_relation_coverage_adjusted+0.45*hungarian_coverage_penalized",
+  "note": "Do not modify fingerprints solely to improve classifier scores."
+}

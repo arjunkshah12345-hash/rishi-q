@@ -1,0 +1,131 @@
+{
+  "assessment_id": "ISEF2027-CONFIRMATORY-FEASIBILITY-v1",
+  "ancient_confirmatory_status": "LOCKED_NOT_READY",
+  "scored": false,
+  "n_method_dev_passages": 2154,
+  "n_method_dev_works": 26,
+  "n_method_dev_source_families": 15,
+  "n_sealed_confirmatory_units": 5,
+  "independent_candidate_final_families": [
+    {
+      "source_family": "planck_theory_of_heat_radiation_pd",
+      "license": "public_domain",
+      "theories_possible": [
+        "thermodynamics",
+        "quantum_mechanics"
+      ],
+      "status": "CANDIDATE_ELIGIBLE_PD"
+    },
+    {
+      "source_family": "heaviside_em_pd",
+      "license": "public_domain",
+      "theories_possible": [
+        "classical_em"
+      ],
+      "status": "CANDIDATE_ELIGIBLE_PD"
+    },
+    {
+      "source_family": "bohr_atomic_theory_pd",
+      "license": "public_domain",
+      "theories_possible": [
+        "quantum_mechanics",
+        "atomistic_corpuscular"
+      ],
+      "status": "CANDIDATE_ELIGIBLE_PD"
+    },
+    {
+      "source_family": "minkowski_spacetime_pd",
+      "license": "public_domain",
+      "theories_possible": [
+        "relativity"
+      ],
+      "status": "CANDIDATE_ELIGIBLE_PD"
+    },
+    {
+      "source_family": "dirac_principles_qm_check_rights",
+      "license": "copyright_status_verify",
+      "theories_possible": [
+        "quantum_mechanics",
+        "quantum_field_theory"
+      ],
+      "status": "LICENSE_GATE"
+    }
+  ],
+  "n_independent_candidate_families": 4,
+  "matched_controls_rule": "prespecified matching variables \u2014 not outcome",
+  "feasibility": "PROJECT_FEASIBLE_WITH_REDUCED_EFFECT_SENSITIVITY",
+  "detail": "Treat confirmatory N as constrained; do not manufacture independence.",
+  "power_table_ref": "results/isef2027/validation/power_sensitivity_table.json",
+  "power_sample": [
+    {
+      "effect": 0.02,
+      "works_per_arm": 6,
+      "passages_per_work": 3,
+      "power": 0.12,
+      "estimated_power": 0.12,
+      "mc_se": 0.01624807680927192,
+      "sim_interval_95": [
+        0.08815376945382702,
+        0.15184623054617297
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 6,
+      "passages_per_work": 5,
+      "power": 0.1075,
+      "estimated_power": 0.1075,
+      "mc_se": 0.015487394067434327,
+      "sim_interval_95": [
+        0.07714470762782871,
+        0.13785529237217128
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 10,
+      "passages_per_work": 3,
+      "power": 0.125,
+      "estimated_power": 0.125,
+      "mc_se": 0.016535945694153693,
+      "sim_interval_95": [
+        0.09258954643945877,
+        0.15741045356054123
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 10,
+      "passages_per_work": 5,
+      "power": 0.19,
+      "estimated_power": 0.19,
+      "mc_se": 0.019615045245933032,
+      "sim_interval_95": [
+        0.15155451131797126,
+        0.22844548868202874
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
+    },
+    {
+      "effect": 0.02,
+      "works_per_arm": 15,
+      "passages_per_work": 3,
+      "power": 0.1775,
+      "estimated_power": 0.1775,
+      "mc_se": 0.019104564245226847,
+      "sim_interval_95": [
+        0.14005505407935537,
+        0.21494494592064461
+      ],
+      "scenario": "pessimistic",
+      "n_sim": 400
+    }
+  ]
+}

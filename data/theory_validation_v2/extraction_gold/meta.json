@@ -1,0 +1,7 @@
+{
+  "n_templates": 40,
+  "status": "BLANK_AWAITING_STUDENT_REVIEW",
+  "student_approved_n": 0,
+  "note": "Do not treat machine-filled labels as gold. Student reviews own project annotations.",
+  "path": "data/theory_validation_v2/extraction_gold/gold_templates_BLANK.jsonl"
+}

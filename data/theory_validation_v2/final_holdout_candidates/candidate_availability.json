@@ -1,0 +1,45 @@
+{
+  "true_final_holdout": "NOT_BUILT",
+  "build_command": "BUILD_FINAL_VALIDATION_HOLDOUT",
+  "gate": "student-approved method freeze required",
+  "candidates": [
+    {
+      "source_family": "planck_theory_of_heat_radiation_pd",
+      "license": "public_domain",
+      "acquisition": "archive.org / PD OCR",
+      "theories": [
+        "thermodynamics",
+        "quantum_mechanics"
+      ],
+      "status": "ELIGIBLE_NOT_ACQUIRED"
+    },
+    {
+      "source_family": "heaviside_electromagnetic_theory_pd",
+      "license": "public_domain",
+      "acquisition": "archive.org",
+      "theories": [
+        "classical_em"
+      ],
+      "status": "ELIGIBLE_NOT_ACQUIRED"
+    },
+    {
+      "source_family": "bohr_three_papers_pd",
+      "license": "public_domain",
+      "acquisition": "public domain reprints",
+      "theories": [
+        "quantum_mechanics",
+        "atomistic_corpuscular"
+      ],
+      "status": "ELIGIBLE_NOT_ACQUIRED"
+    },
+    {
+      "source_family": "minkowski_spacetime_pd",
+      "license": "public_domain",
+      "acquisition": "archive.org",
+      "theories": [
+        "relativity"
+      ],
+      "status": "ELIGIBLE_NOT_ACQUIRED"
+    }
+  ]
+}

@@ -51,7 +51,8 @@ GIVEAWAY_TERMS = [
 
 MASK_RE = re.compile("|".join(GIVEAWAY_TERMS), re.I)
 
-# Prespecified graph weight grid — evaluate on DEVELOPMENT only.
+# Prespecified graph weight grid — evaluate on DEVELOPMENT only AFTER real extractor.
+# Prior lexical-proxy selection (typed=1.0, hungarian=0.0) is RETIRED_PROXY_SELECTION.
 GRAPH_WEIGHT_GRID = [
     (1.0, 0.0),
     (0.75, 0.25),
@@ -59,6 +60,7 @@ GRAPH_WEIGHT_GRID = [
     (0.25, 0.75),
     (0.0, 1.0),
 ]
+RETIRED_PROXY_SELECTION = {"typed_weight": 1.0, "hungarian_weight": 0.0, "status": "RETIRED_PROXY_SELECTION"}
 
 
 def mask_giveaway_vocab(text: str) -> str:
@@ -221,47 +223,34 @@ def task_b_fingerprint_retrieval(
     typed_w: float,
     hung_w: float,
     masked: bool = False,
+    extractor: str = "structural",
 ) -> dict[str, Any]:
-    """Task B: compare passage proxy graph (keyword-light bag) is hard without extractors.
+    """Task B Stage 2: theory retrieval from extracted structure only.
 
-    Practical proxy for Pass 3: build a tiny passage graph from co-occurring node-kind
-    keywords mapped to fingerprint node labels, then rank fingerprints by structural sim.
-    This is development diagnostics — not confirmatory.
+    extractor:
+      - structural: claim-bearing deterministic theory-agnostic extractor
+      - lexical_proxy: LEXICAL_GRAPH_PROXY_BASELINE (comparison only)
     """
-    from rishiq.isef2027.concept_graph import ConceptGraph, EdgeKind, GraphEdge, GraphNode, NodeKind
+    from rishiq.isef2027.structural_extractor import EXTRACTOR_VERSION, extract_structure, lexical_graph_proxy_baseline
 
     fps = _load_fingerprints(root)
-    # Simple lexical→node proxy: if fingerprint node label tokens appear, include node
     ranks = []
     top1 = []
     top2 = []
     margins = []
     mrr = []
+    empty_n = 0
     for r in rows:
         text = mask_giveaway_vocab(r["text"]) if masked else r["text"]
-        tl = text.lower()
-        nodes = []
-        for n in list(fps.values())[0].nodes[:0]:
-            pass
-        # Collect nodes whose labels appear in text across any FP (union)
-        seen = {}
-        for g in fps.values():
-            for n in g.nodes:
-                lab = n.label.lower()
-                if len(lab) >= 4 and lab in tl:
-                    seen[n.id] = n
-        # If nothing matched, empty graph → all sims ~0
-        pg = ConceptGraph(
-            graph_id=f"passage_{r['passage_id']}",
-            domain="historical_text",
-            status="PROXY",
-            nodes=list(seen.values())[:20],
-            edges=[],
-        )
-        # add naive edges if ≥2 nodes
-        ids = [n.id for n in pg.nodes]
-        for i in range(len(ids) - 1):
-            pg.edges.append(GraphEdge(source=ids[i], target=ids[i + 1], kind=EdgeKind.DEPENDS_ON))
+        if extractor == "lexical_proxy":
+            pg = lexical_graph_proxy_baseline(text, fps)
+            method_tag = "LEXICAL_GRAPH_PROXY_BASELINE"
+        else:
+            ext = extract_structure(text)
+            pg = ext.to_concept_graph(graph_id=f"passage_{r['passage_id']}")
+            method_tag = EXTRACTOR_VERSION
+        if not pg.nodes:
+            empty_n += 1
 
         scores = {}
         for tid, g in fps.items():
@@ -279,32 +268,43 @@ def task_b_fingerprint_retrieval(
         correct = scores.get(yt, 0.0)
         margins.append(correct - second if ordered[0] == yt else correct - best)
 
+    claim_bearing = extractor != "lexical_proxy"
     return {
         "task": "B_structural_fingerprint_retrieval",
+        "extractor": method_tag if extractor != "lexical_proxy" else "LEXICAL_GRAPH_PROXY_BASELINE",
+        "claim_bearing": claim_bearing,
         "typed_weight": typed_w,
         "hungarian_weight": hung_w,
+        "masked": masked,
         "n": len(rows),
+        "empty_extraction_n": empty_n,
         "mean_correct_rank": float(np.mean(ranks)) if ranks else None,
         "mrr": float(np.mean(mrr)) if mrr else None,
         "top1_retrieval": float(np.mean(top1)) if top1 else None,
         "top2_retrieval": float(np.mean(top2)) if top2 else None,
         "mean_correct_vs_next_margin": float(np.mean(margins)) if margins else None,
-        "note": "Passage graphs are lexical-proxy extracts; fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW.",
+        "note": (
+            "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; "
+            + ("primary structural extractor." if claim_bearing else "baseline only — not claim-bearing.")
+        ),
     }
 
 
 def select_graph_weights_on_dev(root: Path, dev: list[dict]) -> dict[str, Any]:
     grid = []
     for tw, hw in GRAPH_WEIGHT_GRID:
-        res = task_b_fingerprint_retrieval(root, dev, typed_w=tw, hung_w=hw, masked=False)
+        res = task_b_fingerprint_retrieval(
+            root, dev, typed_w=tw, hung_w=hw, masked=False, extractor="structural"
+        )
         grid.append(res)
-    # Select by MRR on development only (prespecified criterion)
     best = max(grid, key=lambda x: (x["mrr"] or 0.0))
     return {
         "grid": grid,
         "selected": {"typed_weight": best["typed_weight"], "hungarian_weight": best["hungarian_weight"]},
-        "selection_criterion": "max_dev_mrr",
+        "selection_criterion": "max_dev_mrr_structural_extractor",
         "selected_on": "development_only",
+        "retired_proxy_selection": RETIRED_PROXY_SELECTION,
+        "extractor": "structural_extractor_deterministic_v1",
     }
 
 
@@ -343,29 +343,15 @@ def leave_one_source_out(train: list[dict], key: str = "work_id") -> dict[str, A
 
 
 def estimate_calibration_variance(dev: list[dict], scores_by_passage: dict[str, float] | None = None) -> dict[str, Any]:
-    """Estimate within/between work variance using development scores.
-
-    If scores not provided, use a simple lexical proxy score vs theory keyword set
-    for variance structure only (not claim-bearing effect size).
-    """
-    # Proxy score: fraction of theory-specific tokens (development calibration only)
-    lex = {
-        "newtonian": ["force", "mass", "momentum", "acceleration", "gravity"],
-        "thermodynamics": ["heat", "entropy", "temperature", "engine", "energy"],
-        "classical_em": ["electric", "magnetic", "charge", "current", "field"],
-        "relativity": ["light", "frame", "time", "space", "velocity"],
-        "quantum_mechanics": ["wave", "state", "measurement", "particle", "energy"],
-        "quantum_field_theory": ["field", "particle", "interaction", "vacuum", "charge"],
-        "atomistic_corpuscular": ["atom", "void", "corpuscle", "particle", "motion"],
-    }
+    """Estimate within/between work variance using development structural scores."""
     by_work: dict[str, list[float]] = defaultdict(list)
+    missing = 0
     for r in dev:
         if scores_by_passage and r["passage_id"] in scores_by_passage:
             s = scores_by_passage[r["passage_id"]]
         else:
-            words = set(r["text"].lower().split())
-            keys = lex.get(r["theory_label"], [])
-            s = sum(1 for k in keys if k in words) / max(1, len(keys))
+            missing += 1
+            continue
         by_work[r["work_id"]].append(s)
 
     work_means = {w: float(np.mean(v)) for w, v in by_work.items() if v}
@@ -377,22 +363,18 @@ def estimate_calibration_variance(dev: list[dict], scores_by_passage: dict[str, 
             "icc": None,
         }
 
-    grand = float(np.mean(list(work_means.values())))
     between = float(np.std(list(work_means.values()), ddof=1))
     within_vars = [float(np.var(v, ddof=1)) for v in by_work.values() if len(v) > 1]
     within = float(np.sqrt(np.mean(within_vars))) if within_vars else float("nan")
-    # ICC(1) approx
     n_bar = float(np.mean([len(v) for v in by_work.values()]))
     icc = None
     if within == within and between == between and (between**2 + within**2) > 0:
-        # crude: between^2 / (between^2 + within^2)
         icc = float(between**2 / (between**2 + within**2))
 
-    # Bootstrap uncertainty on between/within
     rng = np.random.default_rng(0)
     works = list(by_work)
     boot_b, boot_w, boot_icc = [], [], []
-    for _ in range(300):
+    for _ in range(400):
         samp = [works[i] for i in rng.integers(0, len(works), size=len(works))]
         wm = {w: float(np.mean(by_work[w])) for w in samp}
         b = float(np.std(list(wm.values()), ddof=1)) if len(wm) > 1 else float("nan")
@@ -404,7 +386,7 @@ def estimate_calibration_variance(dev: list[dict], scores_by_passage: dict[str, 
             boot_icc.append(b**2 / (b**2 + w**2))
 
     return {
-        "status": "PROVISIONAL_FROM_DEV_PROXY",
+        "status": "FROM_DEV_STRUCTURAL_CORRECT_SCORE",
         "n_works": len(by_work),
         "mean_passages_per_work": n_bar,
         "between_work_sd": between,
@@ -413,11 +395,26 @@ def estimate_calibration_variance(dev: list[dict], scores_by_passage: dict[str, 
         "between_work_sd_ci95": [float(np.nanpercentile(boot_b, 2.5)), float(np.nanpercentile(boot_b, 97.5))],
         "within_work_sd_ci95": [float(np.nanpercentile(boot_w, 2.5)), float(np.nanpercentile(boot_w, 97.5))],
         "icc_ci95": [float(np.nanpercentile(boot_icc, 2.5)), float(np.nanpercentile(boot_icc, 97.5))] if boot_icc else None,
-        "missingness_rate_estimate": 0.0,
-        "score_definition": "dev_lexical_proxy_for_variance_structure_only",
+        "missingness_rate_estimate": float(missing / max(1, len(dev))),
+        "score_definition": "correct_theory_structural_similarity_on_development",
         "ready_to_freeze_N": False,
-        "note": "Proxy scores — replace with real method scores after freeze candidate exists.",
+        "note": "Work-level bootstrap; fingerprints still pending student review.",
     }
+
+
+def _structural_scores_by_passage(root: Path, rows: list[dict], typed_w: float, hung_w: float) -> dict[str, float]:
+    from rishiq.isef2027.structural_extractor import extract_structure
+
+    fps = _load_fingerprints(root)
+    out: dict[str, float] = {}
+    for r in rows:
+        pg = extract_structure(r["text"]).to_concept_graph(graph_id=r["passage_id"])
+        yt = r["theory_label"]
+        if yt not in fps:
+            continue
+        bund = structural_similarity_bundle(pg, fps[yt], typed_weight=typed_w, hungarian_weight=hung_w)
+        out[r["passage_id"]] = bund["primary_structural"]
+    return out
 
 
 def run_development_method_selection(root: Path) -> dict[str, Any]:
@@ -427,7 +424,6 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
     raw_models = _fit_predict_candidates(train, dev, masked=False)
     masked_models = _fit_predict_candidates(train, dev, masked=True)
 
-    # Choose primary Task A model by macro_f1 on development (prespecified)
     ranked = sorted(
         [m for m in raw_models if not m["model"].endswith("baseline")],
         key=lambda m: m["metrics"]["macro_f1"],
@@ -438,17 +434,19 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
     weight_sel = select_graph_weights_on_dev(root, dev)
     tw = weight_sel["selected"]["typed_weight"]
     hw = weight_sel["selected"]["hungarian_weight"]
-    task_b = task_b_fingerprint_retrieval(root, dev, typed_w=tw, hung_w=hw, masked=False)
-    task_b_masked = task_b_fingerprint_retrieval(root, dev, typed_w=tw, hung_w=hw, masked=True)
+    task_b = task_b_fingerprint_retrieval(root, dev, typed_w=tw, hung_w=hw, masked=False, extractor="structural")
+    task_b_masked = task_b_fingerprint_retrieval(root, dev, typed_w=tw, hung_w=hw, masked=True, extractor="structural")
+    task_b_lexical = task_b_fingerprint_retrieval(
+        root, dev, typed_w=tw, hung_w=hw, masked=False, extractor="lexical_proxy"
+    )
 
     loso = leave_one_source_out(train + dev, key="work_id")
     loao = leave_one_source_out(train + dev, key="author_family")
+    losf = leave_one_source_out(train + dev, key="source_family")
 
-    # Hard-negative subset on dev
     hard = [r for r in dev if r.get("hard_negative_or_cross_theory_context")]
     hard_metrics = None
     if hard and best_a["model"].startswith("tfidf"):
-        # refit chosen style quickly
         pipe = Pipeline(
             [
                 ("tfidf", TfidfVectorizer(ngram_range=(1, 2), min_df=1)),
@@ -459,14 +457,15 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
         yhat = list(pipe.predict([r["text"] for r in hard]))
         hard_metrics = _metrics([r["theory_label"] for r in hard], yhat)
 
-    var_est = estimate_calibration_variance(dev)
+    scores = _structural_scores_by_passage(root, dev, tw, hw)
+    var_est = estimate_calibration_variance(dev, scores)
 
     from rishiq.isef2027.power_hier import PowerAssumptions, simulate_delta_q_power
 
     power_table = []
     bw = var_est["between_work_sd"] if isinstance(var_est.get("between_work_sd"), float) else 0.08
     ww = var_est["within_work_sd"] if isinstance(var_est.get("within_work_sd"), float) else 0.12
-    # Modest sensitivity grid (provisional) — keep MC cost bounded
+    n_sim = 400
     for effect, scenario in [(0.02, "pessimistic"), (0.05, "base"), (0.08, "base"), (0.12, "optimistic")]:
         for n_works in [6, 10, 15]:
             for ppw in [3, 5]:
@@ -476,9 +475,9 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
                     passages_per_work=ppw,
                     between_work_sd=bw,
                     within_work_sd=ww,
-                    n_sim=80,
-                    n_perm=49,
-                    notes="provisional_sensitivity_from_dev_variance",
+                    n_sim=n_sim,
+                    n_perm=79,
+                    notes="structural_dev_variance_calibrated",
                 )
                 sim = simulate_delta_q_power(ass)
                 power_table.append(
@@ -486,43 +485,60 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
                         "effect": effect,
                         "works_per_arm": n_works,
                         "passages_per_work": ppw,
+                        "power": sim.get("empirical_power"),
                         "estimated_power": sim.get("empirical_power"),
                         "mc_se": sim.get("monte_carlo_se"),
+                        "sim_interval_95": sim.get("power_sim_interval_95"),
                         "scenario": scenario,
+                        "n_sim": n_sim,
                     }
                 )
 
-    # Freeze candidate? Only if fingerprints student-reviewed enough — they are not.
+    train_sf = {r.get("source_family", r["work_id"]) for r in train}
+    dev_sf = {r.get("source_family", r["work_id"]) for r in dev}
+    train_af = {r.get("author_family") for r in train}
+    dev_af = {r.get("author_family") for r in dev}
+
     method_freeze = {
         "status": "NOT_READY_TO_FREEZE",
         "reasons": [
-            "physics_fingerprints still AI_DRAFT_PENDING_STUDENT_REVIEW",
-            "Task B uses lexical-proxy passage graphs, not student-verified extractors",
-            "external corpus theory coverage uneven (esp. QFT)",
-            "variance estimates are lexical-proxy provisional",
+            "physics_fingerprints_verified=false (student review required)",
+            "Stage-1 extraction gold annotations awaiting student approval",
+            "true final method holdout NOT_BUILT (correct until after freeze)",
+            "confirmatory corpus feasibility may constrain independent N",
         ],
         "provisional_task_a_model": best_a["model"],
         "provisional_graph_weights": weight_sel["selected"],
-        "final_holdout": "UNEVALUATED",
+        "retired_proxy_graph_weights": RETIRED_PROXY_SELECTION,
+        "final_holdout": "NOT_BUILT",
+        "constructed_unevaluated": "CONSTRUCTED_UNEVALUATED_VALIDATION_SET",
     }
 
     payload = attach_provenance(
         {
-            "benchmark_id": "ISEF2027-THEORY-VAL-EXTERNAL-DEV-v2",
-            "contamination_state": ContaminationState.UNSEEN.value + "_final_holdout",
+            "benchmark_id": "ISEF2027-THEORY-VAL-EXTERNAL-DEV-v2-structural",
+            "contamination_state": ContaminationState.DEVELOPMENT_CONTAMINATED.value,
             "evidence_role": EvidenceRole.EXTERNAL_METHOD_DEVELOPMENT.value,
             "n_train": len(train),
             "n_dev": len(dev),
+            "n_passages": len(train) + len(dev),
+            "n_works": len({r["work_id"] for r in train + dev}),
+            "n_authors": len({r["author_family"] for r in train + dev}),
+            "n_source_families": len({r.get("source_family", r["work_id"]) for r in train + dev}),
             "train_works": sorted({r["work_id"] for r in train}),
             "dev_works": sorted({r["work_id"] for r in dev}),
+            "source_family_overlap_train_dev": sorted(train_sf & dev_sf),
+            "author_family_overlap_train_dev": sorted(train_af & dev_af),
             "task_a_raw": raw_models,
             "task_a_masked": masked_models,
             "selected_task_a_on_dev": best_a,
             "graph_weight_selection": weight_sel,
             "task_b_dev": task_b,
             "task_b_dev_masked": task_b_masked,
-            "leave_one_source_out": loso,
-            "leave_one_author_out": loao,
+            "task_b_lexical_proxy_baseline": task_b_lexical,
+            "leave_one_work_out": loso,
+            "leave_one_author_family_out": loao,
+            "leave_one_source_family_out": losf,
             "hard_negative_dev": {"n": len(hard), "metrics": hard_metrics},
             "calibration_variance": var_est,
             "power_sensitivity_table": power_table,
@@ -534,8 +550,8 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
             real_text=True,
             phase="validation",
             source_split="train+development",
-            method_version="theory_val_external_dev_v2",
-            notes="Final holdout not loaded. Method not frozen.",
+            method_version="theory_val_external_dev_v2_structural",
+            notes="True final holdout not built. Ancient confirmatory locked.",
         ),
     )
 
@@ -546,7 +562,7 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
     append_validation_ledger(
         root,
         {
-            "dataset_version": "theory_validation_external_v2",
+            "dataset_version": "theory_validation_external_v2_family_clean",
             "dataset_hash_file": "data/theory_validation_v2/passages/corpus_meta.json",
             "train_sources": sorted({r["work_id"] for r in train}),
             "dev_sources": sorted({r["work_id"] for r in dev}),
@@ -560,6 +576,7 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
                 "task_a_macro_f1": best_a["metrics"]["macro_f1"],
                 "task_a_top1": best_a["metrics"]["top1_accuracy"],
                 "task_b_mrr": task_b.get("mrr"),
+                "task_b_top1": task_b.get("top1_retrieval"),
             },
             "test_previously_viewed": False,
             "evidence_class": EvidenceClass.DEVELOPMENT_ANALYSIS.value,
@@ -568,13 +585,13 @@ def run_development_method_selection(root: Path) -> dict[str, Any]:
         },
     )
 
-    # Power table artifact
     (root / "results/isef2027/validation/power_sensitivity_table.json").write_text(
         json.dumps(
             {
                 "variance_source": var_est,
                 "rows": power_table,
                 "sample_size_justified": False,
+                "n_sim_per_cell": n_sim,
             },
             indent=2,
             default=float,

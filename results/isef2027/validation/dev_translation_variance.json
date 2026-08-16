@@ -1,8 +1,8 @@
 {
   "study_id": "ISEF2027-DEV-TRANSLATION-VARIANCE-v1",
-  "n_pairs": 11,
-  "mean_lexical_cosine": 0.24653882795761375,
-  "mean_lexical_cosine_masked": 0.2484294684795096,
+  "n_pairs": 15,
+  "mean_lexical_cosine": 0.25841127731361724,
+  "mean_lexical_cosine_masked": 0.2633199132766363,
   "pairs": [
     {
       "work_id": "thomson_tait_np",
@@ -14,20 +14,11 @@
       "note": "within_work_window_proxy_not_multi_translator_pair"
     },
     {
-      "work_id": "maxwell_theory_of_heat",
-      "passage_a": "maxwell_theory_of_heat-0000",
-      "passage_b": "maxwell_theory_of_heat-0001",
-      "lexical_cosine": 0.0,
-      "lexical_cosine_masked": 0.0,
-      "same_theory_label": true,
-      "note": "within_work_window_proxy_not_multi_translator_pair"
-    },
-    {
-      "work_id": "maxwell_elementary_electricity",
-      "passage_a": "maxwell_elementary_electricity-0000",
-      "passage_b": "maxwell_elementary_electricity-0001",
-      "lexical_cosine": 0.2636350694358401,
-      "lexical_cosine_masked": 0.2636350694358401,
+      "work_id": "clausius_mechanical_heat",
+      "passage_a": "clausius_mechanical_heat-0000",
+      "passage_b": "clausius_mechanical_heat-0001",
+      "lexical_cosine": 0.27908157329328775,
+      "lexical_cosine_masked": 0.2790815732932878,
       "same_theory_label": true,
       "note": "within_work_window_proxy_not_multi_translator_pair"
     },
@@ -50,11 +41,20 @@
       "note": "within_work_window_proxy_not_multi_translator_pair"
     },
     {
-      "work_id": "openstax_university-physics-volume-2",
-      "passage_a": "openstax_university-physics-volume-2-1-1-temperature-and-thermal-equilibrium-00",
-      "passage_b": "openstax_university-physics-volume-2-1-1-temperature-and-thermal-equilibrium-01",
-      "lexical_cosine": 0.4087228800697643,
-      "lexical_cosine_masked": 0.4087228800697643,
+      "work_id": "tesla_high_frequency",
+      "passage_a": "tesla_high_frequency-0000",
+      "passage_b": "tesla_high_frequency-0001",
+      "lexical_cosine": 0.23603715658765886,
+      "lexical_cosine_masked": 0.23603715658765886,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_qft",
+      "passage_a": "wikipedia_qft-0000",
+      "passage_b": "wikipedia_qft-0001",
+      "lexical_cosine": 0.18265872412573156,
+      "lexical_cosine_masked": 0.20280844920004432,
       "same_theory_label": true,
       "note": "within_work_window_proxy_not_multi_translator_pair"
     },
@@ -64,6 +64,15 @@
       "passage_b": "wikipedia_qed-0001",
       "lexical_cosine": 0.40922981693350674,
       "lexical_cosine_masked": 0.42877935968833847,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_particle",
+      "passage_a": "wikipedia_particle-0000",
+      "passage_b": "wikipedia_particle-0001",
+      "lexical_cosine": 0.25362085068193874,
+      "lexical_cosine_masked": 0.25195699054273535,
       "same_theory_label": true,
       "note": "within_work_window_proxy_not_multi_translator_pair"
     },
@@ -86,11 +95,38 @@
       "note": "within_work_window_proxy_not_multi_translator_pair"
     },
     {
+      "work_id": "wikipedia_gr",
+      "passage_a": "wikipedia_gr-0000",
+      "passage_b": "wikipedia_gr-0001",
+      "lexical_cosine": 0.36397953566930435,
+      "lexical_cosine_masked": 0.3822862975299823,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_thermo",
+      "passage_a": "wikipedia_thermo-0000",
+      "passage_b": "wikipedia_thermo-0001",
+      "lexical_cosine": 0.27686781359009266,
+      "lexical_cosine_masked": 0.28222086315707207,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
       "work_id": "wikipedia_cm",
       "passage_a": "wikipedia_cm-0000",
       "passage_b": "wikipedia_cm-0001",
       "lexical_cosine": 0.22851626015945145,
       "lexical_cosine_masked": 0.22976376314547375,
+      "same_theory_label": true,
+      "note": "within_work_window_proxy_not_multi_translator_pair"
+    },
+    {
+      "work_id": "wikipedia_maxwell",
+      "passage_a": "wikipedia_maxwell-0000",
+      "passage_b": "wikipedia_maxwell-0001",
+      "lexical_cosine": 0.24435434772809686,
+      "lexical_cosine_masked": 0.25504116506976243,
       "same_theory_label": true,
       "note": "within_work_window_proxy_not_multi_translator_pair"
     },
@@ -117,5 +153,7 @@
     "student_reviewed_inputs": false,
     "notes": "Confirmatory sealed texts unused.",
     "extra": {}
-  }
+  },
+  "accurate_name": "WITHIN_WORK_PASSAGE_SIMILARITY_PROXY",
+  "study_kind": "PROXY_NOT_MULTI_TRANSLATOR"
 }

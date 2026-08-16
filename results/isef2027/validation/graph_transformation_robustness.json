@@ -5,6 +5,7 @@
     "identical": {
       "literal_id_overlap_baseline": 1.0,
       "typed_relation_multiset": 1.0,
+      "typed_relation_coverage_adjusted": 1.0,
       "hungarian_role_alignment": 1.0,
       "primary_structural": 1.0,
       "typed_weight": 0.55,
@@ -13,6 +14,7 @@
     "isomorphic_renamed": {
       "literal_id_overlap_baseline": 0.0,
       "typed_relation_multiset": 1.0,
+      "typed_relation_coverage_adjusted": 1.0,
       "hungarian_role_alignment": 1.0,
       "primary_structural": 1.0,
       "typed_weight": 0.55,
@@ -21,14 +23,16 @@
     "size_mismatch_2_vs_20": {
       "literal_id_overlap_baseline": 0.73,
       "typed_relation_multiset": 1.0,
+      "typed_relation_coverage_adjusted": 0.1,
       "hungarian_role_alignment": 0.1,
-      "primary_structural": 0.5950000000000001,
+      "primary_structural": 0.1,
       "typed_weight": 0.55,
       "hungarian_weight": 0.45
     },
     "empty_vs_nonempty": {
       "literal_id_overlap_baseline": 0.0,
       "typed_relation_multiset": 0.0,
+      "typed_relation_coverage_adjusted": 0.0,
       "hungarian_role_alignment": 0.0,
       "primary_structural": 0.0,
       "typed_weight": 0.55,
@@ -37,6 +41,7 @@
     "unrelated_same_size": {
       "literal_id_overlap_baseline": 0.0,
       "typed_relation_multiset": 0.0,
+      "typed_relation_coverage_adjusted": 0.0,
       "hungarian_role_alignment": 0.25,
       "primary_structural": 0.1125,
       "typed_weight": 0.55,
@@ -45,8 +50,9 @@
     "duplicate_inflation": {
       "literal_id_overlap_baseline": 1.0,
       "typed_relation_multiset": 1.0,
+      "typed_relation_coverage_adjusted": 0.5,
       "hungarian_role_alignment": 0.5,
-      "primary_structural": 0.775,
+      "primary_structural": 0.5,
       "typed_weight": 0.55,
       "hungarian_weight": 0.45
     },
@@ -73,19 +79,19 @@
         "transform": "add_isolated_18",
         "typed_relation": 1.0,
         "hungarian": 0.18181818181818182,
-        "primary": 0.6318181818181818
+        "primary": 0.18181818181818182
       },
       {
         "transform": "add_irrelevant_subgraph",
         "typed_relation": 0.6666666666666666,
         "hungarian": 0.5714285714285714,
-        "primary": 0.6238095238095238
+        "primary": 0.3968253968253968
       },
       {
         "transform": "delete_edges_50pct",
         "typed_relation": 0.5,
         "hungarian": 0.9270833333333334,
-        "primary": 0.6921875000000001
+        "primary": 0.5546875
       },
       {
         "transform": "change_edge_types",
@@ -103,7 +109,7 @@
         "transform": "duplicate_nodes",
         "typed_relation": 1.0,
         "hungarian": 0.5,
-        "primary": 0.775
+        "primary": 0.5
       },
       {
         "transform": "random_rewire",

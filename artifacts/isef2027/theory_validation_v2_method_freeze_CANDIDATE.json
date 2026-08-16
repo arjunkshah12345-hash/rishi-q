@@ -1,0 +1,70 @@
+{
+  "artifact": "theory_validation_v2_method_freeze_CANDIDATE",
+  "status": "NOT_READY_TO_FREEZE",
+  "ready_for_student_method_freeze": false,
+  "blockers": [
+    "Stage-1 extraction gold not student-approved",
+    "physics_fingerprints_verified=false",
+    "validation success criterion not student-approved"
+  ],
+  "timestamp_utc": "2026-08-16T17:17:36.786198+00:00",
+  "git_sha": "43f6322bdb52e397e85d193c39fbcb0bcf1a5eec",
+  "extractor_version": "structural_extractor_deterministic_v1",
+  "ontology_version": "rishiq_concept_graph_v1",
+  "fingerprint_hashes": {
+    "template_fp_atomistic_corpuscular.json": "545742db0dcdf98962211a089d35e1248b70d43fd8d6df85f984e15c59417104",
+    "template_fp_classical_em.json": "7209d75cfb7f8da9ecb757631adb4a48389151b3e0db280227f99e0c60d3cf79",
+    "template_fp_newtonian.json": "cf1403e89c87ee525bc76b3809a9078d1934ddf5ac2880079b27b4aa03148780",
+    "template_fp_quantum_field_theory.json": "b26aefb9e07c15f42bde59880ad6ed95e7638ee5213908b328d9291feb655ed6",
+    "template_fp_quantum_mechanics.json": "ca35dc625c429d335e2c26f7c738568cc1da0c5d1f52a729fccbc04d360e1ff4",
+    "template_fp_relativity.json": "708edd302a14e557ebf09e14495e5492ac8582bc3592bf5d79e62d020dc4f45d",
+    "template_fp_thermodynamics.json": "cee5e76111cd31186fb94adc7f5c0b58d895f7b6a566476567a9b46f5f938d0a"
+  },
+  "student_review_status": {
+    "physics_fingerprints_verified": false,
+    "extraction_gold_approved": false,
+    "validation_success_criterion_approved": false
+  },
+  "graph_algorithm": "typed_relation_coverage_adjusted + hungarian Option_B",
+  "graph_weights": {
+    "typed_weight": 0.25,
+    "hungarian_weight": 0.75
+  },
+  "retired_proxy_weights": {
+    "typed_weight": 1.0,
+    "hungarian_weight": 0.0,
+    "status": "RETIRED_PROXY_SELECTION"
+  },
+  "mask_list": "giveaway_vocab_v1",
+  "classifier_baseline": "tfidf_centroid",
+  "structural_scoring_method": "primary_structural = tw*typed_cov_adj + hw*hungarian",
+  "theory_competitors": [
+    "newtonian",
+    "thermodynamics",
+    "classical_em",
+    "relativity",
+    "quantum_mechanics",
+    "quantum_field_theory",
+    "atomistic_corpuscular"
+  ],
+  "preprocessing": "none",
+  "source_eligibility_rules": "data/theory_validation_v2/eligibility/source_eligibility_v1.json",
+  "family_split_rules": "no source_family overlap train\u2194development; true final holdout NOT_BUILT until freeze",
+  "statistical_metrics": [
+    "top1",
+    "top2",
+    "mrr",
+    "macro_f1",
+    "work_level_permutation_power"
+  ],
+  "random_seeds": {
+    "sklearn": 0,
+    "power": 20270816,
+    "variance_bootstrap": 0
+  },
+  "corpus_meta_sha256": "85c083f947697087a553fb16aca84b5e7ee1ca268e329b7e43ba12613058e5c3",
+  "dev_selection_artifact": "results/isef2027/validation/external_dev_method_selection.json",
+  "true_final_method_holdout": "NOT_BUILT",
+  "ancient_confirmatory": "LOCKED_NOT_READY",
+  "note": "Do NOT mark frozen until student approval. Do NOT evaluate true final holdout yet."
+}
