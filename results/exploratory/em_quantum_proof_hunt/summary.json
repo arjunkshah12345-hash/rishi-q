@@ -1,0 +1,34 @@
+{
+  "experiment_id": "EM-QM-proof-hunt-pd-v03",
+  "status": "EXPLORATORY",
+  "timestamp": "2026-08-16T00:46:53.911712+00:00",
+  "n_hindu": 80,
+  "n_control": 190,
+  "artifact_note": "classical_em scores are identical to quantum_field_theory on every Hindu passage (corr=1.0) \u2014 NOT two independent wins.",
+  "quantum_exclusive": {
+    "hindu_QS_frac_pos": 0.0,
+    "hindu_QEF_frac_pos": 0.0,
+    "hindu_QS_max": 0.0,
+    "hindu_QEF_max": 0.0,
+    "control_QS_frac_pos": 0.005263157894736842,
+    "physics_ref_QS_mean": 0.06818181818181822,
+    "physics_ref_QEF_mean": 0.5
+  },
+  "level_ii_substrate_metaphor": {
+    "hindu_frac": 0.45,
+    "control_frac": 0.07894736842105263,
+    "z_test_hindu_gt_control_p": 5.691374334425581e-13
+  },
+  "classical_em": {
+    "hindu_mean": 0.17291666666666666,
+    "control_mean": 0.0850877192982456,
+    "physics_ref_mean": 0.4777777777777777,
+    "mw_hindu_gt_control_p": 0.0030559322168566315
+  },
+  "verdict_quantum_civilization": "DEFEAT_AT_SPECIFIED_LEVEL",
+  "verdict_em_maxwell_civilization": "DEFEAT_AT_SPECIFIED_LEVEL",
+  "verdict_level_ii_substrate_language": "WEAK_SURPLUS_METAPHOR_SUBSTRATE_ONLY",
+  "result_interpretation": "No quantum-exclusive signal (QS/QEF = 0 on all Ved\u0101nta passages). EM and QFT fingerprint columns are identical (shared Level-II field-like features) \u2014 not independent evidence of Maxwellian EM or QFT. Ved\u0101nta does show more 'metaphor_substrate_only' field-class labels than controls (45% vs 8%, p=5.69e-13) \u2014 continuum/substrate poetry, not advanced-lab physics. Accept defeat on the advanced EM/quantum-civilization claim for this panel; keep hunting only with stronger assays/corpora.",
+  "novelty_candidate": false,
+  "honest_takeaway_for_believer": "Wanted: proof of advanced ancient EM/quantum tech knowledge. Found: more substrate/unity field-metaphor language than controls; zero Level-III quantum. That is interesting humanities structure \u2014 not civilization-level physics proof."
+}
