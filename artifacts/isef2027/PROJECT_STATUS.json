@@ -27,8 +27,10 @@
     "Confirmatory sealed payloads must not be scored during v2 development.",
     "Toy/logistic power outputs are SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE."
   ],
-  "method_validation_held_out_top1": 0.7272727272727273,
-  "method_validation_weakest_theory": "quantum_mechanics",
+  "method_validation_held_out_top1": 0.5714285714285714,
+  "method_validation_weakest_theory": "newtonian",
   "graph_method_implemented": true,
-  "power_analysis_code_ready": true
+  "power_analysis_code_ready": true,
+  "method_validation_macro_f1": 0.5809523809523809,
+  "method_validation_scorer": "tfidf_linearsvc_train_only"
 }

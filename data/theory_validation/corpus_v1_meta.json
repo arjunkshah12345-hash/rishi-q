@@ -1,10 +1,10 @@
 {
   "corpus_id": "theory_validation_v1",
-  "n": 56,
+  "n": 76,
   "splits": {
-    "train": 32,
-    "dev": 13,
-    "test": 11
+    "train": 48,
+    "dev": 14,
+    "test": 14
   },
   "theories": [
     "newtonian",

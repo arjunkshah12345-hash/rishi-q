@@ -1,56 +1,76 @@
 {"theory_id": "newtonian", "passage_id": "newtonian-00", "text": "A body continues in uniform motion unless acted on by a net external force.", "split": "train"}
 {"theory_id": "newtonian", "passage_id": "newtonian-01", "text": "Acceleration is proportional to force and inversely proportional to mass.", "split": "train"}
 {"theory_id": "newtonian", "passage_id": "newtonian-02", "text": "Action and reaction forces are equal in magnitude and opposite in direction.", "split": "train"}
-{"theory_id": "newtonian", "passage_id": "newtonian-03", "text": "Planetary motion can be treated with inverse-square gravitational force in absolute space.", "split": "train"}
-{"theory_id": "newtonian", "passage_id": "newtonian-04", "text": "Momentum is conserved in an isolated system of colliding classical particles.", "split": "train"}
+{"theory_id": "newtonian", "passage_id": "newtonian-03", "text": "Planetary motion can be treated with inverse-square gravitational force in absolute space.", "split": "dev"}
+{"theory_id": "newtonian", "passage_id": "newtonian-04", "text": "Momentum is conserved in an isolated system of colliding classical particles.", "split": "test"}
 {"theory_id": "newtonian", "passage_id": "newtonian-05", "text": "Trajectories are continuous curves in Euclidean space parameterized by absolute time.", "split": "train"}
-{"theory_id": "newtonian", "passage_id": "newtonian-06", "text": "Work equals force times displacement along the path for a constant force.", "split": "dev"}
-{"theory_id": "newtonian", "passage_id": "newtonian-07", "text": "The center of mass of a system moves as if all mass and net force acted there.", "split": "dev"}
+{"theory_id": "newtonian", "passage_id": "newtonian-06", "text": "Work equals force times displacement along the path for a constant force.", "split": "train"}
+{"theory_id": "newtonian", "passage_id": "newtonian-07", "text": "The center of mass of a system moves as if all mass and net force acted there.", "split": "train"}
+{"theory_id": "newtonian", "passage_id": "newtonian-08", "text": "Newtonian gravity is an instantaneous action-at-a-distance force law, not spacetime curvature.", "split": "dev"}
+{"theory_id": "newtonian", "passage_id": "newtonian-09", "text": "Rigid-body rotation uses angular momentum about a classical axis in absolute space.", "split": "test"}
 {"theory_id": "thermodynamics", "passage_id": "thermodynamics-00", "text": "Heat naturally flows from a hotter body to a colder body until temperatures equalize.", "split": "train"}
 {"theory_id": "thermodynamics", "passage_id": "thermodynamics-01", "text": "The entropy of an isolated macroscopic system tends to increase toward equilibrium.", "split": "train"}
 {"theory_id": "thermodynamics", "passage_id": "thermodynamics-02", "text": "Temperature and pressure are state variables describing thermal equilibrium.", "split": "train"}
-{"theory_id": "thermodynamics", "passage_id": "thermodynamics-03", "text": "The first law relates changes in internal energy to heat added and work done.", "split": "train"}
-{"theory_id": "thermodynamics", "passage_id": "thermodynamics-04", "text": "No engine can convert heat entirely into work without rejecting heat to a sink.", "split": "dev"}
-{"theory_id": "thermodynamics", "passage_id": "thermodynamics-05", "text": "Reversible and irreversible processes are distinguished by entropy production.", "split": "dev"}
-{"theory_id": "thermodynamics", "passage_id": "thermodynamics-06", "text": "Ideal gases relate pressure, volume, and temperature through an equation of state.", "split": "test"}
-{"theory_id": "thermodynamics", "passage_id": "thermodynamics-07", "text": "Macroscopic thermal behavior can be described without quantum probability amplitudes.", "split": "test"}
-{"theory_id": "classical_em", "passage_id": "classical_em-00", "text": "Light is an electromagnetic wave described by coupled electric and magnetic fields.", "split": "test"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-03", "text": "The first law relates changes in internal energy to heat added and work done.", "split": "dev"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-04", "text": "No engine can convert heat entirely into work without rejecting heat to a sink.", "split": "test"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-05", "text": "Reversible and irreversible processes are distinguished by entropy production.", "split": "train"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-06", "text": "Ideal gases relate pressure, volume, and temperature through an equation of state.", "split": "train"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-07", "text": "Macroscopic thermal behavior can be described without quantum probability amplitudes.", "split": "train"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-08", "text": "Carnot efficiency depends only on the temperatures of the hot and cold reservoirs.", "split": "dev"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-09", "text": "Phase transitions can exhibit latent heat while temperature remains constant.", "split": "test"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-10", "text": "Heat capacity relates infinitesimal heat to temperature change at fixed constraints.", "split": "train"}
+{"theory_id": "thermodynamics", "passage_id": "thermodynamics-11", "text": "Chemical potential equalizes for species free to exchange between subsystems at equilibrium.", "split": "train"}
+{"theory_id": "classical_em", "passage_id": "classical_em-00", "text": "Light is an electromagnetic wave described by coupled electric and magnetic fields.", "split": "train"}
 {"theory_id": "classical_em", "passage_id": "classical_em-01", "text": "Maxwell's equations relate charges and currents to evolving electromagnetic fields.", "split": "train"}
 {"theory_id": "classical_em", "passage_id": "classical_em-02", "text": "A changing magnetic flux induces an electric field around a circuit.", "split": "train"}
-{"theory_id": "classical_em", "passage_id": "classical_em-03", "text": "Electromagnetic radiation carries energy through empty space without a material ether.", "split": "train"}
-{"theory_id": "classical_em", "passage_id": "classical_em-04", "text": "Coulomb's law gives the force between static point charges.", "split": "train"}
+{"theory_id": "classical_em", "passage_id": "classical_em-03", "text": "Electromagnetic radiation carries energy through empty space without a material ether.", "split": "dev"}
+{"theory_id": "classical_em", "passage_id": "classical_em-04", "text": "Coulomb's law gives the force between static point charges.", "split": "test"}
 {"theory_id": "classical_em", "passage_id": "classical_em-05", "text": "Magnetic fields deflect moving charges perpendicular to velocity.", "split": "train"}
 {"theory_id": "classical_em", "passage_id": "classical_em-06", "text": "Displacement current completes Ampere's law for time-varying electric fields.", "split": "train"}
-{"theory_id": "classical_em", "passage_id": "classical_em-07", "text": "Classical electromagnetism does not require quantized photon number states.", "split": "dev"}
+{"theory_id": "classical_em", "passage_id": "classical_em-07", "text": "Classical electromagnetism does not require quantized photon number states.", "split": "train"}
+{"theory_id": "classical_em", "passage_id": "classical_em-08", "text": "Poynting's vector describes energy flux in classical electromagnetic fields.", "split": "dev"}
+{"theory_id": "classical_em", "passage_id": "classical_em-09", "text": "Boundary conditions on conductors force tangential electric fields to vanish in electrostatics.", "split": "test"}
 {"theory_id": "relativity", "passage_id": "relativity-00", "text": "The speed of light in vacuum is the same in all inertial frames.", "split": "train"}
 {"theory_id": "relativity", "passage_id": "relativity-01", "text": "Simultaneity of distant events depends on the observer's inertial frame.", "split": "train"}
 {"theory_id": "relativity", "passage_id": "relativity-02", "text": "Energy and mass are related; rest energy equals mass times c squared.", "split": "train"}
-{"theory_id": "relativity", "passage_id": "relativity-03", "text": "Spacetime intervals replace absolute Newtonian time for event separation.", "split": "train"}
-{"theory_id": "relativity", "passage_id": "relativity-04", "text": "Gravity is described geometrically by curved spacetime in general relativity.", "split": "dev"}
-{"theory_id": "relativity", "passage_id": "relativity-05", "text": "Time dilation and length contraction appear for relative motion near light speed.", "split": "dev"}
-{"theory_id": "relativity", "passage_id": "relativity-06", "text": "There is no preferred absolute rest frame for mechanics at high speeds.", "split": "test"}
-{"theory_id": "relativity", "passage_id": "relativity-07", "text": "Light deflection near the sun is a relativistic gravitational prediction.", "split": "test"}
+{"theory_id": "relativity", "passage_id": "relativity-03", "text": "Spacetime intervals replace absolute Newtonian time for event separation.", "split": "dev"}
+{"theory_id": "relativity", "passage_id": "relativity-04", "text": "Gravity is described geometrically by curved spacetime in general relativity.", "split": "test"}
+{"theory_id": "relativity", "passage_id": "relativity-05", "text": "Time dilation and length contraction appear for relative motion near light speed.", "split": "train"}
+{"theory_id": "relativity", "passage_id": "relativity-06", "text": "There is no preferred absolute rest frame for mechanics at high speeds.", "split": "train"}
+{"theory_id": "relativity", "passage_id": "relativity-07", "text": "Light deflection near the sun is a relativistic gravitational prediction.", "split": "train"}
+{"theory_id": "relativity", "passage_id": "relativity-08", "text": "Four-vectors transform under Lorentz transformations between inertial frames.", "split": "dev"}
+{"theory_id": "relativity", "passage_id": "relativity-09", "text": "Null intervals characterize lightlike separation of events in Minkowski spacetime.", "split": "test"}
 {"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-00", "text": "Observables are represented by operators on a Hilbert space of states.", "split": "train"}
 {"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-01", "text": "Incompatible observables correspond to noncommuting operators.", "split": "train"}
-{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-02", "text": "Measurement outcomes follow Born-rule probabilities from the state vector.", "split": "dev"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-02", "text": "Measurement outcomes follow Born-rule probabilities from the state vector.", "split": "train"}
 {"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-03", "text": "Superposition allows linear combinations of eigenstates before measurement.", "split": "dev"}
-{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-04", "text": "Planck's constant sets the scale of quantum action and discrete spectra.", "split": "test"}
-{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-05", "text": "The uncertainty principle limits simultaneous sharpness of conjugate variables.", "split": "test"}
-{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-06", "text": "Wavefunctions evolve unitarily between measurements under the Schr\u00f6dinger equation.", "split": "train"}
-{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-07", "text": "Entanglement produces correlations that cannot be explained by local hidden variables alone.", "split": "train"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-04", "text": "The uncertainty principle limits simultaneous sharpness of conjugate variables.", "split": "test"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-05", "text": "Wavefunctions evolve unitarily between measurements under the Schr\u00f6dinger equation.", "split": "train"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-06", "text": "Entanglement produces correlations that cannot be explained by local hidden variables alone.", "split": "train"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-07", "text": "A pure state is a ray in Hilbert space; mixed states need density operators.", "split": "train"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-08", "text": "Tunneling allows nonzero amplitude through classically forbidden potential barriers.", "split": "dev"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-09", "text": "Spin one-half systems are described by two-component Pauli spinors and Stern-Gerlach outcomes.", "split": "test"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-10", "text": "Bound states in a potential well exhibit discrete energy eigenvalues without field quantization.", "split": "train"}
+{"theory_id": "quantum_mechanics", "passage_id": "quantum_mechanics-11", "text": "The measurement problem concerns how definite outcomes arise from unitary state evolution.", "split": "train"}
 {"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-00", "text": "Particles appear as quantized excitations of underlying quantum fields.", "split": "train"}
 {"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-01", "text": "Creation and annihilation operators act on Fock space of field modes.", "split": "train"}
 {"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-02", "text": "Interactions are encoded in local Lagrangian densities of fields.", "split": "train"}
 {"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-03", "text": "The vacuum is the lowest energy state of the field, not empty classical nothing.", "split": "dev"}
-{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-04", "text": "Renormalization reorganizes divergences in perturbative quantum field calculations.", "split": "dev"}
-{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-05", "text": "Classical electromagnetism emerges as a limit of the quantized photon field.", "split": "test"}
-{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-06", "text": "Antiparticles accompany relativistic quantum fields with opposite charge.", "split": "test"}
+{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-04", "text": "Renormalization reorganizes divergences in perturbative quantum field calculations.", "split": "test"}
+{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-05", "text": "Classical electromagnetism emerges as a limit of the quantized photon field.", "split": "train"}
+{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-06", "text": "Antiparticles accompany relativistic quantum fields with opposite charge.", "split": "train"}
 {"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-07", "text": "Gauge symmetry constrains allowed couplings among quantum fields.", "split": "train"}
+{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-08", "text": "Loop diagrams in quantum electrodynamics correct the electron's magnetic moment.", "split": "dev"}
+{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-09", "text": "Particle number is not conserved when fields can create pairs above threshold energy.", "split": "test"}
+{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-10", "text": "Wilsonian effective field theory organizes operators by scaling dimension.", "split": "train"}
+{"theory_id": "quantum_field_theory", "passage_id": "quantum_field_theory-11", "text": "Asymptotic states in scattering are labeled by particle species in Fock space.", "split": "train"}
 {"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-00", "text": "Bodies are aggregates of innumerable tiny corpuscles moving in the void.", "split": "train"}
 {"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-01", "text": "Observable qualities arise from arrangements and motions of atoms.", "split": "train"}
 {"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-02", "text": "Empty space between atoms allows motion and collision of particles.", "split": "train"}
-{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-03", "text": "Hard atoms rebound in collisions without merging into continuous fluid.", "split": "train"}
-{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-04", "text": "Different materials differ by the shapes and hooking of their atoms.", "split": "dev"}
-{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-05", "text": "Change is rearrangement of enduring particles rather than creation from nothing.", "split": "dev"}
-{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-06", "text": "Smell and taste are explained by atoms contacting the sense organs.", "split": "test"}
-{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-07", "text": "The cosmos is vast atomic motions without teleological purpose.", "split": "test"}
+{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-03", "text": "Hard atoms rebound in collisions without merging into continuous fluid.", "split": "dev"}
+{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-04", "text": "Different materials differ by the shapes and hooking of their atoms.", "split": "test"}
+{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-05", "text": "Change is rearrangement of enduring particles rather than creation from nothing.", "split": "train"}
+{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-06", "text": "The cosmos is vast atomic motions without teleological purpose.", "split": "train"}
+{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-07", "text": "Lucretian atomism posits indivisible seeds swerving in infinite empty space.", "split": "train"}
+{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-08", "text": "Softness and hardness are explained by packing density of corpuscles, not continuous substance.", "split": "dev"}
+{"theory_id": "atomistic_corpuscular", "passage_id": "atomistic_corpuscular-09", "text": "Fire and air differ by the fineness and speed of their atomic constituents.", "split": "test"}

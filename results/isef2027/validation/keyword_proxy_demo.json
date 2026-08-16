@@ -1,8 +1,8 @@
 {
   "benchmark_id": "ISEF2027-THEORY-VAL-KEYWORD-PROXY-DEMO",
   "scorer": "keyword_feature_proxy+jaccard_fingerprint",
-  "top1_accuracy": 0.7272727272727273,
-  "warning": "SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE / not claim-bearing validation.",
+  "top1_accuracy": 0.42857142857142855,
+  "warning": "SOFTWARE_DEMO \u2014 not claim-bearing validation.",
   "evidence_class": "SOFTWARE_DEMO",
   "provenance": {
     "evidence_class": "SOFTWARE_DEMO",
