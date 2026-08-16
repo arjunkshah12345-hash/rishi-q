@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-08-16T03:51:49.344414+00:00",
+  "repo": "/Users/arjunkshah21/Downloads/rishi-q",
+  "implemented_modules": {
+    "ontology_v0_1": true,
+    "physics_fingerprints_6": true,
+    "weighted_jaccard_similarity": true,
+    "cluster_bootstrap_permutation": true,
+    "leakage_audit_basic": true,
+    "blinding": true,
+    "masking": true,
+    "confirmatory_firewall": true,
+    "discovery_engine": true,
+    "human_validation_scaffold": true,
+    "isef_flagship_exploratory": true,
+    "chatgpt_handoff_pack": true,
+    "cli_rishiq": true
+  },
+  "n_implemented_true": 13,
+  "upgrade_targets": {
+    "dev_calibration_sealed_splits": "isef2027",
+    "typed_concept_graph": "isef2027",
+    "graph_similarity_methods": "isef2027",
+    "lexical_embedding_baselines": "isef2027",
+    "theory_fingerprint_atomistic": "isef2027",
+    "experiment_registry": "isef2027",
+    "adversarial_battery_v2": "isef2027",
+    "matched_control_manifest": "isef2027",
+    "reproduce_cli": "isef2027",
+    "ai_usage_log": "isef2027",
+    "gap_audit": "isef2027",
+    "animated_3d_visuals": "isef2027",
+    "human_reliability_stats_ready": "isef2027_no_data_collection",
+    "confirmatory_unlock": "BLOCKED_student_prereg"
+  },
+  "exploratory_status": "MUST_REMAIN_EXPLORATORY",
+  "confirmatory_status": "LOCKED",
+  "notes": [
+    "Existing ISEF-AKASA-SOUND-FIELD numbers are development-only.",
+    "Fair-coin P=1/64 is exploratory descriptive null, not confirmatory inference.",
+    "Do not open sealed confirmatory texts during development."
+  ]
+}

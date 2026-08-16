@@ -1,0 +1,2 @@
+Run: uv pip install plotly
+Then: uv run python scripts/build_isef2027_visuals.py

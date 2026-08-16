@@ -1,0 +1,21 @@
+{
+  "note": "Synthetic demo only \u2014 proves metric code runs. NOT human data.",
+  "cohens_kappa_demo": 0.6875,
+  "disagreement_matrix_demo": {
+    "0": {
+      "0": 2,
+      "1": 0,
+      "NA": 0
+    },
+    "1": {
+      "0": 1,
+      "1": 1,
+      "NA": 0
+    },
+    "NA": {
+      "0": 0,
+      "1": 0,
+      "NA": 1
+    }
+  }
+}

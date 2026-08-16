@@ -1,0 +1,42 @@
+{
+  "node_kinds": [
+    "entity",
+    "substance",
+    "field_medium",
+    "particle_atom",
+    "property",
+    "process",
+    "interaction",
+    "cause",
+    "observable",
+    "space",
+    "time",
+    "measurement",
+    "state",
+    "transformation"
+  ],
+  "edge_kinds": [
+    "HAS_PROPERTY",
+    "COMPOSED_OF",
+    "LOCATED_IN",
+    "PROPAGATES_THROUGH",
+    "CAUSES",
+    "INTERACTS_WITH",
+    "TRANSFORMS_INTO",
+    "DEPENDS_ON",
+    "DISTINCT_FROM",
+    "PERVADES",
+    "CARRIES",
+    "OBSERVABLE_AS",
+    "DISCRETE",
+    "CONTINUOUS",
+    "LOCAL",
+    "NONLOCAL"
+  ],
+  "status_values": [
+    "TEMPLATE",
+    "STUDENT_DRAFT",
+    "FROZEN"
+  ],
+  "warning": "Do not design fingerprints after seeing which features raise Sanskrit\u2013QM scores. Student must verify scientific content."
+}

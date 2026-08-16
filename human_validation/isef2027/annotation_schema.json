@@ -1,0 +1,20 @@
+{
+  "fields": [
+    "anonymous_passage_id",
+    "feature_id",
+    "label",
+    "confidence_1_to_5",
+    "ambiguity_flag",
+    "evidence_span",
+    "reviewer_id_blinded",
+    "adjudication_status"
+  ],
+  "labels_allowed": [
+    "1",
+    "0",
+    "NA",
+    "U"
+  ],
+  "no_fabricated_ratings": true,
+  "collection_allowed": false
+}

@@ -1,0 +1,186 @@
+{
+  "freeze_id": "ISEF2027-DEV-FREEZE-v1",
+  "generated_at": "2026-08-16T03:51:53.072627+00:00",
+  "status": "EXPLORATORY_FROZEN",
+  "warning": "These hashes record what was known BEFORE ISEF2027 upgrades. Do not revise these files to strengthen claims. Fair-coin P=1/64 is NOT confirmatory inference.",
+  "n_files_hashed": 32,
+  "n_missing": 0,
+  "missing": [],
+  "files": [
+    {
+      "path": "FLAGSHIP_FINDING.md",
+      "sha256": "42f8d68654efe103b0e3cda4d753481530692c370a334cce941006389ad0328b",
+      "bytes": 984
+    },
+    {
+      "path": "HEADLINE_FINDING.md",
+      "sha256": "a50ecd8879ca5e6952c0208d1321669cfec3e9a133eb893162d0d3f8d440f388",
+      "bytes": 1348
+    },
+    {
+      "path": "PROOF_HUNT.md",
+      "sha256": "ce01c780d018a5ce5d7ebf0ccfe5f2eeddfed932f7b01e9c4ceb69e3efa7a1e2",
+      "bytes": 1024
+    },
+    {
+      "path": "ontology/ontology_v0.1.yaml",
+      "sha256": "d6f9c29adcca89499c3d4cbbec41ff76d7ad683a5f6a7b8bd8eeef09cae8f9d7",
+      "bytes": 26904
+    },
+    {
+      "path": "ontology/physics_fingerprints/index.yaml",
+      "sha256": "b588bd817c7dbd91a8f76a5ea0034013294c29f2b386f2c7587c102d4025f7ff",
+      "bytes": 343
+    },
+    {
+      "path": "ontology/physics_fingerprints/newtonian.yaml",
+      "sha256": "8372d3ff1a0caddaa41c8a553e76a41751315c5da755aad99a2e6f5dfe1a2543",
+      "bytes": 928
+    },
+    {
+      "path": "ontology/physics_fingerprints/classical_em.yaml",
+      "sha256": "037e4401b0b20dff4a55661b2441d9ff6034c2a42136e6774818de91eebfa4a8",
+      "bytes": 925
+    },
+    {
+      "path": "ontology/physics_fingerprints/thermodynamics.yaml",
+      "sha256": "a77b8486a3312277395ed3002f8fb0ef3365c0dc777563731d5f86bdc08a6b1d",
+      "bytes": 937
+    },
+    {
+      "path": "ontology/physics_fingerprints/relativity.yaml",
+      "sha256": "7fa39aa0f0b1112976e328af5d5de45ecc2fdb3e3a9a5276b970aba539de405a",
+      "bytes": 937
+    },
+    {
+      "path": "ontology/physics_fingerprints/quantum_mechanics.yaml",
+      "sha256": "9d72e40d77e515189e0b59231d56f90e07ef2634317a53cb4033bc9f7acdb725",
+      "bytes": 907
+    },
+    {
+      "path": "ontology/physics_fingerprints/quantum_field_theory.yaml",
+      "sha256": "4bdd28ea6bb03af4566dfc54dca7eb96fee2370d7226aff056336b468db7c72a",
+      "bytes": 928
+    },
+    {
+      "path": "configs/physics_vocab_v0.1.json",
+      "sha256": "f0f7f897d6375d11aa9ac91903da64b8fe8b9ad4d03bf5bd14d40ff40cae9cf4",
+      "bytes": 386
+    },
+    {
+      "path": "configs/development.yaml",
+      "sha256": "5560ed0ecea3a3ab01789139eda33a756d08322558c30ef30651efa04e16c797",
+      "bytes": 388
+    },
+    {
+      "path": "prompts/ann-v0.1.yaml",
+      "sha256": "abfdd18f87c32d0bd0064418d439ea63d5b3f9634b4d6cc114bb63b320bece11",
+      "bytes": 891
+    },
+    {
+      "path": "prompts/prop-v0.1.yaml",
+      "sha256": "ca33c65cec318fecf8464f73330f397c6af9b5b29e9118f501ba05ab0a41292c",
+      "bytes": 505
+    },
+    {
+      "path": "scripts/run_isef_akasa_sound_field.py",
+      "sha256": "3f61b9664083314cf501a580316f74c8ed3bfe13778e3367b6c216182a10786c",
+      "bytes": 16452
+    },
+    {
+      "path": "scripts/run_isef_expansion_v2.py",
+      "sha256": "623291ef4b1b5af5041930827921f53ea655a4e35a531a1fa01a665c1751e124",
+      "bytes": 15592
+    },
+    {
+      "path": "scripts/make_isef_extra_figures.py",
+      "sha256": "c74d36b507f1d42abd084a6017d7268be3e9299ae08a8af2e44a5ddb2f524ab1",
+      "bytes": 9523
+    },
+    {
+      "path": "scripts/run_discovery_engine.py",
+      "sha256": "1dae75b989f270dc6a1f5463c50fe3e3107822ef2617ea168a77841d3ae176df",
+      "bytes": 21641
+    },
+    {
+      "path": "src/rishiq/similarity/__init__.py",
+      "sha256": "6f209749c6b24f9fba91b98778924eacec7bdfe2e65beef1086fd5ca1ec86f46",
+      "bytes": 4143
+    },
+    {
+      "path": "src/rishiq/statistics/__init__.py",
+      "sha256": "1587fa8d7f5ec5132b5e717bb587c6f853b7125d094036b3bba533a114edc3b6",
+      "bytes": 5768
+    },
+    {
+      "path": "src/rishiq/leakage/__init__.py",
+      "sha256": "e90ce92fe1decb6123ab6ad4e98ce4c67557d73591530c99664884ce3b3a6b85",
+      "bytes": 2575
+    },
+    {
+      "path": "src/rishiq/blinding/__init__.py",
+      "sha256": "f5a1b5f3764e7f0529e3e4a92f3d35fa9fa1b903bb1de367ef7c8a1ae3dc846a",
+      "bytes": 2136
+    },
+    {
+      "path": "src/rishiq/masking/__init__.py",
+      "sha256": "41b6277fd1965e30d7327a683333d438930af81418553ced13e32f9eab5ec0a5",
+      "bytes": 3253
+    },
+    {
+      "path": "src/rishiq/experiments/firewall.py",
+      "sha256": "0975db242bcb4939b1c8f1b638b852f4cd5e2b7a7b93c528d2928369b3dc4f88",
+      "bytes": 1348
+    },
+    {
+      "path": "results/exploratory/isef_akasa_sound_field/summary.json",
+      "sha256": "416094d9a3bf1faef6ab8f4739a04a8009437609b48940b99e2145d6e08c1fdc",
+      "bytes": 11240
+    },
+    {
+      "path": "results/exploratory/isef_akasa_sound_field/expansion_v2.json",
+      "sha256": "13ca925d21cfb57e094f66b33c8cec81e39471e5d670a0973d05ac543db439ad",
+      "bytes": 4648
+    },
+    {
+      "path": "results/exploratory/isef_akasa_sound_field/VERDICT.md",
+      "sha256": "0d8cd547905c6c828736bb5f133edc1eb3fc8422e64f3eb210f972c3e4a493d6",
+      "bytes": 1149
+    },
+    {
+      "path": "results/exploratory/isef_akasa_sound_field/NOVELTY.md",
+      "sha256": "7ce59c277a62161ae257d507461c25be0a1d0c1206aaf7ccd43b4d3de96ead5e",
+      "bytes": 1406
+    },
+    {
+      "path": "chatgpt-handoff/data/FACTS.json",
+      "sha256": "34a3d4372ac359c8f70559808323a29ccf5cffdc8b1efe8033e91cb268b4b61e",
+      "bytes": 5624
+    },
+    {
+      "path": "chatgpt-handoff/tables/scorecard.csv",
+      "sha256": "7d87c3cce09de77f30cea68fa7791d5fee1a346d8070c24458bd6ad840d985eb",
+      "bytes": 228
+    },
+    {
+      "path": "chatgpt-handoff/tables/R_six_tradition_vectors.csv",
+      "sha256": "4a61a674ebd4abaebb111a3c18cf28cd70c13cceac6372350ad74c0c6b0b2781",
+      "bytes": 162
+    }
+  ],
+  "feature_definitions_r1_r6": {
+    "R1": "Pervasive non-atomic medium/substance",
+    "R2": "Sound specially tied to that medium",
+    "R3": "Light/heat treated as different carrier than sound-medium",
+    "R4": "Atomic/corpuscular ordinary matter",
+    "R5": "Medium itself not a dynamical EM field",
+    "R6": "Maxwell-style unified electromagnetism"
+  },
+  "headline_exploratory_numbers_reference": {
+    "kanada_attestation": "9/9",
+    "prasastapada_replication": "6/6",
+    "maxwell_hits": "0/5",
+    "fair_coin_null_P": 0.015625,
+    "note": "exploratory only; see FACTS.json hash above"
+  }
+}

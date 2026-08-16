@@ -1,0 +1,17 @@
+{
+  "newtonian__classical_em": 0.23529411764705882,
+  "newtonian__thermodynamics": 0.5,
+  "newtonian__relativity": 0.3,
+  "newtonian__quantum_mechanics": 0.10526315789473684,
+  "newtonian__quantum_field_theory": 0.15,
+  "classical_em__thermodynamics": 0.1875,
+  "classical_em__relativity": 0.17647058823529413,
+  "classical_em__quantum_mechanics": 0.07692307692307693,
+  "classical_em__quantum_field_theory": 0.6666666666666666,
+  "thermodynamics__relativity": 0.2222222222222222,
+  "thermodynamics__quantum_mechanics": 0.11764705882352941,
+  "thermodynamics__quantum_field_theory": 0.10526315789473684,
+  "relativity__quantum_mechanics": 0.17647058823529413,
+  "relativity__quantum_field_theory": 0.15789473684210525,
+  "quantum_mechanics__quantum_field_theory": 0.15384615384615385
+}

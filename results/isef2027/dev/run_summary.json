@@ -1,0 +1,125 @@
+{
+  "run_id": "ISEF2027-DEV-20260816T035149Z",
+  "phase": "development_calibration_harness",
+  "seed": 42,
+  "sealed_confirmatory_opened": false,
+  "split_leakage_issues": [],
+  "paths": {
+    "inventory": "artifacts/isef2027/REPO_INVENTORY.json",
+    "freeze": "artifacts/isef2027/dev_freeze_manifest.json",
+    "splits": "artifacts/isef2027/split_manifest.json",
+    "human_validation": "human_validation/isef2027",
+    "concept_graphs": [
+      "ontology/concept_graph/schema.json",
+      "ontology/concept_graph/template_vaisesika_akasa_sabda.json",
+      "ontology/concept_graph/template_maxwell_em.json",
+      "ontology/concept_graph/STUDENT_TODO.md"
+    ]
+  },
+  "n_theory_fingerprints": 6,
+  "theory_ids": [
+    "newtonian",
+    "classical_em",
+    "thermodynamics",
+    "relativity",
+    "quantum_mechanics",
+    "quantum_field_theory"
+  ],
+  "concept_graph_overlap_akasa_vs_maxwell_TEMPLATE": 0.0,
+  "fingerprint_pairwise_jaccard": {
+    "newtonian__classical_em": 0.23529411764705882,
+    "newtonian__thermodynamics": 0.5,
+    "newtonian__relativity": 0.3,
+    "newtonian__quantum_mechanics": 0.10526315789473684,
+    "newtonian__quantum_field_theory": 0.15,
+    "classical_em__thermodynamics": 0.1875,
+    "classical_em__relativity": 0.17647058823529413,
+    "classical_em__quantum_mechanics": 0.07692307692307693,
+    "classical_em__quantum_field_theory": 0.6666666666666666,
+    "thermodynamics__relativity": 0.2222222222222222,
+    "thermodynamics__quantum_mechanics": 0.11764705882352941,
+    "thermodynamics__quantum_field_theory": 0.10526315789473684,
+    "relativity__quantum_mechanics": 0.17647058823529413,
+    "relativity__quantum_field_theory": 0.15789473684210525,
+    "quantum_mechanics__quantum_field_theory": 0.15384615384615385
+  },
+  "tfidf_vais_vs_maxwell_toy": 0.040703361755756506,
+  "positive_control_ranking": {
+    "correct_key": "classical_em",
+    "rank": 1,
+    "top1": "classical_em",
+    "top1_correct": true,
+    "scores": {
+      "newtonian": 0.26666666666666666,
+      "classical_em": 0.8571428571428571,
+      "thermodynamics": 0.21428571428571427,
+      "relativity": 0.2,
+      "quantum_mechanics": 0.08333333333333333,
+      "quantum_field_theory": 0.5555555555555556
+    }
+  },
+  "adversarial": {
+    "seed": 42,
+    "n_texts": 4,
+    "mask_terms": [
+      "atom",
+      "particle",
+      "wave",
+      "field",
+      "energy",
+      "quantum",
+      "vibration",
+      "ether",
+      "aether",
+      "space",
+      "force"
+    ],
+    "masked_texts_sample": [
+      "A pervasive medium is marked by sound; heat belongs to a distinct fiery substance.",
+      "Sound is the mark by which the pervasive substance is inferred.",
+      "Light is an electromagnetic [MASK] in a dynamical [MASK] unified with radiation."
+    ],
+    "n_feature_shuffles": 4,
+    "permuted_labels_sample": [
+      "vais",
+      "maxwell",
+      "maxwell",
+      "vais"
+    ],
+    "length_score_corr": NaN,
+    "leave_one_out_tradition": {
+      "vais": 0.0,
+      "maxwell": 0.0
+    },
+    "interpretation_note": "Battery outputs are diagnostics for development/calibration. Do not select the friendliest p-value."
+  },
+  "inference_demo": {
+    "cluster_bundle": {
+      "delta": 0.037747398000435306,
+      "pooled_mean": 0.3740491211090868,
+      "cluster_bootstrap_ci": [
+        0.35479659719091466,
+        0.3917396975324429
+      ],
+      "cluster_permutation": {
+        "observed_delta": 0.037747398000435306,
+        "p_value": 0.016983016983016984,
+        "n_perm": 1000,
+        "null_mean": 0.00015158535060025736
+      }
+    },
+    "work_level_permutation": {
+      "observed_delta": 0.03774739800043525,
+      "p_ge_obs": 0.0375,
+      "n_perm": 2000,
+      "seed": 42,
+      "method": "work_level_permutation"
+    }
+  },
+  "warnings": [
+    "Toy/dev metrics only \u2014 not confirmatory scientific results.",
+    "TEMPLATE concept graphs are not student-verified.",
+    "Do not interpret these numbers as ancient-quantum evidence."
+  ],
+  "registry_path": "results/isef2027/registry/experiments.jsonl"
+}

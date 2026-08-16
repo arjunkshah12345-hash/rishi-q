@@ -31,6 +31,8 @@ results/exploratory/**
 !results/exploratory/.gitkeep
 !results/exploratory/isef_akasa_sound_field/
 !results/exploratory/isef_akasa_sound_field/**
+!results/isef2027/
+!results/isef2027/**
 results/confirmatory/**
 !results/confirmatory/README.md
 !results/confirmatory/.gitkeep

@@ -12,6 +12,28 @@
 
 ---
 
+## ISEF 2027 technical upgrade (in progress)
+
+Exploratory flagship results are **frozen** (`artifacts/isef2027/dev_freeze_manifest.json`) and remain exploratory.
+
+New sealed-holdout / method-validation infrastructure:
+
+```bash
+uv pip install -e ".[dev]"
+uv run rishiq-isef reproduce --config configs/isef2027.yaml
+uv run python scripts/build_isef2027_visuals.py
+open visuals/isef2027/index.html
+```
+
+- Gap audit (technical only): [`docs/ISEF2027_GAP_AUDIT.md`](docs/ISEF2027_GAP_AUDIT.md)
+- AI usage log: [`AI_USAGE_LOG.md`](AI_USAGE_LOG.md)
+- 3D / animated concept visuals: [`visuals/isef2027/`](visuals/isef2027/)
+- Confirmatory sealed set: **LOCKED / empty** — do not open for tuning
+
+This repository does **not** auto-write ISEF abstracts, papers, posters, or conclusions.
+
+---
+
 ## Flagship result — ISEF-AKASA-SOUND-FIELD
 
 | Gate | Score |

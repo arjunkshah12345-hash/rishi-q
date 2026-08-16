@@ -1,0 +1,83 @@
+{
+  "graph_id": "template_vaisesika_akasa_sabda",
+  "version": "0.1.0",
+  "domain": "historical_text",
+  "status": "TEMPLATE",
+  "nodes": [
+    {
+      "id": "akasa",
+      "kind": "field_medium",
+      "label": "akasa",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "sabda",
+      "kind": "observable",
+      "label": "sabda/sound",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "tejas",
+      "kind": "substance",
+      "label": "tejas",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "heat",
+      "kind": "property",
+      "label": "heat",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    },
+    {
+      "id": "pervasion",
+      "kind": "property",
+      "label": "all-pervasive",
+      "notes": "",
+      "provenance": "STUDENT_OR_TEMPLATE"
+    }
+  ],
+  "edges": [
+    {
+      "source": "sabda",
+      "target": "akasa",
+      "kind": "OBSERVABLE_AS",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "akasa",
+      "target": "pervasion",
+      "kind": "HAS_PROPERTY",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "tejas",
+      "target": "akasa",
+      "kind": "DISTINCT_FROM",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "tejas",
+      "target": "heat",
+      "kind": "HAS_PROPERTY",
+      "weight": 1.0,
+      "notes": ""
+    },
+    {
+      "source": "sabda",
+      "target": "akasa",
+      "kind": "PROPAGATES_THROUGH",
+      "weight": 1.0,
+      "notes": ""
+    }
+  ],
+  "meta": {
+    "warning": "TEMPLATE — student must verify against primary texts"
+  }
+}

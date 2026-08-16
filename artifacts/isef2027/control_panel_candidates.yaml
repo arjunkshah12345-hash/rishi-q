@@ -1,0 +1,56 @@
+# Candidate matched historical control panel — STUDENT APPROVAL REQUIRED
+# Do NOT auto-include because a name appears here.
+# Criteria: era, subject (natural philosophy/cosmology), genre, length, translation era,
+# completeness, availability, relationship to natural philosophy.
+
+version: isef2027-control-panel-v1
+status: CANDIDATE_LIST_NOT_APPROVED
+matching_criteria:
+  - era_compatibility
+  - natural_philosophy_or_cosmology_subject
+  - genre_compatibility
+  - comparable_length_band
+  - translation_era_documented
+  - public_domain_or_licensed
+  - not_obviously_irrelevant_religious_verse_only
+
+families:
+  - id: greek_atomist_epicurean
+    examples_to_consider:
+      - Lucretius De Rerum Natura (already in DEV)
+      - Epicurus letters (if PD edition available)
+    student_decision: PENDING
+  - id: greek_platonic_aristotelian
+    examples_to_consider:
+      - Plato Timaeus (already in DEV)
+      - Aristotle Physics / De Caelo (need PD + matching plan)
+    student_decision: PENDING
+  - id: stoic_presocratic
+    examples_to_consider:
+      - selected Presocratic fragments (only if natural-philosophy content)
+    student_decision: PENDING
+  - id: chinese_natural_philosophy
+    examples_to_consider:
+      - Dao De Jing (already in DEV — may be weak as physics control)
+      - other natural-philosophy texts if PD and matched
+    student_decision: PENDING
+  - id: buddhist_philosophical
+    examples_to_consider:
+      - Abhidharma / Abhidhamma natural-philosophy sections (NOT ethics-only verse)
+      - Dhammapada (DEV) is a weak control by design — consider replacing for confirmatory
+    student_decision: PENDING
+  - id: jain_natural_philosophy
+    examples_to_consider: []
+    student_decision: PENDING
+  - id: other_indian_schools
+    examples_to_consider:
+      - Sāṃkhya / Nyāya natural-philosophy sections (student selects editions)
+    student_decision: PENDING
+  - id: medieval_natural_philosophy
+    examples_to_consider: []
+    student_decision: PENDING
+
+hard_rules:
+  - Avoid primary comparison of Sanskrit physics text vs random religious poem.
+  - Prefer matched-set analyses over assuming all corpora are exchangeable.
+  - Document inclusion/exclusion reasons in split_manifest.

@@ -1,0 +1,47 @@
+# ISEF2027 technical configuration (DEV/CALIBRATION harness)
+# Student freezes confirmatory choices independently — do not tune to raise QM scores.
+
+experiment_family: ISEF2027
+phase: development_calibration
+seed: 42
+
+fingerprint_dir: ontology/physics_fingerprints
+ontology_path: ontology/ontology_v0.1.yaml
+out_dir: results/isef2027/dev
+
+# Expected theory for METHOD positive-control harness (not a Sanskrit claim)
+positive_control_expected: classical_em
+
+splits:
+  manifest: artifacts/isef2027/split_manifest.json
+  allow_open_sealed: false
+
+masking:
+  vocab_list: configs/physics_vocab_v0.1.json
+  run_masked_and_unmasked: true
+
+inference_candidates:
+  methods:
+    - cluster_bootstrap
+    - cluster_permutation
+    - work_level_permutation
+    - leave_one_work_out
+    - max_statistic_permutation
+  note: "Student selects and freezes which become primary confirmatory tests."
+
+baselines:
+  - tfidf
+  - weighted_jaccard_ontology
+  - concept_graph_overlap
+
+adversarial:
+  enabled: true
+
+human_validation:
+  collect_data: false
+  prepare_only: true
+
+warnings:
+  - Never open confirmatory_sealed during this config.
+  - Never choose features/metrics because they raise Sanskrit–QM scores.
+  - Exploratory flagship (9/9, 6/6, 0/5, P=1/64) remains exploratory.
