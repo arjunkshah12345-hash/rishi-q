@@ -439,19 +439,73 @@ def fig_fingerprint_graph_heatmap(go):
 
 
 def write_index(paths: list[Path]) -> Path:
-    links = "\n".join(f'<li><a href="{p.name}">{p.stem}</a></li>' for p in paths)
-    html = f"""<!DOCTYPE html>
-<html><head><meta charset="utf-8"/><title>RISHI-Q ISEF2027 Visuals</title>
+    """Gallery index — keep copy in sync with visuals/isef2027/index.html design."""
+    blurbs = {
+        "01_akasa_sound_field_3d": ("Ākāśa sound field", "Pervasive medium + sound mark"),
+        "02_maxwell_field_3d": ("Maxwell field", "EM foil geometry"),
+        "03_tradition_geometry_3d": ("Tradition geometry", "Six-panel comparative space"),
+        "04_concept_graph_3d": ("Concept graph", "Node–edge structural view"),
+        "05_animated_wave_medium": ("Wave / medium", "Animated propagation sketch"),
+        "06_claim_boundary_surface": ("Claim boundary", "What we claim vs refuse"),
+        "07_method_benchmark_bars": ("Method benchmark", "Harness top-1 bars (dev)"),
+        "08_fingerprint_geometry_3d": ("Fingerprint geometry", "Theory fingerprint layout"),
+        "09_animated_em_vs_sound": ("EM vs sound", "Animated contrast"),
+        "10_fingerprint_graph_heatmap": ("Fingerprint heatmap", "Graph overlap matrix"),
+    }
+    cards = []
+    for p in paths:
+        title, blurb = blurbs.get(p.stem, (p.stem.replace("_", " "), "Interactive figure"))
+        num = p.stem.split("_", 1)[0]
+        cards.append(
+            f'<a class="card" href="{p.name}"><div class="num">{num}</div>'
+            f'<div class="title">{title}</div><div class="blurb">{blurb}</div></a>'
+        )
+    html = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RISHI-Q · ISEF2027 visuals</title>
 <style>
-body{{margin:0;font-family:Georgia,serif;background:#0b1220;color:#e2e8f0}}
-main{{max-width:720px;margin:48px auto;padding:0 20px}}
-a{{color:#93c5fd}}
-.note{{color:#94a3b8;font-size:0.95rem}}
-</style></head><body><main>
-<h1>RISHI-Q — scientific concept visuals</h1>
-<p class="note">Interactive 3D / animated illustrations for methodology review. Not confirmatory results. Not paper text.</p>
-<ul>{links}</ul>
-</main></body></html>"""
+  :root { --bg:#0b1220; --panel:#121a2b; --ink:#e8eef7; --muted:#94a3b8; --accent:#5b8def; --line:#243047; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    background: radial-gradient(1200px 600px at 10% -10%, #1a2744 0%, transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, #152033 0%, transparent 50%), var(--bg);
+    color:var(--ink); min-height:100vh; }
+  main { max-width:880px; margin:0 auto; padding:56px 24px 80px; }
+  .eyebrow { letter-spacing:0.14em; text-transform:uppercase; font-size:0.72rem; color:var(--accent);
+    font-family:ui-sans-serif,system-ui,sans-serif; }
+  h1 { font-weight:500; font-size:clamp(2rem,4vw,2.8rem); line-height:1.15; margin:0.4rem 0 0.75rem; }
+  .lede { color:var(--muted); font-size:1.05rem; max-width:36rem; }
+  .grid { display:grid; gap:12px; margin-top:2.25rem; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); }
+  a.card { display:block; text-decoration:none; color:inherit; background:color-mix(in srgb, var(--panel) 88%, black);
+    border:1px solid var(--line); border-radius:14px; padding:1rem 1.1rem;
+    transition:border-color 160ms ease, transform 160ms ease; }
+  a.card:hover { border-color:var(--accent); transform:translateY(-1px); }
+  .num { font-family:ui-sans-serif,system-ui,sans-serif; font-size:0.75rem; color:var(--accent); letter-spacing:0.08em; }
+  .title { margin-top:0.35rem; font-size:1.05rem; }
+  .blurb { margin-top:0.35rem; color:var(--muted); font-size:0.9rem; }
+  footer { margin-top:2.5rem; color:var(--muted); font-size:0.88rem; }
+  footer a { color:#93c5fd; }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">RISHI-Q · methodology visuals</div>
+  <h1>Scientific concept illustrations</h1>
+  <p class="lede">Interactive 3D and animated figures for method review. Not confirmatory results. Not paper text.</p>
+  <div class="grid">
+""" + "\n".join(cards) + """
+  </div>
+  <footer>
+    Repo: <a href="https://github.com/arjunkshah12345-hash/rishi-q">arjunkshah12345-hash/rishi-q</a>
+    · Confirmatory analysis remains <strong>LOCKED</strong>
+  </footer>
+</main>
+</body>
+</html>
+"""
     out = OUT / "index.html"
     out.write_text(html, encoding="utf-8")
     return out

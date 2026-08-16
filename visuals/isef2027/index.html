@@ -1,21 +1,81 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"/><title>RISHI-Q ISEF2027 Visuals</title>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RISHI-Q · ISEF2027 visuals</title>
 <style>
-body{margin:0;font-family:Georgia,serif;background:#0b1220;color:#e2e8f0}
-main{max-width:720px;margin:48px auto;padding:0 20px}
-a{color:#93c5fd}
-.note{color:#94a3b8;font-size:0.95rem}
-</style></head><body><main>
-<h1>RISHI-Q — scientific concept visuals</h1>
-<p class="note">Interactive 3D / animated illustrations for methodology review. Not confirmatory results. Not paper text.</p>
-<ul><li><a href="01_akasa_sound_field_3d.html">01_akasa_sound_field_3d</a></li>
-<li><a href="02_maxwell_field_3d.html">02_maxwell_field_3d</a></li>
-<li><a href="03_tradition_geometry_3d.html">03_tradition_geometry_3d</a></li>
-<li><a href="04_concept_graph_3d.html">04_concept_graph_3d</a></li>
-<li><a href="05_animated_wave_medium.html">05_animated_wave_medium</a></li>
-<li><a href="06_claim_boundary_surface.html">06_claim_boundary_surface</a></li>
-<li><a href="07_method_benchmark_bars.html">07_method_benchmark_bars</a></li>
-<li><a href="08_fingerprint_geometry_3d.html">08_fingerprint_geometry_3d</a></li>
-<li><a href="09_animated_em_vs_sound.html">09_animated_em_vs_sound</a></li>
-<li><a href="10_fingerprint_graph_heatmap.html">10_fingerprint_graph_heatmap</a></li></ul>
-</main></body></html>
+  :root {
+    --bg: #0b1220;
+    --panel: #121a2b;
+    --ink: #e8eef7;
+    --muted: #94a3b8;
+    --accent: #5b8def;
+    --line: #243047;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #1a2744 0%, transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, #152033 0%, transparent 50%),
+      var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 56px 24px 80px; }
+  .eyebrow {
+    letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.72rem;
+    color: var(--accent); font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+  h1 { font-weight: 500; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.15; margin: 0.4rem 0 0.75rem; }
+  .lede { color: var(--muted); font-size: 1.05rem; max-width: 36rem; }
+  .grid {
+    display: grid; gap: 12px; margin-top: 2.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: color-mix(in srgb, var(--panel) 88%, black);
+    border: 1px solid var(--line); border-radius: 14px; padding: 1rem 1.1rem;
+    transition: border-color 160ms ease, transform 160ms ease;
+  }
+  a.card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .num {
+    font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.75rem;
+    color: var(--accent); letter-spacing: 0.08em;
+  }
+  .title { margin-top: 0.35rem; font-size: 1.05rem; }
+  .blurb { margin-top: 0.35rem; color: var(--muted); font-size: 0.9rem; }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: 0.88rem; }
+  footer a { color: #93c5fd; }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">RISHI-Q · methodology visuals</div>
+  <h1>Scientific concept illustrations</h1>
+  <p class="lede">
+    Interactive 3D and animated figures for method review.
+    Not confirmatory results. Not paper text.
+  </p>
+  <div class="grid">
+    <a class="card" href="01_akasa_sound_field_3d.html"><div class="num">01</div><div class="title">Ākāśa sound field</div><div class="blurb">Pervasive medium + sound mark</div></a>
+    <a class="card" href="02_maxwell_field_3d.html"><div class="num">02</div><div class="title">Maxwell field</div><div class="blurb">EM foil geometry</div></a>
+    <a class="card" href="03_tradition_geometry_3d.html"><div class="num">03</div><div class="title">Tradition geometry</div><div class="blurb">Six-panel comparative space</div></a>
+    <a class="card" href="04_concept_graph_3d.html"><div class="num">04</div><div class="title">Concept graph</div><div class="blurb">Node–edge structural view</div></a>
+    <a class="card" href="05_animated_wave_medium.html"><div class="num">05</div><div class="title">Wave / medium</div><div class="blurb">Animated propagation sketch</div></a>
+    <a class="card" href="06_claim_boundary_surface.html"><div class="num">06</div><div class="title">Claim boundary</div><div class="blurb">What we claim vs refuse</div></a>
+    <a class="card" href="07_method_benchmark_bars.html"><div class="num">07</div><div class="title">Method benchmark</div><div class="blurb">Harness top-1 bars (dev)</div></a>
+    <a class="card" href="08_fingerprint_geometry_3d.html"><div class="num">08</div><div class="title">Fingerprint geometry</div><div class="blurb">Theory fingerprint layout</div></a>
+    <a class="card" href="09_animated_em_vs_sound.html"><div class="num">09</div><div class="title">EM vs sound</div><div class="blurb">Animated contrast</div></a>
+    <a class="card" href="10_fingerprint_graph_heatmap.html"><div class="num">10</div><div class="title">Fingerprint heatmap</div><div class="blurb">Graph overlap matrix</div></a>
+  </div>
+  <footer>
+    Repo: <a href="https://github.com/arjunkshah12345-hash/rishi-q">arjunkshah12345-hash/rishi-q</a>
+    · Confirmatory analysis remains <strong>LOCKED</strong>
+  </footer>
+</main>
+</body>
+</html>

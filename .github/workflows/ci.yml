@@ -16,9 +16,13 @@ jobs:
       - name: Install
         run: uv pip install --system -e ".[dev]"
       - name: Unit tests
-        run: uv run pytest tests/test_isef2027.py tests/test_core.py -q
-      - name: ISEF2027 reproduce harness
-        run: uv run rishiq-isef reproduce --config configs/isef2027.yaml
+        run: uv run pytest -q
+      - name: Freeze integrity
+        run: uv run python scripts/validate_isef2027_freeze.py
+      - name: ISEF2027 status + harness
+        run: |
+          uv run rishiq-isef status
+          uv run rishiq-isef reproduce --config configs/isef2027.yaml
       - name: Confirmatory still locked
         run: |
           out=$(uv run rishiq-isef confirmatory-status)

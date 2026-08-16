@@ -68,6 +68,50 @@ def reproduce_cmd(
     )
 
 
+@app.command("status")
+def status_cmd() -> None:
+    """Print freeze / lock scorecard for the finished ISEF2027 package."""
+    import yaml
+
+    root = _root()
+    decisions = yaml.safe_load((root / "artifacts/isef2027/STUDENT_DECISIONS.yaml").read_text())
+    lock = json.loads((root / "corpus/confirmatory_sealed/lock.json").read_text(encoding="utf-8"))
+    graphs = json.loads((root / "ontology/concept_graph/index.json").read_text(encoding="utf-8"))
+    release = "https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1"
+    try:
+        assert_confirmatory_allowed(root)
+        sealed = "UNLOCKED"
+    except ConfirmatoryLockedError:
+        sealed = "LOCKED"
+
+    rows = [
+        ("decisions", decisions.get("status", "?")),
+        ("concept_graphs", graphs.get("status", "?")),
+        ("sealed_analysis", sealed),
+        ("sealed_ids", str(len(lock.get("confirmatory_sealed_ids", [])))),
+        ("prereg_release", release),
+        ("paper_authorship", "STUDENT_ONLY"),
+        ("human_ratings", "NOT_COLLECTED"),
+    ]
+    rprint({"isef2027": {k: v for k, v in rows}})
+    for k, v in rows:
+        mark = "✓" if str(v).upper() in {"FROZEN", "LOCKED", "STUDENT_ONLY", "NOT_COLLECTED"} or k in {
+            "sealed_ids",
+            "prereg_release",
+        } else "·"
+        rprint(f"  {mark} {k}: {v}")
+
+
+@app.command("validate-freeze")
+def validate_freeze_cmd() -> None:
+    """Re-check SHA256 freeze manifest + lock invariants."""
+    import subprocess
+    import sys
+
+    script = _root() / "scripts" / "validate_isef2027_freeze.py"
+    raise typer.Exit(subprocess.call([sys.executable, str(script)]))
+
+
 @app.command("confirmatory-status")
 def confirmatory_status() -> None:
     root = _root()

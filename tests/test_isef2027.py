@@ -112,3 +112,17 @@ def test_graph_templates_build():
 
     paths = build_all_theory_graph_templates(ROOT)
     assert any("template_fp_classical_em" in str(p) for p in paths)
+
+
+def test_freeze_validator_passes():
+    import subprocess
+    import sys
+
+    r = subprocess.run(
+        [sys.executable, str(ROOT / "scripts/validate_isef2027_freeze.py")],
+        cwd=str(ROOT),
+        capture_output=True,
+        text=True,
+    )
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert "PASS" in r.stdout

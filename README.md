@@ -2,36 +2,34 @@
 
 **Computational comparative history of physics** — classical Sanskrit natural philosophy tested against Greek, Chinese, Buddhist, and modern electromagnetic controls.
 
+[![CI](https://github.com/arjunkshah12345-hash/rishi-q/actions/workflows/ci.yml/badge.svg)](https://github.com/arjunkshah12345-hash/rishi-q/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/flagship-ISEF--AKASA--SOUND--FIELD-0f2744)](FLAGSHIP_FINDING.md)
-[![Maxwell hits](https://img.shields.io/badge/Maxwell%20hits-0%2F5-b91c1c)](chatgpt-handoff/tables/M_maxwell_confrontation.csv)
-[![Kaṇāda](https://img.shields.io/badge/Ka%E1%B9%87%C4%81da-9%2F9-15803d)](chatgpt-handoff/tables/T_kanada_attestation.csv)
+[![Prereg](https://img.shields.io/badge/prereg-frozen%20v1-15803d)](https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1)
+[![Confirmatory](https://img.shields.io/badge/confirmatory-LOCKED-b91c1c)](corpus/confirmatory_sealed/lock.json)
+[![Maxwell](https://img.shields.io/badge/Maxwell%20hits-0%2F5-b91c1c)](chatgpt-handoff/tables/M_maxwell_confrontation.csv)
 
 > **Not** a Capra-style claim that ancient India discovered electromagnetism or quantum mechanics.  
 > **Yes** an open, falsifiable, multi-civilization structural comparison package.
 
+**Your job as author:** write the paper / abstract / poster.  
+**This repo:** evidence, methods, freezes, visuals, reproducibility — already done.
+
 ---
 
-## ISEF 2027 technical upgrade (in progress)
+## Status at a glance
 
-Exploratory flagship results are **frozen** (`artifacts/isef2027/dev_freeze_manifest.json`) and remain exploratory.
+| Gate | Status |
+|------|--------|
+| Flagship exploratory (`ISEF-AKASA-SOUND-FIELD`) | **Frozen & public** |
+| Confirmatory decisions + prereg content | **Frozen** ([release](https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1)) |
+| Concept graphs / controls / mask vocab | **Approved / FROZEN** |
+| Confirmatory sealed analysis | **LOCKED** (no scoring) |
+| Human ratings | **Not collected** (deferred; Form 4 N/A) |
+| School SRC stamp | Packet ready — you submit Forms 1/1A/1B |
+| OSF web mirror | Optional — needs `OSF_TOKEN` → `scripts/submit_osf_prereg.sh` |
+| Paper / abstract | **You write** — start at [`paper/STUDENT_WRITE_HERE.md`](paper/STUDENT_WRITE_HERE.md) |
 
-New sealed-holdout / method-validation infrastructure:
-
-```bash
-uv pip install -e ".[dev]"
-uv run rishiq-isef reproduce-all --config configs/isef2027.yaml
-open visuals/isef2027/index.html
-```
-
-Student blanks to fill (not AI): [`artifacts/isef2027/STUDENT_DECISIONS.yaml`](artifacts/isef2027/STUDENT_DECISIONS.yaml), [`protocol/isef2027_prereg_TEMPLATE.yaml`](protocol/isef2027_prereg_TEMPLATE.yaml)
-
-- Gap audit (technical only): [`docs/ISEF2027_GAP_AUDIT.md`](docs/ISEF2027_GAP_AUDIT.md)
-- AI usage log: [`AI_USAGE_LOG.md`](AI_USAGE_LOG.md)
-- 3D / animated concept visuals: [`visuals/isef2027/`](visuals/isef2027/)
-- Confirmatory sealed set: **LOCKED / empty** — do not open for tuning
-
-This repository does **not** auto-write ISEF abstracts, papers, posters, or conclusions.
+Full dashboard: [`docs/STATUS.md`](docs/STATUS.md)
 
 ---
 
@@ -53,75 +51,44 @@ This repository does **not** auto-write ISEF abstracts, papers, posters, or conc
   <img src="chatgpt-handoff/figures/fig56_scorecard.png" width="720" alt="Primary scorecard" />
 </p>
 
-<p align="center">
-  <img src="chatgpt-handoff/figures/fig54_rubric_heatmap.png" width="720" alt="Six-tradition rubric heatmap" />
-</p>
-
 ---
 
-## Start here (pick one)
-
-| You want… | Go to |
-|-----------|--------|
-| **Write an ISEF report** (ChatGPT / human) | [`chatgpt-handoff/`](chatgpt-handoff/) — upload the folder or zip; paste [`CHATGPT_PROMPT.md`](chatgpt-handoff/CHATGPT_PROMPT.md) |
-| **Headline numbers only** | [`FLAGSHIP_FINDING.md`](FLAGSHIP_FINDING.md) · [`chatgpt-handoff/data/FACTS.json`](chatgpt-handoff/data/FACTS.json) |
-| **All figures** | [`chatgpt-handoff/figures/`](chatgpt-handoff/figures/) (28 PNGs, fig35–fig62) |
-| **All tables** | [`chatgpt-handoff/tables/`](chatgpt-handoff/tables/) |
-| **Reproduce analyses** | Commands below |
-| **Broader RISHI-Q framework** (confirmatory firewall, discovery system) | Rest of this README |
-
----
-
-## Repository map
-
-```
-rishi-q/
-├── FLAGSHIP_FINDING.md          ← locked lead claim
-├── chatgpt-handoff/             ← complete report-writing pack
-│   ├── CHATGPT_PROMPT.md
-│   ├── CONSTRAINTS.md           ← hard do / don't
-│   ├── PROCESS.md · METHODS.md
-│   ├── data/                    ← FACTS.json, summary, expansion, novelty
-│   ├── tables/                  ← CSVs
-│   ├── figures/                 ← all visualizations
-│   ├── evidence/                ← sutra excerpts
-│   └── corpus_snippets/         ← GRETIL caches
-├── results/exploratory/isef_akasa_sound_field/
-├── scripts/run_isef_*.py
-├── paper/figures/fig4*.png · fig5*.png · fig6*.png
-├── corpus/development/          ← GRETIL Vaiśeṣika + Praśastapāda
-└── protocol/ · ontology/ · src/ ← full RISHI-Q research stack
-```
-
----
-
-## Process iterations (flagship)
-
-1. Filter Capra / popular EM–QM anticipation claims  
-2. Lock obscure doctrine: *ākāśa–śabda* + *tejas*  
-3. GRETIL Kaṇāda attestation → **9/9**  
-4. Maxwell structural foil → **0/5**  
-5. Six-tradition rubric (Vaiśeṣika, Lucretius, *Timaeus*, Dao De Jing, Dhammapada, Maxwell)  
-6. Praśastapāda replication → **6/6**  
-7. Descriptive nulls + novelty audit  
-8. Handoff pack for external report writing  
-
-Details: [`chatgpt-handoff/PROCESS.md`](chatgpt-handoff/PROCESS.md) · [`docs/ISEF_ITERATIONS.md`](docs/ISEF_ITERATIONS.md)
-
----
-
-## Reproduce
+## Quick start
 
 ```bash
 git clone https://github.com/arjunkshah12345-hash/rishi-q.git
 cd rishi-q
 uv venv && uv pip install -e ".[dev]"
 
-uv run python scripts/run_isef_akasa_sound_field.py
-uv run python scripts/make_isef_extra_figures.py
-uv run python scripts/run_isef_expansion_v2.py
-uv run python scripts/build_chatgpt_handoff.py
+make status          # freeze / lock scorecard
+make reproduce       # ISEF2027 harness (never opens sealed)
+make visuals         # open interactive 3D index
+make flagship        # re-run exploratory flagship scripts
+make validate-freeze # check prereg SHA256 manifest
 ```
+
+Or without Make:
+
+```bash
+uv run rishiq-isef status
+uv run rishiq-isef reproduce-all --config configs/isef2027.yaml
+open visuals/isef2027/index.html
+```
+
+---
+
+## Where to go
+
+| You want… | Go to |
+|-----------|--------|
+| **Write the ISEF paper** | [`paper/STUDENT_WRITE_HERE.md`](paper/STUDENT_WRITE_HERE.md) |
+| **Evidence pack for drafting** | [`chatgpt-handoff/`](chatgpt-handoff/) |
+| **Frozen prereg** | [`protocol/isef2027_prereg_TEMPLATE.yaml`](protocol/isef2027_prereg_TEMPLATE.yaml) · [Release](https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1) |
+| **Decisions log** | [`artifacts/isef2027/STUDENT_DECISIONS.yaml`](artifacts/isef2027/STUDENT_DECISIONS.yaml) |
+| **SRC / ethics** | [`ethics/`](ethics/) |
+| **3D / animated visuals** | [`visuals/isef2027/`](visuals/isef2027/) |
+| **Gap audit** | [`docs/ISEF2027_GAP_AUDIT.md`](docs/ISEF2027_GAP_AUDIT.md) |
+| **AI transparency** | [`AI_USAGE_LOG.md`](AI_USAGE_LOG.md) |
 
 ---
 
@@ -141,42 +108,28 @@ uv run python scripts/build_chatgpt_handoff.py
 
 ---
 
-## What RISHI-Q is (broader project)
+## Repository map
 
-A computational research framework for testing whether classical Sanskrit philosophical texts exhibit **quantum-specific structural correspondences** relative to matched historical controls — after blinding, translation controls, vocabulary masking, and statistical safeguards.
-
-| System | Role |
-|--------|------|
-| **A — Confirmatory** | Preregistered test (locked until OSF) |
-| **B — Discovery** | Motifs, surprisal, temporal, translation-shift, claims-vs-data |
-
-A negative result is a successful scientific result.
-
-Hard rules (examples): unity ≠ entanglement; vibration ≠ QFT; prefer **NA** over **YES** when ambiguous.
-
-See `protocol/`, `ontology/`, `docs/`, and `discovery_report.md` for the wider stack.
-
----
-
-## Status
-
-| Gate | Status |
-|------|--------|
-| Flagship ISEF package | **Public / reproducible** |
-| Preregistration (confirmatory QM) | `READY_FOR_EXTERNAL_PREREGISTRATION` |
-| Confirmatory QM analysis | **LOCKED** |
-| Human / expert validation | Required before confirmatory unlock |
+```
+rishi-q/
+├── FLAGSHIP_FINDING.md          exploratory lead claim (frozen)
+├── chatgpt-handoff/             report-writing evidence pack
+├── paper/STUDENT_WRITE_HERE.md  your paper workspace
+├── protocol/                    prereg + hypotheses (frozen)
+├── ethics/                      SRC/IRB determination packet
+├── artifacts/isef2027/          decisions, splits, freeze manifests
+├── ontology/concept_graph/      FROZEN structural graphs
+├── corpus/confirmatory_sealed/  LOCKED holdout
+├── visuals/isef2027/            interactive method visuals
+├── src/rishiq/isef2027/         confirmatory firewall + harness
+└── results/                     exploratory + harness outputs
+```
 
 ---
 
-## License
+## License · Citation · Author
 
-MIT — see [`LICENSE`](LICENSE).
-
-## Citation
-
-See [`CITATION.cff`](CITATION.cff). For the flagship experiment, cite this repository and experiment ID `ISEF-AKASA-SOUND-FIELD`.
-
-## Author
+MIT — [`LICENSE`](LICENSE). Citation: [`CITATION.cff`](CITATION.cff).  
+Flagship experiment ID: `ISEF-AKASA-SOUND-FIELD`.
 
 **Arjun Shah** — Stratford Preparatory Milpitas · Independent research / RISHI-Q

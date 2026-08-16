@@ -80,3 +80,14 @@ Do **not** delete entries. Student should mark review status.
   - OSF packet + `scripts/submit_osf_prereg.sh` (needs `OSF_TOKEN`); interim GitHub Release timestamp
 - **Not done:** OSF API submit (no token on machine); school SRC wet-ink; paper/abstract; human ratings; confirmatory unlock/scoring
 - **Review status:** DELEGATED_FREEZE_ACKNOWLEDGED
+
+---
+
+## 2026-08-16 (finish polish) — “make the repo finish it make really good”
+
+- README rewrite (frozen status, badges, Make workflow)
+- `docs/STATUS.md`, `paper/STUDENT_WRITE_HERE.md` (structure only — no paper prose)
+- `Makefile`, freeze validator, `rishiq-isef status`, acquisition helper stub
+- Visuals gallery index upgrade; CI runs full pytest + freeze check
+- Version 0.2.0; CITATION.cff remote fixed to arjunkshah12345-hash
+- Still student-only: paper/abstract; school SRC stamp; optional OSF token; sealed PD acquisitions

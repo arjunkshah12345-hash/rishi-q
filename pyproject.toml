@@ -1,11 +1,12 @@
 [project]
 name = "rishiq"
-version = "0.1.0"
-description = "RISHI-Q: Blinded computational test of quantum-structural analogues in classical Sanskrit thought"
+version = "0.2.0"
+description = "RISHI-Q: falsifiable computational comparison of classical Sanskrit natural philosophy vs historical controls (ISEF2027)"
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.12"
-authors = [{ name = "RISHI-Q Research Team" }]
+authors = [{ name = "Arjun Shah", email = "arjunkshah21@gmail.com" }]
+urls = { Homepage = "https://github.com/arjunkshah12345-hash/rishi-q", Repository = "https://github.com/arjunkshah12345-hash/rishi-q" }
 keywords = [
   "computational-humanities",
   "philosophy-of-physics",
