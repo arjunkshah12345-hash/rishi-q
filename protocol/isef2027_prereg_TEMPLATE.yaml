@@ -114,10 +114,9 @@ human_validation:
     requiring SRC/IRB if humans are later enrolled.
 
 analysis_frozen_before_unblinding: true
-osf_or_aspredicted_url: ""  # fill after OSF submit or record GitHub Release URL
+osf_or_aspredicted_url: "https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1"
 github_prereg_release_tag: prereg-isef2027-v1
-student_signoff: "student_delegated_freeze_2026-08-16"
-date_frozen: "2026-08-16"
+osf_status: "GITHUB_RELEASE_TIMESTAMPED; OSF_API_PENDING_TOKEN"
 
 falsification_triggers:
   - Target–control Δ_Q negligible or CI only covers trivial effects.

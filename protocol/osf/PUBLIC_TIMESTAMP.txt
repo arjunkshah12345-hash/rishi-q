@@ -1,0 +1,1 @@
+RELEASE_URL=https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1

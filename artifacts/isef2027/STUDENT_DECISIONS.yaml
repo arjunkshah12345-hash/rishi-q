@@ -98,13 +98,12 @@ decisions:
 
   - id: D11
     item: Submit preregistration (OSF/AsPredicted) then unlock confirmatory
-    status: FROZEN_PACKET
+    status: TIMESTAMPED_GITHUB_RELEASE
     value: >-
-      Preregistration content frozen in protocol/isef2027_prereg_TEMPLATE.yaml and
-      protocol/osf/OSF_PREREGISTRATION.md. Public timestamp via GitHub Release
-      (prereg-isef2027-v1). OSF web/API submit requires OSF personal token — run
-      scripts/submit_osf_prereg.sh when OSF_TOKEN is available; do not unlock sealed
-      analysis until OSF URL is recorded OR Release is published + 24h elapsed.
+      Public timestamp:
+      https://github.com/arjunkshah12345-hash/rishi-q/releases/tag/prereg-isef2027-v1
+      OSF API submit still pending OSF_TOKEN (scripts/submit_osf_prereg.sh).
+      Do not unlock sealed analysis until acquisitions meet N targets + optional OSF mirror.
 
   - id: D12
     item: Review AI_USAGE_LOG.md and mark reviewed sections
