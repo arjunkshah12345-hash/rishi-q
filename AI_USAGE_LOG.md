@@ -152,3 +152,10 @@ Do **not** delete entries. Student should mark review status.
 - **Task:** Wired `finalize-after-student-review` (DEV weight reselection + n_sim≥2000 power), `pre-freeze-summary`, freeze gates for `development_selection_finished` / `power_updated`, and post-freeze holdout build/one-shot eval (still refuse without freeze / acquired passages).
 - **Explicitly refused:** filling student fingerprint decisions, gold annotations, or setting `student_approved=true`.
 - **Status remains:** `AWAITING_STUDENT_REVIEW`
+
+## 2026-08-17 — Cursor agent (integrity hardening only; final engineering before student review)
+
+- **Model/tool:** Cursor agent (Composer / Auto)
+- **Task performed:** Replaced hardcoded confirmatory lock with `verify_ancient_confirmatory_lock`; added canonical frozen-method manifest + `verify-frozen-method`; gated holdout build/eval on integrity + holdout SHA + one-shot; provenance cleanup for blank student templates; adversarial integrity tests.
+- **Not done by AI:** student fingerprint decisions; gold labels; criterion approvals; method freeze; true holdout build/eval; confirmatory scoring.
+- **Status remains:** `AWAITING_STUDENT_REVIEW` / `TRUE_FINAL_METHOD_HOLDOUT=NOT_BUILT` / `ANCIENT_CONFIRMATORY=LOCKED_NOT_READY`

@@ -1,6 +1,6 @@
 # RISHI-Q / ISEF2027 — project status
 
-Last updated: 2026-08-16 (final pre-confirmatory readiness pass)
+Last updated: 2026-08-17 (integrity hardening; awaiting student scientific review)
 
 **Single source of truth:** [`artifacts/isef2027/PROJECT_STATUS.json`](../artifacts/isef2027/PROJECT_STATUS.json)
 
@@ -14,8 +14,9 @@ Last updated: 2026-08-16 (final pre-confirmatory readiness pass)
 | `SEALED_CANDIDATE_IDS_RESERVED; OUTCOMES_UNSCORED` | IDs exist; no analysis |
 | `OSF_NOT_YET_SUBMITTED` | Only GitHub timestamp exists for v1 |
 | `NOT_READY_TO_FREEZE` | Engineering + student gates incomplete |
-| `CONSTRUCTED_UNEVALUATED_VALIDATION_SET` | Former final holdout demoted; not pristine |
+| `PRESERVED_UNEVALUATED` | Old constructed validation material kept; not the true final holdout |
 | `NOT_BUILT` | True final method holdout not yet constructed |
+| `LOCKED_NOT_READY` | Ancient confirmatory never opened / never scored |
 
 ## Overall
 

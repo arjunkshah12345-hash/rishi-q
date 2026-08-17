@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-08-17T03:53:50.396954+00:00",
+  "git_sha": "14cd1df8e782f0d38cd49a7eb49e49a9edafaed9",
+  "extractor_behavior_changed": false,
+  "fingerprints_changed": false,
+  "graph_metric_changed": false,
+  "development_corpus_changed": false,
+  "theory_labels_changed": false,
+  "development_results_recomputed": false,
+  "power_assumptions_changed": false,
+  "ancient_confirmatory_scored": false,
+  "true_final_holdout_built": false,
+  "notes": "Integrity hardening only; scientific method artifacts unchanged by this patch.",
+  "frozen_manifest_categories_when_frozen": [
+    "repository_state",
+    "extractor",
+    "ontology",
+    "fingerprints",
+    "graph_scoring",
+    "preprocessing",
+    "student_scientific_artifacts",
+    "corpus_development_state",
+    "statistical_method",
+    "development_selection_result",
+    "final_validation_criterion",
+    "ancient_confirmatory_lock_verified_at_check"
+  ],
+  "method_freeze_status": "AWAITING_STUDENT_REVIEW",
+  "true_final_method_holdout": "NOT_BUILT",
+  "ancient_confirmatory": "LOCKED_NOT_READY",
+  "student_fingerprint_review": "0/7",
+  "gold_extraction_review": "0/40"
+}

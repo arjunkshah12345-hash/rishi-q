@@ -30,6 +30,9 @@ uv run rishiq-isef check-freeze-gates
 uv run rishiq-isef freeze-method
 uv run rishiq-isef freeze-method --confirm FREEZE
 
+# After freeze: recompute claim-bearing hashes (never auto-updates manifest)
+uv run rishiq-isef verify-frozen-method
+
 # ONLY after freeze (separate ops)
 uv run rishiq-isef build-final-validation-holdout
 uv run rishiq-isef evaluate-final-validation-once

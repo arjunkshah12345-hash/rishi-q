@@ -23,7 +23,6 @@
   "graph_method_validated": false,
   "external_validation_corpus_built": true,
   "final_method_holdout_evaluated": false,
-  "final_method_holdout_status": "UNEVALUATED",
   "sample_size_justified": false,
   "confirmatory_corpus_adequate": false,
   "documentation_internally_consistent": false,
@@ -34,11 +33,13 @@
     "V1 GitHub Release must remain untouched.",
     "Confirmatory sealed payloads must not be scored during v2 development.",
     "Pedagogy corpus downgraded Pass 3 \u2014 not HELD_OUT_METHOD_VALIDATION.",
-    "External corpus v2 built with source-group splits; final holdout unevaluated.",
-    "Toy/logistic power outputs remain SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE until ICC stable."
+    "External corpus v2 built with source-group splits; true final method holdout NOT_BUILT until freeze.",
+    "Toy/logistic power outputs remain SOFTWARE_DEMO_NOT_SAMPLE_SIZE_EVIDENCE until ICC stable.",
+    "constructed_unevaluated_validation_set is preserved pre-freeze material; not the true final holdout."
   ],
   "true_final_method_holdout": "NOT_BUILT",
   "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED",
+  "ancient_confirmatory": "LOCKED_NOT_READY",
   "ancient_confirmatory_status": "LOCKED_NOT_READY",
   "n_passages": 2154,
   "n_works": 26,

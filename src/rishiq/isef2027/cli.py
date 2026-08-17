@@ -313,6 +313,17 @@ def check_freeze_gates_cmd() -> None:
     rprint(write_freeze_candidate_if_ready(_root()))
 
 
+@app.command("verify-frozen-method")
+def verify_frozen_method_cmd() -> None:
+    """Recompute every claim-bearing hash in the frozen manifest. Never updates it."""
+    from rishiq.isef2027.frozen_method_integrity import verify_frozen_method
+
+    out = verify_frozen_method(_root())
+    rprint(out)
+    if not out.get("ok"):
+        raise typer.Exit(code=2)
+
+
 @app.command("freeze-method")
 def freeze_method_cmd(
     confirm: str | None = typer.Option(None, "--confirm", help="Must be FREEZE to commit"),

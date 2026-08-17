@@ -7,5 +7,10 @@
   "failure_rule": null,
   "student_approved": false,
   "approved_at": null,
-  "note": "Student decides BEFORE true final holdout construction. Do not optimize to make method pass."
+  "note": "Student decides BEFORE true final holdout construction. Do not optimize to make method pass.",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": false,
+  "annotator_role": "student_researcher",
+  "student_decisions_present": false
 }

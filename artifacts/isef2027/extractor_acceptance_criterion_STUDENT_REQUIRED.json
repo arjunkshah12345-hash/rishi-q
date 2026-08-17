@@ -8,5 +8,10 @@
   "metrics_viewed_before_approval": null,
   "note": "Student fills thresholds BEFORE viewing aggregate extractor-gold metrics if feasible.",
   "max_gold_guided_revisions": 1,
-  "revision_policy": "ONE_STUDENT_GOLD_GUIDED_EXTRACTOR_REVISION"
+  "revision_policy": "ONE_STUDENT_GOLD_GUIDED_EXTRACTOR_REVISION",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": false,
+  "annotator_role": "student_researcher",
+  "student_decisions_present": false
 }

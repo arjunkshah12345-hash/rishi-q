@@ -1,6 +1,5 @@
 {
   "schema": "fingerprint_decisions_v1",
-  "ai_generated": false,
   "annotator_role": "student_researcher",
   "physics_fingerprints_verified": false,
   "theories": {
@@ -54,5 +53,9 @@
       "completed_at": null
     }
   },
-  "note": "Student decisions only. AI drafts live under protocol/isef2027_v2/fingerprint_review/."
+  "note": "Student decisions only. AI drafts live under protocol/isef2027_v2/fingerprint_review/.",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": false,
+  "student_decisions_present": false
 }

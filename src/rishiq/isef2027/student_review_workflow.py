@@ -71,7 +71,10 @@ def ensure_student_artifacts(root: Path) -> None:
     if not paths["fingerprint_decisions"].exists():
         payload = {
             "schema": "fingerprint_decisions_v1",
-            "ai_generated": False,
+            "template_created_by": "coding_agent",
+            "template_generated_with_ai": True,
+            "student_decisions_ai_generated": False,
+            "student_decisions_present": False,
             "annotator_role": "student_researcher",
             "physics_fingerprints_verified": False,
             "theories": {
@@ -84,9 +87,11 @@ def ensure_student_artifacts(root: Path) -> None:
                 }
                 for tid in THEORIES
             },
-            "note": "Student decisions only. AI drafts live under protocol/isef2027_v2/fingerprint_review/.",
+            "note": "Blank scaffolding from coding agent. Student decisions only. AI drafts live under protocol/isef2027_v2/fingerprint_review/.",
         }
         paths["fingerprint_decisions"].write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    else:
+        _migrate_fingerprint_provenance(paths["fingerprint_decisions"])
 
     if not paths["extractor_criterion"].exists():
         paths["extractor_criterion"].write_text(
@@ -99,6 +104,11 @@ def ensure_student_artifacts(root: Path) -> None:
                     "student_approved": False,
                     "approved_at": None,
                     "metrics_viewed_before_approval": None,
+                    "template_created_by": "coding_agent",
+                    "template_generated_with_ai": True,
+                    "student_decisions_ai_generated": False,
+                    "student_decisions_present": False,
+                    "annotator_role": "student_researcher",
                     "note": "Student fills thresholds BEFORE viewing aggregate extractor-gold metrics if feasible.",
                     "max_gold_guided_revisions": 1,
                     "revision_policy": "ONE_STUDENT_GOLD_GUIDED_EXTRACTOR_REVISION",
@@ -108,6 +118,8 @@ def ensure_student_artifacts(root: Path) -> None:
             + "\n",
             encoding="utf-8",
         )
+    else:
+        _migrate_criterion_provenance(paths["extractor_criterion"])
 
     if not paths["success_criterion"].exists():
         paths["success_criterion"].write_text(
@@ -121,6 +133,11 @@ def ensure_student_artifacts(root: Path) -> None:
                     "failure_rule": None,
                     "student_approved": False,
                     "approved_at": None,
+                    "template_created_by": "coding_agent",
+                    "template_generated_with_ai": True,
+                    "student_decisions_ai_generated": False,
+                    "student_decisions_present": False,
+                    "annotator_role": "student_researcher",
                     "note": "Student decides BEFORE true final holdout construction. Do not optimize to make method pass.",
                 },
                 indent=2,
@@ -128,8 +145,90 @@ def ensure_student_artifacts(root: Path) -> None:
             + "\n",
             encoding="utf-8",
         )
+    else:
+        _migrate_criterion_provenance(paths["success_criterion"])
 
+    _ensure_gold_template_provenance(root)
     write_dev_reference_for_student(root)
+
+
+def _migrate_fingerprint_provenance(path: Path) -> None:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    changed = False
+    if "template_created_by" not in data:
+        data["template_created_by"] = "coding_agent"
+        changed = True
+    if "template_generated_with_ai" not in data:
+        data["template_generated_with_ai"] = True
+        changed = True
+    if "student_decisions_ai_generated" not in data:
+        data["student_decisions_ai_generated"] = False
+        changed = True
+    # Detect whether any student decision exists
+    present = False
+    for block in (data.get("theories") or {}).values():
+        for node in (block.get("nodes") or {}).values():
+            if isinstance(node, dict) and node.get("decision"):
+                present = True
+        for edge in (block.get("edges") or {}).values():
+            if isinstance(edge, dict) and edge.get("decision"):
+                present = True
+    if data.get("student_decisions_present") is not present:
+        data["student_decisions_present"] = present
+        changed = True
+    # Remove misleading bare ai_generated=false implying student authorship of blank file
+    if data.get("ai_generated") is False and not present:
+        data.pop("ai_generated", None)
+        changed = True
+    if changed:
+        path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+
+
+def _migrate_criterion_provenance(path: Path) -> None:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    changed = False
+    defaults = {
+        "template_created_by": "coding_agent",
+        "template_generated_with_ai": True,
+        "student_decisions_ai_generated": False,
+        "annotator_role": "student_researcher",
+    }
+    for k, v in defaults.items():
+        if k not in data:
+            data[k] = v
+            changed = True
+    present = bool(data.get("student_approved")) or any(
+        data.get(k) is not None
+        for k in (
+            "minimum_node_f1",
+            "minimum_relation_f1",
+            "minimum_typed_relation_f1",
+            "maximum_empty_extraction_rate",
+            "primary_metric",
+            "minimum_primary_value",
+        )
+    )
+    if data.get("student_decisions_present") is not present:
+        data["student_decisions_present"] = present
+        changed = True
+    if changed:
+        path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+
+
+def _ensure_gold_template_provenance(root: Path) -> None:
+    meta_path = root / "data/theory_validation_v2/extraction_gold/meta.json"
+    if meta_path.exists():
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+    else:
+        meta = {}
+    meta.setdefault("template_created_by", "coding_agent")
+    meta.setdefault("template_generated_with_ai", True)
+    meta.setdefault("student_decisions_ai_generated", False)
+    meta.setdefault("student_decisions_present", False)
+    meta.setdefault("annotator_role", "student_researcher")
+    meta.setdefault("status", "BLANK_AWAITING_STUDENT_REVIEW")
+    meta_path.parent.mkdir(parents=True, exist_ok=True)
+    meta_path.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
 
 
 def write_dev_reference_for_student(root: Path) -> Path:
@@ -387,6 +486,8 @@ def run_fingerprint_review_interactive(root: Path, *, theory_id: str | None = No
             else:
                 print(f"\n{tid}: incomplete decisions")
         dec["theories"][tid] = block
+        dec["student_decisions_present"] = True
+        dec["student_decisions_ai_generated"] = False
         paths["fingerprint_decisions"].write_text(json.dumps(dec, indent=2) + "\n", encoding="utf-8")
         with paths["fingerprint_ledger"].open("a", encoding="utf-8") as f:
             f.write(json.dumps({"event": "theory_saved", "theory": tid, "at": _utc_now()}) + "\n")
@@ -516,6 +617,10 @@ def run_gold_annotation_interactive(root: Path, *, passage_id: str | None = None
         "entities": entities,
         "relations": relations,
         "annotator_role": "student_researcher",
+        "template_created_by": "coding_agent",
+        "template_generated_with_ai": True,
+        "student_decisions_ai_generated": False,
+        "student_decisions_present": True,
         "ai_generated": False,
         "extractor_prediction_hidden_during_annotation": True,
         "annotation_locked": True,
@@ -539,6 +644,12 @@ def run_gold_annotation_interactive(root: Path, *, passage_id: str | None = None
         "".join(json.dumps(existing[k]) + "\n" for k in sorted(existing)),
         encoding="utf-8",
     )
+    meta_path = paths["gold_dir"] / "meta.json"
+    if meta_path.exists():
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        meta["student_decisions_present"] = True
+        meta["student_decisions_ai_generated"] = False
+        meta_path.write_text(json.dumps(meta, indent=2) + "\n", encoding="utf-8")
 
     print(f"Locked {pid}. Hash={record['annotation_sha256'][:16]}…")
     # NOW optionally reveal extractor

@@ -148,7 +148,7 @@
         "passes_gate": false
       }
     },
-    "ai_generated_flag_on_file": false
+    "ai_generated_flag_on_file": null
   },
   "gold_progress": {
     "completed": 0,
@@ -272,7 +272,7 @@
           "passes_gate": false
         }
       },
-      "ai_generated_flag_on_file": false
+      "ai_generated_flag_on_file": null
     },
     "gold_extraction_review": {
       "completed": 0,

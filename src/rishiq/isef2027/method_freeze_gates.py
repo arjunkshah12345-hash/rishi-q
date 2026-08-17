@@ -9,6 +9,14 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from rishiq.isef2027.confirmatory_lock import verify_ancient_confirmatory_lock
+from rishiq.isef2027.frozen_method_integrity import (
+    FROZEN_REL,
+    build_frozen_method_manifest,
+    sha256_file,
+    verify_frozen_method,
+    write_frozen_method_manifest,
+)
 from rishiq.isef2027.method_freeze_candidate import write_method_freeze_candidate
 from rishiq.isef2027.student_review_validate import validate_student_review
 from rishiq.isef2027.student_review_workflow import review_paths, review_status
@@ -22,9 +30,7 @@ def _git_sha(root: Path) -> str:
 
 
 def _sha_file(path: Path) -> str | None:
-    if not path.exists():
-        return None
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    return sha256_file(path)
 
 
 def _post_student_finalization(root: Path) -> dict[str, Any]:
@@ -32,6 +38,13 @@ def _post_student_finalization(root: Path) -> dict[str, Any]:
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _true_holdout_status(root: Path) -> str:
+    holdout_true = root / "data/theory_validation_v2/passages/TRUE_FINAL_HOLDOUT_STATUS.json"
+    if not holdout_true.exists():
+        return "NOT_BUILT"
+    return json.loads(holdout_true.read_text(encoding="utf-8")).get("status", "NOT_BUILT")
 
 
 def check_freeze_gates(root: Path) -> dict[str, Any]:
@@ -50,17 +63,16 @@ def check_freeze_gates(root: Path) -> dict[str, Any]:
     gold_eval_path = root / "results/isef2027/validation/extractor_gold_evaluation.json"
     gold_eval = json.loads(gold_eval_path.read_text(encoding="utf-8")) if gold_eval_path.exists() else {}
 
-    frozen_path = root / "artifacts/isef2027/theory_validation_v2_method_FROZEN.json"
-    holdout_true = root / "data/theory_validation_v2/passages/TRUE_FINAL_HOLDOUT_STATUS.json"
-    true_holdout = "NOT_BUILT"
-    if holdout_true.exists():
-        true_holdout = json.loads(holdout_true.read_text(encoding="utf-8")).get("status", "NOT_BUILT")
+    frozen_path = root / FROZEN_REL
+    true_holdout = _true_holdout_status(root)
 
     post = _post_student_finalization(root)
     power_path = root / "results/isef2027/validation/power_sensitivity_table.json"
     power = json.loads(power_path.read_text(encoding="utf-8")) if power_path.exists() else {}
     sel_path = root / "results/isef2027/validation/external_dev_method_selection.json"
     sel = json.loads(sel_path.read_text(encoding="utf-8")) if sel_path.exists() else {}
+
+    conf = verify_ancient_confirmatory_lock(root)
 
     extractor_passes = False
     extractor_pass_detail = "criterion_not_approved_or_metrics_missing"
@@ -111,7 +123,7 @@ def check_freeze_gates(root: Path) -> dict[str, Any]:
         "development_selection_finished": development_selection_finished,
         "power_updated": power_updated,
         "true_final_holdout_not_built": true_holdout == "NOT_BUILT",
-        "ancient_confirmatory_locked": True,
+        "ancient_confirmatory_locked": conf.get("ancient_confirmatory_locked") is True,
         "method_not_already_frozen": not frozen_path.exists(),
     }
     all_pass = all(gates.values())
@@ -134,7 +146,9 @@ def check_freeze_gates(root: Path) -> dict[str, Any]:
         "method_freeze_status": freeze_status,
         "extractor_pass_detail": extractor_pass_detail,
         "true_final_method_holdout": true_holdout,
-        "ancient_confirmatory": "LOCKED_NOT_READY",
+        "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED",
+        "ancient_confirmatory": conf.get("status_label", "LOCKED_NOT_READY"),
+        "ancient_confirmatory_lock": conf,
         "validation": val,
     }
 
@@ -142,11 +156,24 @@ def check_freeze_gates(root: Path) -> dict[str, Any]:
 def write_freeze_candidate_if_ready(root: Path) -> dict[str, Any]:
     gate = check_freeze_gates(root)
     ready = gate["method_freeze_status"] == "READY_FOR_STUDENT_METHOD_FREEZE"
-    blockers = gate["blockers"] if not ready else []
+    blockers = list(gate["blockers"]) if not ready else []
+    # Explicit student-facing blockers while awaiting review
     if gate["method_freeze_status"] == "AWAITING_STUDENT_REVIEW":
-        blockers = blockers or ["student_review_incomplete"]
+        explicit = [
+            "student fingerprint review incomplete",
+            "gold extraction review incomplete",
+            "extractor acceptance criterion not approved",
+            "final-validation success criterion not approved",
+            "development post-student finalization not complete",
+        ]
+        for b in explicit:
+            if b not in blockers:
+                blockers.append(b)
     cand = write_method_freeze_candidate(root, ready=ready, blockers=blockers)
     cand["status"] = gate["method_freeze_status"]
+    cand["true_final_method_holdout"] = gate["true_final_method_holdout"]
+    cand["constructed_unevaluated_validation_set"] = "PRESERVED_UNEVALUATED"
+    cand["ancient_confirmatory"] = gate["ancient_confirmatory"]
     if gate["method_freeze_status"] != "READY_FOR_STUDENT_METHOD_FREEZE":
         cand["ready_for_student_method_freeze"] = False
     out = root / "artifacts/isef2027/theory_validation_v2_method_freeze_CANDIDATE.json"
@@ -157,6 +184,17 @@ def write_freeze_candidate_if_ready(root: Path) -> dict[str, Any]:
 
 def freeze_method(root: Path, *, confirm: str | None = None) -> dict[str, Any]:
     gate = check_freeze_gates(root)
+    if not gate["gates"].get("ancient_confirmatory_locked"):
+        return {
+            "status": "REFUSED",
+            "method_freeze_status": gate["method_freeze_status"],
+            "blockers": gate["blockers"],
+            "reason": "ancient_confirmatory_locked verification failed",
+            "failing_invariants": (gate.get("ancient_confirmatory_lock") or {}).get(
+                "failing_invariants"
+            ),
+            "detail": gate,
+        }
     if not gate["all_pass"]:
         return {
             "status": "REFUSED",
@@ -178,46 +216,42 @@ def freeze_method(root: Path, *, confirm: str | None = None) -> dict[str, Any]:
             "summary": summary,
         }
 
-    paths = review_paths(root)
-    post = _post_student_finalization(root)
-    sel_path = root / "results/isef2027/validation/external_dev_method_selection.json"
-    sel = json.loads(sel_path.read_text(encoding="utf-8")) if sel_path.exists() else {}
-    weights = (sel.get("graph_weight_selection") or {}).get("selected")
-    frozen = {
-        "artifact": "theory_validation_v2_method_FROZEN",
-        "frozen_at": datetime.now(timezone.utc).isoformat(),
-        "git_sha": _git_sha(root),
-        "extractor_version": "structural_extractor_deterministic_v1",
-        "fingerprint_decisions_sha256": _sha_file(paths["fingerprint_decisions"]),
-        "student_gold_sha256": _sha_file(paths["student_gold"]),
-        "extractor_criterion_sha256": _sha_file(paths["extractor_criterion"]),
-        "success_criterion_sha256": _sha_file(paths["success_criterion"]),
-        "corpus_meta_sha256": _sha_file(root / "data/theory_validation_v2/passages/corpus_meta.json"),
-        "post_student_finalization_sha256": _sha_file(
-            root / "results/isef2027/validation/post_student_dev_finalization.json"
-        ),
-        "graph_weights": weights,
-        "point_of_no_return_for_final_validation": True,
-        "true_final_method_holdout": "NOT_BUILT",
-        "ancient_confirmatory": "LOCKED_NOT_READY",
-        "post_student_marker": post,
+    frozen = build_frozen_method_manifest(root)
+    written = write_frozen_method_manifest(root, frozen)
+    return {
+        "status": "FROZEN",
+        "path": written.get("_path", FROZEN_REL),
+        "frozen_sha256": written.get("_written_sha256"),
+        "frozen": {k: v for k, v in written.items() if not str(k).startswith("_")},
     }
-    out = root / "artifacts/isef2027/theory_validation_v2_method_FROZEN.json"
-    out.write_text(json.dumps(frozen, indent=2) + "\n", encoding="utf-8")
-    sha = _sha_file(out)
-    if sha:
-        (out.with_suffix(".sha256")).write_text(sha + "\n", encoding="utf-8")
-    return {"status": "FROZEN", "path": str(out.relative_to(root)), "frozen": frozen}
 
 
 def build_final_validation_holdout(root: Path) -> dict[str, Any]:
     """Post-freeze only. Materialize holdout from acquired candidates. Does not score."""
-    frozen = root / "artifacts/isef2027/theory_validation_v2_method_FROZEN.json"
+    frozen = root / FROZEN_REL
     if not frozen.exists():
         return {
             "status": "REFUSED",
             "true_final_method_holdout": "NOT_BUILT",
             "reason": "Method must be FROZEN first via rishiq-isef freeze-method",
+        }
+
+    integrity = verify_frozen_method(root)
+    if not integrity.get("ok"):
+        return {
+            "status": "REFUSED",
+            "reason": "FROZEN_METHOD_INTEGRITY_FAILURE",
+            "integrity": integrity,
+            "true_final_method_holdout": _true_holdout_status(root),
+        }
+
+    conf = verify_ancient_confirmatory_lock(root)
+    if not conf.get("ok"):
+        return {
+            "status": "REFUSED",
+            "reason": "ancient confirmatory lock verification failed",
+            "failing_invariants": conf.get("failing_invariants"),
+            "true_final_method_holdout": _true_holdout_status(root),
         }
 
     status_path = root / "data/theory_validation_v2/passages/TRUE_FINAL_HOLDOUT_STATUS.json"
@@ -229,6 +263,13 @@ def build_final_validation_holdout(root: Path) -> dict[str, Any]:
                 "reason": "Holdout already built; do not rebuild",
                 "true_final_method_holdout": cur.get("status"),
             }
+
+    if _true_holdout_status(root) != "NOT_BUILT":
+        return {
+            "status": "REFUSED",
+            "reason": "true final holdout must be NOT_BUILT before build",
+            "true_final_method_holdout": _true_holdout_status(root),
+        }
 
     acquired_dir = root / "data/theory_validation_v2/final_holdout_candidates/acquired"
     passages_path = acquired_dir / "passages.jsonl"
@@ -275,50 +316,84 @@ def build_final_validation_holdout(root: Path) -> dict[str, Any]:
             "overlap": overlap,
         }
 
+    work_ids = sorted({r.get("work_id") for r in rows if r.get("work_id")})
+    author_families = sorted(
+        {r.get("author_family") or r.get("author") for r in rows if (r.get("author_family") or r.get("author"))}
+    )
+
     out_passages = root / "data/theory_validation_v2/passages/true_final_holdout.jsonl"
     out_passages.parent.mkdir(parents=True, exist_ok=True)
     out_passages.write_text(passages_path.read_text(encoding="utf-8"), encoding="utf-8")
-    corpus_hash = hashlib.sha256(out_passages.read_bytes()).hexdigest()
+    holdout_sha = hashlib.sha256(out_passages.read_bytes()).hexdigest()
+    frozen_sha = _sha_file(frozen)
     status = {
         "status": "BUILT_UNEVALUATED",
+        "build_timestamp": datetime.now(timezone.utc).isoformat(),
         "built_at": datetime.now(timezone.utc).isoformat(),
-        "frozen_method_sha256": _sha_file(frozen),
-        "holdout_passages_sha256": corpus_hash,
+        "frozen_method_manifest_sha256": frozen_sha,
+        "frozen_method_sha256": frozen_sha,
+        "holdout_sha256": holdout_sha,
+        "holdout_passages_sha256": holdout_sha,
+        "number_of_passages": len(rows),
         "n_passages": len(rows),
-        "source_families": sorted(hold_sf),
+        "source_families": sorted(x for x in hold_sf if x),
+        "work_ids": work_ids,
+        "author_families": author_families,
         "evaluated_once": False,
         "scoring_forbidden_until": "evaluate-final-validation-once",
         "ancient_confirmatory": "LOCKED_NOT_READY",
+        "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED",
     }
     status_path.write_text(json.dumps(status, indent=2) + "\n", encoding="utf-8")
     return {
         "status": "BUILT_UNEVALUATED",
         "true_final_method_holdout": "BUILT_UNEVALUATED",
         "path": str(out_passages.relative_to(root)),
-        "holdout_passages_sha256": corpus_hash,
+        "holdout_sha256": holdout_sha,
         "n_passages": len(rows),
         "note": "Do not score until evaluate-final-validation-once.",
     }
 
 
 def evaluate_final_validation_once(root: Path) -> dict[str, Any]:
-    frozen = root / "artifacts/isef2027/theory_validation_v2_method_FROZEN.json"
+    frozen = root / FROZEN_REL
     if not frozen.exists():
         return {
             "status": "REFUSED",
             "reason": "Method not frozen",
             "true_final_method_holdout": "NOT_BUILT",
         }
+
+    integrity = verify_frozen_method(root)
+    if not integrity.get("ok"):
+        return {
+            "status": "REFUSED",
+            "reason": "FROZEN_METHOD_INTEGRITY_FAILURE",
+            "integrity": integrity,
+        }
+
+    conf = verify_ancient_confirmatory_lock(root)
+    if not conf.get("ok"):
+        return {
+            "status": "REFUSED",
+            "reason": "ancient confirmatory lock verification failed",
+            "failing_invariants": conf.get("failing_invariants"),
+        }
+
     status_path = root / "data/theory_validation_v2/passages/TRUE_FINAL_HOLDOUT_STATUS.json"
     hold = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
+    if hold.get("evaluated_once") is True or hold.get("status") == "EVALUATED_ONCE_AFTER_METHOD_FREEZE":
+        return {
+            "status": "REFUSED",
+            "reason": "Already EVALUATED_ONCE_AFTER_METHOD_FREEZE",
+            "holdout_status": hold.get("status"),
+        }
     if hold.get("status") != "BUILT_UNEVALUATED":
         return {
             "status": "REFUSED",
             "reason": "Holdout must be BUILT_UNEVALUATED first",
             "holdout_status": hold.get("status", "NOT_BUILT"),
         }
-    if hold.get("evaluated_once"):
-        return {"status": "REFUSED", "reason": "Already EVALUATED_ONCE_AFTER_METHOD_FREEZE"}
 
     print("THIS RESULT MAY NOT BE USED TO RETUNE THE CURRENT FROZEN METHOD.")
 
@@ -326,9 +401,21 @@ def evaluate_final_validation_once(root: Path) -> dict[str, Any]:
     if not holdout_path.exists():
         return {"status": "REFUSED", "reason": "true_final_holdout.jsonl missing"}
 
+    recomputed = hashlib.sha256(holdout_path.read_bytes()).hexdigest()
+    expected = hold.get("holdout_sha256") or hold.get("holdout_passages_sha256")
+    if expected and recomputed != expected:
+        return {
+            "status": "REFUSED",
+            "reason": "FINAL_HOLDOUT_INTEGRITY_FAILURE",
+            "expected_holdout_sha256": expected,
+            "recomputed_holdout_sha256": recomputed,
+        }
+
     rows = [json.loads(l) for l in holdout_path.read_text(encoding="utf-8").splitlines() if l.strip()]
     frozen_obj = json.loads(frozen.read_text(encoding="utf-8"))
-    weights = frozen_obj.get("graph_weights") or {"typed_weight": 0.25, "hungarian_weight": 0.75}
+    weights = (frozen_obj.get("graph_scoring") or {}).get("graph_weights") or frozen_obj.get(
+        "graph_weights"
+    ) or {"typed_weight": 0.25, "hungarian_weight": 0.75}
     tw = float(weights.get("typed_weight", 0.25))
     hw = float(weights.get("hungarian_weight", 0.75))
 
@@ -371,6 +458,10 @@ def evaluate_final_validation_once(root: Path) -> dict[str, Any]:
 
     suc_path = review_paths(root)["success_criterion"]
     criterion = json.loads(suc_path.read_text(encoding="utf-8")) if suc_path.exists() else {}
+    # Prefer frozen criterion object if present
+    frozen_crit = frozen_obj.get("final_validation_criterion")
+    if isinstance(frozen_crit, dict) and frozen_crit:
+        criterion = frozen_crit
 
     primary = criterion.get("primary_metric")
     primary_val = None
@@ -389,12 +480,16 @@ def evaluate_final_validation_once(root: Path) -> dict[str, Any]:
     ):
         met = float(primary_val) >= float(criterion["minimum_primary_value"])
 
+    frozen_sha = _sha_file(frozen)
     result = {
         "status": "EVALUATED_ONCE_AFTER_METHOD_FREEZE",
+        "evaluation_timestamp": datetime.now(timezone.utc).isoformat(),
         "evaluated_at": datetime.now(timezone.utc).isoformat(),
         "warning": "THIS RESULT MAY NOT BE USED TO RETUNE THE CURRENT FROZEN METHOD.",
-        "frozen_method_sha256": _sha_file(frozen),
-        "holdout_passages_sha256": hold.get("holdout_passages_sha256"),
+        "frozen_method_sha256": frozen_sha,
+        "holdout_sha256": recomputed,
+        "holdout_passages_sha256": recomputed,
+        "git_sha": _git_sha(root),
         "n_holdout": len(rows),
         "task_a_lexical": best_a,
         "task_a_masked": task_a_masked,
@@ -406,6 +501,7 @@ def evaluate_final_validation_once(root: Path) -> dict[str, Any]:
         "primary_metric_value": primary_val,
         "meets_student_success_criterion": met,
         "ancient_confirmatory": "LOCKED_NOT_READY",
+        "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED",
         "note": "Passing final validation does NOT unlock ancient confirmatory scoring.",
     }
     out = root / "results/isef2027/validation/final_validation_ONCE.json"
@@ -414,11 +510,16 @@ def evaluate_final_validation_once(root: Path) -> dict[str, Any]:
     sha = _sha_file(out)
     if sha:
         (out.with_suffix(".sha256")).write_text(sha + "\n", encoding="utf-8")
+    result["result_sha256"] = sha
 
     hold["status"] = "EVALUATED_ONCE_AFTER_METHOD_FREEZE"
     hold["evaluated_once"] = True
-    hold["result_path"] = str(out.relative_to(root))
+    hold["evaluation_timestamp"] = result["evaluation_timestamp"]
+    hold["frozen_method_sha256"] = frozen_sha
+    hold["holdout_sha256"] = recomputed
     hold["result_sha256"] = sha
+    hold["git_sha"] = result["git_sha"]
+    hold["result_path"] = str(out.relative_to(root))
     status_path.write_text(json.dumps(hold, indent=2) + "\n", encoding="utf-8")
 
     return result
