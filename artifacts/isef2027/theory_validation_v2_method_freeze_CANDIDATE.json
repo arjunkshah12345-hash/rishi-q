@@ -1,24 +1,13 @@
 {
   "artifact": "theory_validation_v2_method_freeze_CANDIDATE",
-  "status": "AWAITING_STUDENT_REVIEW",
+  "status": "NOT_READY_TO_FREEZE",
   "ready_for_student_method_freeze": false,
   "blockers": [
-    "student_review_validation_ok",
-    "physics_fingerprints_verified",
-    "gold_review_complete",
-    "extractor_acceptance_criterion_approved",
-    "extractor_passes_criterion",
-    "validation_success_criterion_approved",
-    "development_selection_finished",
-    "power_updated",
-    "student fingerprint review incomplete",
-    "gold extraction review incomplete",
-    "extractor acceptance criterion not approved",
-    "final-validation success criterion not approved",
-    "development post-student finalization not complete"
+    "true_final_holdout_not_built",
+    "method_not_already_frozen"
   ],
-  "timestamp_utc": "2026-08-17T04:03:29.229515+00:00",
-  "git_sha": "2966e282c31e9645f96104127bb70ea1041cd7ee",
+  "timestamp_utc": "2026-08-17T04:32:13.456282+00:00",
+  "git_sha": "4c6e42a97955acd581e66a77580bd705bc6be339",
   "extractor_version": "structural_extractor_deterministic_v1",
   "ontology_version": "rishiq_concept_graph_v1",
   "fingerprint_hashes": {
@@ -74,7 +63,7 @@
   },
   "corpus_meta_sha256": "85c083f947697087a553fb16aca84b5e7ee1ca268e329b7e43ba12613058e5c3",
   "dev_selection_artifact": "results/isef2027/validation/external_dev_method_selection.json",
-  "true_final_method_holdout": "NOT_BUILT",
+  "true_final_method_holdout": "EVALUATED_ONCE_AFTER_METHOD_FREEZE",
   "ancient_confirmatory": "LOCKED_NOT_READY",
   "note": "Do NOT mark frozen until student approval. Do NOT evaluate true final holdout yet.",
   "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED"

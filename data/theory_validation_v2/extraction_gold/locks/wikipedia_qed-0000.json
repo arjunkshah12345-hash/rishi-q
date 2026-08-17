@@ -1,0 +1,63 @@
+{
+  "passage_id": "wikipedia_qed-0000",
+  "work_id": "wikipedia_qed",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "b58b3e0f10d40cc1b3e51e3004e7fbf9883c5566da44f7a1304855bf63a51e16",
+  "text": "In particle physics, quantum electrodynamics (QED) is the relativistic quantum field theory of electrodynamics. In essence, it describes how light and matter interact and is the first theory where full agreement between quantum mechanics and special relativity is achieved. QED mathematically describes all phenomena involving electrically charged particles interacting by means of exchange of photons and represents the quantum counterpart of classical electromagnetism giving a complete account of matter and light interaction. In technical terms, QED can be described as a perturbation theory of the electromagnetic quantum vacuum. Richard Feynman called it \"the jewel of physics\" for its extremely accurate predictions of quantities like the anomalous magnetic moment of the electron and the Lamb shift of the energy levels of hydrogen. It is the most precise and stringently tested theory in physics. However, the prediction of vacuum zero energy made by QED has 10^120 magnitude of difference compared to experimental observation value. This is called the cosmological constant problem or vacuum catastrophe.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "electron",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "energy",
+      "canonical_entity_type": "property",
+      "note": ""
+    },
+    {
+      "id": "e3",
+      "surface": "field",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    },
+    {
+      "id": "e4",
+      "surface": "interaction",
+      "canonical_entity_type": "interaction",
+      "note": ""
+    },
+    {
+      "id": "e5",
+      "surface": "light",
+      "canonical_entity_type": "observable",
+      "note": ""
+    },
+    {
+      "id": "e6",
+      "surface": "particle",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    },
+    {
+      "id": "e7",
+      "surface": "vacuum",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "2e37837f8e0200df1863f4223928327b244e540ddfd4fb80a2d5f054b2d6cb09",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

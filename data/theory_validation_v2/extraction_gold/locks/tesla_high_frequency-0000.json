@@ -1,0 +1,20 @@
+{
+  "passage_id": "tesla_high_frequency-0000",
+  "work_id": "tesla_high_frequency",
+  "source_family": "tesla_high_frequency",
+  "passage_sha256": "6aa72bc4d7526dd4855fa3b1dd382d3878f9051be418fa86899de557d54550ba",
+  "text": "While a large portion of the European family has been surging westward during the last three or four hundred years, settling the vast continents of America, another, but smaller, portion has been doing frontier work in the Old World, protecting the rear by beating back the \"unspeakable Turk\" and reclaiming gradually the fair lands that endure the curse of Mohammedan rule. For a long time the Slav people--who, after the battle of Kosovopjolje, in which the Turks defeated the Servians, retired to the confines of the present Montenegro, Dalmatia, Herzegovina and Bosnia, and \"Borderland\" of Austria--knew what it was to deal, as our Western pioneers did, with foes ceaselessly fretting against their frontier; and the races of these countries, through their strenuous struggle against the armies of the Crescent, have developed notable qualities of bravery and sagacity, while maintaining a patriotism and independence unsurpassed in any other nation.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "ebcec8393fd965f57adc7f00a9c9afb7142bbe6a6271f96924226eaccf7acb6c",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

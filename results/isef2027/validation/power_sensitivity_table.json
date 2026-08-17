@@ -21,330 +21,330 @@
     "missingness_rate_estimate": 0.0,
     "score_definition": "correct_theory_structural_similarity_on_development",
     "ready_to_freeze_N": false,
-    "note": "Work-level bootstrap; fingerprints still pending student review."
+    "note": "Work-level bootstrap after student review; post_student_review=true."
   },
   "rows": [
     {
       "effect": 0.02,
       "works_per_arm": 6,
       "passages_per_work": 3,
-      "power": 0.12,
-      "estimated_power": 0.12,
-      "mc_se": 0.01624807680927192,
+      "power": 0.122,
+      "estimated_power": 0.122,
+      "mc_se": 0.007318333143551201,
       "sim_interval_95": [
-        0.08815376945382702,
-        0.15184623054617297
+        0.10765606703863964,
+        0.13634393296136035
       ],
       "scenario": "pessimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.02,
       "works_per_arm": 6,
       "passages_per_work": 5,
-      "power": 0.1075,
-      "estimated_power": 0.1075,
-      "mc_se": 0.015487394067434327,
+      "power": 0.114,
+      "estimated_power": 0.114,
+      "mc_se": 0.0071064759198916595,
       "sim_interval_95": [
-        0.07714470762782871,
-        0.13785529237217128
+        0.10007130719701235,
+        0.12792869280298766
       ],
       "scenario": "pessimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.02,
       "works_per_arm": 10,
       "passages_per_work": 3,
-      "power": 0.125,
-      "estimated_power": 0.125,
-      "mc_se": 0.016535945694153693,
+      "power": 0.14,
+      "estimated_power": 0.14,
+      "mc_se": 0.00775886589650833,
       "sim_interval_95": [
-        0.09258954643945877,
-        0.15741045356054123
+        0.12479262284284369,
+        0.15520737715715635
       ],
       "scenario": "pessimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.02,
       "works_per_arm": 10,
       "passages_per_work": 5,
-      "power": 0.19,
-      "estimated_power": 0.19,
-      "mc_se": 0.019615045245933032,
+      "power": 0.1655,
+      "estimated_power": 0.1655,
+      "mc_se": 0.008309926293295267,
       "sim_interval_95": [
-        0.15155451131797126,
-        0.22844548868202874
+        0.1492125444651413,
+        0.18178745553485873
       ],
       "scenario": "pessimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.02,
       "works_per_arm": 15,
       "passages_per_work": 3,
-      "power": 0.1775,
-      "estimated_power": 0.1775,
-      "mc_se": 0.019104564245226847,
+      "power": 0.175,
+      "estimated_power": 0.175,
+      "mc_se": 0.008496322733983213,
       "sim_interval_95": [
-        0.14005505407935537,
-        0.21494494592064461
+        0.15834720744139288,
+        0.1916527925586071
       ],
       "scenario": "pessimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.02,
       "works_per_arm": 15,
       "passages_per_work": 5,
-      "power": 0.1775,
-      "estimated_power": 0.1775,
-      "mc_se": 0.019104564245226847,
+      "power": 0.2045,
+      "estimated_power": 0.2045,
+      "mc_se": 0.009018862178789517,
       "sim_interval_95": [
-        0.14005505407935537,
-        0.21494494592064461
+        0.18682303012957252,
+        0.22217696987042745
       ],
       "scenario": "pessimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.05,
       "works_per_arm": 6,
       "passages_per_work": 3,
-      "power": 0.2775,
-      "estimated_power": 0.2775,
-      "mc_se": 0.02238826422481207,
+      "power": 0.293,
+      "estimated_power": 0.293,
+      "mc_se": 0.010177204920802175,
       "sim_interval_95": [
-        0.23361900211936837,
-        0.3213809978806317
+        0.27305267835522773,
+        0.31294732164477224
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.05,
       "works_per_arm": 6,
       "passages_per_work": 5,
-      "power": 0.3275,
-      "estimated_power": 0.3275,
-      "mc_se": 0.023465067121148406,
+      "power": 0.326,
+      "estimated_power": 0.326,
+      "mc_se": 0.010481507525160682,
       "sim_interval_95": [
-        0.2815084684425491,
-        0.3734915315574509
+        0.3054562452506851,
+        0.3465437547493149
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.05,
       "works_per_arm": 10,
       "passages_per_work": 3,
-      "power": 0.4325,
-      "estimated_power": 0.4325,
-      "mc_se": 0.02477113996165699,
+      "power": 0.406,
+      "estimated_power": 0.406,
+      "mc_se": 0.010980983562504773,
       "sim_interval_95": [
-        0.3839485656751523,
-        0.4810514343248477
+        0.3844772722174907,
+        0.4275227277825094
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.05,
       "works_per_arm": 10,
       "passages_per_work": 5,
-      "power": 0.51,
-      "estimated_power": 0.51,
-      "mc_se": 0.024994999499899976,
+      "power": 0.494,
+      "estimated_power": 0.494,
+      "mc_se": 0.01117953487404552,
       "sim_interval_95": [
-        0.46100980098019606,
-        0.558990199019804
+        0.47208811164687076,
+        0.5159118883531292
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.05,
       "works_per_arm": 15,
       "passages_per_work": 3,
-      "power": 0.49,
-      "estimated_power": 0.49,
-      "mc_se": 0.024994999499899976,
+      "power": 0.522,
+      "estimated_power": 0.522,
+      "mc_se": 0.0111695120752878,
       "sim_interval_95": [
-        0.44100980098019604,
-        0.5389901990198039
+        0.500107756332436,
+        0.5438922436675641
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.05,
       "works_per_arm": 15,
       "passages_per_work": 5,
-      "power": 0.62,
-      "estimated_power": 0.62,
-      "mc_se": 0.024269322199023193,
+      "power": 0.6505,
+      "estimated_power": 0.6505,
+      "mc_se": 0.010661842007833357,
       "sim_interval_95": [
-        0.5724321284899145,
-        0.6675678715100855
+        0.6296027896646466,
+        0.6713972103353534
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.08,
       "works_per_arm": 6,
       "passages_per_work": 3,
-      "power": 0.5275,
-      "estimated_power": 0.5275,
-      "mc_se": 0.02496215886096393,
+      "power": 0.5085,
+      "estimated_power": 0.5085,
+      "mc_se": 0.01117872421164419,
       "sim_interval_95": [
-        0.4785741686325107,
-        0.5764258313674893
+        0.48658970054517736,
+        0.5304102994548225
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.08,
       "works_per_arm": 6,
       "passages_per_work": 5,
-      "power": 0.575,
-      "estimated_power": 0.575,
-      "mc_se": 0.024717149916606486,
+      "power": 0.613,
+      "estimated_power": 0.613,
+      "mc_se": 0.010891074327172687,
       "sim_interval_95": [
-        0.5265543861634513,
-        0.6234456138365486
+        0.5916534943187415,
+        0.6343465056812585
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.08,
       "works_per_arm": 10,
       "passages_per_work": 3,
-      "power": 0.7125,
-      "estimated_power": 0.7125,
-      "mc_se": 0.022629833737789592,
+      "power": 0.7,
+      "estimated_power": 0.7,
+      "mc_se": 0.010246950765959599,
       "sim_interval_95": [
-        0.6681455258739324,
-        0.7568544741260677
+        0.6799159764987192,
+        0.7200840235012808
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.08,
       "works_per_arm": 10,
       "passages_per_work": 5,
-      "power": 0.8375,
-      "estimated_power": 0.8375,
-      "mc_se": 0.01844544320421713,
+      "power": 0.825,
+      "estimated_power": 0.825,
+      "mc_se": 0.008496322733983215,
       "sim_interval_95": [
-        0.8013469313197344,
-        0.8736530686802656
+        0.8083472074413929,
+        0.841652792558607
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.08,
       "works_per_arm": 15,
       "passages_per_work": 3,
-      "power": 0.845,
-      "estimated_power": 0.845,
-      "mc_se": 0.01809523417919757,
+      "power": 0.853,
+      "estimated_power": 0.853,
+      "mc_se": 0.007918049002121673,
       "sim_interval_95": [
-        0.8095333410087727,
-        0.8804666589912272
+        0.8374806239558416,
+        0.8685193760441584
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.08,
       "works_per_arm": 15,
       "passages_per_work": 5,
-      "power": 0.94,
-      "estimated_power": 0.94,
-      "mc_se": 0.011874342087037922,
+      "power": 0.941,
+      "estimated_power": 0.941,
+      "mc_se": 0.005268728499363013,
       "sim_interval_95": [
-        0.9167262895094056,
-        0.9632737104905943
+        0.9306732921412484,
+        0.9513267078587515
       ],
       "scenario": "base",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.12,
       "works_per_arm": 6,
       "passages_per_work": 3,
-      "power": 0.8225,
-      "estimated_power": 0.8225,
-      "mc_se": 0.019104564245226847,
+      "power": 0.7995,
+      "estimated_power": 0.7995,
+      "mc_se": 0.008952646256833787,
       "sim_interval_95": [
-        0.7850550540793554,
-        0.8599449459206446
+        0.7819528133366058,
+        0.8170471866633942
       ],
       "scenario": "optimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.12,
       "works_per_arm": 6,
       "passages_per_work": 5,
-      "power": 0.89,
-      "estimated_power": 0.89,
-      "mc_se": 0.015644487847162013,
+      "power": 0.8795,
+      "estimated_power": 0.8795,
+      "mc_se": 0.007279414468211026,
       "sim_interval_95": [
-        0.8593368038195625,
-        0.9206631961804376
+        0.8652323476423064,
+        0.8937676523576935
       ],
       "scenario": "optimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.12,
       "works_per_arm": 10,
       "passages_per_work": 3,
-      "power": 0.965,
-      "estimated_power": 0.965,
-      "mc_se": 0.009188987974744557,
+      "power": 0.9495,
+      "estimated_power": 0.9495,
+      "mc_se": 0.0048964145045124596,
       "sim_interval_95": [
-        0.9469895835695006,
-        0.9830104164304994
+        0.9399030275711556,
+        0.9590969724288444
       ],
       "scenario": "optimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.12,
       "works_per_arm": 10,
       "passages_per_work": 5,
-      "power": 0.99,
-      "estimated_power": 0.99,
-      "mc_se": 0.004974937185533102,
+      "power": 0.9865,
+      "estimated_power": 0.9865,
+      "mc_se": 0.0025804796065847873,
       "sim_interval_95": [
-        0.9802491231163551,
-        0.9997508768836448
+        0.9814422599710939,
+        0.9915577400289062
       ],
       "scenario": "optimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.12,
       "works_per_arm": 15,
       "passages_per_work": 3,
-      "power": 0.99,
-      "estimated_power": 0.99,
-      "mc_se": 0.004974937185533102,
+      "power": 0.991,
+      "estimated_power": 0.991,
+      "mc_se": 0.002111752826445369,
       "sim_interval_95": [
-        0.9802491231163551,
-        0.9997508768836448
+        0.986860964460167,
+        0.995139035539833
       ],
       "scenario": "optimistic",
-      "n_sim": 400
+      "n_sim": 2000
     },
     {
       "effect": 0.12,
@@ -358,9 +358,10 @@
         1.0
       ],
       "scenario": "optimistic",
-      "n_sim": 400
+      "n_sim": 2000
     }
   ],
   "sample_size_justified": false,
-  "n_sim_per_cell": 400
+  "n_sim_per_cell": 2000,
+  "post_student_review": true
 }

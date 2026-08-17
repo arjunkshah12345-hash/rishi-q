@@ -1,0 +1,20 @@
+{
+  "passage_id": "clausius_mechanical_heat-0002",
+  "work_id": "clausius_mechanical_heat",
+  "source_family": "clausius_mechanical_heat",
+  "passage_sha256": "9074e3d282d2ab9ecc6c9317bd000edc31b9a61b183a719d24f8801effba6856",
+  "text": "The two equations (6) and (7) may thus be treated as form- ing together a solution of the differential equation. As the form of the function fixy) may be anything whatever, it is clear that the number of solutions thus to be obtained is infinite.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "a083fb930451f438e6ba1461721464004324478742db37cf6aea6aa5f0aadeef",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

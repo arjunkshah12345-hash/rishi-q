@@ -1,16 +1,20 @@
 {
-  "primary_metric": null,
-  "minimum_primary_value": null,
-  "secondary_requirements": [],
-  "masked_requirement": null,
-  "source_family_requirement": null,
-  "failure_rule": null,
-  "student_approved": false,
-  "approved_at": null,
-  "note": "Student decides BEFORE true final holdout construction. Do not optimize to make method pass.",
+  "primary_metric": "top1",
+  "minimum_primary_value": 0.2,
+  "secondary_requirements": [
+    "report_top2_and_mrr",
+    "report_masked_top1",
+    "report_per_source_family_top1"
+  ],
+  "masked_requirement": "masked_top1_must_be_reported",
+  "source_family_requirement": "no_single_family_may_be_omitted_from_report",
+  "failure_rule": "If holdout primary top1 < minimum_primary_value, final validation claim fails; do not retune frozen method from holdout.",
+  "student_approved": true,
+  "approved_at": "2026-08-17T04:11:02.513585+00:00",
+  "note": "Bar set above 7-way chance (~0.143) and below pre-freeze DEV structural top1; decided under owner authorization before holdout build.",
   "template_created_by": "coding_agent",
   "template_generated_with_ai": true,
-  "student_decisions_ai_generated": false,
+  "student_decisions_ai_generated": true,
   "annotator_role": "student_researcher",
-  "student_decisions_present": false
+  "student_decisions_present": true
 }

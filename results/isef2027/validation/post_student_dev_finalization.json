@@ -1,0 +1,17 @@
+{
+  "schema": "post_student_dev_finalization_v1",
+  "completed_at": "2026-08-17T04:25:35.801480+00:00",
+  "n_sim_per_cell": 2000,
+  "post_student_review": true,
+  "extractor_gold_status": "EVALUATED_VS_STUDENT_GOLD",
+  "extractor_criterion_approved": true,
+  "success_criterion_approved": true,
+  "graph_weights_selected": {
+    "typed_weight": 0.25,
+    "hungarian_weight": 0.75
+  },
+  "confirmatory_feasibility": "PROJECT_FEASIBLE_WITH_REDUCED_EFFECT_SENSITIVITY",
+  "true_final_method_holdout": "NOT_BUILT",
+  "ancient_confirmatory": "LOCKED_NOT_READY",
+  "partial_criteria_pending": false
+}

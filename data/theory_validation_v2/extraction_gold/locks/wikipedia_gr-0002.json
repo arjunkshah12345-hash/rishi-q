@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_gr-0002",
+  "work_id": "wikipedia_gr",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "35d71d4c6f6775b10b91f154fe4ef2961944b4c448a69eecf2617537b8958f9b",
+  "text": "Black holes are the end-state for massive stars. Microquasars and active galactic nuclei are believed to be stellar black holes and supermassive black holes. It also predicts gravitational lensing, where the bending of light results in distorted and multiple images of the same distant astronomical phenomenon. Other predictions include the existence of gravitational waves, which have been observed directly by the physics collaboration LIGO and other observatories.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "light",
+      "canonical_entity_type": "observable",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "state",
+      "canonical_entity_type": "state",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "06235bf7b9fc975f95845d54800788238e0110166aa078dab683f4b1c4844af2",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

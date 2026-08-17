@@ -11,7 +11,8 @@
         "thermodynamics",
         "quantum_mechanics"
       ],
-      "status": "ELIGIBLE_NOT_ACQUIRED"
+      "status": "ACQUIRED",
+      "acquired_passages": 8
     },
     {
       "source_family": "heaviside_electromagnetic_theory_pd",
@@ -20,7 +21,8 @@
       "theories": [
         "classical_em"
       ],
-      "status": "ELIGIBLE_NOT_ACQUIRED"
+      "status": "ACQUIRED",
+      "acquired_passages": 8
     },
     {
       "source_family": "bohr_three_papers_pd",
@@ -30,7 +32,8 @@
         "quantum_mechanics",
         "atomistic_corpuscular"
       ],
-      "status": "ELIGIBLE_NOT_ACQUIRED"
+      "status": "ACQUIRED",
+      "acquired_passages": 8
     },
     {
       "source_family": "minkowski_spacetime_pd",
@@ -39,7 +42,8 @@
       "theories": [
         "relativity"
       ],
-      "status": "ELIGIBLE_NOT_ACQUIRED"
+      "status": "ACQUIRED",
+      "acquired_passages": 8
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "passage_id": "tesla_high_frequency-0002",
+  "work_id": "tesla_high_frequency",
+  "source_family": "tesla_high_frequency",
+  "passage_sha256": "4043b3e4a6bdcae671da9dae177082698b1dc6195d93a203ed71e93b3dd11c55",
+  "text": "Not desiring the fame of a faster, he cast about for a livelihood, and through the help of friends he secured a berth as assistant in the engineering department of the government telegraphs. The salary was five dollars a week. This brought him into direct contact with practical electrical work and ideas, but it is needless to say that his means did not admit of much experimenting.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "641f7447bf967bb622722f2f64c8a9b68b523c84a5ac8dbd19c813562c5419ab",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

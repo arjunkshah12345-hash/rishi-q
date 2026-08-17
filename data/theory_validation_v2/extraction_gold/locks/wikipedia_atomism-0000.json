@@ -1,0 +1,20 @@
+{
+  "passage_id": "wikipedia_atomism-0000",
+  "work_id": "wikipedia_atomism",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "e1ae931186aebd880f07f9a4b94e1e47abbea8b9960d660f67a7af67ded27efb",
+  "text": "Atomism (from Ancient Greek \u1f04\u03c4\u03bf\u03bc\u03bf\u03bd (atomon) 'uncuttable, indivisible') is a natural philosophy proposing that the physical universe is composed of fundamental indivisible components known as atoms. The concept of atomism appeared in both ancient Greek and ancient Indian philosophical traditions. Atomism in multiple different forms appeared in ancient Greece. Leucippus is the earliest figure whose commitment to Greek atomism is well attested and is usually credited with inventing Greek atomism.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "8f2b85906c226faa43a0e007e0928ea93e67c1e5094cd13dfa9bec6901f10547",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

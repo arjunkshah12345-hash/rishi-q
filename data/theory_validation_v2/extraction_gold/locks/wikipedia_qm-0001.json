@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_qm-0001",
+  "work_id": "wikipedia_qm",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "e8a175c7737f0881cac073215bbb8cad8749d34cb24c772a255055fcd0fca131",
+  "text": "Quantum mechanics can describe many systems that classical physics cannot. Classical physics can describe many aspects of nature at an ordinary (macroscopic and (optical) microscopic) scale; however, it is insufficient for describing them at very small submicroscopic (atomic and subatomic) scales. Classical mechanics can be derived from quantum mechanics as an approximation that is valid at ordinary scales. Quantum systems have bound states that are quantized to discrete values of energy, momentum, angular momentum, and other quantities, in contrast to classical systems where these quantities can be measured continuously.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "energy",
+      "canonical_entity_type": "property",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "momentum",
+      "canonical_entity_type": "property",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "2c29ee32750dd86b5c79f5a0e9e20c3f969756bf2ab7fabc1c2e8c3f67e10f7a",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

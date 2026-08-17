@@ -1,0 +1,33 @@
+{
+  "passage_id": "huygens_light-0002",
+  "work_id": "huygens_light",
+  "source_family": "huygens_treatise_on_light",
+  "passage_sha256": "121b7197d69340dc21a31cf2c0825b3fa225fad76bb151b976bffe351094d36c",
+  "text": "It is true that his wave theory was far from the complete doctrine as subsequently developed by Thomas Young and Augustin Fresnel, and belonged rather to geometrical than to physical Optics. If Huygens had no conception of transverse vibrations, of the principle of interference, or of the existence of the ordered sequence of waves in trains, he nevertheless attained to a remarkably clear understanding of the principles of wave-propagation; and his exposition of the subject marks an epoch in the treatment of Optical problems.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "propagation",
+      "canonical_entity_type": "process",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "wave",
+      "canonical_entity_type": "observable",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "b9b8a008d427e83041193d521d3c982af014db9094b93cdea9fe7981329f722a",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

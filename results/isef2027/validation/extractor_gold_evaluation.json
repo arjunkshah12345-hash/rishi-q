@@ -1,0 +1,40 @@
+{
+  "status": "EVALUATED_VS_STUDENT_GOLD",
+  "evidence_role": "DEVELOPMENT_VALIDATION",
+  "extractor_version": "structural_extractor_deterministic_v1",
+  "n_passages": 40,
+  "node": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1": 0.888888888888889
+  },
+  "relation": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "typed_relation": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "coverage": {
+    "pct_passages_with_ge1_node": 0.825,
+    "pct_passages_with_ge1_relation": 0.15,
+    "empty_extraction_rate": 0.17500000000000004
+  },
+  "error_classes": {
+    "false_positive_entity": 17,
+    "false_positive_relation": 7
+  },
+  "bootstrap_passage": {
+    "node_f1_ci95": [
+      0.5258482142857143,
+      0.7947023809523808
+    ],
+    "relation_f1_ci95": [
+      0.0,
+      0.0
+    ]
+  }
+}

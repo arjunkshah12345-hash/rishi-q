@@ -1,0 +1,27 @@
+{
+  "passage_id": "thomson_tait_np-0001",
+  "work_id": "thomson_tait_np",
+  "source_family": "treatise_natural_philosophy",
+  "passage_sha256": "8a44aeab601c747810fb89aa8168e1003945f904acd68fce5bcf7630ceb35ea0",
+  "text": "Elastic curve transmitting force and couple\u2014 Kirchhofif\u2019s ki- netic comparison \u2014 Common pendulum and plane elastic curve \u2014 Graphic construction of elastic curve transmitting force in one plane \u2014 Equation of the plane elastic curve \u2014 - Bow slightly bent \u2014 Plane elastic curve and common pen- dulum ....",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "force",
+      "canonical_entity_type": "interaction",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "1386f06efa4e94ca4406d41fa30a01dd218ec1d61e0d98ee4f4ecdc338983e98",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

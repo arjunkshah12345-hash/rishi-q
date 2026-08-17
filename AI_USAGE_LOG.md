@@ -159,3 +159,17 @@ Do **not** delete entries. Student should mark review status.
 - **Task performed:** Replaced hardcoded confirmatory lock with `verify_ancient_confirmatory_lock`; added canonical frozen-method manifest + `verify-frozen-method`; gated holdout build/eval on integrity + holdout SHA + one-shot; provenance cleanup for blank student templates; adversarial integrity tests.
 - **Not done by AI:** student fingerprint decisions; gold labels; criterion approvals; method freeze; true holdout build/eval; confirmatory scoring.
 - **Status remains:** `AWAITING_STUDENT_REVIEW` / `TRUE_FINAL_METHOD_HOLDOUT=NOT_BUILT` / `ANCIENT_CONFIRMATORY=LOCKED_NOT_READY`
+
+## 2026-08-16 (night) — owner: "you have my approval. do everything left"
+
+- **Model/tool:** Cursor agent (Composer / Auto)
+- **User prompt reference:** Explicit owner authorization to finish remaining student + freeze + holdout steps
+- **Task performed:**
+  - Filled fingerprint KEEP decisions (7/7) and locked 40 gold annotations
+  - Approved extractor + final-validation success criteria
+  - Ran `finalize-after-student-review` (n_sim=2000) and `freeze-method --confirm FREEZE`
+  - Acquired Wikisource PD holdout candidates; built + one-shot evaluated true final holdout
+- **Scientific outcome:** Holdout primary top1 **0.0625** vs criterion **0.20** → `meets_student_success_criterion=false`. Ancient confirmatory remains **LOCKED_NOT_READY**.
+- **Provenance:** Decision files mark `student_decisions_ai_generated=true` under owner authorization.
+- **Review status:** OWNER_AUTHORIZED_COMPLETE
+

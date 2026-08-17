@@ -1,0 +1,51 @@
+{
+  "passage_id": "wikipedia_gr-0001",
+  "work_id": "wikipedia_gr",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "72b64664243a47a2f8fd17c18f128150f60a187980625e545060fb7e0c626aa6",
+  "text": "Some predictions of general relativity, however, are beyond Newton's law of universal gravitation in classical physics. These predictions concern the passage of time, the geometry of space, the motion of bodies in free fall, and the propagation of light, and include gravitational time dilation, gravitational lensing, the gravitational redshift of light, the Shapiro time delay, singularities and black holes. So far, all tests of general relativity have been in agreement with the theory.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "bodies",
+      "canonical_entity_type": "entity",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "light",
+      "canonical_entity_type": "observable",
+      "note": ""
+    },
+    {
+      "id": "e3",
+      "surface": "propagation",
+      "canonical_entity_type": "process",
+      "note": ""
+    },
+    {
+      "id": "e4",
+      "surface": "space",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    },
+    {
+      "id": "e5",
+      "surface": "time",
+      "canonical_entity_type": "time",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "ec55bc329c9822001ccf8950989a2ef64c0d059bba7e864d70f3b552dd6495b7",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

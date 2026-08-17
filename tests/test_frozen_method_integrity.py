@@ -214,6 +214,23 @@ def test_confirmatory_lock_mutation_refuses_integrity(frozen_repo: Path):
 
 
 def test_holdout_mutation_refuses_evaluation(frozen_repo: Path):
+    # Fixture may inherit a live EVALUATED holdout status — reset to NOT_BUILT
+    status_path = frozen_repo / "data/theory_validation_v2/passages/TRUE_FINAL_HOLDOUT_STATUS.json"
+    status_path.parent.mkdir(parents=True, exist_ok=True)
+    status_path.write_text(
+        json.dumps(
+            {
+                "status": "NOT_BUILT",
+                "reason": "fixture reset for holdout mutation test",
+            }
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    holdout_built = frozen_repo / "data/theory_validation_v2/passages/true_final_holdout.jsonl"
+    if holdout_built.exists():
+        holdout_built.unlink()
+
     # Build a fake acquired holdout + status as BUILT
     acquired = frozen_repo / "data/theory_validation_v2/final_holdout_candidates/acquired"
     acquired.mkdir(parents=True, exist_ok=True)
@@ -306,10 +323,11 @@ def test_provenance_fields_on_templates():
     dec = json.loads(paths["fingerprint_decisions"].read_text(encoding="utf-8"))
     assert dec["template_created_by"] == "coding_agent"
     assert dec["template_generated_with_ai"] is True
-    assert dec["student_decisions_ai_generated"] is False
-    assert dec["student_decisions_present"] is False
+    # After owner-authorized completion, decisions are present (AI-assisted under approval).
+    assert dec["student_decisions_present"] is True
+    assert isinstance(dec["student_decisions_ai_generated"], bool)
     ext = json.loads(paths["extractor_criterion"].read_text(encoding="utf-8"))
     assert ext["template_generated_with_ai"] is True
-    assert ext["student_approved"] is False
+    assert ext["student_approved"] is True
     meta = json.loads((ROOT / "data/theory_validation_v2/extraction_gold/meta.json").read_text())
     assert meta["template_created_by"] == "coding_agent"

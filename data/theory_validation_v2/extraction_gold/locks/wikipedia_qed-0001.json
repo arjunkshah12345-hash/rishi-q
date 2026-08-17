@@ -1,0 +1,57 @@
+{
+  "passage_id": "wikipedia_qed-0001",
+  "work_id": "wikipedia_qed",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "8d027339339c88a8db5cd4904c6501fae7d967b9a3000fc74da3bb96466f7ae1",
+  "text": "The first formulation of a quantum theory describing radiation and matter interaction is attributed to Paul Dirac, who during the 1920s computed the coefficient of spontaneous emission of an atom. He is credited with coining the term \"quantum electrodynamics\". Dirac described the quantization of the electromagnetic field as an ensemble of harmonic oscillators with the introduction of the concept of creation and annihilation operators of particles. In the following years, with contributions from Wolfgang Pauli, Eugene Wigner, Pascual Jordan, Werner Heisenberg and Enrico Fermi, physicists came to believe that, in principle, it was possible to perform any computation for any physical process involving photons and charged particles. However, further studies by Felix Bloch with Arnold Nordsieck, and Victor Weisskopf, in 1937 and 1939, revealed that such computations were reliable only at a first order of perturbation theory, a problem already pointed out by Robert Oppenheimer. At higher orders in the series infinities emerged, making such computations meaningless and casting doubt on the theory's internal consistency. This suggested that special relativity and quantum mechanics were fundamentally incompatible.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "atom",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "emission",
+      "canonical_entity_type": "process",
+      "note": ""
+    },
+    {
+      "id": "e3",
+      "surface": "field",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    },
+    {
+      "id": "e4",
+      "surface": "interaction",
+      "canonical_entity_type": "interaction",
+      "note": ""
+    },
+    {
+      "id": "e5",
+      "surface": "process",
+      "canonical_entity_type": "process",
+      "note": ""
+    },
+    {
+      "id": "e6",
+      "surface": "radiation",
+      "canonical_entity_type": "observable",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "58296c0c3bbdfcb33700686b975379d6ed1ea583dbb63a1836e154582c37f05a",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

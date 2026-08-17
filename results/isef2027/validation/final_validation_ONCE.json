@@ -1,0 +1,535 @@
+{
+  "status": "EVALUATED_ONCE_AFTER_METHOD_FREEZE",
+  "evaluation_timestamp": "2026-08-17T04:31:06.340341+00:00",
+  "evaluated_at": "2026-08-17T04:31:06.340354+00:00",
+  "warning": "THIS RESULT MAY NOT BE USED TO RETUNE THE CURRENT FROZEN METHOD.",
+  "frozen_method_sha256": "a9c7d47ad8e7b6790166ed07336fdc9e290b9fff9b9fa1628fb34076cac5cafe",
+  "holdout_sha256": "74f671037c1a7e78d8b3109ae7fcde861d021e51a54b4e970232cf7413f20f72",
+  "holdout_passages_sha256": "74f671037c1a7e78d8b3109ae7fcde861d021e51a54b4e970232cf7413f20f72",
+  "git_sha": "4c6e42a97955acd581e66a77580bd705bc6be339",
+  "n_holdout": 32,
+  "task_a_lexical": {
+    "model": "tfidf_unigram_linearsvc",
+    "metrics": {
+      "top1_accuracy": 0.65625,
+      "macro_f1": 0.5092063492063492,
+      "labels": [
+        "atomistic_corpuscular",
+        "classical_em",
+        "quantum_mechanics",
+        "relativity",
+        "thermodynamics"
+      ],
+      "per_theory": {
+        "atomistic_corpuscular": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 0
+        },
+        "classical_em": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 8
+        },
+        "quantum_mechanics": {
+          "precision": 1.0,
+          "recall": 0.125,
+          "f1": 0.2222222222222222,
+          "support": 8
+        },
+        "relativity": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571,
+          "support": 8
+        },
+        "thermodynamics": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1": 0.8,
+          "support": 8
+        }
+      },
+      "bootstrap": {
+        "top1_mean": 0.656796875,
+        "top1_ci95_low": 0.46875,
+        "top1_ci95_high": 0.84375
+      },
+      "top2_accuracy": 0.71875,
+      "mean_correct_rank": 2.375
+    },
+    "hyperparameters": {
+      "vectorizer": "TfidfVectorizer()",
+      "clf": "LinearSVC(random_state=0)"
+    }
+  },
+  "task_a_masked": [
+    {
+      "model": "majority_baseline",
+      "metrics": {
+        "top1_accuracy": 0.25,
+        "macro_f1": 0.1,
+        "labels": [
+          "classical_em",
+          "quantum_mechanics",
+          "relativity",
+          "thermodynamics"
+        ],
+        "per_theory": {
+          "classical_em": {
+            "precision": 0.25,
+            "recall": 1.0,
+            "f1": 0.4,
+            "support": 8
+          },
+          "quantum_mechanics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "relativity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "thermodynamics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          }
+        }
+      },
+      "hyperparameters": {
+        "label": "classical_em"
+      }
+    },
+    {
+      "model": "random_baseline",
+      "metrics": {
+        "top1_accuracy": 0.09375,
+        "macro_f1": 0.06666666666666667,
+        "labels": [
+          "atomistic_corpuscular",
+          "classical_em",
+          "newtonian",
+          "quantum_field_theory",
+          "quantum_mechanics",
+          "relativity",
+          "thermodynamics"
+        ],
+        "per_theory": {
+          "atomistic_corpuscular": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "classical_em": {
+            "precision": 0.25,
+            "recall": 0.125,
+            "f1": 0.16666666666666666,
+            "support": 8
+          },
+          "newtonian": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "quantum_field_theory": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "quantum_mechanics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "relativity": {
+            "precision": 0.14285714285714285,
+            "recall": 0.125,
+            "f1": 0.13333333333333333,
+            "support": 8
+          },
+          "thermodynamics": {
+            "precision": 0.25,
+            "recall": 0.125,
+            "f1": 0.16666666666666666,
+            "support": 8
+          }
+        }
+      },
+      "hyperparameters": {
+        "seed": 0
+      }
+    },
+    {
+      "model": "tfidf_unigram_linearsvc",
+      "metrics": {
+        "top1_accuracy": 0.625,
+        "macro_f1": 0.4647619047619047,
+        "labels": [
+          "atomistic_corpuscular",
+          "classical_em",
+          "quantum_mechanics",
+          "relativity",
+          "thermodynamics"
+        ],
+        "per_theory": {
+          "atomistic_corpuscular": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "classical_em": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "support": 8
+          },
+          "quantum_mechanics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "relativity": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 8
+          },
+          "thermodynamics": {
+            "precision": 0.8571428571428571,
+            "recall": 0.75,
+            "f1": 0.8,
+            "support": 8
+          }
+        },
+        "bootstrap": {
+          "top1_mean": 0.62609375,
+          "top1_ci95_low": 0.4375,
+          "top1_ci95_high": 0.7820312499999993
+        },
+        "top2_accuracy": 0.71875,
+        "mean_correct_rank": 2.40625
+      },
+      "hyperparameters": {
+        "vectorizer": "TfidfVectorizer()",
+        "clf": "LinearSVC(random_state=0)"
+      }
+    },
+    {
+      "model": "tfidf_unigram_bigram_linearsvc",
+      "metrics": {
+        "top1_accuracy": 0.59375,
+        "macro_f1": 0.37362637362637363,
+        "labels": [
+          "atomistic_corpuscular",
+          "classical_em",
+          "newtonian",
+          "quantum_mechanics",
+          "relativity",
+          "thermodynamics"
+        ],
+        "per_theory": {
+          "atomistic_corpuscular": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "classical_em": {
+            "precision": 0.4444444444444444,
+            "recall": 1.0,
+            "f1": 0.6153846153846154,
+            "support": 8
+          },
+          "newtonian": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "quantum_mechanics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "relativity": {
+            "precision": 1.0,
+            "recall": 0.625,
+            "f1": 0.7692307692307693,
+            "support": 8
+          },
+          "thermodynamics": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 8
+          }
+        },
+        "bootstrap": {
+          "top1_mean": 0.593671875,
+          "top1_ci95_low": 0.40625,
+          "top1_ci95_high": 0.75
+        },
+        "top2_accuracy": 0.71875,
+        "mean_correct_rank": 2.4375
+      },
+      "hyperparameters": {
+        "vectorizer": "TfidfVectorizer(ngram_range=(1, 2))",
+        "clf": "LinearSVC(random_state=0)"
+      }
+    },
+    {
+      "model": "tfidf_unigram_bigram_logreg",
+      "metrics": {
+        "top1_accuracy": 0.4375,
+        "macro_f1": 0.2683982683982684,
+        "labels": [
+          "classical_em",
+          "newtonian",
+          "quantum_mechanics",
+          "relativity",
+          "thermodynamics"
+        ],
+        "per_theory": {
+          "classical_em": {
+            "precision": 0.32,
+            "recall": 1.0,
+            "f1": 0.48484848484848486,
+            "support": 8
+          },
+          "newtonian": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "quantum_mechanics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "relativity": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "thermodynamics": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 8
+          }
+        },
+        "bootstrap": {
+          "top1_mean": 0.43484375,
+          "top1_ci95_low": 0.28046875000000004,
+          "top1_ci95_high": 0.625
+        },
+        "top2_accuracy": 0.53125,
+        "mean_correct_rank": 2.78125
+      },
+      "hyperparameters": {
+        "vectorizer": "TfidfVectorizer(ngram_range=(1, 2))",
+        "clf": "LogisticRegression(max_iter=2000, random_state=0)"
+      }
+    },
+    {
+      "model": "tfidf_centroid",
+      "metrics": {
+        "top1_accuracy": 0.65625,
+        "macro_f1": 0.48117216117216116,
+        "labels": [
+          "atomistic_corpuscular",
+          "classical_em",
+          "quantum_mechanics",
+          "relativity",
+          "thermodynamics"
+        ],
+        "per_theory": {
+          "atomistic_corpuscular": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "classical_em": {
+            "precision": 0.4444444444444444,
+            "recall": 1.0,
+            "f1": 0.6153846153846154,
+            "support": 8
+          },
+          "quantum_mechanics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 8
+          },
+          "relativity": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333333333333333,
+            "support": 8
+          },
+          "thermodynamics": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571428571428571,
+            "support": 8
+          }
+        },
+        "bootstrap": {
+          "top1_mean": 0.656484375,
+          "top1_ci95_low": 0.5,
+          "top1_ci95_high": 0.8125
+        },
+        "top2_accuracy": 0.75
+      },
+      "hyperparameters": {
+        "ngram": [
+          1,
+          2
+        ]
+      }
+    }
+  ],
+  "task_b_structural": {
+    "task": "B_structural_fingerprint_retrieval",
+    "extractor": "structural_extractor_deterministic_v1",
+    "claim_bearing": true,
+    "typed_weight": 0.25,
+    "hungarian_weight": 0.75,
+    "masked": false,
+    "n": 32,
+    "empty_extraction_n": 1,
+    "mean_correct_rank": 4.46875,
+    "mrr": 0.2944940476190476,
+    "top1_retrieval": 0.0625,
+    "top2_retrieval": 0.15625,
+    "mean_correct_vs_next_margin": -0.08149414062499999,
+    "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+  },
+  "task_b_masked": {
+    "task": "B_structural_fingerprint_retrieval",
+    "extractor": "structural_extractor_deterministic_v1",
+    "claim_bearing": true,
+    "typed_weight": 0.25,
+    "hungarian_weight": 0.75,
+    "masked": true,
+    "n": 32,
+    "empty_extraction_n": 1,
+    "mean_correct_rank": 4.4375,
+    "mrr": 0.29605654761904765,
+    "top1_retrieval": 0.0625,
+    "top2_retrieval": 0.15625,
+    "mean_correct_vs_next_margin": -0.08002929687499999,
+    "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+  },
+  "hard_cases": null,
+  "per_source_family": {
+    "minkowski_spacetime_pd": {
+      "task": "B_structural_fingerprint_retrieval",
+      "extractor": "structural_extractor_deterministic_v1",
+      "claim_bearing": true,
+      "typed_weight": 0.25,
+      "hungarian_weight": 0.75,
+      "masked": false,
+      "n": 8,
+      "empty_extraction_n": 0,
+      "mean_correct_rank": 4.375,
+      "mrr": 0.26160714285714287,
+      "top1_retrieval": 0.0,
+      "top2_retrieval": 0.125,
+      "mean_correct_vs_next_margin": -0.094140625,
+      "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+    },
+    "heaviside_electromagnetic_theory_pd": {
+      "task": "B_structural_fingerprint_retrieval",
+      "extractor": "structural_extractor_deterministic_v1",
+      "claim_bearing": true,
+      "typed_weight": 0.25,
+      "hungarian_weight": 0.75,
+      "masked": false,
+      "n": 8,
+      "empty_extraction_n": 0,
+      "mean_correct_rank": 4.875,
+      "mrr": 0.3148809523809524,
+      "top1_retrieval": 0.125,
+      "top2_retrieval": 0.25,
+      "mean_correct_vs_next_margin": -0.10488281249999999,
+      "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+    },
+    "planck_theory_of_heat_radiation_pd": {
+      "task": "B_structural_fingerprint_retrieval",
+      "extractor": "structural_extractor_deterministic_v1",
+      "claim_bearing": true,
+      "typed_weight": 0.25,
+      "hungarian_weight": 0.75,
+      "masked": false,
+      "n": 8,
+      "empty_extraction_n": 0,
+      "mean_correct_rank": 3.0,
+      "mrr": 0.41041666666666665,
+      "top1_retrieval": 0.125,
+      "top2_retrieval": 0.25,
+      "mean_correct_vs_next_margin": -0.035546875000000006,
+      "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+    },
+    "bohr_three_papers_pd": {
+      "task": "B_structural_fingerprint_retrieval",
+      "extractor": "structural_extractor_deterministic_v1",
+      "claim_bearing": true,
+      "typed_weight": 0.25,
+      "hungarian_weight": 0.75,
+      "masked": false,
+      "n": 8,
+      "empty_extraction_n": 1,
+      "mean_correct_rank": 5.625,
+      "mrr": 0.19107142857142856,
+      "top1_retrieval": 0.0,
+      "top2_retrieval": 0.0,
+      "mean_correct_vs_next_margin": -0.09140625000000001,
+      "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+    }
+  },
+  "success_criterion": {
+    "primary_metric": "top1",
+    "minimum_primary_value": 0.2,
+    "secondary_requirements": [
+      "report_top2_and_mrr",
+      "report_masked_top1",
+      "report_per_source_family_top1"
+    ],
+    "masked_requirement": "masked_top1_must_be_reported",
+    "source_family_requirement": "no_single_family_may_be_omitted_from_report",
+    "failure_rule": "If holdout primary top1 < minimum_primary_value, final validation claim fails; do not retune frozen method from holdout.",
+    "student_approved": true,
+    "approved_at": "2026-08-17T04:11:02.513585+00:00",
+    "note": "Bar set above 7-way chance (~0.143) and below pre-freeze DEV structural top1; decided under owner authorization before holdout build.",
+    "template_created_by": "coding_agent",
+    "template_generated_with_ai": true,
+    "student_decisions_ai_generated": true,
+    "annotator_role": "student_researcher",
+    "student_decisions_present": true
+  },
+  "primary_metric_value": 0.0625,
+  "meets_student_success_criterion": false,
+  "ancient_confirmatory": "LOCKED_NOT_READY",
+  "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED",
+  "note": "Passing final validation does NOT unlock ancient confirmatory scoring."
+}

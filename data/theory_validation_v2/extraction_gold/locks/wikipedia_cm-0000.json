@@ -1,0 +1,20 @@
+{
+  "passage_id": "wikipedia_cm-0000",
+  "work_id": "wikipedia_cm",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "e071789ab2c6aa68a32074c6df95814623b8ecec3817743d19b1003f40de0630",
+  "text": "In physics, classical mechanics is a theory that describes the effect of forces on the motion of macroscopic objects and bulk matter, without considering quantum effects, and often without incorporating relativistic effects either. It is used in describing the motion of objects such as projectiles and particles, parts of machinery, spacecraft, planets, stars, galaxies, deformable solids, fluids, macromolecules and other objects.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "3f4928f1555a51890a6a9f8f745f64e705fba61ef71f0f0f0e64909aba5cd4a5",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

@@ -1,4 +1,37 @@
 {
-  "status": "NOT_BUILT",
-  "reason": "True final method holdout may be built only AFTER student method freeze."
+  "status": "EVALUATED_ONCE_AFTER_METHOD_FREEZE",
+  "build_timestamp": "2026-08-17T04:30:59.331428+00:00",
+  "built_at": "2026-08-17T04:30:59.331449+00:00",
+  "frozen_method_manifest_sha256": "a9c7d47ad8e7b6790166ed07336fdc9e290b9fff9b9fa1628fb34076cac5cafe",
+  "frozen_method_sha256": "a9c7d47ad8e7b6790166ed07336fdc9e290b9fff9b9fa1628fb34076cac5cafe",
+  "holdout_sha256": "74f671037c1a7e78d8b3109ae7fcde861d021e51a54b4e970232cf7413f20f72",
+  "holdout_passages_sha256": "74f671037c1a7e78d8b3109ae7fcde861d021e51a54b4e970232cf7413f20f72",
+  "number_of_passages": 32,
+  "n_passages": 32,
+  "source_families": [
+    "bohr_three_papers_pd",
+    "heaviside_electromagnetic_theory_pd",
+    "minkowski_spacetime_pd",
+    "planck_theory_of_heat_radiation_pd"
+  ],
+  "work_ids": [
+    "britannica_1911_radiation_theory",
+    "britannica_1926_atom_bohr",
+    "heaviside_moving_charge_1888",
+    "minkowski_space_and_time_saha"
+  ],
+  "author_families": [
+    "bohr",
+    "heaviside",
+    "larmor_britannica",
+    "minkowski"
+  ],
+  "evaluated_once": true,
+  "scoring_forbidden_until": "evaluate-final-validation-once",
+  "ancient_confirmatory": "LOCKED_NOT_READY",
+  "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED",
+  "evaluation_timestamp": "2026-08-17T04:31:06.340341+00:00",
+  "result_sha256": "00ffc5348b73b0da863ade7583349bb78c9bb0aa519fd2a2e2ebfb9c7c66ef69",
+  "git_sha": "4c6e42a97955acd581e66a77580bd705bc6be339",
+  "result_path": "results/isef2027/validation/final_validation_ONCE.json"
 }

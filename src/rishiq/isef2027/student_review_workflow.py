@@ -380,6 +380,13 @@ def review_status(root: Path) -> dict[str, Any]:
         and suc_c.get("student_approved") is True
     ):
         status = "STUDENT_REVIEW_COMPLETE_PENDING_OTHER_GATES"
+    holdout_status = "NOT_BUILT"
+    hold_path = root / "data/theory_validation_v2/passages/TRUE_FINAL_HOLDOUT_STATUS.json"
+    if hold_path.exists():
+        try:
+            holdout_status = json.loads(hold_path.read_text(encoding="utf-8")).get("status", "NOT_BUILT")
+        except Exception:
+            holdout_status = "NOT_BUILT"
     return {
         "method_freeze_status": status if status == "AWAITING_STUDENT_REVIEW" else "NOT_READY_TO_FREEZE",
         "workflow_status": status,
@@ -393,7 +400,7 @@ def review_status(root: Path) -> dict[str, Any]:
             "student_approved": suc_c.get("student_approved") is True,
             "path": str(paths["success_criterion"].relative_to(root)),
         },
-        "true_final_method_holdout": "NOT_BUILT",
+        "true_final_method_holdout": holdout_status,
         "ancient_confirmatory": "LOCKED_NOT_READY",
         "dev_reference": str(paths["dev_reference"].relative_to(root)),
     }

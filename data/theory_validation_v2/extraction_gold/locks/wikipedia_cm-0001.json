@@ -1,0 +1,20 @@
+{
+  "passage_id": "wikipedia_cm-0001",
+  "work_id": "wikipedia_cm",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "b5a907b731aebd01349239eacfa19321e8950413cd97fcb5e3c044feeae64d44",
+  "text": "The development of classical mechanics involved substantial change in the methods and philosophy of physics. The qualifier classical distinguishes this type of mechanics from new methods developed after the revolutions in physics of the early 20th century which revealed limitations in classical mechanics. Some modern sources include relativistic mechanics in classical mechanics, as representing the subject matter in its most developed and accurate form.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "dd868aa7c20392cf7b1db411dea6945cb6da5206978317fa6349a6ba1742f34c",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

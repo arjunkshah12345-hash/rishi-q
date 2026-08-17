@@ -1,0 +1,20 @@
+{
+  "passage_id": "wikipedia_maxwell-0002",
+  "work_id": "wikipedia_maxwell",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "baeb609421de06c7aedba0e0fed624c291ed60b5661f615a27a4f14935fff5e9",
+  "text": "However, their use requires experimentally determined parameters for a phenomenological description of the electromagnetic response of materials. The term \"Maxwell's equations\" is often also used for equivalent alternative formulations. Versions of Maxwell's equations based on the electric and magnetic scalar potentials are preferred for explicitly solving the equations as a boundary value problem, analytical mechanics, or for use in quantum mechanics.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "e0ce945e37617366094488e407e026c3748f164b8f54cb181acc851ae3c525e8",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

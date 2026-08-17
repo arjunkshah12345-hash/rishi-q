@@ -1,0 +1,27 @@
+{
+  "passage_id": "clausius_mechanical_heat-0000",
+  "work_id": "clausius_mechanical_heat",
+  "source_family": "clausius_mechanical_heat",
+  "passage_sha256": "0d292cc3e3fffe7a722a67bd2e1e5e6d93db0160fec7472312c21983af815b77",
+  "text": "The following translation was undertaken at the instance of Dr T. Archer Hirst, F.R.S., the translator of the first collected edition (mentioned in the Author's Preface below) of Professor Clausius' papers on the Mechanical Theory of Heat. The former work has however been so completely re- written by Professor Clausius, that Dr Hirst's translation has been found scarcely anywhere available ; and I must there- fore accept the full responsibility of the present publication. I trust it may be found to supply a want which I have reason to believe has been felt, namely, that of a systematic and connected treatise on Thermodynamics, for use in Universities and Colleges, and among advanced students generally. With the view of rendering it more complete for this purpose, I have added, with the consent of Professor Clausius, three short appendices on points which he had left unnoticed, but which still seemed of interest, at any rate to English readers. These are, (1) The Thermo-elastic pro-",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "heat",
+      "canonical_entity_type": "observable",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "94a562fbeb1e37b8bb7a895430f72936b11fe752857a4f77c020644a09ca4d1e",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

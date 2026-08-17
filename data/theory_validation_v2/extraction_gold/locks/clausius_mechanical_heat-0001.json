@@ -1,0 +1,27 @@
+{
+  "passage_id": "clausius_mechanical_heat-0001",
+  "work_id": "clausius_mechanical_heat",
+  "source_family": "clausius_mechanical_heat",
+  "passage_sha256": "2bca7b3c1b447f214606c91dd4c7b669c558801d0aeaf7fd84a3ecf82693b7e5",
+  "text": "same direction in which the motion actually takes place, or in the opposite. The work likewise will be positive in the first case, negative in the second. To express the difference in words, which is for many reasons convenient, recourse may be had to a terminology proposed by the writer in a former treatise, and the force may be said to do or perform work in the former case, and to destroy work in the latter.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "force",
+      "canonical_entity_type": "interaction",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "446799098cc4f6ffb5631c5ec3dd97f1f172de0fddafdffbcf7bb86851cc4e74",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

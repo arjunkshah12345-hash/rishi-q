@@ -1,0 +1,27 @@
+{
+  "passage_id": "huygens_light-0001",
+  "work_id": "huygens_light",
+  "source_family": "huygens_treatise_on_light",
+  "passage_sha256": "3a78ca032354c8dbc9cf63737b1407ad3ac2b859901136a31dc62521e809dde0",
+  "text": "It is always possible to attain thereby to a degree of probability which very often is scarcely less than complete proof. To wit, when things which have been demonstrated by the Principles that have been assumed correspond perfectly to the phenomena which experiment has brought under observation; especially when there are a great number of them, and further, principally, when one can imagine and foresee new phenomena which ought to follow from the hypotheses which one employs, and when one finds that therein the fact corresponds to our prevision. But if all these proofs of probability are met with in that which I propose to discuss, as it seems to me they are, this ought to be a very strong confirmation of the success of my inquiry; and it must be ill if the facts are not pretty much as I represent them. I would believe then that those who love to know the Causes of things and who are able to admire the marvels of Light, will find some satisfaction in these various speculations regarding it, and in the new explanation of its famous property which is the main foundation of the construction of our eyes and of those great inventions which extend so vastly the use of them.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "light",
+      "canonical_entity_type": "observable",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "de335e6e93fb010497c8e6843d640acc16d466103dc5ba0d548ef993905fc98b",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

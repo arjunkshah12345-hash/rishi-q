@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_gr-0000",
+  "work_id": "wikipedia_gr",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "5087b20b1acfe56a5f4080133738eb8cec3fbddbcde0e5bb4b2975546d6367de",
+  "text": "General relativity, also known as the general theory of relativity, and as Einstein's theory of gravity, is the geometric theory of gravitation published by Albert Einstein in May 1916 and is the accepted description of the gravitation of macroscopic objects in modern physics. General relativity generalizes special relativity and refines Isaac Newton's law of universal gravitation, providing a unified description of gravity as a geometric property of space and time, or four-dimensional spacetime.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "space",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "time",
+      "canonical_entity_type": "time",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "f73f690db5b09853717c24b8ff46c4e7ceb99e15b8f8634a8096cd6803c569fb",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

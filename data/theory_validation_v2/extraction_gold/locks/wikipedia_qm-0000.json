@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_qm-0000",
+  "work_id": "wikipedia_qm",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "f62e8cc4ba48179eedb5b112d1b3476118eac7d5bd617c9f53aee104cf830e0e",
+  "text": "Quantum mechanics, also known as quantum physics, is the fundamental physical theory that describes the behavior of matter and of light; the behaviors it models typically occur at and below the scale of atoms, and have been described as peculiar and mysterious. Its concepts and methods have been applied across many disciplines, including quantum chemistry, quantum biology, quantum field theory, quantum technology, and quantum information science.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "field",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "light",
+      "canonical_entity_type": "observable",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "481b423fe6a6001ef0f6c7a5f116be72b3c492fcc550bebeeebafefcc61dca69",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

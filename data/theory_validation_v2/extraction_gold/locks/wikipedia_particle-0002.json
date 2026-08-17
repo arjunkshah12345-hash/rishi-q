@@ -1,0 +1,39 @@
+{
+  "passage_id": "wikipedia_particle-0002",
+  "work_id": "wikipedia_particle",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "41b02c8fb1645a8b41f2670711ade9025af32566764a5557bbdb3f2bd8a78eb6",
+  "text": "Hadrons that contain an odd number of quarks are called baryons and those that contain an even number are called mesons. Two baryons, the proton and the neutron, make up most of the mass of ordinary matter. Mesons are unstable and the longest-lived last for only a few hundredths of a microsecond. They occur after collisions between particles made of quarks, such as fast-moving protons and neutrons in cosmic rays.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "mass",
+      "canonical_entity_type": "property",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "neutron",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    },
+    {
+      "id": "e3",
+      "surface": "proton",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "b79e23ebc7b5de9ac9f27acd2db5969d5e7153f04f597b642a8bf1d5369a80ed",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

@@ -1,0 +1,27 @@
+{
+  "passage_id": "wikipedia_atomism-0002",
+  "work_id": "wikipedia_atomism",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "7d65ada036c98ba29c64713fd998dbbaff5530cf6255aa753bcb8589e92b07af",
+  "text": "The particles of chemical matter for which chemists and other natural philosophers of the early 19th century found experimental evidence were thought to be indivisible, and therefore were given by John Dalton the name \"atom\", long used by the atomist philosophy. Although the connection to historical atomism is at best tenuous, elementary particles have become a modern analogue of philosophical atoms.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "atom",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "312815d5285fc515c1214c2c04487ee93173b1a8dea5de8a4253907caf9a317e",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

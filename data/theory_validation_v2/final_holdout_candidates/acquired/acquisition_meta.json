@@ -1,0 +1,10 @@
+{
+  "n_passages": 32,
+  "source_families": [
+    "bohr_three_papers_pd",
+    "heaviside_electromagnetic_theory_pd",
+    "minkowski_spacetime_pd",
+    "planck_theory_of_heat_radiation_pd"
+  ],
+  "acquisition": "wikisource_public_domain"
+}

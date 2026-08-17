@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_cm-0002",
+  "work_id": "wikipedia_cm",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "d259b037b13e59f153646142fd8f6e87d777ac9c878df3eca2f7060a934ea4f4",
+  "text": "The earliest formulation of classical mechanics is often referred to as Newtonian mechanics. It consists of the physical concepts based on the 17th century foundational works of Sir Isaac Newton, and the mathematical methods invented by Newton, Gottfried Wilhelm Leibniz, Leonhard Euler and others to describe the motion of bodies under the influence of forces. Later, methods based on energy were developed by Euler, Joseph-Louis Lagrange, William Rowan Hamilton and others, leading to the development of analytical mechanics (which includes Lagrangian mechanics and Hamiltonian mechanics).",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "bodies",
+      "canonical_entity_type": "entity",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "energy",
+      "canonical_entity_type": "property",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "8d0d28a6766e3a9733b5d807eef24f240d7f91c334b1b5cb57af4b46e643150c",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

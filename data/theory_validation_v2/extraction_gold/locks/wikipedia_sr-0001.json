@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_sr-0001",
+  "work_id": "wikipedia_sr",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "617eeb1abbfa361d30754342d480a19a816af0ebfae6a60da4220e9661adbd37",
+  "text": "The first postulate, the principle of relativity, says the laws of physics do not depend on objects being at absolute rest: for example, an observer on a train sees natural phenomena on that train that look the same whether the train is moving or not. The second postulate, constant speed of light, says observers in a train station see light travel at the same speed whether they measure light from within the station or light from a moving train.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "light",
+      "canonical_entity_type": "observable",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "observer",
+      "canonical_entity_type": "measurement",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "9191da223f454c7adea1a5857f3eccd5296b153fb53e70ff62f4e28b4935fd41",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

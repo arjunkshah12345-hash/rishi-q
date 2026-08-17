@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_maxwell-0001",
+  "work_id": "wikipedia_maxwell",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "60116805478a04f01eb5a4b140abac1ce3b8930453eaa6d07a990a9c1f051b62",
+  "text": "The microscopic equations have universal applicability but are unwieldy for common calculations. They relate the electric and magnetic fields to total charge and total current, including the complicated charges and currents in materials at the atomic scale. The macroscopic equations define two new auxiliary fields that describe the large-scale behaviour of matter without having to consider atomic-scale charges and quantum phenomena like spins.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "charge",
+      "canonical_entity_type": "property",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "current",
+      "canonical_entity_type": "observable",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "5d49217b4a6eb9d2f2a9aa80f34d345379d6d14c8d875332bd3970e7c2b40057",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

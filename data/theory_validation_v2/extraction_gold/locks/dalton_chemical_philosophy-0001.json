@@ -1,0 +1,27 @@
+{
+  "passage_id": "dalton_chemical_philosophy-0001",
+  "work_id": "dalton_chemical_philosophy",
+  "source_family": "dalton_chemical_philosophy",
+  "passage_sha256": "416dec204f16bb2b07bd4f9e4b987fae15cd8c5909496a29ec93d0b7e7445abb",
+  "text": "There is no reason that I am acquainted with for disbelieving that oxygen combined with a metal is still repulsive df oxygen, and that by the same law as particles of an elastic fluid; that is, the repulsion is inversely as the distance of the centres of the atoms. Hence it may be demonstrated that it re- quires twice the strength of affinity to form a deutoxide as a protoxide* three times the strength to form a tritoxide as a protox- ide> Sec; On this account it is, in all proba- bility, that deutoxides are not numerous, and tritoxides are rarely if ever found.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "repulsion",
+      "canonical_entity_type": "interaction",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "ef536183cc38d2c10d28bf1e02e79385802e1633f4f4100ee5578d374734d2b3",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

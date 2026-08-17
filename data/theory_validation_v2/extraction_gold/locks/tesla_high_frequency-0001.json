@@ -1,0 +1,20 @@
+{
+  "passage_id": "tesla_high_frequency-0001",
+  "work_id": "tesla_high_frequency",
+  "source_family": "tesla_high_frequency",
+  "passage_sha256": "258300f60ee7aeb0de51f5ea43cb9a93d0200d1d84640b259e1476758995d847",
+  "text": "At Cartstatt he was so diligent as to compress the four years' course into three, and graduated in 1873. Returning home during an epidemic of cholera, he was stricken down by the disease and suffered so seriously from the consequences that his studies were interrupted for fully two years. But the time was not wasted, for he had become passionately fond of experimenting, and as much as his means and leisure permitted devoted his energies to electrical study and investigation.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "a3e090d40efad31c6465c051b6f8b869095b8d98034c79fce87848b15059c899",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

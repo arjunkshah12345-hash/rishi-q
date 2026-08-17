@@ -1,0 +1,20 @@
+{
+  "passage_id": "dalton_chemical_philosophy-0000",
+  "work_id": "dalton_chemical_philosophy",
+  "source_family": "dalton_chemical_philosophy",
+  "passage_sha256": "58c08b4782471afb7a2b7a55110c49ab2be87e8a818691e2b3f2218b42a17e3b",
+  "text": "J. HE work now submitted to the public was begun to be printed in 1817; and the 13th and 14th sections, containing the oxicles and sulphurets, were printed off before the end of October of the same year. The printing of the rest of the work to the appendix was finished in September, 1821. One sheet of the appendix was printed at the end of 1823 ; but no addition was afterwards made till May, 1826 ; when the print- ing- was resumed, and has been continued to the present time.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "34b7060a5ce557b705acf94130424895a0ecf9f49def07c936797587fe30b868",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

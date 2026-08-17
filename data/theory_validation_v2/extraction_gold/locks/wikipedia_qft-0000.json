@@ -1,0 +1,39 @@
+{
+  "passage_id": "wikipedia_qft-0000",
+  "work_id": "wikipedia_qft",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "1f15d3e42df232d32ce7ee630bda55b3f2557919742d984bbb8ca213e1595389",
+  "text": "In theoretical physics, quantum field theory (QFT) is a theoretical framework that combines field theory, special relativity and quantum mechanics. QFT is used in particle physics to construct physical models of subatomic particles and in condensed matter physics to construct models of quasiparticles. The current Standard Model of particle physics is based on QFT. Despite its extraordinary predictive success, QFT faces ongoing challenges in fully incorporating gravity and in establishing a completely rigorous mathematical foundation.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "current",
+      "canonical_entity_type": "observable",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "field",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    },
+    {
+      "id": "e3",
+      "surface": "particle",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "d7cf3d262144a69ad9d246544cced651de2e4f48161c933ccde73080f089a9bd",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

@@ -1,0 +1,27 @@
+{
+  "passage_id": "wikipedia_atomism-0001",
+  "work_id": "wikipedia_atomism",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "f1a323978b333dbccfe20b5d1ca1fa6f3f89f8f9a67d29115e43452de6a56abd",
+  "text": "He and other ancient Greek atomists argued that nature consists of two fundamental principles: atom and void. Clusters of different shapes, arrangements, and positions give rise to the various macroscopic substances in the world. A similar idea was developed by Kan\u0101da of the Vai\u015be\u1e63ika school, who proposed indivisible particles (param\u0101\u1e47u). Indian Buddhists, such as Dharmakirti (fl. c. 6th or 7th century) and others, developed distinctive theories of atomism, for example, involving momentary (instantaneous) atoms (kalapas) that flash in and out of existence.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "atom",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "7d226e0d5938081db26984d3d52803d1ce945fc4685a8f154de160621f7c07a6",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

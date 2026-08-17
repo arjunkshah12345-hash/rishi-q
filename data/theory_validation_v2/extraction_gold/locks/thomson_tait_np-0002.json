@@ -1,0 +1,27 @@
+{
+  "passage_id": "thomson_tait_np-0002",
+  "work_id": "thomson_tait_np",
+  "source_family": "treatise_natural_philosophy",
+  "passage_sha256": "9dff0d0dd01010e074b8dda52d8a581b98af3a47ba42878804883ec522e1fd7c",
+  "text": "Problem of \u00a7 696 solved for spherical shell \u2014 Dilatation proved expressible in convergent series of spherical harmonics \u2014 General theorem regarding expansibility in solid har- monics\u2014 Displacement determined on temporary suppo- sition that dilatation is known \u2014 Complete harmonic solu- tion of equations of interior equilibrium \u2014 Solid sphere with surface displacements given \u2014 Shell with given dis- placements of its outer and inner surfaces",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "equilibrium",
+      "canonical_entity_type": "state",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "be6794c21f6d858dc9761cb8c92ce2a258182cc2330fc403032d3687ad57add8",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

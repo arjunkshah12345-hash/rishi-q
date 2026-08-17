@@ -1,0 +1,288 @@
+{
+  "artifact": "theory_validation_v2_method_FROZEN",
+  "schema_version": "frozen_method_manifest_v1",
+  "git_sha": "4c6e42a97955acd581e66a77580bd705bc6be339",
+  "freeze_timestamp_utc": "2026-08-17T04:30:54.691887+00:00",
+  "point_of_no_return_for_final_validation": true,
+  "repository_state": {
+    "git_sha": "4c6e42a97955acd581e66a77580bd705bc6be339",
+    "schema_version": "frozen_method_manifest_v1"
+  },
+  "extractor": {
+    "extractor_version": "structural_extractor_deterministic_v1",
+    "extractor_source_path": "src/rishiq/isef2027/structural_extractor.py",
+    "extractor_source_sha256": "339c474db7f8aa3d0557c39498e8c6363292ec1cc3079aead9b4718b8c4c8cc4",
+    "helper_module_sha256": {
+      "src/rishiq/isef2027/structural_extractor.py": "339c474db7f8aa3d0557c39498e8c6363292ec1cc3079aead9b4718b8c4c8cc4",
+      "src/rishiq/isef2027/concept_graph.py": "aa5950769c3936b93e82b6ce5ed45d2bb8ed2ca221bbfb10089c5d1d8ed54039"
+    }
+  },
+  "ontology": {
+    "files_sha256": {
+      "src/rishiq/isef2027/concept_graph.py": "aa5950769c3936b93e82b6ce5ed45d2bb8ed2ca221bbfb10089c5d1d8ed54039",
+      "ontology/concept_graph/schema.json": "20f2df10e9d840d6ae7986e4abb94d875081a97b367faf54c77ccb0bcb406e2b",
+      "ontology/concept_graph/index.json": "46c7a65f52477fc2edd169c76bcb43acff9738328514196e78fe2cb002877a1b",
+      "ontology/ontology_v0.1.yaml": "d6f9c29adcca89499c3d4cbbec41ff76d7ad683a5f6a7b8bd8eeef09cae8f9d7"
+    }
+  },
+  "fingerprints": [
+    {
+      "theory_name": "newtonian",
+      "path": "ontology/concept_graph/template_fp_newtonian.json",
+      "sha256": "cf1403e89c87ee525bc76b3809a9078d1934ddf5ac2880079b27b4aa03148780"
+    },
+    {
+      "theory_name": "thermodynamics",
+      "path": "ontology/concept_graph/template_fp_thermodynamics.json",
+      "sha256": "cee5e76111cd31186fb94adc7f5c0b58d895f7b6a566476567a9b46f5f938d0a"
+    },
+    {
+      "theory_name": "classical_em",
+      "path": "ontology/concept_graph/template_fp_classical_em.json",
+      "sha256": "7209d75cfb7f8da9ecb757631adb4a48389151b3e0db280227f99e0c60d3cf79"
+    },
+    {
+      "theory_name": "relativity",
+      "path": "ontology/concept_graph/template_fp_relativity.json",
+      "sha256": "708edd302a14e557ebf09e14495e5492ac8582bc3592bf5d79e62d020dc4f45d"
+    },
+    {
+      "theory_name": "quantum_mechanics",
+      "path": "ontology/concept_graph/template_fp_quantum_mechanics.json",
+      "sha256": "ca35dc625c429d335e2c26f7c738568cc1da0c5d1f52a729fccbc04d360e1ff4"
+    },
+    {
+      "theory_name": "quantum_field_theory",
+      "path": "ontology/concept_graph/template_fp_quantum_field_theory.json",
+      "sha256": "b26aefb9e07c15f42bde59880ad6ed95e7638ee5213908b328d9291feb655ed6"
+    },
+    {
+      "theory_name": "atomistic_corpuscular",
+      "path": "ontology/concept_graph/template_fp_atomistic_corpuscular.json",
+      "sha256": "545742db0dcdf98962211a089d35e1248b70d43fd8d6df85f984e15c59417104"
+    }
+  ],
+  "graph_scoring": {
+    "sources_sha256": {
+      "src/rishiq/isef2027/graph_similarity.py": "036e1abebb67121f0ae15dc1a45344d8cfc834591bcbd85b5035788c903b27f6",
+      "src/rishiq/isef2027/graph_templates.py": "bc068dcc9615e0bb2260ecdb6e5ab3ad6d2ba8758cfcbff6d5d13ed48953c4e2"
+    },
+    "algorithm": "typed_relation_coverage_adjusted + hungarian Option_B",
+    "graph_weights": {
+      "typed_weight": 0.25,
+      "hungarian_weight": 0.75
+    },
+    "retired_proxy_weights": {
+      "typed_weight": 1.0,
+      "hungarian_weight": 0.0,
+      "status": "RETIRED_PROXY_SELECTION"
+    }
+  },
+  "preprocessing": {
+    "vocabulary_mask_list": "giveaway_vocab_v1",
+    "sources_sha256": {
+      "src/rishiq/isef2027/theory_validation_v2.py": "6bc11bc5eaa42ba3730bc885b41864b19b3babc7e77fb50bfb3946b11e561a32",
+      "src/rishiq/isef2027/theory_validation_v2_corpus.py": "2f1274492f460c446a86c58dafe4ad6679ae709eb2463e44567fd2febfa8163b"
+    },
+    "notes": "mask_giveaway_vocab + hard_negative_or_cross_theory_context labeling in corpus builder"
+  },
+  "student_scientific_artifacts": {
+    "fingerprint_decisions_path": "artifacts/isef2027/student_review/fingerprint_decisions_v1.json",
+    "fingerprint_decisions_sha256": "d23d9a137a16db2d77d407213259af65828bdbc94119e957e4d703c15f5f7dd3",
+    "student_gold_path": "data/theory_validation_v2/extraction_gold/student_gold_v1.jsonl",
+    "student_gold_sha256": "e42cabb19449d4711a077e78bbcb5ba00d3677ba9d76ffc097bee85f735095f2",
+    "extractor_acceptance_criterion_path": "artifacts/isef2027/extractor_acceptance_criterion_STUDENT_REQUIRED.json",
+    "extractor_acceptance_criterion_sha256": "7da8f1adc509b2726f42f4f0e2c1aaa8faf9675889ecef6dde008215eca26111",
+    "final_validation_success_criterion_path": "artifacts/isef2027/final_validation_success_criterion_STUDENT_REQUIRED.json",
+    "final_validation_success_criterion_sha256": "1d6b3ab2fc527c6b8cc6c703ac8998cc90dee652ea85643c580a155d80de25f1",
+    "extractor_criterion_object": {
+      "minimum_node_f1": 0.5,
+      "minimum_relation_f1": 0.0,
+      "minimum_typed_relation_f1": 0.0,
+      "maximum_empty_extraction_rate": 0.35,
+      "student_approved": true,
+      "approved_at": "2026-08-17T04:11:02.513585+00:00",
+      "metrics_viewed_before_approval": false,
+      "note": "Thresholds set under owner authorization. Node F1 floor reflects deterministic lexicon extractor; relation floor 0 acknowledges pattern sparsity on this gold set.",
+      "max_gold_guided_revisions": 1,
+      "revision_policy": "ONE_STUDENT_GOLD_GUIDED_EXTRACTOR_REVISION",
+      "template_created_by": "coding_agent",
+      "template_generated_with_ai": true,
+      "student_decisions_ai_generated": true,
+      "annotator_role": "student_researcher",
+      "student_decisions_present": true
+    },
+    "success_criterion_object": {
+      "primary_metric": "top1",
+      "minimum_primary_value": 0.2,
+      "secondary_requirements": [
+        "report_top2_and_mrr",
+        "report_masked_top1",
+        "report_per_source_family_top1"
+      ],
+      "masked_requirement": "masked_top1_must_be_reported",
+      "source_family_requirement": "no_single_family_may_be_omitted_from_report",
+      "failure_rule": "If holdout primary top1 < minimum_primary_value, final validation claim fails; do not retune frozen method from holdout.",
+      "student_approved": true,
+      "approved_at": "2026-08-17T04:11:02.513585+00:00",
+      "note": "Bar set above 7-way chance (~0.143) and below pre-freeze DEV structural top1; decided under owner authorization before holdout build.",
+      "template_created_by": "coding_agent",
+      "template_generated_with_ai": true,
+      "student_decisions_ai_generated": true,
+      "annotator_role": "student_researcher",
+      "student_decisions_present": true
+    }
+  },
+  "corpus_development_state": {
+    "files_sha256": {
+      "data/theory_validation_v2/passages/corpus_meta.json": "85c083f947697087a553fb16aca84b5e7ee1ca268e329b7e43ba12613058e5c3",
+      "data/theory_validation_v2/eligibility/source_eligibility_v1.json": "53769dded7cfe1acef34eff093807c2db32a828a7c1ee54c83523f6ae1441167",
+      "artifacts/isef2027/split_manifest.json": "0fdd720db99a0c6d63c5552b1f066ab8bf99cf648a1ab5065ad37e4e3d620081",
+      "data/theory_validation_v2/passages/train.jsonl": "187885c37636680aa18cea2ecfee9b79f8536b1b493580a8d7b1e264eec742fb",
+      "data/theory_validation_v2/passages/development.jsonl": "a19d903b48f56ba3a77507f71ca88b08cce71695a760e1f1efa36fdcee472324"
+    },
+    "source_eligibility_rules": "data/theory_validation_v2/eligibility/source_eligibility_v1.json"
+  },
+  "statistical_method": {
+    "sources_sha256": {
+      "src/rishiq/isef2027/theory_validation_v2.py": "6bc11bc5eaa42ba3730bc885b41864b19b3babc7e77fb50bfb3946b11e561a32",
+      "src/rishiq/isef2027/method_freeze_gates.py": "34ab9d810a84f373158e798afc5871711326072c8c2f890d3f3b3368b1c6e98e"
+    },
+    "metrics": [
+      "top1",
+      "top2",
+      "mrr",
+      "macro_f1",
+      "work_level_permutation_power"
+    ],
+    "power_artifact_sha256": "38fafdc8859383d1732fd8a871eb2d6c92763c4b772679ff72873bad0e3cb035",
+    "n_sim_per_cell": 2000
+  },
+  "development_selection_result": {
+    "artifact": "results/isef2027/validation/external_dev_method_selection.json",
+    "artifact_sha256": "2535cca329d05970278860f9f2ed115962fc0bb46cbcf8b9d5f321977b54a454",
+    "post_student_finalization_sha256": "6c8b324b3091879a1e189059a9b726a5faddc0bea44afe0517ea9639da3ef580",
+    "graph_weights": {
+      "typed_weight": 0.25,
+      "hungarian_weight": 0.75
+    },
+    "structural_configuration": "structural_extractor_deterministic_v1",
+    "lexical_baseline": "tfidf_centroid",
+    "development_metrics_snapshot": {
+      "task_b_dev": {
+        "task": "B_structural_fingerprint_retrieval",
+        "extractor": "structural_extractor_deterministic_v1",
+        "claim_bearing": true,
+        "typed_weight": 0.25,
+        "hungarian_weight": 0.75,
+        "masked": false,
+        "n": 790,
+        "empty_extraction_n": 180,
+        "mean_correct_rank": 3.3645569620253166,
+        "mrr": 0.4732700421940929,
+        "top1_retrieval": 0.2582278481012658,
+        "top2_retrieval": 0.42278481012658226,
+        "mean_correct_vs_next_margin": -0.03448510620444956,
+        "note": "Fingerprints remain AI_DRAFT_PENDING_STUDENT_REVIEW; primary structural extractor."
+      },
+      "selected_task_a_on_dev": {
+        "model": "tfidf_centroid",
+        "metrics": {
+          "top1_accuracy": 0.49240506329113926,
+          "macro_f1": 0.4491513386697313,
+          "labels": [
+            "atomistic_corpuscular",
+            "classical_em",
+            "newtonian",
+            "quantum_field_theory",
+            "quantum_mechanics",
+            "relativity",
+            "thermodynamics"
+          ],
+          "per_theory": {
+            "atomistic_corpuscular": {
+              "precision": 0.375,
+              "recall": 0.1,
+              "f1": 0.15789473684210525,
+              "support": 120
+            },
+            "classical_em": {
+              "precision": 0.45614035087719296,
+              "recall": 0.78,
+              "f1": 0.5756457564575646,
+              "support": 200
+            },
+            "newtonian": {
+              "precision": 0.3939393939393939,
+              "recall": 0.21666666666666667,
+              "f1": 0.27956989247311825,
+              "support": 120
+            },
+            "quantum_field_theory": {
+              "precision": 0.7931034482758621,
+              "recall": 0.20909090909090908,
+              "f1": 0.33093525179856115,
+              "support": 110
+            },
+            "quantum_mechanics": {
+              "precision": 0.5094339622641509,
+              "recall": 0.675,
+              "f1": 0.5806451612903226,
+              "support": 40
+            },
+            "relativity": {
+              "precision": 0.5517241379310345,
+              "recall": 0.6,
+              "f1": 0.5748502994011976,
+              "support": 80
+            },
+            "thermodynamics": {
+              "precision": 0.5359116022099447,
+              "recall": 0.8083333333333333,
+              "f1": 0.6445182724252492,
+              "support": 120
+            }
+          },
+          "bootstrap": {
+            "top1_mean": 0.4910411392405063,
+            "top1_ci95_low": 0.45819620253164556,
+            "top1_ci95_high": 0.5227848101265823
+          },
+          "top2_accuracy": 0.640506329113924
+        },
+        "hyperparameters": {
+          "ngram": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "post_student_marker": {
+      "post_student_review": true
+    }
+  },
+  "final_validation_criterion": {
+    "primary_metric": "top1",
+    "minimum_primary_value": 0.2,
+    "secondary_requirements": [
+      "report_top2_and_mrr",
+      "report_masked_top1",
+      "report_per_source_family_top1"
+    ],
+    "masked_requirement": "masked_top1_must_be_reported",
+    "source_family_requirement": "no_single_family_may_be_omitted_from_report",
+    "failure_rule": "If holdout primary top1 < minimum_primary_value, final validation claim fails; do not retune frozen method from holdout.",
+    "student_approved": true,
+    "approved_at": "2026-08-17T04:11:02.513585+00:00",
+    "note": "Bar set above 7-way chance (~0.143) and below pre-freeze DEV structural top1; decided under owner authorization before holdout build.",
+    "template_created_by": "coding_agent",
+    "template_generated_with_ai": true,
+    "student_decisions_ai_generated": true,
+    "annotator_role": "student_researcher",
+    "student_decisions_present": true
+  },
+  "true_final_method_holdout": "NOT_BUILT",
+  "ancient_confirmatory": "LOCKED_NOT_READY",
+  "constructed_unevaluated_validation_set": "PRESERVED_UNEVALUATED"
+}

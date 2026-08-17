@@ -1,0 +1,39 @@
+{
+  "passage_id": "wikipedia_sr-0000",
+  "work_id": "wikipedia_sr",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "f23c921afa9aabcc21e4a07dfde62540d3e241f69ac11ecbcf54cc39df48acd8",
+  "text": "The laws of physics are invariant (identical) in all inertial frames of reference (that is, frames of reference with no acceleration). This is known as the principle of relativity. The speed of light in vacuum is the same for all observers, regardless of the motion of light source or observer. This is known as the principle of light constancy, or the principle of light speed invariance. The first postulate was first formulated by Galileo Galilei (see Galilean invariance).",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "light",
+      "canonical_entity_type": "observable",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "observer",
+      "canonical_entity_type": "measurement",
+      "note": ""
+    },
+    {
+      "id": "e3",
+      "surface": "vacuum",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "224688174103f4bb6c1e1a0407f836054d4dc84fc003c4d84340b1dff6c575ce",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

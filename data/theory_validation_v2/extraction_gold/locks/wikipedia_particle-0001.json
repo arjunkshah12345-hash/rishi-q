@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_particle-0001",
+  "work_id": "wikipedia_particle",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "0780f5db77f997d086769f56f4ea71cdd70af7685601e52de2a22dbe0db14eae",
+  "text": "There are three generations of fermions, although ordinary matter is made only from the first fermion generation. The first generation consists of up and down quarks which form protons and neutrons, and electrons and electron neutrinos. The three fundamental interactions known to be mediated by bosons are electromagnetism, the weak interaction, and the strong interaction. Quarks form hadrons, but cannot exist on their own.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "electron",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "interaction",
+      "canonical_entity_type": "interaction",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "12e18dcf7b8885095d74aba7ebf16b5a88d9bb083e258f17bae530132d7fd2a0",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_qft-0001",
+  "work_id": "wikipedia_qft",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "4be6e2f9d3e79d31536ad3595e068acb78415dc7c0c446c2a8f089cc1ae9da20",
+  "text": "Quantum field theory is the result of the combination of classical field theory, quantum mechanics, and special relativity. A brief overview of these theoretical precursors follows. The earliest successful classical field theory is one that emerged from Newton's law of universal gravitation, despite the complete absence of the concept of fields from his 1687 treatise Philosophi\u00e6 Naturalis Principia Mathematica. The force of gravity as described by Isaac Newton is an \"action at a distance\"\u2014its effects on faraway objects are instantaneous, no matter the distance.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "field",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "force",
+      "canonical_entity_type": "interaction",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "7bbf3a4553be12da7cc24a203bb792817316b1460bbe5172acfb24cf5961123c",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

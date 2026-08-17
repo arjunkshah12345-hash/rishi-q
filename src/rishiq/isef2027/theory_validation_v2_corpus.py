@@ -471,19 +471,31 @@ def build_external_theory_corpus(root: Path) -> dict[str, Any]:
                 f.write(json.dumps(r) + "\n")
 
     # Do not materialize a new final_holdout from this rebuild.
-    # Empty placeholder documents that true holdout is NOT_BUILT.
+    # Empty placeholder documents that true holdout is NOT_BUILT — unless already built/evaluated.
     (out_dir / "final_holdout_TEXTS_LOCKED.jsonl").write_text("", encoding="utf-8")
-    (out_dir / "TRUE_FINAL_HOLDOUT_STATUS.json").write_text(
-        json.dumps(
-            {
-                "status": "NOT_BUILT",
-                "reason": "True final method holdout may be built only AFTER student method freeze.",
-            },
-            indent=2,
+    status_path = out_dir / "TRUE_FINAL_HOLDOUT_STATUS.json"
+    existing_hold = {}
+    if status_path.exists():
+        try:
+            existing_hold = json.loads(status_path.read_text(encoding="utf-8"))
+        except Exception:
+            existing_hold = {}
+    existing_status = existing_hold.get("status")
+    if existing_status in {"BUILT_UNEVALUATED", "EVALUATED_ONCE_AFTER_METHOD_FREEZE"}:
+        # Preserve post-freeze true holdout status; corpus rebuild must not wipe it.
+        pass
+    else:
+        status_path.write_text(
+            json.dumps(
+                {
+                    "status": "NOT_BUILT",
+                    "reason": "True final method holdout may be built only AFTER student method freeze.",
+                },
+                indent=2,
+            )
+            + "\n",
+            encoding="utf-8",
         )
-        + "\n",
-        encoding="utf-8",
-    )
 
     demoted = demote_constructed_unevaluated_holdout(root)
 

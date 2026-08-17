@@ -1,0 +1,20 @@
+{
+  "passage_id": "huygens_light-0000",
+  "work_id": "huygens_light",
+  "source_family": "huygens_treatise_on_light",
+  "passage_sha256": "7e714e76a33adb63d3feb5a825e4518901e5cde8f46895e450a9b94cb4ae9950",
+  "text": "I wrote this Treatise during my sojourn in France twelve years ago, and I communicated it in the year 1678 to the learned persons who then composed the Royal Academy of Science, to the membership of which the King had done me the honour of calling, me. Several of that body who are still alive will remember having been present when I read it, and above the rest those amongst them who applied themselves particularly to the study of Mathematics; of whom I cannot cite more than the celebrated gentlemen Cassini, R\u00f6mer, and De la Hire.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "e0f8306aa18e8e302345cd21b620590ccf5abd98dd18620b70a8ef69e215d07f",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

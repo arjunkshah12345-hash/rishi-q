@@ -1,0 +1,20 @@
+{
+  "passage_id": "thomson_tait_np-0000",
+  "work_id": "thomson_tait_np",
+  "source_family": "treatise_natural_philosophy",
+  "passage_sha256": "8e3aa12bd5576ab5ead1c840ee231b00feef99c4b43e511830725bfcd7639c8a",
+  "text": "The original design of tlie Authors in commencing this work about twenty jmars ago has not been carried out beyond the production of the first of a series of volumes, in which it was intended that the various branches of mathematical and experi- mental physics should be successively treated. The intention of proceeding with the other volumes is now definitely aban- doned ; but much new matter has been added to the first volume, and it has been divided into two parts, in the second edition now completed in this second part. The original first volume contained many references to the intended future volumes; and these references have been allowed to remain in the present completion of the new edition of the first volume, because the plan of treatment followed depended on the expectation of carrying out the original design.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "add85c3e787cad6f57a3cefef794cafe63a4f35a2d8ba29bf812630f5a65d03b",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

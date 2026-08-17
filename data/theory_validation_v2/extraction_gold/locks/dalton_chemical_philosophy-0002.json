@@ -1,0 +1,20 @@
+{
+  "passage_id": "dalton_chemical_philosophy-0002",
+  "work_id": "dalton_chemical_philosophy",
+  "source_family": "dalton_chemical_philosophy",
+  "passage_sha256": "1127f1d904fbbe1996603e21ec406dd51205646220f9c69f199bdd88a2257e61",
+  "text": "Ten grains of guinea gold of the sp. gr. 17.3, were repeatedly dissolved in a small excess of nitro-muriatic acid; the quantity and purity of the nitrous gas generated were duly observed and allowance made for the loss occasioned by a small portion of common air originally in the gas bottle. The volume of nitrous gas corrected as above was always found between 1100 and 1200 grain measures, the weight of which may be estimated at J .6 grains, corresponding to 1.4 grains of oxygen.",
+  "entities": [],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "19600858717535bef2b94eb7593cd3f32decd2957cf117ae95a27122558eafb0",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

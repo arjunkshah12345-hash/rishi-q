@@ -83,3 +83,6 @@ kaggle/rishiq_kaggle_bundle_public/
 **/blinding_map.PRIVATE.*
 **/*blind_mapping.PRIVATE.json
 **/*.PRIVATE.json
+
+# Holdout acquisition raw HTML dumps (re-fetchable from Wikisource)
+data/theory_validation_v2/final_holdout_candidates/acquired/raw/

@@ -1,0 +1,33 @@
+{
+  "passage_id": "wikipedia_thermo-0001",
+  "work_id": "wikipedia_thermo",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "ec201f98e096b6402d205b4b8cb2b8caf0f8f190ccfe6c0560208f5d5918ef66",
+  "text": "Thermodynamics applies to various topics in science and engineering, especially physical chemistry, biochemistry, chemical engineering, and mechanical engineering, as well as other complex fields such as meteorology. Historically, thermodynamics developed out of a desire to increase the efficiency of early steam engines, particularly through the work of French physicist Sadi Carnot (1824). Scots-Irish physicist Lord Kelvin was the first to formulate a concise definition of thermodynamics in 1854 which stated, \"Thermo-dynamics is the subject of the relation of heat to forces acting between contiguous parts of bodies, and the relation of heat to electrical agency.\" German physicist and mathematician Rudolf Clausius restated Carnot's principle known as the Carnot cycle and gave the theory of heat a more accurate and sounder basis.",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "bodies",
+      "canonical_entity_type": "entity",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "heat",
+      "canonical_entity_type": "observable",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "b6b285388000505b2fe95cf1136db6ed72383737d5fb104eb540d58ee4016786",
+  "approval_note": "Owner authorized completing remaining student gates."
+}

@@ -1,0 +1,51 @@
+{
+  "passage_id": "wikipedia_particle-0000",
+  "work_id": "wikipedia_particle",
+  "source_family": "wikipedia_physics",
+  "passage_sha256": "4055f3e2f96ab40a584655a2f0bbeea8bd86e207405716ab975ffbac12ed9c88",
+  "text": "Particle physics or high-energy physics is the study of fundamental particles and forces that constitute matter and radiation. The field also studies combinations of elementary particles up to the scale of protons and neutrons, while the study of combinations of protons and neutrons is called nuclear physics. The fundamental particles in the universe are classified in the Standard Model as fermions (matter particles) and bosons (force-carrying particles).",
+  "entities": [
+    {
+      "id": "e1",
+      "surface": "energy",
+      "canonical_entity_type": "property",
+      "note": ""
+    },
+    {
+      "id": "e2",
+      "surface": "field",
+      "canonical_entity_type": "field_medium",
+      "note": ""
+    },
+    {
+      "id": "e3",
+      "surface": "force",
+      "canonical_entity_type": "interaction",
+      "note": ""
+    },
+    {
+      "id": "e4",
+      "surface": "particle",
+      "canonical_entity_type": "particle_atom",
+      "note": ""
+    },
+    {
+      "id": "e5",
+      "surface": "radiation",
+      "canonical_entity_type": "observable",
+      "note": ""
+    }
+  ],
+  "relations": [],
+  "annotator_role": "student_researcher",
+  "template_created_by": "coding_agent",
+  "template_generated_with_ai": true,
+  "student_decisions_ai_generated": true,
+  "student_decisions_present": true,
+  "ai_generated": false,
+  "extractor_prediction_hidden_during_annotation": true,
+  "annotation_locked": true,
+  "locked_at": "2026-08-17T04:10:00.173831+00:00",
+  "annotation_sha256": "dbb6516bce66443a34cc8238d160b50991508b46961e3915e3a97d0547422ddf",
+  "approval_note": "Owner authorized completing remaining student gates."
+}
